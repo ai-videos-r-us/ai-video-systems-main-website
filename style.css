@@ -234,13 +234,18 @@ h1, h2, h3, h4{
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: rgba(216, 164, 35, 0.12);
-  border: 1px solid var(--border-gold);
+  background: linear-gradient(150deg, #f6d478 0%, #d8a423 48%, #97650f 100%);
+  border: 1px solid rgba(255, 232, 172, 0.6);
+  box-shadow:
+    0 6px 12px -4px rgba(0,0,0,0.5),
+    inset 0 1px 0 rgba(255,255,255,0.6),
+    inset 0 -2px 3px rgba(64,40,0,0.5);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--gold-bright);
+  color: #2b1c04;
 }
+.hero-badge .icon-circle svg{ filter: drop-shadow(0 1px 0 rgba(255,255,255,0.3)); }
 
 /* Hero visual */
 .hero-visual{
@@ -375,15 +380,21 @@ h1, h2, h3, h4{
 .icon-badge{
   width: 46px;
   height: 46px;
-  border-radius: 10px;
-  background: rgba(216, 164, 35, 0.1);
-  border: 1px solid var(--border-gold);
+  border-radius: 12px;
+  background: linear-gradient(150deg, #f6d478 0%, #d8a423 48%, #97650f 100%);
+  border: 1px solid rgba(255, 232, 172, 0.6);
+  box-shadow:
+    0 10px 18px -6px rgba(0,0,0,0.5),
+    0 2px 4px rgba(0,0,0,0.25),
+    inset 0 1.5px 0 rgba(255,255,255,0.6),
+    inset 0 -3px 5px rgba(64,40,0,0.5);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--gold-bright);
+  color: #2b1c04;
   margin-bottom: 18px;
 }
+.icon-badge svg{ filter: drop-shadow(0 1px 0 rgba(255,255,255,0.3)); }
 
 .value-card h3{
   font-family: var(--font-sans);
@@ -445,7 +456,6 @@ h1, h2, h3, h4{
 
 .problem-card .icon-badge{
   margin: 0 auto 16px;
-  background: rgba(216, 164, 35, 0.14);
 }
 
 .problem-card h3{
