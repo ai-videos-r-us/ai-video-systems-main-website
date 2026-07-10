@@ -4,8 +4,7 @@ import ContactButton from '../components/ContactButton';
 
 const NAV_LINKS = ['About', 'Price', 'Projects', 'Contact'];
 
-const PORTRAIT_URL =
-  'https://shrug-person-78902957.figma.site/_components/v2/d24c01ad3a56fc65e942a1f501eb73db42d7cf9a/Rectangle_40443.81459862.png';
+const PORTRAIT_URL = '/sean-head.png';
 
 export default function HeroSection() {
   return (
@@ -27,7 +26,7 @@ export default function HeroSection() {
       <div className="overflow-hidden">
         <FadeIn delay={0.15} y={40}>
           <h1 className="hero-heading mt-6 w-full whitespace-nowrap text-center text-[14vw] font-black uppercase leading-none tracking-tight sm:mt-4 sm:text-[15vw] md:-mt-5 md:text-[16vw] lg:text-[17.5vw]">
-            Hi, i&apos;m jack
+            Hi, i&apos;m Sean
           </h1>
         </FadeIn>
       </div>
@@ -56,7 +55,7 @@ export default function HeroSection() {
           >
             <img
               src={PORTRAIT_URL}
-              alt="Jack, 3D creator"
+              alt="Sean, 3D creator"
               className="w-[280px] sm:w-[360px] md:w-[440px] lg:w-[520px]"
             />
           </Magnet>
