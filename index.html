@@ -3,122 +3,161 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#050A12">
-<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0B0B0D">
+<meta name="color-scheme" content="light">
 <title>Turn AI Content Into Clients — AI Video Systems</title>
 <meta name="description" content="Done-for-you AI content systems for businesses that want more clients without filming, hiring UGC creators, or constantly producing new content manually.">
 <meta property="og:title" content="Turn AI Content Into Clients — AI Video Systems">
 <meta property="og:description" content="Done-for-you AI content systems for businesses that want more clients without filming, hiring UGC creators, or constantly producing new content manually.">
 <meta property="og:type" content="website">
+<link rel="icon" href="assets/brand/avs-favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ============================= HEADER ============================= -->
+<!-- ============================= HEADER (NAVIGATION) ============================= -->
 <header class="site-header">
   <div class="container">
     <a href="#" class="logo">
-      <span class="logo-mark" aria-hidden="true">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="2.4" fill="currentColor"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke="currentColor" stroke-width="1.4"/></svg>
-      </span>
+      <img class="logo-symbol" src="assets/brand/avs-symbol-black.svg" alt="" width="34" height="34">
       <span class="logo-text">AI Video<br>Systems</span>
     </a>
     <div class="header-ctas">
       <a href="https://calendly.com/sean_munn/seanspersonallink" target="_blank" rel="noopener" class="btn btn-primary">Book a Strategy Call</a>
-      <a href="https://calendly.com/sean_munn/seanspersonallink" target="_blank" rel="noopener" class="btn btn-outline">Book a Strategy Call</a>
     </div>
   </div>
 </header>
 
-<!-- ============================= HERO ============================= -->
+<!-- ============================= HERO / HERO JOURNEY ============================= -->
 <section class="hero">
-  <div class="container">
+  <div class="container hero-grid">
     <div class="hero-copy">
       <p class="eyebrow">AI Video Strategy and Ad Creative</p>
-      <h1 class="hero-title">Turn <span class="accent">AI Content</span> Into Clients</h1>
-      <p class="hero-subtitle">Done-for-you AI content systems for businesses that want more clients without filming, hiring UGC creators, or constantly producing new content manually.</p>
+      <h1 class="hero-title">Every View Is a <span class="accent">Signal</span>. We Turn It Into a Client.</h1>
+      <p class="hero-subtitle">Done-for-you AI content systems that track a viewer from first watch to booked enquiry — without filming, hiring UGC creators, or producing content manually.</p>
       <div class="hero-ctas">
         <a href="https://calendly.com/sean_munn/seanspersonallink" target="_blank" rel="noopener" class="btn btn-primary">Book a Strategy Call</a>
-        <a href="https://calendly.com/sean_munn/seanspersonallink" target="_blank" rel="noopener" class="btn btn-outline">Book a Strategy Call</a>
       </div>
       <div class="hero-badges">
-        <div class="hero-badge">
-          <span class="icon-circle"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          More High-Quality Leads
-        </div>
-        <div class="hero-badge">
-          <span class="icon-circle"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
-          Save Time &amp; Resources
-        </div>
-        <div class="hero-badge">
-          <span class="icon-circle"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M3 17l5-5 4 4 8-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 7h5v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-          Predictable, Scalable Growth
-        </div>
+        <div class="hero-badge"><span class="dot-bullet"></span>More High-Quality Leads</div>
+        <div class="hero-badge"><span class="dot-bullet"></span>Save Time &amp; Resources</div>
+        <div class="hero-badge"><span class="dot-bullet"></span>Predictable, Scalable Growth</div>
       </div>
     </div>
 
-    <div class="hero-visual">
-      <div class="hero-media">
-        <img src="assets/founder-hero.png" alt="Sean, founder of AI Video Systems" onerror="this.parentElement.classList.add('img-fallback'); this.parentElement.setAttribute('data-label','Founder Hero Image')">
+    <!-- Hero Journey: HTML cards connected with SVG signal line -->
+    <div class="hero-journey" aria-label="The buyer journey we engineer, from organic video view to booked enquiry">
+      <div class="journey-stage">
+        <span class="journey-poster"><span class="poster-play"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><path d="M7 5l12 7-12 7z"/></svg></span></span>
+        <div class="journey-text"><span class="journey-label">Organic Video</span><span class="journey-desc">A cold viewer presses play</span></div>
       </div>
+      <div class="connector connector--v"><svg class="connector-svg" viewBox="0 0 10 40" preserveAspectRatio="none"><path class="connector-path" d="M5 0 L5 40"/></svg><span class="connector-dot"></span></div>
 
-      <div class="float-card float-card--top">
-        <div class="float-thumb-wrap">
-          <img class="float-thumb" src="assets/video-example.png" alt="AI video example" onerror="this.parentElement.classList.add('img-fallback'); this.parentElement.setAttribute('data-label','Video')">
-          <span class="play-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 5l12 7-12 7z"/></svg></span>
-        </div>
-        <div class="float-text">
-          <span class="label">AI Video Example</span>
-          <span class="watch">Watch Now <svg width="9" height="9" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </div>
+      <div class="journey-stage">
+        <span class="journey-poster"><span class="poster-play"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><path d="M7 5l12 7-12 7z"/></svg></span></span>
+        <div class="journey-text"><span class="journey-label">Engaged Viewer</span><span class="journey-desc">Watches, lingers, shows intent</span></div>
       </div>
+      <div class="connector connector--v"><svg class="connector-svg" viewBox="0 0 10 40" preserveAspectRatio="none"><path class="connector-path" d="M5 0 L5 40"/></svg><span class="connector-dot"></span></div>
 
-      <div class="float-card float-card--bottom">
-        <div class="float-thumb-wrap">
-          <img class="float-thumb" src="assets/founder-insights.png" alt="Founder insights checklist" onerror="this.parentElement.classList.add('img-fallback'); this.parentElement.setAttribute('data-label','Founder Insights')">
-          <span class="play-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 5l12 7-12 7z"/></svg></span>
-        </div>
-        <div class="float-text">
-          <span class="label">Founder Insights</span>
-          <span class="watch">Watch Now <svg width="9" height="9" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        </div>
+      <div class="journey-stage">
+        <span class="journey-poster"><span class="poster-play"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><path d="M7 5l12 7-12 7z"/></svg></span></span>
+        <div class="journey-text"><span class="journey-label">Warm Audience</span><span class="journey-desc">Grouped by real behaviour</span></div>
+      </div>
+      <div class="connector connector--v"><svg class="connector-svg" viewBox="0 0 10 40" preserveAspectRatio="none"><path class="connector-path" d="M5 0 L5 40"/></svg><span class="connector-dot"></span></div>
+
+      <div class="journey-stage">
+        <span class="journey-poster"><span class="poster-play"><svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor"><path d="M7 5l12 7-12 7z"/></svg></span></span>
+        <div class="journey-text"><span class="journey-label">Retargeting</span><span class="journey-desc">Follow-up creative, right time</span></div>
+      </div>
+      <div class="connector connector--v"><svg class="connector-svg" viewBox="0 0 10 40" preserveAspectRatio="none"><path class="connector-path" d="M5 0 L5 40"/></svg><span class="connector-dot"></span></div>
+
+      <div class="journey-stage journey-stage--final">
+        <span class="journey-icon journey-icon--final"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v10a2 2 0 01-2 2H6a2 2 0 01-2-2V6z" stroke="currentColor" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+        <div class="journey-text"><span class="journey-label">Enquiry Booked</span><span class="journey-desc">A call lands in your calendar</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================= VALUE STRIP ============================= -->
-<section class="value-strip">
+<!-- ============================= THREE-STEP MECHANISM ============================= -->
+<section class="mechanism">
   <div class="container">
-    <div class="value-grid">
-      <div class="value-card">
-        <span class="icon-badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="1.4" fill="currentColor"/></svg></span>
-        <h3>AI Video Strategy</h3>
-        <p>Data-led strategy tailored to your audience and goals.</p>
+    <div class="section-head">
+      <p class="eyebrow">How It Works</p>
+      <h2>A Complete AI Video Creative System</h2>
+    </div>
+
+    <div class="mechanism-row">
+      <div class="mechanism-card">
+        <span class="mechanism-index">01</span>
+        <h3>Detect the Signal</h3>
+        <p>We define your message, ideal clients and identify what a real buying signal looks like for your business.</p>
       </div>
-      <div class="value-card">
-        <span class="icon-badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="7" width="13" height="11" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M16 10l5-3v10l-5-3" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
-        <h3>Done-for-You Creative</h3>
-        <p>AI-powered videos that build trust and drive action.</p>
+      <div class="connector connector--h"><svg class="connector-svg" viewBox="0 0 60 10" preserveAspectRatio="none"><path class="connector-path" d="M0 5 L60 5"/></svg><span class="connector-dot"></span></div>
+
+      <div class="mechanism-card">
+        <span class="mechanism-index">02</span>
+        <h3>Build the Engine</h3>
+        <p>Our two-engine system produces the AI video creative and distributes it to warm the right audience.</p>
       </div>
-      <div class="value-card">
-        <span class="icon-badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="17" cy="9" r="2.4" stroke="currentColor" stroke-width="1.6"/><path d="M15.5 20c.2-2.6 1.9-4.6 4.5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
-        <h3>Lead Generation Focus</h3>
-        <p>Content designed to attract, qualify and convert leads.</p>
+      <div class="connector connector--h"><svg class="connector-svg" viewBox="0 0 60 10" preserveAspectRatio="none"><path class="connector-path" d="M0 5 L60 5"/></svg><span class="connector-dot"></span></div>
+
+      <div class="mechanism-card">
+        <span class="mechanism-index">03</span>
+        <h3>Convert the Enquiry</h3>
+        <p>Retargeting and funnels carry the signal through to a booked call in your calendar.</p>
       </div>
-      <div class="value-card">
-        <span class="icon-badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2l2 6h6l-5 4 2 7-5-4-5 4 2-7-5-4h6z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></span>
-        <h3>Campaign-Ready Assets</h3>
-        <p>Fully optimised videos ready to launch and scale.</p>
+    </div>
+
+    <div class="cta-banner">
+      <div class="cta-banner-left">
+        <span class="icon-badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 9h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        <p>Book a Strategy Call and get a custom content plan for your business.</p>
       </div>
+      <a href="https://calendly.com/sean_munn/seanspersonallink" target="_blank" rel="noopener" class="btn btn-primary">Book a Strategy Call</a>
     </div>
   </div>
 </section>
 
-<!-- ============================= PROBLEM / SOLUTION ============================= -->
+<!-- ============================= PROOF METRICS ============================= -->
+<section class="proof-metrics">
+  <div class="container proof-grid">
+    <button class="proof-tile" data-modal="proof-1">
+      <span class="proof-number">5M+</span>
+      <span class="proof-label">Views Generated</span>
+    </button>
+    <button class="proof-tile" data-modal="proof-2">
+      <span class="proof-number">74</span>
+      <span class="proof-label">Qualified Leads, 7 Weeks</span>
+    </button>
+    <button class="proof-tile" data-modal="proof-3">
+      <span class="proof-number">32%</span>
+      <span class="proof-label">Lead-to-Job Conversion</span>
+    </button>
+    <button class="proof-tile" data-modal="proof-4">
+      <span class="proof-number">150K+</span>
+      <span class="proof-label">Views in 5 Weeks</span>
+    </button>
+  </div>
+</section>
+
+<!-- Proof metrics modal -->
+<div class="proof-modal" id="proof-modal" aria-hidden="true">
+  <div class="proof-modal-backdrop" data-modal-close></div>
+  <div class="proof-modal-box" role="dialog" aria-modal="true">
+    <button class="proof-modal-close" data-modal-close aria-label="Close">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <div class="proof-modal-shot img-fallback" data-label="Screenshot"></div>
+    <h3 class="proof-modal-title"></h3>
+    <p class="proof-modal-copy"></p>
+  </div>
+</div>
+
+<!-- ============================= PROBLEM ============================= -->
 <section class="problem">
   <div class="container">
     <div class="problem-copy">
@@ -130,32 +169,32 @@
 
     <div class="problem-grid">
       <div class="problem-card">
-        <span class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></span>
+        <span class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
         <h3>Reviews</h3>
         <p>Build trust and credibility with authentic social proof.</p>
       </div>
       <div class="problem-card">
-        <span class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 5h16v11H8l-4 4z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></span>
+        <span class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 5h16v11H8l-4 4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
         <h3>Objections</h3>
         <p>Address concerns and turn doubt into confidence.</p>
       </div>
       <div class="problem-card">
-        <span class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.4"/><path d="M9.5 9.5a2.5 2.5 0 015 .3c0 1.7-2.5 1.9-2.5 3.7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><circle cx="12" cy="17" r="0.9" fill="currentColor"/></svg></span>
+        <span class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M9.5 9.5a2.5 2.5 0 015 .3c0 1.7-2.5 1.9-2.5 3.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="12" cy="17" r="0.9" fill="currentColor"/></svg></span>
         <h3>FAQs</h3>
         <p>Answer common questions before prospects ask.</p>
       </div>
       <div class="problem-card">
-        <span class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.4" stroke="currentColor" stroke-width="1.4"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span>
+        <span class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.4" stroke="currentColor" stroke-width="1.6"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
         <h3>Founder Insights</h3>
         <p>Share your expertise and build deeper connections.</p>
       </div>
       <div class="problem-card">
-        <span class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 20V10M11 20V4M18 20v-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        <span class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 20V10M11 20V4M18 20v-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
         <h3>Case Studies</h3>
         <p>Show real results that inspire action.</p>
       </div>
       <div class="problem-card">
-        <span class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M9 21h6M12 17v4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M8 13l2.5-3L13 12l3-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M9 21h6M12 17v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M8 13l2.5-3L13 12l3-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         <h3>Service Demos</h3>
         <p>Explain your offer and convert more leads.</p>
       </div>
@@ -163,43 +202,331 @@
   </div>
 </section>
 
-<!-- ============================= SOLUTION SYSTEM ============================= -->
-<section class="solution">
+<!-- ============================= "A VIDEO VIEW IS A SIGNAL" (BIG IDEA / EQUATION) ============================= -->
+<section class="signal-concept">
   <div class="container">
     <div class="section-head">
-      <p class="eyebrow">Our Solution</p>
-      <h2>A Complete AI Video Creative System</h2>
+      <p class="eyebrow">The Core Idea</p>
+      <h2>A Video View Is a Signal</h2>
+      <p class="section-lede">Not a vanity metric. A viewer raising their hand. Our system reads that signal, routes it through the AI Video Team engine, and turns it into a warm, trackable path to an enquiry.</p>
     </div>
 
-    <div class="solution-grid">
-      <div class="solution-card">
-        <span class="icon-badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 20L20 4M14 4h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 4l4 4M4 14v6h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-        <h3>Strategy &amp; Positioning</h3>
-        <p>We define your message, ideal clients and content that converts.</p>
+    <div class="signal-diagram signal-equation">
+      <div class="signal-node signal-node--video">
+        <span class="signal-node-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="14" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M17 10l4-2.4v8.8l-4-2.4" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+        <span class="signal-node-label">Video View</span>
       </div>
-      <div class="solution-card">
-        <span class="icon-badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="7" width="13" height="11" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M16 10l5-3v10l-5-3" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
-        <h3>AI Video Production</h3>
-        <p>High-quality AI videos crafted to build trust and drive engagement.</p>
+
+      <span class="signal-operator" aria-hidden="true">+</span>
+
+      <div class="signal-node signal-node--engine">
+        <span class="signal-node-icon signal-node-icon--engine"><img src="assets/brand/avs-symbol-black.svg" alt="" width="30" height="30"></span>
+        <span class="signal-node-label">AI Video Team Engine</span>
       </div>
-      <div class="solution-card">
-        <span class="icon-badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="2.4" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke="currentColor" stroke-width="1.6"/></svg></span>
-        <h3>Distribution &amp; Funnels</h3>
-        <p>We distribute across the right platforms and build lead-generating funnels.</p>
-      </div>
-      <div class="solution-card">
-        <span class="icon-badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 19V9M11 19V5M18 19v-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M3 4l3 3 3-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(13,-1)"/></svg></span>
-        <h3>Optimise &amp; Scale</h3>
-        <p>We analyse, test and optimise to maximise results over time.</p>
+
+      <span class="signal-operator" aria-hidden="true">=</span>
+
+      <div class="signal-node signal-node--enquiry">
+        <span class="signal-node-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v10a2 2 0 01-2 2H6a2 2 0 01-2-2V6z" stroke="currentColor" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+        <span class="signal-node-label">Enquiry</span>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="cta-banner">
-      <div class="cta-banner-left">
-        <span class="icon-badge"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 9h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
-        <p>Book a Strategy Call and get a custom content plan for your business.</p>
+<!-- ============================= ORGANIC VIDEO ENGINE ============================= -->
+<section class="organic-engine">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Engine One — The AI Video Team Engine</p>
+      <h2>The Organic Video Engine</h2>
+      <p class="section-lede">Your reviews, objections, FAQs, founder insights and case studies go in. A constantly growing library of AI video assets comes out.</p>
+    </div>
+
+    <div class="oe-flow">
+      <div class="oe-inputs">
+        <span class="journey-poster oe-poster"></span>
+        <span class="journey-poster oe-poster"></span>
+        <span class="journey-poster oe-poster"></span>
+        <span class="journey-poster oe-poster"></span>
+        <span class="journey-poster oe-poster"></span>
+        <span class="journey-poster oe-poster"></span>
+        <span class="journey-poster oe-poster"></span>
       </div>
-      <a href="https://calendly.com/sean_munn/seanspersonallink" target="_blank" rel="noopener" class="btn btn-primary">Book a Strategy Call</a>
+
+      <div class="connector connector--h connector--long"><svg class="connector-svg" viewBox="0 0 120 10" preserveAspectRatio="none"><path class="connector-path" d="M0 5 L120 5"/></svg><span class="connector-dot"></span></div>
+
+      <div class="oe-engine-box">
+        <img src="assets/brand/avs-symbol-white.svg" alt="" width="30" height="30">
+        <span>Engine</span>
+      </div>
+
+      <div class="connector connector--h connector--long"><svg class="connector-svg" viewBox="0 0 120 10" preserveAspectRatio="none"><path class="connector-path" d="M0 5 L120 5"/></svg><span class="connector-dot"></span></div>
+
+      <div class="oe-output">
+        <span class="oe-output-label">Published to Organic Feeds</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= RETARGETING ENGINE ============================= -->
+<section class="retargeting-engine">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Engine Two — The AI Video Team Engine</p>
+      <h2>The Retargeting Engine</h2>
+      <p class="section-lede">Warm audiences get a second, more direct sequence of creative — built specifically to convert the signal they already gave you.</p>
+    </div>
+
+    <div class="re-flow">
+      <div class="re-audience">
+        <span class="signal-node-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="8" cy="8" r="3" stroke="currentColor" stroke-width="1.6"/><circle cx="16" cy="8" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M3 19c0-3 2.2-5.4 5-5.4s5 2.4 5 5.4M11 19c0-2.6 1.9-4.7 4.3-4.7s4.7 2.1 4.7 4.7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span>
+        <span class="re-label">Warm Audience</span>
+      </div>
+
+      <div class="connector connector--h connector--long"><svg class="connector-svg" viewBox="0 0 120 10" preserveAspectRatio="none"><path class="connector-path" d="M0 5 L120 5"/></svg><span class="connector-dot"></span></div>
+
+      <div class="re-sequence">
+        <span class="journey-poster re-poster"><span class="re-poster-index">1</span></span>
+        <span class="journey-poster re-poster"><span class="re-poster-index">2</span></span>
+        <span class="journey-poster re-poster"><span class="re-poster-index">3</span></span>
+      </div>
+
+      <div class="connector connector--h connector--long"><svg class="connector-svg" viewBox="0 0 120 10" preserveAspectRatio="none"><path class="connector-path" d="M0 5 L120 5"/></svg><span class="connector-dot"></span></div>
+
+      <div class="re-audience">
+        <span class="signal-node-icon signal-node--enquiry"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v10a2 2 0 01-2 2H6a2 2 0 01-2-2V6z" stroke="currentColor" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+        <span class="re-label">Enquiry</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= BACKEND INFRASTRUCTURE (CRM/FUNNEL DASHBOARD MOCK-UP) ============================= -->
+<section class="infra">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Under the Hood</p>
+      <h2>Backend Infrastructure That Tracks Every Signal</h2>
+      <p class="section-lede">Every view, watch-time and click is logged, scored and routed automatically — so nothing warm ever goes cold.</p>
+    </div>
+
+    <div class="dashboard-mock">
+      <div class="dashboard-topbar">
+        <span class="dash-dot dash-dot--r"></span>
+        <span class="dash-dot dash-dot--y"></span>
+        <span class="dash-dot dash-dot--g"></span>
+        <span class="dashboard-title">AVS Signal Dashboard</span>
+      </div>
+      <div class="dashboard-body">
+        <nav class="dashboard-nav">
+          <span class="dash-nav-item dash-nav-item--active">Overview</span>
+          <span class="dash-nav-item">Video Library</span>
+          <span class="dash-nav-item">Audiences</span>
+          <span class="dash-nav-item">Retargeting</span>
+          <span class="dash-nav-item">Enquiries</span>
+        </nav>
+        <div class="dashboard-main">
+          <div class="dashboard-stats">
+            <div class="dash-stat"><span class="dash-stat-label">Views</span><span class="dash-stat-value">184,203</span></div>
+            <div class="dash-stat"><span class="dash-stat-label">Engaged Viewers</span><span class="dash-stat-value">9,412</span></div>
+            <div class="dash-stat"><span class="dash-stat-label">Warm Audience</span><span class="dash-stat-value">2,088</span></div>
+            <div class="dash-stat dash-stat--accent"><span class="dash-stat-label">Enquiries Booked</span><span class="dash-stat-value">74</span></div>
+          </div>
+          <div class="dashboard-chart">
+            <svg viewBox="0 0 340 80" preserveAspectRatio="none">
+              <polyline class="dash-chart-line" points="0,60 30,55 60,58 90,42 120,46 150,30 180,34 210,20 240,24 270,12 300,16 340,6" />
+            </svg>
+          </div>
+          <div class="dashboard-table">
+            <div class="dash-row dash-row--head"><span>Video</span><span>Viewer Action</span><span>Stage</span></div>
+            <div class="dash-row"><span>Founder Insights #04</span><span>Watched 82%</span><span class="dash-tag dash-tag--warm">Warm Audience</span></div>
+            <div class="dash-row"><span>Objection: Cost</span><span>Clicked Link</span><span class="dash-tag dash-tag--retarget">Retargeting</span></div>
+            <div class="dash-row"><span>Case Study: Ironclad</span><span>Booked Call</span><span class="dash-tag dash-tag--enquiry">Enquiry</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= DELIVERABLES ============================= -->
+<section class="deliverables">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">What You Actually Get</p>
+      <h2>Deliverables, Not Just Promises</h2>
+    </div>
+
+    <div class="deliverables-grid">
+      <div class="deliverable-card">
+        <span class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="7" width="13" height="11" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M16 10l5-3v10l-5-3" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+        <h3>AI Video Library</h3>
+        <p>A growing set of AI-generated video assets covering reviews, FAQs, objections and case studies.</p>
+      </div>
+      <div class="deliverable-card">
+        <span class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="2.4" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke="currentColor" stroke-width="1.6"/></svg></span>
+        <h3>Retargeting Funnel Build</h3>
+        <p>A complete audience and ad-sequence build so every warm viewer is followed up automatically.</p>
+      </div>
+      <div class="deliverable-card">
+        <span class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M7 9h6M7 13h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        <h3>Signal Dashboard Access</h3>
+        <p>Direct visibility into views, engaged viewers, warm audiences and booked enquiries as they happen.</p>
+      </div>
+      <div class="deliverable-card">
+        <span class="icon-badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 19V9M11 19V5M18 19v-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+        <h3>Monthly Optimisation Call</h3>
+        <p>A recurring review of what's converting, what's not, and where we double down next.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= COMPARISON TABLE ============================= -->
+<section class="comparison">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Why Switch</p>
+      <h2>The Old Way vs. AI Video Systems</h2>
+    </div>
+
+    <div class="comparison-table" role="table">
+      <div class="comparison-row comparison-row--head" role="row">
+        <span role="columnheader"></span>
+        <span role="columnheader" class="comparison-col comparison-col--old">The Old Way</span>
+        <span role="columnheader" class="comparison-col comparison-col--avs">AI Video Systems</span>
+      </div>
+      <div class="comparison-row" role="row">
+        <span class="comparison-feature">Content production</span>
+        <span class="comparison-cell"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg> Filming, UGC creators, agencies</span>
+        <span class="comparison-cell comparison-cell--yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> Done-for-you AI video</span>
+      </div>
+      <div class="comparison-row" role="row">
+        <span class="comparison-feature">Consistency</span>
+        <span class="comparison-cell"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg> One-off video projects</span>
+        <span class="comparison-cell comparison-cell--yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> Continuous content library</span>
+      </div>
+      <div class="comparison-row" role="row">
+        <span class="comparison-feature">Lead tracking</span>
+        <span class="comparison-cell"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg> No system for warm signals</span>
+        <span class="comparison-cell comparison-cell--yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> Full view-to-enquiry pipeline</span>
+      </div>
+      <div class="comparison-row" role="row">
+        <span class="comparison-feature">Follow-up</span>
+        <span class="comparison-cell"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg> Manual, inconsistent, or none</span>
+        <span class="comparison-cell comparison-cell--yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> Built-in retargeting funnel</span>
+      </div>
+      <div class="comparison-row" role="row">
+        <span class="comparison-feature">Your time</span>
+        <span class="comparison-cell"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg> Hours on camera and edits</span>
+        <span class="comparison-cell comparison-cell--yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> Zero filming, done for you</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= PORTFOLIO (FILTERABLE GALLERY) ============================= -->
+<section class="portfolio">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Selected Work</p>
+      <h2>Explore the Portfolio</h2>
+      <p class="section-lede">A sample of the AI video libraries we've built across industries. Filter by the kind of business closest to yours.</p>
+    </div>
+
+    <div class="portfolio-filters" role="tablist" aria-label="Filter portfolio by industry">
+      <button class="portfolio-filter is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="portfolio-filter" data-filter="finance" role="tab" aria-selected="false">Finance</button>
+      <button class="portfolio-filter" data-filter="home-services" role="tab" aria-selected="false">Home Services</button>
+      <button class="portfolio-filter" data-filter="coaching" role="tab" aria-selected="false">Coaching</button>
+    </div>
+
+    <div class="portfolio-grid">
+      <div class="portfolio-item" data-category="finance">
+        <span class="portfolio-poster"><span class="poster-play poster-play--lg"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M7 5l12 7-12 7z"/></svg></span></span>
+        <span class="portfolio-title">Ironclad Finance — Case Study Reel</span>
+      </div>
+      <div class="portfolio-item" data-category="home-services">
+        <span class="portfolio-poster"><span class="poster-play poster-play--lg"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M7 5l12 7-12 7z"/></svg></span></span>
+        <span class="portfolio-title">Exterior Cleaning Co. — Service Demo</span>
+      </div>
+      <div class="portfolio-item" data-category="finance">
+        <span class="portfolio-poster"><span class="poster-play poster-play--lg"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M7 5l12 7-12 7z"/></svg></span></span>
+        <span class="portfolio-title">Mortgage Fit — Objection Breakdown</span>
+      </div>
+      <div class="portfolio-item" data-category="coaching">
+        <span class="portfolio-poster"><span class="poster-play poster-play--lg"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M7 5l12 7-12 7z"/></svg></span></span>
+        <span class="portfolio-title">Founder Insights Series</span>
+      </div>
+      <div class="portfolio-item" data-category="home-services">
+        <span class="portfolio-poster"><span class="poster-play poster-play--lg"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M7 5l12 7-12 7z"/></svg></span></span>
+        <span class="portfolio-title">Trinity Exterior — Before &amp; After</span>
+      </div>
+      <div class="portfolio-item" data-category="coaching">
+        <span class="portfolio-poster"><span class="poster-play poster-play--lg"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M7 5l12 7-12 7z"/></svg></span></span>
+        <span class="portfolio-title">Client Objection Q&amp;A</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= FUNNEL X-RAY (INTERACTIVE) ============================= -->
+<section class="funnel-xray">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Funnel X-Ray</p>
+      <h2>See Exactly Where Every Signal Sits</h2>
+      <p class="section-lede">Click a stage to see what happens there — and what moves a viewer to the next one.</p>
+    </div>
+
+    <div class="xray-video">
+      <span class="portfolio-poster xray-poster"><span class="poster-play poster-play--lg"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M7 5l12 7-12 7z"/></svg></span></span>
+      <span class="xray-video-label">The organic video that starts this exact funnel</span>
+    </div>
+
+    <div class="xray-wrap">
+      <div class="xray-bars" role="tablist" aria-label="Funnel stages">
+        <button class="xray-bar xray-bar--1 is-active" data-stage="1" role="tab" aria-selected="true">
+          <span class="xray-bar-label">Organic Video</span><span class="xray-bar-value">184,203</span>
+        </button>
+        <button class="xray-bar xray-bar--2" data-stage="2" role="tab" aria-selected="false">
+          <span class="xray-bar-label">Engaged Viewer</span><span class="xray-bar-value">9,412</span>
+        </button>
+        <button class="xray-bar xray-bar--3" data-stage="3" role="tab" aria-selected="false">
+          <span class="xray-bar-label">Warm Audience</span><span class="xray-bar-value">2,088</span>
+        </button>
+        <button class="xray-bar xray-bar--4" data-stage="4" role="tab" aria-selected="false">
+          <span class="xray-bar-label">Retargeting</span><span class="xray-bar-value">560</span>
+        </button>
+        <button class="xray-bar xray-bar--5" data-stage="5" role="tab" aria-selected="false">
+          <span class="xray-bar-label">Enquiry</span><span class="xray-bar-value">74</span>
+        </button>
+      </div>
+
+      <div class="xray-detail">
+        <div class="xray-panel is-active" data-panel="1">
+          <h3>Organic Video</h3>
+          <p>Your library of AI-generated videos reaches cold audiences on the platforms your buyers already scroll. Every play is logged as a first-touch signal.</p>
+        </div>
+        <div class="xray-panel" data-panel="2">
+          <h3>Engaged Viewer</h3>
+          <p>Watch-time, replays and clicks separate genuine interest from a passive scroll-by. These viewers are tagged the moment they cross the threshold.</p>
+        </div>
+        <div class="xray-panel" data-panel="3">
+          <h3>Warm Audience</h3>
+          <p>Engaged viewers are grouped into audiences by the content that moved them — objection, case study, founder insight — so follow-up creative speaks to what they already watched.</p>
+        </div>
+        <div class="xray-panel" data-panel="4">
+          <h3>Retargeting</h3>
+          <p>Warm audiences are served a second, more direct piece of creative built specifically to convert the signal they already gave you.</p>
+        </div>
+        <div class="xray-panel" data-panel="5">
+          <h3>Enquiry</h3>
+          <p>The signal completes its path: a call lands in your calendar, fully warmed by everything that came before it.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -221,9 +548,9 @@
           <h3>Exterior Cleaning Co.</h3>
           <p>Generated 100,000+ views and 20+ qualified leads with our AI video content system.</p>
           <ul class="case-bullets">
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.15"/><path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 100,000+ Views</li>
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.15"/><path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 20+ Qualified Leads</li>
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.15"/><path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 32% Lead-to-Job Conversion</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.12"/><path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 100,000+ Views</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.12"/><path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 20+ Qualified Leads</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.12"/><path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 32% Lead-to-Job Conversion</li>
           </ul>
         </div>
       </article>
@@ -237,9 +564,9 @@
           <h3>Mortgage Fit</h3>
           <p>150,000+ views generated and 25+ leads generated within 5 weeks.</p>
           <ul class="case-bullets">
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.15"/><path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 150,000+ Views</li>
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.15"/><path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 25+ Qualified Leads</li>
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.15"/><path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> High Intent Mortgage Leads</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.12"/><path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 150,000+ Views</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.12"/><path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 25+ Qualified Leads</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.12"/><path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> High Intent Mortgage Leads</li>
           </ul>
         </div>
       </article>
@@ -252,12 +579,138 @@
           <h3>Ironclad Finance</h3>
           <p>5 Million views &amp; 74 leads generated within 7 weeks.</p>
           <ul class="case-bullets">
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.15"/><path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 5 Million+ Views</li>
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.15"/><path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 74 Qualified Leads</li>
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.15"/><path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Cost Per Lead Optimised</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.12"/><path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 5 Million+ Views</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.12"/><path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 74 Qualified Leads</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="currentColor" opacity="0.12"/><path d="M8 12.5l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Cost Per Lead Optimised</li>
           </ul>
         </div>
       </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= WHO IT IS FOR (QUALIFICATION CARDS) ============================= -->
+<section class="who-for">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Is This You</p>
+      <h2>Who This Is Built For</h2>
+    </div>
+
+    <div class="who-grid">
+      <div class="who-card">
+        <span class="who-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <p>You already have a proven service or offer and just need more of the right people seeing it.</p>
+      </div>
+      <div class="who-card">
+        <span class="who-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <p>You want consistent, trackable leads — not vanity views with no way to follow up.</p>
+      </div>
+      <div class="who-card">
+        <span class="who-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <p>You're ready to let AI handle production, without losing your voice or positioning.</p>
+      </div>
+      <div class="who-card">
+        <span class="who-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4 10-10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <p>You don't want to be on camera every week just to stay visible to your market.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= COMMERCIAL VALUE (COLD VS WARM DIAGRAM) ============================= -->
+<section class="commercial-value">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Why It Pays For Itself</p>
+      <h2>Cold Traffic vs. Warm Signal</h2>
+    </div>
+
+    <div class="cv-diagram">
+      <div class="cv-panel cv-panel--cold">
+        <h3>Cold Traffic</h3>
+        <ul>
+          <li>High cost per lead</li>
+          <li>Low trust, low close rate</li>
+          <li>No memory of what a viewer already knows</li>
+        </ul>
+      </div>
+      <span class="cv-vs">VS</span>
+      <div class="cv-panel cv-panel--warm">
+        <h3>Warm Signal</h3>
+        <ul>
+          <li>Lower cost per qualified lead</li>
+          <li>Pre-built trust from video already watched</li>
+          <li>Follow-up matched to what moved them</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= PROCESS (SIX-STAGE ANIMATED TIMELINE) ============================= -->
+<section class="timeline">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Getting Started</p>
+      <h2>From Strategy Call to Booked Enquiries</h2>
+    </div>
+
+    <div class="timeline-row">
+      <div class="timeline-stage">
+        <span class="timeline-index">01</span>
+        <h3>Book a Call</h3>
+        <p>We review your business and goals.</p>
+      </div>
+      <div class="connector connector--h"><svg class="connector-svg" viewBox="0 0 60 10" preserveAspectRatio="none"><path class="connector-path" d="M0 5 L60 5"/></svg><span class="connector-dot"></span></div>
+
+      <div class="timeline-stage">
+        <span class="timeline-index">02</span>
+        <h3>Strategy &amp; Positioning</h3>
+        <p>We map your message and ideal clients.</p>
+      </div>
+      <div class="connector connector--h"><svg class="connector-svg" viewBox="0 0 60 10" preserveAspectRatio="none"><path class="connector-path" d="M0 5 L60 5"/></svg><span class="connector-dot"></span></div>
+
+      <div class="timeline-stage">
+        <span class="timeline-index">03</span>
+        <h3>AI Video Production</h3>
+        <p>Your creative library goes into production.</p>
+      </div>
+      <div class="connector connector--h"><svg class="connector-svg" viewBox="0 0 60 10" preserveAspectRatio="none"><path class="connector-path" d="M0 5 L60 5"/></svg><span class="connector-dot"></span></div>
+
+      <div class="timeline-stage">
+        <span class="timeline-index">04</span>
+        <h3>Launch &amp; Distribute</h3>
+        <p>Your content goes live across platforms.</p>
+      </div>
+      <div class="connector connector--h"><svg class="connector-svg" viewBox="0 0 60 10" preserveAspectRatio="none"><path class="connector-path" d="M0 5 L60 5"/></svg><span class="connector-dot"></span></div>
+
+      <div class="timeline-stage">
+        <span class="timeline-index">05</span>
+        <h3>Track &amp; Retarget</h3>
+        <p>Every signal is logged and followed up.</p>
+      </div>
+      <div class="connector connector--h"><svg class="connector-svg" viewBox="0 0 60 10" preserveAspectRatio="none"><path class="connector-path" d="M0 5 L60 5"/></svg><span class="connector-dot"></span></div>
+
+      <div class="timeline-stage">
+        <span class="timeline-index">06</span>
+        <h3>Optimise &amp; Scale</h3>
+        <p>We double down on what's converting.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= FOUNDER (LIGHT EDITORIAL LAYOUT) ============================= -->
+<section class="founder">
+  <div class="container founder-grid">
+    <div class="founder-photo img-fallback" data-label="Founder Photo"></div>
+    <div class="founder-copy">
+      <p class="eyebrow">The Person Behind the System</p>
+      <h2>Built by Someone Who's Actually Run the Pipeline</h2>
+      <p class="founder-quote">&ldquo;Most businesses don&rsquo;t have a content problem. They have a signal-tracking problem &mdash; they can&rsquo;t see who's actually interested, so nothing gets followed up. That's what this system fixes.&rdquo;</p>
+      <p class="founder-name">Sean Munn</p>
+      <p class="founder-role">Founder, AI Video Systems</p>
     </div>
   </div>
 </section>
@@ -370,18 +823,20 @@
   </div>
 </section>
 
-<!-- ============================= FINAL CTA ============================= -->
+<!-- ============================= FINAL CTA ANIMATION ============================= -->
 <section class="final-cta" id="cta">
   <div class="container">
     <div class="final-cta-box">
-      <div class="final-cta-left">
-        <span class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 9h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
-        <div>
-          <h2>Ready to Turn AI Content Into Clients?</h2>
-          <p>Book a strategy call and get a custom content plan for your business.</p>
-        </div>
+      <div class="final-cta-copy">
+        <h2>Ready to Turn Views Into Signals?</h2>
+        <p>Book a strategy call and get a custom content plan for your business.</p>
+        <a href="https://calendly.com/sean_munn/seanspersonallink" target="_blank" rel="noopener" class="btn btn-primary">Book a Strategy Call</a>
       </div>
-      <a href="https://calendly.com/sean_munn/seanspersonallink" target="_blank" rel="noopener" class="btn btn-primary">Book a Strategy Call</a>
+      <div class="final-cta-signal" aria-hidden="true">
+        <svg class="final-cta-line" viewBox="0 0 220 10" preserveAspectRatio="none"><path class="connector-path" d="M0 5 L220 5"/></svg>
+        <span class="final-cta-dot"></span>
+        <img class="final-cta-logo" src="assets/brand/avs-symbol-black.svg" alt="AI Video Systems">
+      </div>
     </div>
   </div>
 </section>
@@ -390,9 +845,7 @@
 <footer class="site-footer">
   <div class="container">
     <a href="#" class="logo">
-      <span class="logo-mark" aria-hidden="true">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="2.4" fill="currentColor"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke="currentColor" stroke-width="1.4"/></svg>
-      </span>
+      <img class="logo-symbol" src="assets/brand/avs-symbol-black.svg" alt="" width="30" height="30">
       <span class="logo-text">AI Video<br>Systems</span>
     </a>
     <div class="footer-mid">
