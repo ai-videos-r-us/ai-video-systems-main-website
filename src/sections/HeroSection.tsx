@@ -4,7 +4,7 @@ import ContactButton from '../components/ContactButton';
 
 const NAV_LINKS = ['About', 'Price', 'Projects', 'Contact'];
 
-const PORTRAIT_URL = '/sean-head.png';
+const PORTRAIT_URL = '/avs-symbol-white.svg';
 
 export default function HeroSection() {
   return (
@@ -25,8 +25,8 @@ export default function HeroSection() {
 
       <div className="overflow-hidden">
         <FadeIn delay={0.15} y={40}>
-          <h1 className="hero-heading mt-6 w-full whitespace-nowrap text-center text-[14vw] font-black uppercase leading-none tracking-tight sm:mt-4 sm:text-[15vw] md:-mt-5 md:text-[16vw] lg:text-[17.5vw]">
-            Hi, i&apos;m Sean
+          <h1 className="hero-heading mt-6 w-full whitespace-nowrap text-center text-[11vw] font-black uppercase leading-none tracking-tight sm:mt-4 sm:text-[11.5vw] md:-mt-5 md:text-[12.5vw] lg:text-[13.5vw]">
+            Get more quotes
           </h1>
         </FadeIn>
       </div>
@@ -55,8 +55,8 @@ export default function HeroSection() {
           >
             <img
               src={PORTRAIT_URL}
-              alt="Sean, 3D creator"
-              className="w-[280px] sm:w-[360px] md:w-[440px] lg:w-[520px]"
+              alt="AI Video Systems logo"
+              className="w-[240px] sm:w-[300px] md:w-[380px] lg:w-[440px]"
             />
           </Magnet>
         </FadeIn>
