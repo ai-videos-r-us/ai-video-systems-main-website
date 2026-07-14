@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 
 const IMAGES = [
-  'https://motionsites.ai/assets/hero-space-voyage-preview-eECLH3Yc.gif',
+  '/videos/three-protocol-cover.mp4',
   'https://motionsites.ai/assets/hero-codenest-preview-Cgppc2qV.gif',
   'https://motionsites.ai/assets/hero-vex-ventures-preview-BczMFIiw.gif',
   'https://motionsites.ai/assets/hero-stellar-ai-v2-preview-DjvxjG3C.gif',
@@ -12,7 +12,7 @@ const IMAGES = [
   'https://motionsites.ai/assets/hero-skyelite-preview-DHaZIgUv.gif',
   'https://motionsites.ai/assets/hero-aethera-preview-DknSlcTa.gif',
   'https://motionsites.ai/assets/hero-designpro-preview-D8c5_een.gif',
-  'https://motionsites.ai/assets/hero-stellar-ai-preview-D3HL6bw1.gif',
+  '/videos/myleadmachine-case-study.mp4',
   'https://motionsites.ai/assets/hero-xportfolio-preview-D4A8maiC.gif',
   'https://motionsites.ai/assets/hero-orbit-web3-preview-BXt4OttD.gif',
   'https://motionsites.ai/assets/hero-nexora-preview-cx5HmUgo.gif',
@@ -28,13 +28,30 @@ const ROW_1 = [...IMAGES.slice(0, 11), ...IMAGES.slice(0, 11), ...IMAGES.slice(0
 const ROW_2 = [...IMAGES.slice(11), ...IMAGES.slice(11), ...IMAGES.slice(11)];
 
 function Tile({ src }: { src: string }) {
+  const tileStyle = { width: 420, height: 270, flexShrink: 0 } as const;
+
+  if (src.endsWith('.mp4')) {
+    return (
+      <video
+        src={src}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        className="rounded-2xl object-cover"
+        style={tileStyle}
+      />
+    );
+  }
+
   return (
     <img
       src={src}
       alt=""
       loading="lazy"
       className="rounded-2xl object-cover"
-      style={{ width: 420, height: 270, flexShrink: 0 }}
+      style={tileStyle}
     />
   );
 }
