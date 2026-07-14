@@ -4,7 +4,7 @@ const IMAGES = [
   '/videos/three-protocol-cover.mp4',
   '/videos/mortgage-habitat.mp4',
   '/videos/novus-digital.mp4',
-  'https://motionsites.ai/assets/hero-stellar-ai-v2-preview-DjvxjG3C.gif',
+  '/videos/pn-digital.mp4',
   'https://motionsites.ai/assets/hero-asme-preview-B_nGDnTP.gif',
   'https://motionsites.ai/assets/hero-transform-data-preview-Cx5OU29N.gif',
   'https://motionsites.ai/assets/hero-vitara-preview-Cjz2QYyU.gif',
