@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 const IMAGES = [
   '/videos/three-protocol-cover.mp4',
   '/videos/mortgage-habitat.mp4',
-  'https://motionsites.ai/assets/hero-vex-ventures-preview-BczMFIiw.gif',
+  '/videos/novus-digital.mp4',
   'https://motionsites.ai/assets/hero-stellar-ai-v2-preview-DjvxjG3C.gif',
   'https://motionsites.ai/assets/hero-asme-preview-B_nGDnTP.gif',
   'https://motionsites.ai/assets/hero-transform-data-preview-Cx5OU29N.gif',
