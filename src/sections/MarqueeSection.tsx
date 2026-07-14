@@ -13,7 +13,7 @@ const IMAGES = [
   'https://motionsites.ai/assets/hero-aethera-preview-DknSlcTa.gif',
   'https://motionsites.ai/assets/hero-designpro-preview-D8c5_een.gif',
   '/videos/myleadmachine-case-study.mp4',
-  'https://motionsites.ai/assets/hero-xportfolio-preview-D4A8maiC.gif',
+  '/videos/compare-funerals.mp4',
   'https://motionsites.ai/assets/hero-orbit-web3-preview-BXt4OttD.gif',
   'https://motionsites.ai/assets/hero-nexora-preview-cx5HmUgo.gif',
   'https://motionsites.ai/assets/hero-evr-ventures-preview-DZxeVFEX.gif',
