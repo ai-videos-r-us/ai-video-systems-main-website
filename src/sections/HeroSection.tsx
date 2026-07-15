@@ -25,8 +25,9 @@ export default function HeroSection() {
 
       <div className="overflow-hidden">
         <FadeIn delay={0.15} y={40}>
-          <h1 className="hero-heading mt-6 w-full whitespace-nowrap text-center text-[10vw] font-black uppercase leading-none tracking-tight sm:mt-4 sm:text-[9.8vw] md:-mt-5">
-            Get more customers
+          <h1 className="hero-heading mt-6 w-full text-center font-black uppercase leading-none tracking-tight sm:mt-4 md:-mt-5">
+            <span className="block whitespace-nowrap text-[14vw] sm:text-[13.5vw]">Get more</span>
+            <span className="block whitespace-nowrap text-[14vw] sm:text-[13.5vw]">customers</span>
           </h1>
         </FadeIn>
       </div>
