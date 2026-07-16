@@ -1,17 +1,27 @@
-import HeroSection from './sections/HeroSection';
-import MarqueeSection from './sections/MarqueeSection';
-import AboutSection from './sections/AboutSection';
-import ServicesSection from './sections/ServicesSection';
-import ProjectsSection from './sections/ProjectsSection';
+import Navbar from './sections/Navbar';
+import Hero from './sections/Hero';
+import ValuePillars from './sections/ValuePillars';
+import Problem from './sections/Problem';
+import SystemLoop from './sections/SystemLoop';
+import CaseStudies from './sections/CaseStudies';
+import Process from './sections/Process';
+import TestimonialsFaq from './sections/TestimonialsFaq';
+import FinalCta from './sections/FinalCta';
+import Footer from './sections/Footer';
 
 export default function App() {
   return (
-    <main className="bg-[#0C0C0C]" style={{ overflowX: 'clip' }}>
-      <HeroSection />
-      <MarqueeSection />
-      <AboutSection />
-      <ServicesSection />
-      <ProjectsSection />
+    <main className="bg-white" style={{ overflowX: 'clip' }}>
+      <Navbar />
+      <Hero />
+      <ValuePillars />
+      <Problem />
+      <SystemLoop />
+      <CaseStudies />
+      <Process />
+      <TestimonialsFaq />
+      <FinalCta />
+      <Footer />
     </main>
   );
 }

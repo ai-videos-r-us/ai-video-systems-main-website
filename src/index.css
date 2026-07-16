@@ -8,16 +8,77 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body,
 #root {
-  background: #0c0c0c;
-  font-family: 'Kanit', sans-serif;
+  background: #ffffff;
+  color: #0b0b0d;
+  font-family: 'Inter', sans-serif;
 }
 
-.hero-heading {
-  background: linear-gradient(180deg, #646973 0%, #bbccd7 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+::selection {
+  background: #ff1f1f;
+  color: #ffffff;
+}
+
+/* Angular section edges inspired by the logo symbol */
+.clip-angle-top {
+  clip-path: polygon(0 0, 100% 4rem, 100% 100%, 0 100%);
+}
+.clip-angle-both {
+  clip-path: polygon(0 0, 100% 4rem, 100% 100%, 0 calc(100% - 4rem));
+}
+@media (max-width: 640px) {
+  .clip-angle-top {
+    clip-path: polygon(0 0, 100% 2rem, 100% 100%, 0 100%);
+  }
+  .clip-angle-both {
+    clip-path: polygon(0 0, 100% 2rem, 100% 100%, 0 calc(100% - 2rem));
+  }
+}
+
+/* Traveling signal dot on thin red connector lines */
+.signal-track {
+  position: relative;
+}
+.signal-dot {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  margin: -3.5px;
+  border-radius: 50%;
+  background: #ff1f1f;
+  box-shadow: 0 0 8px rgba(255, 31, 31, 0.6);
+}
+.signal-dot--v {
+  top: 0;
+  left: 50%;
+  animation: signal-v 2.4s linear infinite;
+}
+@keyframes signal-v {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  88% {
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .signal-dot--v {
+    animation: none;
+    top: 50%;
+  }
 }
