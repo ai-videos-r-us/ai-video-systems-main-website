@@ -13,14 +13,14 @@ const STATE_ONE = [
 ];
 
 const STATE_TWO = [
-  'Proof and expertise are continuously converted into video assets',
-  'A growing audience of voluntary viewers and engagers',
-  'Warm prospects receive the right proof, education and objection handling',
-  'Qualified enquiries enter a structured booking and follow-up journey',
-  'Sales conversations begin with recognition and existing trust',
-  'Creative decisions are based on appointments, sales and revenue',
-  'Winning patterns are replicated systematically',
-  'The warm audience and creative library compound as you grow',
+  'A video library that sells for you 24/7 — built from proof you already have',
+  'An audience of ideal buyers that grows every week, by their own choice',
+  'Prospects see exactly the proof they need to choose you',
+  'Enquiries become booked appointments without you chasing anyone',
+  'Sales calls start with trust already earned — and close easier',
+  'Your budget flows only to the videos that make you money',
+  'Winning messages get repeated, so results compound every month',
+  'You own an audience and content library that grow more valuable over time',
 ];
 
 const SECONDARY = [
@@ -38,19 +38,16 @@ export default function Transformation() {
       <div className="mx-auto max-w-[1360px] px-5 md:px-8">
         <div className="max-w-[820px]">
           <FadeIn>
-            <Eyebrow>The Transformation</Eyebrow>
+            <Eyebrow>The Way Forward</Eyebrow>
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2 className="mt-5 font-display text-[clamp(1.9rem,3.8vw,3.1rem)] font-extrabold leading-[1.08] tracking-tight text-carbon">
-              Turn Your Existing Proof Into Attention, Qualified Appointments and{' '}
-              <span className="text-signal">Trackable New Revenue in 90 Days</span>
+              Turn Your Business Proof into <span className="text-signal">More Revenue in 90 Days Or Less</span>
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
             <p className="mt-6 text-[16px] leading-relaxed text-carbon/70">
-              You are not buying AI video, automation or CRM workflows as isolated services. You are buying a more
-              scalable way to turn market attention into qualified appointments and trackable new revenue — without
-              relying on constant filming or endlessly increasing cold ad spend.
+              Without constantly filming or endlessly increasing cold ad spend.
             </p>
           </FadeIn>
         </div>
