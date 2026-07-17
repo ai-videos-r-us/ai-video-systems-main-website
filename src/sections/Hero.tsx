@@ -74,24 +74,24 @@ export default function Hero() {
           </FadeIn>
 
           <FadeIn delay={0.5}>
-            <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4 border-t-2 border-carbon pt-6">
-              <div>
-                <p className="font-display text-3xl font-extrabold text-carbon">
+            <div className="mt-10 flex items-start gap-4 border-t-2 border-carbon pt-6 sm:gap-6">
+              <div className="min-w-0 flex-1">
+                <p className="font-display text-2xl font-extrabold text-carbon sm:text-3xl">
                   <CountUp to={35} suffix="M+" />
                 </p>
-                <p className="font-mono text-[11px] uppercase tracking-wider text-carbon/55">Video views generated</p>
+                <p className="mt-1 font-mono text-[10.5px] uppercase leading-snug tracking-wider text-carbon/55">Video views generated</p>
               </div>
-              <span className="hidden h-10 w-[2px] rotate-12 bg-signal sm:block" />
-              <div>
-                <p className="font-display text-3xl font-extrabold text-carbon">1,000s</p>
-                <p className="font-mono text-[11px] uppercase tracking-wider text-carbon/55">Appointments generated</p>
+              <span className="mt-1 h-10 w-[2px] flex-none rotate-12 bg-signal" />
+              <div className="min-w-0 flex-1">
+                <p className="font-display text-2xl font-extrabold text-carbon sm:text-3xl">1,000s</p>
+                <p className="mt-1 font-mono text-[10.5px] uppercase leading-snug tracking-wider text-carbon/55">Appointments generated</p>
               </div>
-              <span className="hidden h-10 w-[2px] rotate-12 bg-signal sm:block" />
-              <div>
-                <p className="font-display text-3xl font-extrabold text-signal">
+              <span className="mt-1 h-10 w-[2px] flex-none rotate-12 bg-signal" />
+              <div className="min-w-0 flex-1">
+                <p className="font-display text-2xl font-extrabold text-signal sm:text-3xl">
                   <CountUp to={12} prefix="$" suffix="M+" />
                 </p>
-                <p className="font-mono text-[11px] uppercase tracking-wider text-carbon/55">In results generated for clients</p>
+                <p className="mt-1 font-mono text-[10.5px] uppercase leading-snug tracking-wider text-carbon/55">In results generated for clients</p>
               </div>
             </div>
           </FadeIn>
