@@ -44,9 +44,8 @@ export default function Hero() {
 
           <FadeIn delay={0.2}>
             <p className="mt-7 max-w-[560px] text-[16.5px] leading-relaxed text-carbon/70">
-              We build and manage a complete AI Video Demand System for established service based businesses spending
-              $5k+ p/m on Ads — turning your proof, expertise and customer outcomes into AI videos people love to
-              watch, retargeting those viewers turning them into qualified appointments.
+              We build &amp; manage the system that turns your proof, expertise and customer outcomes into AI videos
+              people love to watch, retarget them &amp; turn them into qualified appointments.
             </p>
           </FadeIn>
 
