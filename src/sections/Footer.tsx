@@ -39,7 +39,7 @@ const COLUMNS: { heading: string; links: { label: string; href: string }[] }[] =
       { label: 'Case Studies', href: '#case-studies' },
       { label: 'Insights', href: '#resources' },
       { label: 'AI Video Guides', href: '#resources' },
-      { label: 'Demand System Audit', href: AUDIT_URL },
+      { label: 'Revenue System Audit', href: AUDIT_URL },
     ],
   },
   {
@@ -67,7 +67,7 @@ export default function Footer() {
           <div>
             <img src="/brand/avs-full-logo-white.svg" alt="AI Video Systems" className="h-12 w-auto" />
             <p className="mt-5 max-w-[300px] text-[14.5px] leading-relaxed text-steel">
-              Your done-for-you AI video team that turns viewers into enquiries.
+              Your done-for-you AI video team that turns attention into trackable revenue.
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
               {SOCIAL.map((s) => (
@@ -121,7 +121,7 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-7 md:flex-row">
           <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-white/40">
-            From Watch Time to Pipeline. <span className="text-signal">From Signal to Sales.</span>
+            From Attention to Revenue. <span className="text-signal">From Signal to Sales.</span>
           </p>
           <p className="font-mono text-[11px] text-white/30">
             © {new Date().getFullYear()} AI Video Systems. All rights reserved.

@@ -34,20 +34,13 @@ export default function Navbar() {
 
         <div className="flex items-center gap-3">
           <a
-            href="#case-studies"
-            className="hidden border-2 border-carbon px-4 py-2.5 font-display text-xs font-bold uppercase tracking-wider text-carbon transition-colors hover:bg-carbon hover:text-white xl:inline-block"
-            style={{ clipPath: 'polygon(0 0, 100% 0, calc(100% - 10px) 100%, 0 100%)' }}
-          >
-            View Case Studies
-          </a>
-          <a
             href={AUDIT_URL}
             target="_blank"
             rel="noopener"
             className="inline-block bg-signal px-4 py-2.5 font-display text-xs font-bold uppercase tracking-wider text-white transition-colors hover:bg-action sm:px-5"
             style={{ clipPath: 'polygon(0 0, 100% 0, calc(100% - 10px) 100%, 0 100%)' }}
           >
-            Book a Demand System Audit
+            Book a Revenue System Audit
           </a>
           <button
             type="button"

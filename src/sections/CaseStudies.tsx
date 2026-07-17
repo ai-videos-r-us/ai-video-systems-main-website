@@ -45,7 +45,7 @@ export default function CaseStudies() {
           <article className="mt-14 grid overflow-hidden border-2 border-carbon lg:grid-cols-[1fr_1.1fr]">
             <div className="relative min-h-[280px] bg-carbon">
               <img
-                src="/assets/ironclad-finance.png"
+                src="/assets/ironclad-finance.jpg"
                 alt="Ironclad Finance AI video content"
                 className="absolute inset-0 h-full w-full object-cover opacity-85"
               />
@@ -97,7 +97,7 @@ export default function CaseStudies() {
           <FadeIn delay={0.1}>
             <article className="flex h-full flex-col border border-carbon/15">
               <div className="relative h-44 overflow-hidden bg-carbon">
-                <img src="/assets/mortgage-fit.png" alt="Mortgage Fit" className="h-full w-full object-cover opacity-85" />
+                <img src="/assets/mortgage-fit.jpg" alt="Mortgage Fit" className="h-full w-full object-cover opacity-85" />
               </div>
               <div className="flex flex-1 flex-col p-7">
                 <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-carbon/50">Mortgage Fit</p>

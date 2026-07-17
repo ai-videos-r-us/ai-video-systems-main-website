@@ -7,7 +7,7 @@ const TRUST = [
   'No constant founder filming required',
   'Creative, retargeting, qualification and tracking connected',
   'No content published without approval',
-  '90-Day Launch Assurance',
+  '90-Day Revenue Guarantee — make it back or you don’t pay',
 ];
 
 export default function FinalCta() {
@@ -20,15 +20,15 @@ export default function FinalCta() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2 className="mt-5 font-display text-[clamp(1.9rem,3.8vw,3.1rem)] font-extrabold leading-[1.08] tracking-tight text-carbon">
-              Build the Warm-Audience Acquisition Layer{' '}
-              <span className="text-signal">Your Ad Account Is Missing</span>
+              Turn Attention Into Trackable Revenue in 90 Days —{' '}
+              <span className="text-signal">or You Don&rsquo;t Pay</span>
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
             <p className="mt-6 max-w-[560px] text-[16px] leading-relaxed text-carbon/70">
-              We will review your offer, advertising, creative volume, lead quality and tracking, then show you how
-              the Watcher-to-Appointment Loop could turn more of your existing market attention into qualified booked
-              appointments.
+              We will review your current offer, advertising, creative volume, lead quality and tracking, then show
+              you how the Attention-to-Revenue System could turn your existing proof and ad spend into a trackable
+              path from attention to revenue.
             </p>
           </FadeIn>
           <FadeIn delay={0.3}>
@@ -58,13 +58,13 @@ export default function FinalCta() {
               aria-hidden
             />
             <img
-              src="/assets/founder-hero.png"
+              src="/assets/founder-hero.jpg"
               alt="Sean, founder of AI Video Systems"
               className="relative w-full object-cover"
               style={{ clipPath: 'polygon(0 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%)' }}
             />
             <p className="mt-6 text-center font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-carbon/45">
-              From Watch Time to Pipeline. <span className="text-action">From Signal to Sales.</span>
+              From Attention to Revenue. <span className="text-action">From Signal to Sales.</span>
             </p>
           </div>
         </FadeIn>

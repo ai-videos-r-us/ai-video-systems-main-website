@@ -3,7 +3,7 @@ import { ReactNode } from 'react';
 export const AUDIT_URL = 'https://calendly.com/sean_munn/seanspersonallink';
 
 export function PrimaryCTA({
-  children = 'Book a Demand System Audit',
+  children = 'Book a Revenue System Audit',
   className = '',
 }: {
   children?: ReactNode;

@@ -63,8 +63,8 @@ const FAQS = [
     a: 'We extract your offer and buyer psychology, build the initial video library, install the warm-audience campaigns, connect qualification and tracking, and complete the first commercial optimisation cycle.',
   },
   {
-    q: 'Do you guarantee leads or sales?',
-    a: 'No credible partner can control your market, sales team, offer, fulfilment or advertising platform. The 90-Day Launch Assurance guarantees that the agreed creative engine, retargeting structure, lead-routing workflow and tracking system will be installed and operational.',
+    q: 'Do you guarantee results?',
+    a: "Yes — the 90-Day Revenue Guarantee: make back 100% of the fees paid to AI Video Systems in attributable new revenue within the first 90 days, or you don't pay. It applies while the eligibility conditions are met: the agreed ad budget stays active, access and approvals are supplied on time, leads are contacted within the agreed response standard, and outcomes are recorded accurately in the CRM. Ad spend and third-party software are excluded.",
   },
 ];
 

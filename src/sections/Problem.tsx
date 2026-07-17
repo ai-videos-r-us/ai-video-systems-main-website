@@ -40,21 +40,25 @@ export default function Problem() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2 className="mt-5 font-display text-[clamp(1.9rem,3.8vw,3.1rem)] font-extrabold leading-[1.08] tracking-tight text-carbon">
-              Your Ads Aren&rsquo;t Failing. You&rsquo;re Asking Cold Strangers to Do Too Much.
+              Your Ad Account Doesn&rsquo;t Have a Targeting Problem. It Has a{' '}
+              <span className="text-signal">Cold-Audience Problem</span>.
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
             <div className="mt-6 space-y-4 text-[16px] leading-relaxed text-carbon/70">
               <p>
-                Most businesses ask a cold prospect to notice the ad, trust the company, understand the service,
-                believe the claims, overcome their objections and submit an enquiry after a single impression.
+                You&rsquo;re spending more, but the growth curve is flattening. Cost per lead rises, creative fatigues
+                faster, lead quality becomes less predictable and the sales team receives more prospects who need to
+                be convinced from zero.
               </p>
               <p className="font-semibold text-carbon">
-                That forces one advertisement to do the work of an entire sales journey.
+                The underlying problem: you&rsquo;re asking a cold stranger to move from no familiarity to enquiry in
+                a single step — one impression forced to earn attention, establish trust, explain the service, prove
+                credibility, overcome objections and create action all at once.
               </p>
               <p>
-                As spend increases, creative fatigues faster, lead quality becomes less predictable and the sales team
-                receives more prospects who need to be educated from zero.
+                More budget, more generic content, more UGC and another funnel rebuild are false solutions — they all
+                leave the attention and trust problem untouched.
               </p>
             </div>
           </FadeIn>
@@ -120,10 +124,15 @@ export default function Problem() {
         </div>
 
         <FadeIn delay={0.2}>
-          <blockquote className="mx-auto mt-16 max-w-[820px] border-l-4 border-signal bg-white px-8 py-7 shadow-[0_16px_40px_rgba(11,11,13,0.06)]">
-            <p className="font-display text-[clamp(1.15rem,2vw,1.5rem)] font-bold leading-snug text-carbon">
-              Stop asking every cold stranger to become a lead immediately. First create an audience of people who
-              chose to watch. <span className="text-action">Then turn the right watchers into appointments.</span>
+          <blockquote className="mx-auto mt-16 max-w-[860px] border-l-4 border-signal bg-white px-8 py-7 shadow-[0_16px_40px_rgba(11,11,13,0.06)]">
+            <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-action">The big idea</p>
+            <p className="mt-3 font-display text-[clamp(1.15rem,2vw,1.5rem)] font-bold leading-snug text-carbon">
+              Don&rsquo;t ask every cold prospect to become a lead immediately. First create an audience of people who
+              choose to watch.{' '}
+              <span className="text-action">
+                Then use proof, retargeting and follow-up to convert that attention into qualified appointments and
+                trackable revenue.
+              </span>
             </p>
           </blockquote>
         </FadeIn>

@@ -79,20 +79,20 @@ export default function SystemLoop() {
   return (
     <section id="system" className="clip-angle-top bg-carbon pb-24 pt-32 text-white md:pb-32 md:pt-40">
       <div className="mx-auto max-w-[1360px] px-5 md:px-8">
-        <div className="max-w-[780px]">
+        <div className="max-w-[820px]">
           <FadeIn>
-            <Eyebrow light>The Watcher-to-Appointment Loop</Eyebrow>
+            <Eyebrow light>The Attention-to-Revenue System</Eyebrow>
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2 className="mt-5 font-display text-[clamp(1.9rem,3.8vw,3.1rem)] font-extrabold leading-[1.08] tracking-tight text-white">
-              A Complete System From <span className="text-signal">Proof to Pipeline</span>
+              One Closed Loop That Turns Your Proof Into <span className="text-signal">Trackable Revenue</span>
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
             <p className="mt-6 text-[16px] leading-relaxed text-steel">
-              Every customer result becomes new proof. That proof becomes content. The content creates engaged
-              viewers. Those viewers become qualified opportunities. The commercial result improves the next
-              generation of creative.
+              Proof and expertise become AI videos. AI videos create engaged audiences. Engaged audiences are
+              retargeted into qualified enquiries. Qualified appointments become trackable revenue. And revenue
+              outcomes tell the system what to create next.
             </p>
           </FadeIn>
         </div>
@@ -153,8 +153,42 @@ export default function SystemLoop() {
           </FadeIn>
         </div>
 
+        {/* Measurement framework — never judged on views alone */}
         <FadeIn>
-          <div className="mt-20 flex flex-col items-center justify-between gap-6 border-2 border-signal/40 bg-white/[0.03] px-8 py-9 md:flex-row md:px-12">
+          <div className="mt-20 grid gap-4 md:grid-cols-3">
+            {[
+              {
+                level: 'Attention',
+                metrics: 'Watch time · completion · rewatches · saves · shares',
+                q: 'Does the creative earn voluntary attention and build a usable audience?',
+              },
+              {
+                level: 'Buying intent',
+                metrics: 'Profile visits · site visits · DMs · form starts · booking-page visits',
+                q: 'Does attention progress towards a meaningful sales action?',
+              },
+              {
+                level: 'Commercial',
+                metrics: 'Qualified enquiries · appointments · quotes · sales · revenue · CAC',
+                q: 'Does the creative create customers at acceptable economics?',
+              },
+            ].map((m, i) => (
+              <div key={m.level} className="border border-white/12 bg-white/[0.03] p-6">
+                <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-signal">
+                  Level {i + 1} — {m.level}
+                </p>
+                <p className="mt-3 font-mono text-[11px] leading-relaxed text-steel">{m.metrics}</p>
+                <p className="mt-3 text-[13.5px] font-semibold leading-snug text-white/90">{m.q}</p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-5 text-center font-mono text-[11px] uppercase tracking-[0.16em] text-steel">
+            The system is never judged by views alone.
+          </p>
+        </FadeIn>
+
+        <FadeIn>
+          <div className="mt-16 flex flex-col items-center justify-between gap-6 border-2 border-signal/40 bg-white/[0.03] px-8 py-9 md:flex-row md:px-12">
             <p className="max-w-[520px] text-center font-display text-xl font-bold leading-snug text-white md:text-left">
               Ready to See What the System Could Look Like for Your Business?
             </p>
@@ -165,7 +199,7 @@ export default function SystemLoop() {
               className="inline-flex items-center gap-2 bg-signal px-7 py-4 font-display text-sm font-bold uppercase tracking-wider text-white transition-colors hover:bg-action"
               style={{ clipPath: 'polygon(0 0, 100% 0, calc(100% - 14px) 100%, 0 100%)' }}
             >
-              Request a Demand System Audit
+              Book a Revenue System Audit
             </a>
           </div>
         </FadeIn>

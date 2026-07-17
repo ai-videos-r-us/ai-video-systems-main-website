@@ -1,105 +1,97 @@
 import FadeIn from '../components/FadeIn';
 import { Eyebrow } from '../components/CTA';
 
-const STEPS = [
+const PHASES = [
   {
-    n: '01',
-    name: 'Demand Audit',
-    input: ['Current offer', 'Advertising spend', 'Existing creative', 'Lead quality', 'Close rates', 'Customer economics', 'Sales process'],
-    output: 'A clear understanding of where attention, trust, qualification and tracking are breaking down.',
-    deliverable: 'Demand Strategy and Performance Baseline',
+    days: 'Days 1–14',
+    name: 'Foundation',
+    body: 'Extract the offer, buyer psychology, proof and sales process. Audit current creative and ad performance. Build brand rules, tracking, content architecture, audience plan and approval workflow.',
   },
   {
-    n: '02',
-    name: 'Messaging and Proof Extraction',
-    input: ['Reviews', 'Customer stories', 'Sales recordings', 'CRM notes', 'FAQs', 'Objections', 'Founder expertise', 'Completed work'],
-    output: 'A buyer-psychology map covering problems, objections, proof, awareness stages and sales arguments.',
-    deliverable: 'Messaging Framework, Proof Library and Content Architecture',
+    days: 'Days 15–30',
+    name: 'Launch',
+    body: 'Produce the first attention and retargeting creative batches. Install or integrate tracking, CRM stages, qualification and booking. Launch organic publishing and initial warm-audience campaigns.',
   },
   {
-    n: '03',
-    name: 'AI Video Production',
-    input: ['Approved messaging framework', 'Brand rules', 'Content strategy'],
-    output: 'The first complete batch of attention and retargeting creative — 16–20 attention videos, 8–12 retargeting ads and 4–8 controlled winner variations each month.',
-    deliverable: 'Campaign-Ready AI Video Library',
+    days: 'Days 31–60',
+    name: 'Optimise',
+    body: 'Measure watch behaviour, engagement quality, leads, qualified appointments and sales progression. Replace weak creative, deepen audience segmentation and introduce objection-specific retargeting.',
   },
   {
-    n: '04',
-    name: 'Launch the System',
-    input: ['Approved creative', 'Advertising access', 'CRM access', 'Qualification requirements'],
-    output: 'Organic content publishing, warm-audience campaigns, lead qualification and appointment routing go live.',
-    deliverable: 'Active Watcher-to-Appointment Infrastructure',
+    days: 'Days 61–90',
+    name: 'Scale',
+    body: 'Identify attention, lead and revenue winners. Create controlled variations, shift budget towards proven messages and formalise the ongoing monthly creative and optimisation cadence.',
   },
-  {
-    n: '05',
-    name: 'Optimise and Scale',
-    input: ['Watch behaviour', 'Engagement', 'Enquiries', 'Appointments', 'Quotes', 'Sales', 'Revenue'],
-    output: 'Weak creative is replaced, winning messages are expanded and budget is directed towards proven commercial outcomes.',
-    deliverable: 'Revenue-Winner Report and Monthly Replication Plan',
-  },
+];
+
+const MILESTONES = [
+  'The first approved content batch is live',
+  'Engaged-viewer and retargeting audiences are collecting data',
+  'The lead and appointment journey is connected to the CRM',
+  'Commercial outcomes can be tied back to creative IDs',
+  'At least one monthly optimisation cycle has been completed',
+  'A documented winner-replication plan is operating',
 ];
 
 export default function Process() {
   return (
-    <section id="how-it-works" className="bg-cloud py-24 md:py-32">
+    <section id="how-it-works" className="bg-white py-24 md:py-32">
       <div className="mx-auto max-w-[1360px] px-5 md:px-8">
-        <div className="max-w-[720px]">
+        <div className="max-w-[760px]">
           <FadeIn>
-            <Eyebrow>Installation and Optimisation</Eyebrow>
+            <Eyebrow>The 90-Day Installation Plan</Eyebrow>
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2 className="mt-5 font-display text-[clamp(1.9rem,3.8vw,3.1rem)] font-extrabold leading-[1.08] tracking-tight text-carbon">
-              Your AI Video Demand System <span className="text-signal">Installed in 90 Days</span>
+              Your Attention-to-Revenue System, <span className="text-signal">Live Within 90 Days</span>
             </h2>
           </FadeIn>
         </div>
 
         <div className="relative mt-16">
-          <div className="signal-track absolute bottom-4 left-[22px] top-4 w-[2px] bg-signal/25 md:left-[30px]">
-            <span className="signal-dot signal-dot--v" style={{ animationDuration: '4.5s' }} />
+          <div className="signal-track absolute left-[22px] top-4 h-[calc(100%-2rem)] w-[2px] bg-signal/25 lg:hidden">
+            <span className="signal-dot signal-dot--v" style={{ animationDuration: '4s' }} />
           </div>
 
-          <div className="space-y-10">
-            {STEPS.map((s, i) => (
-              <FadeIn key={s.n} delay={i * 0.05}>
-                <div className="relative pl-16 md:pl-24">
-                  <span className="absolute left-0 top-0 flex h-11 w-11 items-center justify-center bg-carbon font-mono text-sm font-semibold text-white md:h-[60px] md:w-[60px] md:text-base"
+          {/* horizontal connector on desktop */}
+          <div className="absolute left-0 right-0 top-[26px] hidden h-[2px] bg-signal/25 lg:block" />
+
+          <div className="grid gap-10 lg:grid-cols-4 lg:gap-6">
+            {PHASES.map((p, i) => (
+              <FadeIn key={p.name} delay={i * 0.08}>
+                <div className="relative pl-16 lg:pl-0">
+                  <span
+                    className="absolute left-0 top-0 flex h-11 w-11 items-center justify-center bg-carbon font-mono text-[13px] font-semibold text-white lg:relative lg:mb-5 lg:h-[52px] lg:w-[52px]"
                     style={{ clipPath: 'polygon(0 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%)' }}
                   >
-                    {s.n}
+                    {String(i + 1).padStart(2, '0')}
                   </span>
-                  <div className="border border-carbon/12 bg-white p-6 md:p-8">
-                    <h3 className="font-display text-xl font-bold text-carbon">
-                      Step {parseInt(s.n, 10)}: {s.name}
-                    </h3>
-                    <div className="mt-5 grid gap-6 md:grid-cols-[1fr_1fr_auto] md:gap-8">
-                      <div>
-                        <p className="font-mono text-[10.5px] font-semibold uppercase tracking-[0.16em] text-carbon/45">Input</p>
-                        <div className="mt-2.5 flex flex-wrap gap-1.5">
-                          {s.input.map((inp) => (
-                            <span key={inp} className="border border-carbon/12 bg-cloud px-2 py-1 font-mono text-[10.5px] text-carbon/70">
-                              {inp}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                      <div>
-                        <p className="font-mono text-[10.5px] font-semibold uppercase tracking-[0.16em] text-carbon/45">Output</p>
-                        <p className="mt-2.5 text-[13.5px] leading-relaxed text-carbon/70">{s.output}</p>
-                      </div>
-                      <div className="md:max-w-[220px]">
-                        <p className="font-mono text-[10.5px] font-semibold uppercase tracking-[0.16em] text-carbon/45">Deliverable</p>
-                        <p className="mt-2.5 border-l-4 border-signal bg-signal/5 px-3 py-2.5 text-[13px] font-bold leading-snug text-carbon">
-                          {s.deliverable}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                  <p className="font-mono text-[11.5px] font-semibold uppercase tracking-[0.14em] text-action">{p.days}</p>
+                  <h3 className="mt-1.5 font-display text-xl font-bold text-carbon">{p.name}</h3>
+                  <p className="mt-3 text-[13.5px] leading-relaxed text-carbon/65">{p.body}</p>
                 </div>
               </FadeIn>
             ))}
           </div>
         </div>
+
+        <FadeIn delay={0.15}>
+          <div className="mt-16 border border-carbon/12 bg-cloud p-8">
+            <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-carbon/50">
+              Client milestones — what will be true by day 90
+            </p>
+            <ul className="mt-4 grid gap-x-8 gap-y-2.5 md:grid-cols-2">
+              {MILESTONES.map((m) => (
+                <li key={m} className="flex items-start gap-2.5 text-[14px] font-medium text-carbon/80">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" className="mt-0.5 flex-shrink-0 text-action">
+                    <path d="M5 13l4 4 10-10" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                  {m}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </FadeIn>
       </div>
     </section>
   );
