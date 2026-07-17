@@ -6,11 +6,11 @@ import { Eyebrow, PrimaryCTA } from '../components/CTA';
 const SignalField = lazy(() => import('../components/SignalField'));
 
 const BENEFITS = [
-  'Consistent AI video production without constant filming',
-  'Organic attention content built from real proof and buyer-relevant expertise',
-  'Retargeting campaigns designed specifically for video viewers and engagers',
-  'Qualification and follow-up that moves suitable prospects to a booked appointment',
-  'Creative optimisation based on qualified leads, sales and revenue — not vanity metrics',
+  'Get a consistent flow of AI videos promoting your business — without filming a thing',
+  'Ideal buyers choose to watch your proof and expertise every single week',
+  'Prospects arrive already knowing, trusting and preferring your business',
+  'Qualified appointments land in your calendar on autopilot',
+  'Know exactly which videos make you money — and scale the winners',
 ];
 
 function Check() {
