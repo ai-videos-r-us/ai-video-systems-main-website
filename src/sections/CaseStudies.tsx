@@ -20,7 +20,7 @@ const INDUSTRIES = [
 
 const CRED = [
   'Thousands of appointments generated',
-  'More than $8M in client results',
+  'More than $12M in client results',
   'Lead generation and sales automation experience',
   'Creative, advertising and appointment infrastructure under one system',
 ];
@@ -126,7 +126,7 @@ export default function CaseStudies() {
             <article id="industries" className="flex h-full flex-col border border-carbon/15 bg-cloud p-7">
               <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-carbon/50">Cross-industry results</p>
               <h3 className="mt-2 font-display text-lg font-bold leading-snug text-carbon">
-                More Than <span className="text-signal">10 Million</span> Video Views Generated
+                More Than <span className="text-signal">35 Million</span> Video Views Generated
               </h3>
               <p className="mt-3 text-[13.5px] leading-relaxed text-carbon/65">Mechanisms have been developed across:</p>
               <ul className="mt-4 space-y-2 text-[13px] text-carbon/75">

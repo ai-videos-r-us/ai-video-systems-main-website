@@ -57,8 +57,7 @@ export default function Hero() {
                   <path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" />
                   <path d="M9 12l2 2 4-4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-                90-Day Revenue Guarantee — make back 100% of your fees in attributable new revenue within 90 days, or
-                you don&rsquo;t pay.
+                90 Day Guarantee - Make back 100% of your money within 90 days or you don&rsquo;t pay
               </p>
             </div>
           </FadeIn>
@@ -78,21 +77,21 @@ export default function Hero() {
             <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4 border-t-2 border-carbon pt-6">
               <div>
                 <p className="font-display text-3xl font-extrabold text-carbon">
-                  <CountUp to={10} suffix="M+" />
+                  <CountUp to={35} suffix="M+" />
                 </p>
-                <p className="font-mono text-[11px] uppercase tracking-wider text-carbon/55">video views generated</p>
+                <p className="font-mono text-[11px] uppercase tracking-wider text-carbon/55">Video views generated</p>
               </div>
               <span className="hidden h-10 w-[2px] rotate-12 bg-signal sm:block" />
               <div>
-                <p className="font-display text-3xl font-extrabold text-carbon">1000s</p>
-                <p className="font-mono text-[11px] uppercase tracking-wider text-carbon/55">appointments created</p>
+                <p className="font-display text-3xl font-extrabold text-carbon">1,000s</p>
+                <p className="font-mono text-[11px] uppercase tracking-wider text-carbon/55">Appointments generated</p>
               </div>
               <span className="hidden h-10 w-[2px] rotate-12 bg-signal sm:block" />
               <div>
                 <p className="font-display text-3xl font-extrabold text-signal">
-                  <CountUp to={8} prefix="$" suffix="M+" />
+                  <CountUp to={12} prefix="$" suffix="M+" />
                 </p>
-                <p className="font-mono text-[11px] uppercase tracking-wider text-carbon/55">in client results</p>
+                <p className="font-mono text-[11px] uppercase tracking-wider text-carbon/55">In results generated for clients</p>
               </div>
             </div>
           </FadeIn>
