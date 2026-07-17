@@ -32,7 +32,7 @@ export default function Hero() {
 
           <FadeIn delay={0.1}>
             <h1 className="mt-5 font-display text-[clamp(2rem,4.4vw,3.6rem)] font-extrabold leading-[1.06] tracking-tight text-carbon">
-              Get the acquisition system that generates viral attention &amp; gets qualified appointments using{' '}
+              Get viral attention &amp; qualified appointments using{' '}
               <span className="relative inline-block text-signal">
                 The Attention-to-Revenue System
                 <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 400 10" preserveAspectRatio="none" aria-hidden>
