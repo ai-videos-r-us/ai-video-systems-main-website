@@ -36,29 +36,22 @@ export default function Problem() {
       <div className="mx-auto max-w-[1360px] px-5 md:px-8">
         <div className="max-w-[780px]">
           <FadeIn>
-            <Eyebrow>The Real Acquisition Bottleneck</Eyebrow>
+            <Eyebrow>The Real Problem</Eyebrow>
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2 className="mt-5 font-display text-[clamp(1.9rem,3.8vw,3.1rem)] font-extrabold leading-[1.08] tracking-tight text-carbon">
-              Your Ad Account Doesn&rsquo;t Have a Targeting Problem. It Has a{' '}
-              <span className="text-signal">Cold-Audience Problem</span>.
+              Your Ad Account <span className="text-signal">Doesn&rsquo;t Have a Problem</span>
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
             <div className="mt-6 space-y-4 text-[16px] leading-relaxed text-carbon/70">
               <p>
-                You&rsquo;re spending more, but the growth curve is flattening. Cost per lead rises, creative fatigues
-                faster, lead quality becomes less predictable and the sales team receives more prospects who need to
-                be convinced from zero.
+                Your cost per lead is rising, Return on Ad Spend is going down, lead quality is stagnant
               </p>
               <p className="font-semibold text-carbon">
                 The underlying problem: you&rsquo;re asking a cold stranger to move from no familiarity to enquiry in
                 a single step — one impression forced to earn attention, establish trust, explain the service, prove
                 credibility, overcome objections and create action all at once.
-              </p>
-              <p>
-                More budget, more generic content, more UGC and another funnel rebuild are false solutions — they all
-                leave the attention and trust problem untouched.
               </p>
             </div>
           </FadeIn>
