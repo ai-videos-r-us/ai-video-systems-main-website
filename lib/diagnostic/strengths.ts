@@ -1,6 +1,6 @@
-import { CATEGORIES, CATEGORY_MAP } from './constants';
-import { STRENGTH_CONTENT } from './content';
-import type { CategoryKey } from './types';
+import { CATEGORIES, CATEGORY_MAP } from './constants.js';
+import { STRENGTH_CONTENT } from './content.js';
+import type { CategoryKey } from './types.js';
 
 export interface Strength {
   categoryKey: CategoryKey;

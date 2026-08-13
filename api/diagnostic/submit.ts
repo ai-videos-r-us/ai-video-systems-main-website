@@ -1,15 +1,15 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { runFullScoring, isHighNeed, getFitBand } from '../../lib/diagnostic/scoring';
-import { toPublicResult } from '../../lib/diagnostic/serialize';
-import { getPartnerBySlug } from '../../lib/diagnostic/partners';
-import { validateSubmission } from '../../lib/server/validation';
-import { createAssessment } from '../../lib/server/repository';
-import { generateResultToken, hashResultToken } from '../../lib/server/token';
-import { sendResultsEmail, sendInternalNotification } from '../../lib/server/email';
-import { sendDiagnosticWebhook } from '../../lib/server/webhook';
-import { isRateLimited } from '../../lib/server/rate-limit';
-import { env, hasSupabaseConfig } from '../../lib/server/env';
-import { DIAGNOSTIC_ANALYSIS_URL_LABEL } from '../../lib/diagnostic/cta-copy';
+import { runFullScoring, isHighNeed, getFitBand } from '../../lib/diagnostic/scoring.js';
+import { toPublicResult } from '../../lib/diagnostic/serialize.js';
+import { getPartnerBySlug } from '../../lib/diagnostic/partners.js';
+import { validateSubmission } from '../../lib/server/validation.js';
+import { createAssessment, updateEmailStatus, updateWebhookStatus } from '../../lib/server/repository.js';
+import { generateResultToken, hashResultToken } from '../../lib/server/token.js';
+import { sendResultsEmail, sendInternalNotification } from '../../lib/server/email.js';
+import { sendDiagnosticWebhook } from '../../lib/server/webhook.js';
+import { isRateLimited } from '../../lib/server/rate-limit.js';
+import { env, hasSupabaseConfig } from '../../lib/server/env.js';
+import { DIAGNOSTIC_ANALYSIS_URL_LABEL } from '../../lib/diagnostic/cta-copy.js';
 
 function getClientIp(req: VercelRequest): string {
   const forwarded = req.headers['x-forwarded-for'];
@@ -128,12 +128,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     webhookResult.status === 'fulfilled' ? webhookResult.value : { status: 'failed' as const };
 
   if (assessmentId && persisted) {
-    void import('../../lib/server/repository').then(({ updateEmailStatus, updateWebhookStatus }) => {
-      void updateEmailStatus(assessmentId!, emailStatus.status === 'sent' ? 'sent' : 'failed', emailStatus.errorCategory);
-      if (webhookStatus.status !== 'not_configured') {
-        void updateWebhookStatus(assessmentId!, webhookStatus.status, webhookStatus.errorCategory);
-      }
-    });
+    void updateEmailStatus(assessmentId, emailStatus.status === 'sent' ? 'sent' : 'failed', emailStatus.errorCategory);
+    if (webhookStatus.status !== 'not_configured') {
+      void updateWebhookStatus(assessmentId, webhookStatus.status, webhookStatus.errorCategory);
+    }
 
     if (isHighNeed(scoring.needScore) && (getFitBand(scoring.fitScore) === 'strong' || getFitBand(scoring.fitScore) === 'priority')) {
       void sendInternalNotification({ scoring, contact: payload.contact, resultUrl });

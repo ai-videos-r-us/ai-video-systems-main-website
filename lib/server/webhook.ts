@@ -1,7 +1,7 @@
 import { createHmac } from 'node:crypto';
-import { env, hasWebhookConfig } from './env';
-import type { FullScoringResult } from '../diagnostic/scoring';
-import { ASSESSMENT_VERSION, CONTENT_VERSION, SCORING_VERSION } from '../diagnostic/constants';
+import { env, hasWebhookConfig } from './env.js';
+import type { FullScoringResult } from '../diagnostic/scoring.js';
+import { ASSESSMENT_VERSION, CONTENT_VERSION, SCORING_VERSION } from '../diagnostic/constants.js';
 
 export interface WebhookPayloadInput {
   assessmentId: string;

@@ -1,8 +1,8 @@
-import { CLASSIFICATION_DISCLAIMER, CONSTRAINT_CONTENT } from './content';
-import { buildPriorities, buildRisks, type Priority } from './priorities';
-import { buildStrengths, type Strength } from './strengths';
-import type { FullScoringResult } from './scoring';
-import type { CategoryKey } from './types';
+import { CLASSIFICATION_DISCLAIMER, CONSTRAINT_CONTENT } from './content.js';
+import { buildPriorities, buildRisks, type Priority } from './priorities.js';
+import { buildStrengths, type Strength } from './strengths.js';
+import type { FullScoringResult } from './scoring.js';
+import type { CategoryKey } from './types.js';
 
 /**
  * The subset of a FullScoringResult that is safe to return from a public API /

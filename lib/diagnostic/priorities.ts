@@ -1,6 +1,6 @@
-import { CONSTRAINT_CONTENT, RISK_WARNINGS } from './content';
-import type { ConstraintKey } from './types';
-import type { FullScoringResult } from './scoring';
+import { CONSTRAINT_CONTENT, RISK_WARNINGS } from './content.js';
+import type { ConstraintKey } from './types.js';
+import type { FullScoringResult } from './scoring.js';
 
 export interface Priority {
   order: 1 | 2 | 3;

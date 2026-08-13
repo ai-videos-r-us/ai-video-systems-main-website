@@ -1,8 +1,8 @@
-import { getSupabaseClient } from './supabase';
-import type { FullScoringResult } from '../diagnostic/scoring';
-import type { PublicResult } from '../diagnostic/serialize';
-import type { ContextAnswers, FinancialInputs, ScoredAnswers } from '../diagnostic/types';
-import { ASSESSMENT_VERSION, CONTENT_VERSION, SCORING_VERSION } from '../diagnostic/constants';
+import { getSupabaseClient } from './supabase.js';
+import type { FullScoringResult } from '../diagnostic/scoring.js';
+import type { PublicResult } from '../diagnostic/serialize.js';
+import type { ContextAnswers, FinancialInputs, ScoredAnswers } from '../diagnostic/types.js';
+import { ASSESSMENT_VERSION, CONTENT_VERSION, SCORING_VERSION } from '../diagnostic/constants.js';
 
 const TABLE = 'diagnostic_assessments';
 

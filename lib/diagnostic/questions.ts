@@ -1,4 +1,4 @@
-import type { ScoredQuestion } from './types';
+import type { ScoredQuestion } from './types.js';
 
 // The 28 scored diagnostic questions. Wording, ids and score mappings follow the
 // approved question bank exactly. Do not change ids without bumping CONTENT_VERSION

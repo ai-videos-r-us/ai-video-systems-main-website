@@ -1,4 +1,4 @@
-import type { CtaVariant } from './types';
+import type { CtaVariant } from './types.js';
 
 export const DIAGNOSTIC_ANALYSIS_URL_LABEL = 'Request a Deeper 90-Day Lead-to-Plan Analysis';
 

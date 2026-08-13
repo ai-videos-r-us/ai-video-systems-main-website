@@ -4,7 +4,7 @@ import {
   CLASSIFICATION_BANDS,
   CORE_FINANCIAL_INPUT_KEYS,
   MIN_STABLE_SAMPLE_PAID_ENQUIRIES,
-} from './constants';
+} from './constants.js';
 import {
   CTX3_DECISION_AUTHORITY,
   CTX5_SPEND,
@@ -15,8 +15,8 @@ import {
   CTX10_TIMING,
   CTX11_DATA_SHARING,
   CTX12_TRIGGERS,
-} from './context-questions';
-import { SCORED_QUESTION_MAP, SCORED_QUESTIONS } from './questions';
+} from './context-questions.js';
+import { SCORED_QUESTION_MAP, SCORED_QUESTIONS } from './questions.js';
 import type {
   Alignment,
   CategoryKey,
@@ -29,7 +29,7 @@ import type {
   NeedBand,
   ReadinessClassification,
   ScoredAnswers,
-} from './types';
+} from './types.js';
 
 // ---------------------------------------------------------------------------
 // Category + overall readiness scoring

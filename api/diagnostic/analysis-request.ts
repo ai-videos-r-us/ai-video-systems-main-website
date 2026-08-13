@@ -1,9 +1,9 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { analysisRequestSchema } from '../../lib/server/validation';
-import { recordAnalysisRequest } from '../../lib/server/repository';
-import { hashResultToken } from '../../lib/server/token';
-import { hasSupabaseConfig } from '../../lib/server/env';
-import { isRateLimited } from '../../lib/server/rate-limit';
+import { analysisRequestSchema } from '../../lib/server/validation.js';
+import { recordAnalysisRequest } from '../../lib/server/repository.js';
+import { hashResultToken } from '../../lib/server/token.js';
+import { hasSupabaseConfig } from '../../lib/server/env.js';
+import { isRateLimited } from '../../lib/server/rate-limit.js';
 
 function getClientIp(req: VercelRequest): string {
   const forwarded = req.headers['x-forwarded-for'];

@@ -1,7 +1,7 @@
 import { z } from 'zod';
-import { NUMERIC_LIMITS } from '../diagnostic/constants';
-import { CONTEXT_QUESTIONS } from '../diagnostic/context-questions';
-import { SCORED_QUESTIONS } from '../diagnostic/questions';
+import { NUMERIC_LIMITS } from '../diagnostic/constants.js';
+import { CONTEXT_QUESTIONS } from '../diagnostic/context-questions.js';
+import { SCORED_QUESTIONS } from '../diagnostic/questions.js';
 
 const REQUIRED_QUESTION_IDS = SCORED_QUESTIONS.map((q) => q.id);
 const VALID_ANSWER_IDS_BY_QUESTION: Record<string, Set<string>> = Object.fromEntries(

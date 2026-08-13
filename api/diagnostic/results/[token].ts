@@ -1,8 +1,8 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { findByTokenHash } from '../../../lib/server/repository';
-import { hashResultToken } from '../../../lib/server/token';
-import { env, hasSupabaseConfig } from '../../../lib/server/env';
-import { DIAGNOSTIC_ANALYSIS_URL_LABEL } from '../../../lib/diagnostic/cta-copy';
+import { findByTokenHash } from '../../../lib/server/repository.js';
+import { hashResultToken } from '../../../lib/server/token.js';
+import { env, hasSupabaseConfig } from '../../../lib/server/env.js';
+import { DIAGNOSTIC_ANALYSIS_URL_LABEL } from '../../../lib/diagnostic/cta-copy.js';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'GET') {

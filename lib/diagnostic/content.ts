@@ -1,4 +1,4 @@
-import type { CategoryKey, ConstraintKey } from './types';
+import type { CategoryKey, ConstraintKey } from './types.js';
 
 export interface ConstraintContent {
   key: ConstraintKey;

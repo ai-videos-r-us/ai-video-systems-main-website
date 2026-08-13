@@ -1,4 +1,4 @@
-import type { ContextQuestion, TriggerOption } from './types';
+import type { ContextQuestion, TriggerOption } from './types.js';
 
 // CTX1–CTX11: single-select commercial-context questions.
 // These personalise the result and drive hidden Fit/Need — they never change the public Readiness Score.

@@ -1,10 +1,10 @@
 import { Resend } from 'resend';
-import { env, hasResendConfig } from './env';
-import { CLASSIFICATION_BANDS } from '../diagnostic/constants';
-import { CONSTRAINT_CONTENT } from '../diagnostic/content';
-import type { FullScoringResult } from '../diagnostic/scoring';
-import { buildPriorities } from '../diagnostic/priorities';
-import type { ReadinessClassification } from '../diagnostic/types';
+import { env, hasResendConfig } from './env.js';
+import { CLASSIFICATION_BANDS } from '../diagnostic/constants.js';
+import { CONSTRAINT_CONTENT } from '../diagnostic/content.js';
+import type { FullScoringResult } from '../diagnostic/scoring.js';
+import { buildPriorities } from '../diagnostic/priorities.js';
+import type { ReadinessClassification } from '../diagnostic/types.js';
 
 export interface SendResultsEmailInput {
   firstName: string;
