@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /funeral-plan-scale-readiness/results/
