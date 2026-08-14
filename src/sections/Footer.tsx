@@ -2,7 +2,6 @@ import { AUDIT_URL, trackAuditCtaClick } from '../components/CTA';
 
 const QUICK_LINKS = [
   { label: 'How It Works', href: '#how-it-works' },
-  { label: 'Results', href: '#results' },
   { label: '90-Day Plan', href: '#90-day-plan' },
   { label: 'FAQ', href: '#faq' },
   { label: 'Contact', href: 'mailto:hello@aivideosystems.com' },

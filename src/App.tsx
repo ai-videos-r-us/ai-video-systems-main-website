@@ -4,7 +4,6 @@ import Navbar from './sections/Navbar';
 import Hero from './sections/Hero';
 import Problem from './sections/Problem';
 import Outcome from './sections/Outcome';
-import CaseStudies from './sections/CaseStudies';
 import HowItWorks from './sections/HowItWorks';
 import FullyManaged from './sections/FullyManaged';
 import Testimonials from './sections/Testimonials';
@@ -27,7 +26,6 @@ function MainSite() {
       <Hero />
       <Problem />
       <Outcome />
-      <CaseStudies />
       <HowItWorks />
       <FullyManaged />
       <Testimonials />
