@@ -4,46 +4,32 @@ import { Eyebrow } from '../components/CTA';
 const PHASES = [
   {
     days: 'Days 1–14',
-    name: 'Foundation',
-    body: 'Extract the offer, buyer psychology, proof and sales process. Audit current creative and ad performance. Build brand rules, tracking, content architecture, audience plan and approval workflow.',
+    name: 'Diagnose',
+    body: 'Audit the offer, proof, buyer psychology, creative, lead quality, sales process and tracking. Identify the constraint before prescribing the build.',
   },
   {
     days: 'Days 15–30',
     name: 'Launch',
-    body: 'Produce the first attention and retargeting creative batches. Install or integrate tracking, CRM stages, qualification and booking. Launch organic publishing and initial warm-audience campaigns.',
+    body: 'Produce the first buyer-aware creative, launch the warm-audience campaigns and connect qualification, follow-up and measurement.',
   },
   {
-    days: 'Days 31–60',
-    name: 'Optimise',
-    body: 'Measure watch behaviour, engagement quality, leads, qualified appointments and sales progression. Replace weak creative, deepen audience segmentation and introduce objection-specific retargeting.',
+    days: 'Days 31–90',
+    name: 'Improve',
+    body: 'Track qualified appointments and sales, remove weak messages, create variations of winners and complete the first commercial optimisation cycles.',
   },
-  {
-    days: 'Days 61–90',
-    name: 'Scale',
-    body: 'Identify attention, lead and revenue winners. Create controlled variations, shift budget towards proven messages and formalise the ongoing monthly creative and optimisation cadence.',
-  },
-];
-
-const MILESTONES = [
-  'The first approved content batch is live',
-  'Engaged-viewer and retargeting audiences are collecting data',
-  'The lead and appointment journey is connected to the CRM',
-  'Commercial outcomes can be tied back to creative IDs',
-  'At least one monthly optimisation cycle has been completed',
-  'A documented winner-replication plan is operating',
 ];
 
 export default function Process() {
   return (
-    <section id="how-it-works" className="bg-white py-24 md:py-32">
+    <section id="90-day-plan" className="bg-white py-24 md:py-32">
       <div className="mx-auto max-w-[1360px] px-5 md:px-8">
         <div className="max-w-[760px]">
           <FadeIn>
-            <Eyebrow>The 90-Day Installation Plan</Eyebrow>
+            <Eyebrow>The First 90 Days</Eyebrow>
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2 className="mt-5 font-display text-[clamp(1.9rem,3.8vw,3.1rem)] font-extrabold leading-[1.08] tracking-tight text-carbon">
-              Your Attention-to-Revenue System, <span className="text-signal">Live Within 90 Days</span>
+              From Scattered Creative to <span className="text-signal">a Measurable Demand System</span>
             </h2>
           </FadeIn>
         </div>
@@ -53,10 +39,9 @@ export default function Process() {
             <span className="signal-dot signal-dot--v" style={{ animationDuration: '4s' }} />
           </div>
 
-          {/* horizontal connector on desktop */}
           <div className="absolute left-0 right-0 top-[26px] hidden h-[2px] bg-signal/25 lg:block" />
 
-          <div className="grid gap-10 lg:grid-cols-4 lg:gap-6">
+          <div className="grid gap-10 lg:grid-cols-3 lg:gap-8">
             {PHASES.map((p, i) => (
               <FadeIn key={p.name} delay={i * 0.08}>
                 <div className="relative pl-16 lg:pl-0">
@@ -74,24 +59,6 @@ export default function Process() {
             ))}
           </div>
         </div>
-
-        <FadeIn delay={0.15}>
-          <div className="mt-16 border border-carbon/12 bg-cloud p-8">
-            <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-carbon/50">
-              Client milestones — what will be true by day 90
-            </p>
-            <ul className="mt-4 grid gap-x-8 gap-y-2.5 md:grid-cols-2">
-              {MILESTONES.map((m) => (
-                <li key={m} className="flex items-start gap-2.5 text-[14px] font-medium text-carbon/80">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" className="mt-0.5 flex-shrink-0 text-action">
-                    <path d="M5 13l4 4 10-10" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                  {m}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </FadeIn>
       </div>
     </section>
   );

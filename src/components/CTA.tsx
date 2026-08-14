@@ -2,18 +2,41 @@ import { ReactNode } from 'react';
 
 export const AUDIT_URL = 'https://calendly.com/sean_munn/seanspersonallink';
 
+declare global {
+  interface Window {
+    dataLayer?: unknown[];
+  }
+}
+
+export function trackAuditCtaClick(placement: string): void {
+  try {
+    if (typeof window !== 'undefined' && Array.isArray(window.dataLayer)) {
+      window.dataLayer.push({ event: 'audit_cta_click', placement });
+    }
+    if (import.meta.env?.DEV) {
+      // eslint-disable-next-line no-console
+      console.debug('[analytics] audit_cta_click', { placement });
+    }
+  } catch {
+    // analytics must never break the CTA
+  }
+}
+
 export function PrimaryCTA({
   children = 'Book a Revenue System Audit',
   className = '',
+  placement = 'unknown',
 }: {
   children?: ReactNode;
   className?: string;
+  placement?: string;
 }) {
   return (
     <a
       href={AUDIT_URL}
       target="_blank"
       rel="noopener"
+      onClick={() => trackAuditCtaClick(placement)}
       className={`group inline-flex items-center justify-center gap-2 bg-signal px-7 py-4 font-display text-sm font-bold uppercase tracking-wider text-white transition-all duration-200 hover:bg-action hover:shadow-[0_10px_30px_rgba(255,31,31,0.35)] ${className}`}
       style={{ clipPath: 'polygon(0 0, 100% 0, calc(100% - 14px) 100%, 0 100%)' }}
     >

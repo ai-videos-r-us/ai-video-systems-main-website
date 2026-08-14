@@ -19,15 +19,14 @@ export default function Guarantee() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2 className="mt-5 font-display text-[clamp(1.8rem,3.4vw,2.8rem)] font-extrabold leading-[1.1] tracking-tight text-carbon">
-              Make Back <span className="text-signal">100% of Your Fees</span> in Attributable New Revenue Within 90
-              Days — or You Don&rsquo;t Pay
+              Make Back <span className="text-signal">100% of Your Fee</span> in Attributable New Revenue Within 90
+              Days — or Receive a Refund
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
             <p className="mt-6 max-w-[760px] text-[15.5px] leading-relaxed text-carbon/70">
-              If verified attributable revenue has not equalled or exceeded the fees paid to AI Video Systems by day
-              90, the fees paid for the initial 90-day period are refunded. Our compensation is aligned with the
-              commercial result the Attention-to-Revenue System is built to produce — not with post volume or views.
+              Our compensation is aligned with the commercial result the system is built to produce — not with post
+              volume or views. The guarantee is available to approved clients who meet the conditions below.
             </p>
           </FadeIn>
 
@@ -55,7 +54,7 @@ export default function Guarantee() {
 
           <FadeIn delay={0.3}>
             <div className="mt-9">
-              <PrimaryCTA />
+              <PrimaryCTA placement="guarantee" />
             </div>
           </FadeIn>
         </div>

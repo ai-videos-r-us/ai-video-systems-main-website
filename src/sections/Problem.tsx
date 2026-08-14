@@ -1,34 +1,13 @@
 import FadeIn from '../components/FadeIn';
 import { Eyebrow } from '../components/CTA';
 
-const SOURCES = [
-  'Customer reviews',
-  'Sales calls',
-  'CRM notes',
-  'Support tickets',
-  'Founder expertise',
-  'Customer questions',
-  'Completed projects',
-  'Case studies',
-  'Landing pages',
-  'Competitor advertising',
-  'Testimonials',
-  'Lost-sale objections',
+const BULLETS = [
+  'Leads know the offer but not why they should trust you.',
+  'Sales calls are spent educating rather than selling.',
+  'Low-context prospects consume follow-up time.',
+  'The same small set of ads fatigues faster than it is replaced.',
+  'Marketing is judged by leads while the business cares about customers.',
 ];
-
-const OUTPUTS = [
-  { label: 'Attention videos' },
-  { label: 'Proof videos' },
-  { label: 'Objection-handling ads' },
-  { label: 'Process videos' },
-  { label: 'Customer stories' },
-  { label: 'Offer ads' },
-  { label: 'Qualified enquiries', hot: true },
-  { label: 'Booked appointments', hot: true },
-  { label: 'Revenue-winning creative insights', hot: true },
-];
-
-const FUNNEL = ['AI Message Extraction', 'Buyer Psychology Mapping', 'Content & Retargeting Strategy'];
 
 export default function Problem() {
   return (
@@ -36,98 +15,39 @@ export default function Problem() {
       <div className="mx-auto max-w-[1360px] px-5 md:px-8">
         <div className="max-w-[780px]">
           <FadeIn>
-            <Eyebrow>The Real Problem</Eyebrow>
+            <Eyebrow>The Real Leak</Eyebrow>
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2 className="mt-5 font-display text-[clamp(1.9rem,3.8vw,3.1rem)] font-extrabold leading-[1.08] tracking-tight text-carbon">
-              Your Ad Account <span className="text-signal">Doesn&rsquo;t Have a Problem</span>
+              Your Ads Can Be Working While Your <span className="text-signal">Acquisition System Still Leaks</span>
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <div className="mt-6 space-y-4 text-[16px] leading-relaxed text-carbon/70">
-              <p>
-                Your cost per lead is rising, Return on Ad Spend is going down, lead quality is stagnant
-              </p>
-              <p className="font-semibold text-carbon">
-                The underlying problem: you&rsquo;re asking a cold stranger to move from no familiarity to enquiry in
-                a single step — one impression forced to earn attention, establish trust, explain the service, prove
-                credibility, overcome objections and create action all at once.
-              </p>
-            </div>
+            <p className="mt-6 text-[16px] leading-relaxed text-carbon/70">
+              A healthy cost per lead can hide an expensive problem. Prospects arrive cold. Sales starts from zero.
+              Creative wears out. Reporting stops at the form fill — so nobody knows which message actually caused
+              the sale.
+            </p>
           </FadeIn>
         </div>
 
-        {/* Intelligence -> extraction -> outputs */}
-        <div className="mt-16 grid items-start gap-10 lg:grid-cols-[1fr_auto_1fr]">
-          <FadeIn x={-40} y={0}>
-            <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-carbon/50">
-              Business intelligence sources
-            </p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {SOURCES.map((s) => (
-                <span
-                  key={s}
-                  className="border border-carbon/15 bg-white px-3 py-1.5 font-mono text-[11.5px] text-carbon/75"
-                >
-                  {s}
-                </span>
-              ))}
-            </div>
-          </FadeIn>
+        <FadeIn delay={0.25}>
+          <ul className="mt-12 grid max-w-[820px] gap-3">
+            {BULLETS.map((b) => (
+              <li key={b} className="flex items-start gap-3 border-l-4 border-carbon/15 bg-white px-5 py-4 text-[15px] font-medium leading-snug text-carbon/80">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" className="mt-1 flex-shrink-0 text-steel">
+                  <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" />
+                </svg>
+                {b}
+              </li>
+            ))}
+          </ul>
+        </FadeIn>
 
-          <FadeIn delay={0.15} className="mx-auto w-full max-w-[300px] lg:w-[300px]">
-            <div className="flex flex-col items-stretch">
-              {FUNNEL.map((f, i) => (
-                <div key={f}>
-                  <div
-                    className="bg-carbon px-5 py-4 text-center font-display text-[13px] font-bold uppercase tracking-wide text-white"
-                    style={{ clipPath: 'polygon(0 0, 100% 0, calc(100% - 12px) 100%, 0 100%)' }}
-                  >
-                    {f}
-                  </div>
-                  {i < FUNNEL.length - 1 && (
-                    <div className="signal-track mx-auto h-6 w-[2px] bg-signal/25">
-                      <span className="signal-dot signal-dot--v" />
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </FadeIn>
-
-          <FadeIn x={40} y={0} delay={0.25}>
-            <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-carbon/50">
-              Commercial outputs
-            </p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {OUTPUTS.map((o) => (
-                <span
-                  key={o.label}
-                  className={`border px-3 py-1.5 font-mono text-[11.5px] ${
-                    o.hot
-                      ? 'border-signal bg-signal/5 font-semibold text-action'
-                      : 'border-carbon/15 bg-white text-carbon/75'
-                  }`}
-                >
-                  {o.label}
-                </span>
-              ))}
-            </div>
-          </FadeIn>
-        </div>
-
-        <FadeIn delay={0.2}>
-          <blockquote className="mx-auto mt-16 max-w-[860px] border-l-4 border-signal bg-white px-8 py-7 shadow-[0_16px_40px_rgba(11,11,13,0.06)]">
-            <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-action">The big idea</p>
-            <p className="mt-3 font-display text-[clamp(1.15rem,2vw,1.5rem)] font-bold leading-snug text-carbon">
-              Don&rsquo;t ask every cold prospect to become a lead immediately. First create an audience of people who
-              choose to watch.{' '}
-              <span className="text-action">
-                Then use proof, retargeting and follow-up to convert that attention into qualified appointments and
-                trackable revenue.
-              </span>
-            </p>
-          </blockquote>
+        <FadeIn delay={0.3}>
+          <p className="mx-auto mt-10 max-w-[820px] border-l-4 border-signal bg-white px-6 py-5 font-display text-[18px] font-bold leading-snug text-carbon">
+            Increasing the budget simply pushes more people through the same leaks.
+          </p>
         </FadeIn>
       </div>
     </section>

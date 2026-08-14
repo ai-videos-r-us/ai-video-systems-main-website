@@ -2,14 +2,16 @@ import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './sections/Navbar';
 import Hero from './sections/Hero';
-import Transformation from './sections/Transformation';
 import Problem from './sections/Problem';
-import SystemLoop from './sections/SystemLoop';
-import Deliverables from './sections/Deliverables';
+import Outcome from './sections/Outcome';
 import CaseStudies from './sections/CaseStudies';
+import HowItWorks from './sections/HowItWorks';
+import FullyManaged from './sections/FullyManaged';
+import Testimonials from './sections/Testimonials';
 import Process from './sections/Process';
 import Guarantee from './sections/Guarantee';
-import TestimonialsFaq from './sections/TestimonialsFaq';
+import Fit from './sections/Fit';
+import Faq from './sections/Faq';
 import FinalCta from './sections/FinalCta';
 import Footer from './sections/Footer';
 
@@ -23,14 +25,16 @@ function MainSite() {
     <main className="bg-white" style={{ overflowX: 'clip' }}>
       <Navbar />
       <Hero />
-      <Transformation />
       <Problem />
-      <SystemLoop />
-      <Deliverables />
+      <Outcome />
       <CaseStudies />
+      <HowItWorks />
+      <FullyManaged />
+      <Testimonials />
       <Process />
       <Guarantee />
-      <TestimonialsFaq />
+      <Fit />
+      <Faq />
       <FinalCta />
       <Footer />
     </main>

@@ -1,13 +1,12 @@
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { AUDIT_URL } from '../components/CTA';
+import { AUDIT_URL, trackAuditCtaClick } from '../components/CTA';
 
 const LINKS = [
   { label: 'How It Works', href: '#how-it-works' },
-  { label: 'The System', href: '#system' },
-  { label: 'Case Studies', href: '#case-studies' },
-  { label: 'Industries', href: '#industries' },
-  { label: 'Resources', href: '#resources' },
+  { label: 'Results', href: '#results' },
+  { label: '90-Day Plan', href: '#90-day-plan' },
+  { label: 'FAQ', href: '#faq' },
 ];
 
 export default function Navbar() {
@@ -37,6 +36,7 @@ export default function Navbar() {
             href={AUDIT_URL}
             target="_blank"
             rel="noopener"
+            onClick={() => trackAuditCtaClick('navbar')}
             className="inline-block bg-signal px-4 py-2.5 font-display text-xs font-bold uppercase tracking-wider text-white transition-colors hover:bg-action sm:px-5"
             style={{ clipPath: 'polygon(0 0, 100% 0, calc(100% - 10px) 100%, 0 100%)' }}
           >
