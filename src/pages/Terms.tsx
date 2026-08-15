@@ -1,11 +1,12 @@
-import { useEffect } from 'react';
 import Navbar from '../sections/Navbar';
 import Footer from '../sections/Footer';
+import useDocumentMeta from '../hooks/useDocumentMeta';
 
 export default function Terms() {
-  useEffect(() => {
-    document.title = 'Terms | AI Video Systems';
-  }, []);
+  useDocumentMeta(
+    'Terms | AI Video Systems',
+    'The terms of service for AI Video Systems, including the Funeral Plan Scale Readiness Diagnostic.'
+  );
 
   return (
     <main className="bg-white">
@@ -55,8 +56,8 @@ export default function Terms() {
             <h2 className="font-display text-lg font-bold text-carbon">Contact</h2>
             <p>
               Questions about these terms can be sent to{' '}
-              <a href="mailto:hello@aivideosystems.com" className="text-action underline">
-                hello@aivideosystems.com
+              <a href="mailto:sean@aivideosystems.org" className="text-action underline">
+                sean@aivideosystems.org
               </a>
               .
             </p>

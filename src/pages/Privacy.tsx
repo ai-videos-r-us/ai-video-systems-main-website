@@ -1,11 +1,12 @@
-import { useEffect } from 'react';
 import Navbar from '../sections/Navbar';
 import Footer from '../sections/Footer';
+import useDocumentMeta from '../hooks/useDocumentMeta';
 
 export default function Privacy() {
-  useEffect(() => {
-    document.title = 'Privacy Policy | AI Video Systems';
-  }, []);
+  useDocumentMeta(
+    'Privacy Policy | AI Video Systems',
+    'How AI Video Systems collects, uses and protects data from our website and tools, including the Funeral Plan Scale Readiness Diagnostic.'
+  );
 
   return (
     <main className="bg-white">
@@ -60,8 +61,8 @@ export default function Privacy() {
             <h2 className="font-display text-lg font-bold text-carbon">Your rights</h2>
             <p>
               You may ask us to access, correct or delete your personal data at any time by emailing{' '}
-              <a href="mailto:hello@aivideosystems.com" className="text-action underline">
-                hello@aivideosystems.com
+              <a href="mailto:sean@aivideosystems.org" className="text-action underline">
+                sean@aivideosystems.org
               </a>
               .
             </p>
