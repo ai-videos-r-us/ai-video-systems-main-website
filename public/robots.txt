@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /funeral-plan-scale-readiness/results/
+
+Sitemap: https://www.aivideosystems.org/sitemap.xml

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import FuneralDiagnosticLanding from './FuneralDiagnosticLanding';
 import DiagnosticWizard from './DiagnosticWizard';
@@ -10,6 +10,7 @@ import { getPartnerBySlug } from '../../lib/diagnostic/partners';
 import type { ConsentValues, ContactFormValues } from './components/ContactGateForm';
 import type { PublicResult } from '../../lib/diagnostic/serialize';
 import { track } from './analytics';
+import useDocumentMeta from '../hooks/useDocumentMeta';
 
 type View = 'landing' | 'wizard' | 'results';
 
@@ -33,18 +34,10 @@ export default function FuneralDiagnosticPage() {
   const partnerSlug = searchParams.get('partner');
   const partner = getPartnerBySlug(partnerSlug);
 
-  useEffect(() => {
-    document.title = 'Funeral Plan Scale Readiness Diagnostic | AI Video Systems';
-    const description =
-      'Find out whether your funeral plan business could profitably handle another £10,000 a month in customer acquisition—and what would be most likely to break first.';
-    let meta = document.querySelector('meta[name="description"]');
-    if (!meta) {
-      meta = document.createElement('meta');
-      meta.setAttribute('name', 'description');
-      document.head.appendChild(meta);
-    }
-    meta.setAttribute('content', description);
-  }, []);
+  useDocumentMeta(
+    'Funeral Plan Scale Readiness Diagnostic | AI Video Systems',
+    'Free diagnostic for funeral plan providers, funeral groups and funeral directors: find out whether your business could profitably handle another £10,000 a month in customer acquisition, and what would be most likely to break first.'
+  );
 
   async function handleFinalSubmit(contact: ContactFormValues, consents: ConsentValues) {
     setSubmitting(true);

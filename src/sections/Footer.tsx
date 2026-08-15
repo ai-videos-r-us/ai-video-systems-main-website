@@ -4,7 +4,7 @@ const QUICK_LINKS = [
   { label: 'How It Works', href: '#how-it-works' },
   { label: '90-Day Plan', href: '#90-day-plan' },
   { label: 'FAQ', href: '#faq' },
-  { label: 'Contact', href: 'mailto:hello@aivideosystems.com' },
+  { label: 'Contact', href: 'mailto:sean@aivideosystems.org' },
 ];
 
 const LEGAL_LINKS = [
@@ -25,7 +25,7 @@ export default function Footer() {
             </p>
             <div className="mt-6 space-y-1.5 font-mono text-[12px] text-steel">
               <p>
-                <a href="mailto:hello@aivideosystems.com" className="hover:text-white">hello@aivideosystems.com</a>
+                <a href="mailto:sean@aivideosystems.org" className="hover:text-white">sean@aivideosystems.org</a>
               </p>
               <p>
                 <a

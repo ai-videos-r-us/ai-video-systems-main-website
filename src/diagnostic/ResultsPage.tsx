@@ -61,7 +61,7 @@ export default function ResultsPage() {
           <h1 className="font-display text-xl font-bold text-carbon">We could not find that result</h1>
           <p className="mt-3 text-[14.5px] text-carbon/60">
             This link may have expired or been typed incorrectly. If you believe this is an error, please contact us
-            at <a href="mailto:hello@aivideosystems.com" className="text-action underline">hello@aivideosystems.com</a>.
+            at <a href="mailto:sean@aivideosystems.org" className="text-action underline">sean@aivideosystems.org</a>.
           </p>
         </div>
       )}

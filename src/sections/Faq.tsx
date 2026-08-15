@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import FadeIn from '../components/FadeIn';
 import { Eyebrow } from '../components/CTA';
@@ -24,10 +24,67 @@ const FAQS = [
     q: 'How does the 90-day guarantee work?',
     a: "Make back 100% of your fee in attributable new revenue within 90 days, or receive a refund. It applies while eligibility conditions are met: the agreed ad budget stays active, access and approvals are supplied on time, leads are contacted within the agreed response standard, and outcomes are recorded accurately in the CRM.",
   },
+  {
+    q: 'What does this cost?',
+    a: "It's priced as a one-time system installation plus ongoing monthly management — not a per-video fee. The investment is anchored to the value of creating additional qualified demand for a business already spending $5k+/month on ads, not to a fixed number of deliverables, and your paid media budget stays separate and remains yours. Exact numbers are confirmed during the Revenue System Audit once we understand your economics.",
+  },
+  {
+    q: 'Do you replace our existing agency or media buyer?',
+    a: "No — it's built to sit alongside them. We add the buyer-aware creative, warm-audience retargeting and revenue-feedback layer most agencies aren't scoped to build. The audit maps exactly what sits inside and outside your current agency's remit before anything starts.",
+  },
+  {
+    q: 'Our campaigns already look like they’re performing — why would we need this?',
+    a: 'A healthy cost per lead can hide a weak downstream result. Platform dashboards show clicks and leads; they don’t show which message actually produced a qualified appointment or a sale. The audit checks whether your qualified-appointment rate, sales conversion and customer acquisition cost tell the same story as the dashboard — and if they do, this isn’t the right fit.',
+  },
+  {
+    q: 'Why not just increase our ad budget instead?',
+    a: 'Increasing spend multiplies whatever is already happening in your funnel — including the leaks. If the constraint is trust, qualification or follow-up rather than traffic volume, more budget just produces more of the same weak conversations at a higher cost. The audit identifies the specific leak so you know whether spend is actually the constraint before you commit more of it.',
+  },
+  {
+    q: 'What if the real problem turns out to be our sales team, not marketing?',
+    a: "Then we'll say so. The audit is a diagnosis, not a pitch — if the biggest leak is offer, sales process, follow-up or fulfilment rather than demand, that's the honest read you'll get, and it may mean this isn't the right engagement yet.",
+  },
+  {
+    q: 'How quickly will we see results?',
+    a: 'The first 90 days run in three phases: diagnose (days 1–14), launch (days 15–30) and improve (days 31–90) — see the 90-Day Plan above. Early creative and warm-audience campaigns typically launch inside the first month; qualified-appointment and revenue data builds through days 30–90 as winning messages are identified and scaled.',
+  },
 ];
+
+const FAQ_SCHEMA_ID = 'faq-page-schema';
+
+function useFaqSchema() {
+  useEffect(() => {
+    const schema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: FAQS.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: f.a,
+        },
+      })),
+    };
+
+    let script = document.getElementById(FAQ_SCHEMA_ID) as HTMLScriptElement | null;
+    if (!script) {
+      script = document.createElement('script');
+      script.id = FAQ_SCHEMA_ID;
+      script.type = 'application/ld+json';
+      document.head.appendChild(script);
+    }
+    script.textContent = JSON.stringify(schema);
+
+    return () => {
+      document.getElementById(FAQ_SCHEMA_ID)?.remove();
+    };
+  }, []);
+}
 
 export default function Faq() {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
+  useFaqSchema();
 
   return (
     <section id="faq" className="bg-cloud py-24 md:py-32">
