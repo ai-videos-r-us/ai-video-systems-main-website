@@ -16,6 +16,7 @@ import Footer from './sections/Footer';
 
 const FuneralDiagnosticPage = lazy(() => import('./diagnostic/FuneralDiagnosticPage'));
 const ResultsPage = lazy(() => import('./diagnostic/ResultsPage'));
+const RevenueLeakPage = lazy(() => import('./revenueLeak/RevenueLeakPage'));
 const Privacy = lazy(() => import('./pages/Privacy'));
 const Terms = lazy(() => import('./pages/Terms'));
 
@@ -46,6 +47,7 @@ export default function App() {
         <Route path="/" element={<MainSite />} />
         <Route path="/funeral-plan-scale-readiness" element={<FuneralDiagnosticPage />} />
         <Route path="/funeral-plan-scale-readiness/results/:token" element={<ResultsPage />} />
+        <Route path="/revenue-leak-calculator" element={<RevenueLeakPage />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
       </Routes>
