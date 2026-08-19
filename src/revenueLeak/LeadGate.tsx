@@ -175,7 +175,7 @@ export default function LeadGate({ onUnlock }: LeadGateProps) {
           className="mt-7 inline-flex min-h-[48px] w-full items-center justify-center bg-signal px-7 py-3.5 font-display text-sm font-bold uppercase tracking-wider text-white transition-colors hover:bg-action disabled:cursor-not-allowed disabled:bg-carbon/30 sm:w-auto"
           style={{ clipPath: 'polygon(0 0, 100% 0, calc(100% - 12px) 100%, 0 100%)' }}
         >
-          {submitting ? 'Calculating…' : 'Calculate'}
+          {submitting ? 'Opening…' : 'Learn More'}
         </button>
 
         <p className="mt-5 text-[12px] leading-relaxed text-carbon/45">
