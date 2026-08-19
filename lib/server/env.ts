@@ -16,6 +16,7 @@ export const env = {
   DIAGNOSTIC_WEBHOOK_SECRET: readEnv('DIAGNOSTIC_WEBHOOK_SECRET'),
   LEAD_WEBHOOK_URL: readEnv('LEAD_WEBHOOK_URL'),
   LEAD_WEBHOOK_SECRET: readEnv('LEAD_WEBHOOK_SECRET'),
+  LEAD_ACCESS_SECRET: readEnv('LEAD_ACCESS_SECRET'),
   NEXT_PUBLIC_SITE_URL: readEnv('NEXT_PUBLIC_SITE_URL') ?? 'https://www.aivideosystems.org',
   PRIVACY_POLICY_URL: readEnv('PRIVACY_POLICY_URL') ?? '/privacy',
   TERMS_URL: readEnv('TERMS_URL') ?? '/terms',

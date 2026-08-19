@@ -4,6 +4,7 @@ import { validateLead } from '../../lib/server/lead-validation.js';
 import { sendLeadWebhook } from '../../lib/server/lead-webhook.js';
 import { isRateLimited } from '../../lib/server/rate-limit.js';
 import { hasLeadWebhookConfig } from '../../lib/server/env.js';
+import { issueAccessToken, HAS_STABLE_ACCESS_SECRET } from '../../lib/server/access-token.js';
 
 function getClientIp(req: VercelRequest): string {
   const forwarded = req.headers['x-forwarded-for'];
@@ -45,11 +46,20 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return res.status(200).json({ ok: true, delivery: 'discarded' });
   }
 
+  if (!HAS_STABLE_ACCESS_SECRET) {
+    console.warn('lead_access_secret_missing: set LEAD_ACCESS_SECRET so unlocks survive across serverless instances');
+  }
+
+  // The lead has been validated and is now recorded (delivered below, or logged for
+  // replay if delivery fails). That is what earns access — downstream delivery problems
+  // are ours to fix, not a reason to withhold what the visitor just paid for with contact details.
+  const accessToken = issueAccessToken(lead.email);
+
   if (!hasLeadWebhookConfig()) {
     // No destination configured yet. Log it so the lead is at least recoverable from
     // Vercel's function logs, and still let the visitor through to the calculator.
     console.warn('lead_webhook_not_configured', JSON.stringify({ firstName: lead.firstName, email: lead.email }));
-    return res.status(200).json({ ok: true, delivery: 'not_configured' });
+    return res.status(200).json({ ok: true, delivery: 'not_configured', accessToken });
   }
 
   const result = await sendLeadWebhook({
@@ -65,8 +75,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       'lead_webhook_failed',
       JSON.stringify({ category: result.errorCategory, firstName: lead.firstName, email: lead.email })
     );
-    return res.status(502).json({ ok: false, delivery: 'failed' });
+    return res.status(200).json({ ok: true, delivery: 'failed', accessToken });
   }
 
-  return res.status(200).json({ ok: true, delivery: result.status });
+  return res.status(200).json({ ok: true, delivery: result.status, accessToken });
 }

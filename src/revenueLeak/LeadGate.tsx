@@ -3,7 +3,7 @@ import { PRIVACY_POLICY_URL, TERMS_URL } from '../diagnostic/links';
 import { readAttribution } from './attribution';
 
 interface LeadGateProps {
-  onUnlock: (firstName: string) => void;
+  onUnlock: (firstName: string, accessToken: string) => void;
 }
 
 const inputClass = (hasError: boolean) =>
@@ -18,6 +18,7 @@ export default function LeadGate({ onUnlock }: LeadGateProps) {
   const [honeypot, setHoneypot] = useState('');
   const [errors, setErrors] = useState<{ firstName?: string; email?: string }>({});
   const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -28,8 +29,9 @@ export default function LeadGate({ onUnlock }: LeadGateProps) {
     if (Object.keys(next).length > 0) return;
 
     setSubmitting(true);
+    setSubmitError(null);
     try {
-      await fetch('/api/leads/revenue-leak', {
+      const response = await fetch('/api/leads/revenue-leak', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -41,13 +43,26 @@ export default function LeadGate({ onUnlock }: LeadGateProps) {
           company_website: honeypot,
         }),
       });
+
+      if (response.status === 429) {
+        setSubmitError('Too many attempts from this connection. Wait a minute and try again.');
+        return;
+      }
+
+      const data = (await response.json().catch(() => null)) as { accessToken?: string } | null;
+
+      // The server-signed token is the only thing that opens the calculator. No token,
+      // no access — a failed request must never fall through to an unlock.
+      if (!response.ok || !data?.accessToken) {
+        setSubmitError('We could not confirm your details just then. Please try again.');
+        return;
+      }
+
+      onUnlock(firstName.trim(), data.accessToken);
     } catch {
-      // Deliberate: a delivery failure is our problem, not the visitor's. The capture is
-      // logged server-side for replay, and we still let them through rather than losing
-      // them at the door. Flip this to a hard block if capture matters more than volume.
+      setSubmitError('That did not go through — check your connection and try again.');
     } finally {
       setSubmitting(false);
-      onUnlock(firstName.trim());
     }
   }
 
@@ -132,6 +147,15 @@ export default function LeadGate({ onUnlock }: LeadGateProps) {
           />
           <span>Send me occasional commercial breakdowns from AI Video Systems.</span>
         </label>
+
+        {submitError && (
+          <div
+            role="alert"
+            className="mt-6 rounded-md border border-score-critical/30 bg-score-critical/5 px-4 py-3 text-[13.5px] text-score-critical"
+          >
+            {submitError}
+          </div>
+        )}
 
         <button
           type="submit"

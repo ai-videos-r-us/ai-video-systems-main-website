@@ -1,43 +1,93 @@
-import { useEffect, useState } from 'react';
+import { Suspense, lazy, useEffect, useState } from 'react';
 import LeadGate from './LeadGate';
-import Calculator from './Calculator';
 
-const STORAGE_KEY = 'avs.revenueLeak.unlocked';
+// Lazily imported so the calculator's JavaScript is not even downloaded until the gate
+// has been passed. A visitor who never submits never receives it.
+const Calculator = lazy(() => import('./Calculator'));
+
+const TOKEN_KEY = 'avs.revenueLeak.token';
+const NAME_KEY = 'avs.revenueLeak.name';
+
+type Phase = 'checking' | 'gated' | 'unlocked';
 
 /**
- * Standalone page — deliberately no site Navbar or Footer. This is a direct-link asset
- * promoted from short-form, not part of the main site journey, and nothing on the main
- * site links into it.
+ * Standalone page — deliberately no site Navbar or Footer. A direct-link asset promoted
+ * from short-form, not part of the main site journey, and nothing on the site links in.
  *
- * The gate is a conversion device, not a security boundary: the calculator is pure
- * client-side arithmetic, so there is no secret behind it to protect. It exists to make
- * the exchange explicit, and it holds for the overwhelming majority of real visitors.
+ * Access is controlled by a server-signed token issued only after a lead is captured.
+ * Editing sessionStorage does not work: the token is HMAC-signed server-side and
+ * revalidated on every page load.
  */
 export default function RevenueLeakPage() {
-  const [unlocked, setUnlocked] = useState(false);
+  const [phase, setPhase] = useState<Phase>('checking');
   const [firstName, setFirstName] = useState<string | undefined>();
 
   useEffect(() => {
     document.title = 'Revenue Leak Calculator — AI Video Systems';
+
+    let cancelled = false;
+    let token: string | null = null;
     try {
-      const stored = sessionStorage.getItem(STORAGE_KEY);
-      if (stored) {
-        setFirstName(stored);
-        setUnlocked(true);
-      }
+      token = sessionStorage.getItem(TOKEN_KEY);
     } catch {
-      // Private browsing / storage disabled — the visitor just re-enters on refresh.
+      // Storage unavailable (private browsing) — the visitor simply re-enters details.
     }
+
+    if (!token) {
+      setPhase('gated');
+      return;
+    }
+
+    (async () => {
+      try {
+        const response = await fetch('/api/leads/verify-access', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ accessToken: token }),
+        });
+        const data = (await response.json().catch(() => null)) as { valid?: boolean } | null;
+        if (cancelled) return;
+
+        if (response.ok && data?.valid) {
+          try {
+            setFirstName(sessionStorage.getItem(NAME_KEY) ?? undefined);
+          } catch {
+            /* non-fatal */
+          }
+          setPhase('unlocked');
+        } else {
+          clearStored();
+          setPhase('gated');
+        }
+      } catch {
+        // Cannot reach the server to confirm — fail closed rather than open.
+        if (!cancelled) setPhase('gated');
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
-  function handleUnlock(name: string) {
+  function clearStored() {
     try {
-      sessionStorage.setItem(STORAGE_KEY, name);
+      sessionStorage.removeItem(TOKEN_KEY);
+      sessionStorage.removeItem(NAME_KEY);
     } catch {
-      // Non-fatal: unlocking this session still works, it just won't survive a refresh.
+      /* non-fatal */
+    }
+  }
+
+  function handleUnlock(name: string, accessToken: string) {
+    try {
+      sessionStorage.setItem(TOKEN_KEY, accessToken);
+      sessionStorage.setItem(NAME_KEY, name);
+    } catch {
+      // Non-fatal: this session still unlocks, it just won't survive a refresh.
     }
     setFirstName(name);
-    setUnlocked(true);
+    setPhase('unlocked');
     window.scrollTo({ top: 0, behavior: 'auto' });
   }
 
@@ -49,7 +99,25 @@ export default function RevenueLeakPage() {
         </div>
       </div>
 
-      {unlocked ? <Calculator firstName={firstName} /> : <LeadGate onUnlock={handleUnlock} />}
+      {phase === 'checking' && (
+        <div className="flex min-h-[50vh] items-center justify-center" role="status" aria-live="polite">
+          <p className="font-mono text-[12px] uppercase tracking-[0.14em] text-carbon/40">Checking access…</p>
+        </div>
+      )}
+
+      {phase === 'gated' && <LeadGate onUnlock={handleUnlock} />}
+
+      {phase === 'unlocked' && (
+        <Suspense
+          fallback={
+            <div className="flex min-h-[50vh] items-center justify-center" role="status" aria-live="polite">
+              <p className="font-mono text-[12px] uppercase tracking-[0.14em] text-carbon/40">Opening the calculator…</p>
+            </div>
+          }
+        >
+          <Calculator firstName={firstName} />
+        </Suspense>
+      )}
     </main>
   );
 }
