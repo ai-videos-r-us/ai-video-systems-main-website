@@ -262,7 +262,7 @@ export default function Calculator({ firstName }: { firstName?: string }) {
           className="mt-7 inline-block bg-signal px-7 py-3.5 font-display text-sm font-bold uppercase tracking-wider text-white transition-colors hover:bg-action"
           style={{ clipPath: 'polygon(0 0, 100% 0, calc(100% - 12px) 100%, 0 100%)' }}
         >
-          Book a Revenue System Audit
+          Learn More
         </a>
         <p className="mt-7 border-t border-white/15 pt-5 font-mono text-[11.5px] text-white/55">
           Sean Munn &middot; AI Video Systems &middot; $11M+ generated for clients
