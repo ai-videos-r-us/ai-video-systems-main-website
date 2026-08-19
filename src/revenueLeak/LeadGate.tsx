@@ -1,0 +1,159 @@
+import { useState } from 'react';
+import { PRIVACY_POLICY_URL, TERMS_URL } from '../diagnostic/links';
+import { readAttribution } from './attribution';
+
+interface LeadGateProps {
+  onUnlock: (firstName: string) => void;
+}
+
+const inputClass = (hasError: boolean) =>
+  `h-12 w-full rounded-md border bg-white px-3.5 text-[15px] text-carbon outline-none transition-colors focus:border-signal ${
+    hasError ? 'border-score-critical' : 'border-carbon/20'
+  }`;
+
+export default function LeadGate({ onUnlock }: LeadGateProps) {
+  const [firstName, setFirstName] = useState('');
+  const [email, setEmail] = useState('');
+  const [consent, setConsent] = useState(false);
+  const [honeypot, setHoneypot] = useState('');
+  const [errors, setErrors] = useState<{ firstName?: string; email?: string }>({});
+  const [submitting, setSubmitting] = useState(false);
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    const next: { firstName?: string; email?: string } = {};
+    if (!firstName.trim()) next.firstName = 'Enter your first name.';
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) next.email = 'Enter a valid email address.';
+    setErrors(next);
+    if (Object.keys(next).length > 0) return;
+
+    setSubmitting(true);
+    try {
+      await fetch('/api/leads/revenue-leak', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          firstName: firstName.trim(),
+          email: email.trim(),
+          marketingConsent: consent,
+          source: 'revenue-leak-calculator',
+          attribution: readAttribution(),
+          company_website: honeypot,
+        }),
+      });
+    } catch {
+      // Deliberate: a delivery failure is our problem, not the visitor's. The capture is
+      // logged server-side for replay, and we still let them through rather than losing
+      // them at the door. Flip this to a hard block if capture matters more than volume.
+    } finally {
+      setSubmitting(false);
+      onUnlock(firstName.trim());
+    }
+  }
+
+  return (
+    <div className="mx-auto w-full max-w-[560px] px-5 pb-24 pt-10 md:pt-16">
+      <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-carbon/45">
+        AI Video Systems &middot; Diagnostic 01
+      </p>
+      <h1 className="mt-4 font-display text-[30px] font-extrabold leading-[1.08] tracking-tight text-carbon sm:text-[40px]">
+        Where your ad spend stops becoming revenue
+      </h1>
+      <p className="mt-4 text-[16px] leading-relaxed text-carbon/70">
+        Your ad account looks fine. Cost per lead is acceptable. And sales still says the leads are weak. That gap has a
+        number attached to it &mdash; most businesses never calculate it, because the reporting stops at the lead and the
+        money lives in the CRM.
+      </p>
+      <p className="mt-3 text-[16px] font-semibold leading-relaxed text-carbon">
+        Seven figures you already know. The leak appears as you type.
+      </p>
+
+      <form onSubmit={handleSubmit} noValidate className="mt-9 border-t border-carbon/10 pt-8">
+        <div className="grid grid-cols-1 gap-4">
+          <div>
+            <label htmlFor="rl-first-name" className="block text-[13.5px] font-semibold text-carbon">
+              First name <span className="text-signal">*</span>
+            </label>
+            <input
+              id="rl-first-name"
+              type="text"
+              autoComplete="given-name"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+              className={`mt-1.5 ${inputClass(!!errors.firstName)}`}
+              aria-invalid={!!errors.firstName}
+            />
+            {errors.firstName && (
+              <p role="alert" className="mt-1 text-[12.5px] text-score-critical">
+                {errors.firstName}
+              </p>
+            )}
+          </div>
+          <div>
+            <label htmlFor="rl-email" className="block text-[13.5px] font-semibold text-carbon">
+              Email <span className="text-signal">*</span>
+            </label>
+            <input
+              id="rl-email"
+              type="email"
+              autoComplete="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className={`mt-1.5 ${inputClass(!!errors.email)}`}
+              aria-invalid={!!errors.email}
+            />
+            {errors.email && (
+              <p role="alert" className="mt-1 text-[12.5px] text-score-critical">
+                {errors.email}
+              </p>
+            )}
+          </div>
+        </div>
+
+        {/* Honeypot — visually and programmatically hidden from real users. */}
+        <div aria-hidden="true" className="absolute left-[-9999px] h-0 w-0 overflow-hidden">
+          <label htmlFor="company_website">Company website</label>
+          <input
+            id="company_website"
+            type="text"
+            tabIndex={-1}
+            autoComplete="off"
+            value={honeypot}
+            onChange={(e) => setHoneypot(e.target.value)}
+          />
+        </div>
+
+        <label className="mt-6 flex cursor-pointer items-start gap-3 text-[13.5px] text-carbon/75">
+          <input
+            type="checkbox"
+            checked={consent}
+            onChange={(e) => setConsent(e.target.checked)}
+            className="mt-0.5 h-4 w-4 flex-shrink-0 accent-signal"
+          />
+          <span>Send me occasional commercial breakdowns from AI Video Systems.</span>
+        </label>
+
+        <button
+          type="submit"
+          disabled={submitting}
+          className="mt-7 inline-flex min-h-[48px] w-full items-center justify-center bg-signal px-7 py-3.5 font-display text-sm font-bold uppercase tracking-wider text-white transition-colors hover:bg-action disabled:cursor-not-allowed disabled:bg-carbon/30 sm:w-auto"
+          style={{ clipPath: 'polygon(0 0, 100% 0, calc(100% - 12px) 100%, 0 100%)' }}
+        >
+          {submitting ? 'Opening the calculator…' : 'Show me the leak'}
+        </button>
+
+        <p className="mt-5 text-[12px] leading-relaxed text-carbon/45">
+          No call, no download &mdash; the calculator opens on this page. By continuing you agree to our{' '}
+          <a href={PRIVACY_POLICY_URL} className="underline hover:text-carbon">
+            Privacy Policy
+          </a>{' '}
+          and{' '}
+          <a href={TERMS_URL} className="underline hover:text-carbon">
+            Terms
+          </a>
+          . The consent above is optional.
+        </p>
+      </form>
+    </div>
+  );
+}
