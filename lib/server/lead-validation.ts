@@ -6,7 +6,9 @@ import { z } from 'zod';
 const leadSchema = z.object({
   firstName: z.string().trim().min(1).max(120),
   email: z.string().trim().email().max(254),
-  marketingConsent: z.boolean().optional().default(false),
+  // Required. The gate makes ticking this a condition of access, so the server enforces
+  // it rather than trusting the client — otherwise the requirement is cosmetic.
+  marketingConsent: z.literal(true),
   source: z.string().trim().max(80).optional(),
   attribution: z
     .object({

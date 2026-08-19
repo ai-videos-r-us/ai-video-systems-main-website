@@ -16,15 +16,16 @@ export default function LeadGate({ onUnlock }: LeadGateProps) {
   const [email, setEmail] = useState('');
   const [consent, setConsent] = useState(false);
   const [honeypot, setHoneypot] = useState('');
-  const [errors, setErrors] = useState<{ firstName?: string; email?: string }>({});
+  const [errors, setErrors] = useState<{ firstName?: string; email?: string; consent?: string }>({});
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    const next: { firstName?: string; email?: string } = {};
+    const next: { firstName?: string; email?: string; consent?: string } = {};
     if (!firstName.trim()) next.firstName = 'Enter your first name.';
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) next.email = 'Enter a valid email address.';
+    if (!consent) next.consent = 'Please tick the box to continue.';
     setErrors(next);
     if (Object.keys(next).length > 0) return;
 
@@ -133,15 +134,31 @@ export default function LeadGate({ onUnlock }: LeadGateProps) {
           />
         </div>
 
-        <label className="mt-6 flex cursor-pointer items-start gap-3 text-[13.5px] text-carbon/75">
-          <input
-            type="checkbox"
-            checked={consent}
-            onChange={(e) => setConsent(e.target.checked)}
-            className="mt-0.5 h-4 w-4 flex-shrink-0 accent-signal"
-          />
-          <span>Send me occasional commercial breakdowns from AI Video Systems.</span>
-        </label>
+        <div className="mt-6">
+          <label className="flex cursor-pointer items-start gap-3 text-[13.5px] text-carbon/75">
+            <input
+              type="checkbox"
+              checked={consent}
+              onChange={(e) => {
+                setConsent(e.target.checked);
+                if (e.target.checked) setErrors((prev) => ({ ...prev, consent: undefined }));
+              }}
+              aria-invalid={!!errors.consent}
+              className={`mt-0.5 h-4 w-4 flex-shrink-0 accent-signal ${
+                errors.consent ? 'outline outline-1 outline-offset-2 outline-score-critical' : ''
+              }`}
+            />
+            <span>
+              Send me occasional commercial breakdowns from AI Video
+              Systems.&nbsp;<span className="text-signal">*</span>
+            </span>
+          </label>
+          {errors.consent && (
+            <p role="alert" className="mt-1.5 pl-7 text-[12.5px] text-score-critical">
+              {errors.consent}
+            </p>
+          )}
+        </div>
 
         {submitError && (
           <div
@@ -158,7 +175,7 @@ export default function LeadGate({ onUnlock }: LeadGateProps) {
           className="mt-7 inline-flex min-h-[48px] w-full items-center justify-center bg-signal px-7 py-3.5 font-display text-sm font-bold uppercase tracking-wider text-white transition-colors hover:bg-action disabled:cursor-not-allowed disabled:bg-carbon/30 sm:w-auto"
           style={{ clipPath: 'polygon(0 0, 100% 0, calc(100% - 12px) 100%, 0 100%)' }}
         >
-          {submitting ? 'Opening the calculator…' : 'Show me the leak'}
+          {submitting ? 'Calculating…' : 'Calculate'}
         </button>
 
         <p className="mt-5 text-[12px] leading-relaxed text-carbon/45">
@@ -170,7 +187,7 @@ export default function LeadGate({ onUnlock }: LeadGateProps) {
           <a href={TERMS_URL} className="underline hover:text-carbon">
             Terms
           </a>
-          . The consent above is optional.
+          .
         </p>
       </form>
     </div>
