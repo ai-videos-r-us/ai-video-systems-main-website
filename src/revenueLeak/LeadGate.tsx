@@ -72,15 +72,10 @@ export default function LeadGate({ onUnlock }: LeadGateProps) {
         AI Video Systems &middot; Diagnostic 01
       </p>
       <h1 className="mt-4 font-display text-[30px] font-extrabold leading-[1.08] tracking-tight text-carbon sm:text-[40px]">
-        Where your ad spend stops becoming revenue
+        How much ad spend are you wasting?
       </h1>
       <p className="mt-4 text-[16px] leading-relaxed text-carbon/70">
-        Your ad account looks fine. Cost per lead is acceptable. And sales still says the leads are weak. That gap has a
-        number attached to it &mdash; most businesses never calculate it, because the reporting stops at the lead and the
-        money lives in the CRM.
-      </p>
-      <p className="mt-3 text-[16px] font-semibold leading-relaxed text-carbon">
-        Seven figures you already know. The leak appears as you type.
+        Calculate how many more customers you could get for the same ad spend.
       </p>
 
       <form onSubmit={handleSubmit} noValidate className="mt-9 border-t border-carbon/10 pt-8">
