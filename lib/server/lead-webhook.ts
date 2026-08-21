@@ -1,5 +1,5 @@
 import { createHmac } from 'node:crypto';
-import { env, hasLeadWebhookConfig } from './env.js';
+import { getLeadWebhookTarget, type LeadWebhookTarget } from './env.js';
 import type { LeadInput } from './lead-validation.js';
 
 export interface LeadWebhookResult {
@@ -11,6 +11,11 @@ export interface LeadWebhookInput {
   lead: LeadInput;
   capturedAt: string;
   clientIpHash?: string;
+  /**
+   * Where to deliver. Omit for the shared Revenue Leak destination; the funeral gate passes
+   * its own so those captures can go to a different Zap without touching this one.
+   */
+  target?: LeadWebhookTarget | null;
 }
 
 /**
@@ -38,14 +43,15 @@ export function buildLeadPayload(input: LeadWebhookInput) {
 }
 
 export async function sendLeadWebhook(input: LeadWebhookInput): Promise<LeadWebhookResult> {
-  if (!hasLeadWebhookConfig()) return { status: 'not_configured' };
+  const target = input.target === undefined ? getLeadWebhookTarget() : input.target;
+  if (!target) return { status: 'not_configured' };
 
   try {
     const body = JSON.stringify(buildLeadPayload(input));
     const headers: Record<string, string> = { 'Content-Type': 'application/json' };
 
-    if (env.LEAD_WEBHOOK_SECRET) {
-      const signature = createHmac('sha256', env.LEAD_WEBHOOK_SECRET).update(body).digest('hex');
+    if (target.secret) {
+      const signature = createHmac('sha256', target.secret).update(body).digest('hex');
       headers['X-Lead-Signature'] = `sha256=${signature}`;
     }
 
@@ -53,7 +59,7 @@ export async function sendLeadWebhook(input: LeadWebhookInput): Promise<LeadWebh
     const timeout = setTimeout(() => controller.abort(), 8000);
     let response: Response;
     try {
-      response = await fetch(env.LEAD_WEBHOOK_URL!, {
+      response = await fetch(target.url, {
         method: 'POST',
         headers,
         body,

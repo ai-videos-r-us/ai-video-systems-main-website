@@ -18,16 +18,18 @@ interface ContactGateFormProps {
   onSubmit: (contact: ContactFormValues, consents: ConsentValues) => void;
   submitting: boolean;
   submitError?: string | null;
+  /** Carried over from the page gate — the respondent has already given these once. */
+  initialValues?: Partial<ContactFormValues>;
 }
 
-export default function ContactGateForm({ onSubmit, submitting, submitError }: ContactGateFormProps) {
+export default function ContactGateForm({ onSubmit, submitting, submitError, initialValues }: ContactGateFormProps) {
   const headingRef = useRef<HTMLHeadingElement>(null);
   const [values, setValues] = useState<ContactFormValues>({
-    firstName: '',
-    surname: '',
-    company: '',
-    workEmail: '',
-    phone: '',
+    firstName: initialValues?.firstName ?? '',
+    surname: initialValues?.surname ?? '',
+    company: initialValues?.company ?? '',
+    workEmail: initialValues?.workEmail ?? '',
+    phone: initialValues?.phone ?? '',
   });
   const [consents, setConsents] = useState<ConsentValues>({ marketing: false, research: false });
   const [errors, setErrors] = useState<Partial<Record<keyof ContactFormValues, string>>>({});

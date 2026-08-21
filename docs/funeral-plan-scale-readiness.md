@@ -6,6 +6,31 @@ Systems marketing site. Public entry point:
 - Landing/wizard: `/funeral-plan-scale-readiness`
 - Results (secure, non-indexed): `/funeral-plan-scale-readiness/results/:token`
 
+## The page gate
+
+`/funeral-plan-scale-readiness` is gated: until the visitor submits first name, email and the
+marketing-consent tick, the only thing that renders is `src/diagnostic/FuneralLeadGate.tsx`.
+
+1. The gate POSTs to `api/leads/funeral-diagnostic.ts`, which validates the capture (Zod,
+   `marketingConsent` must be `true`), drops honeypot submissions, rate-limits by IP, forces
+   `source: 'funeral-plan-scale-readiness'` server-side, and delivers to the funeral webhook
+   destination (`FUNERAL_LEAD_WEBHOOK_URL`, or the checked-in Zapier default). Because that
+   default lives in a public repo the hook URL is readable by anyone — rotate it in Zapier and
+   set the env var if it ever attracts junk.
+2. It returns an HMAC-signed access token (`lib/server/access-token.ts`, 12h TTL) which the
+   client stores in `sessionStorage` alongside the first name and email.
+3. On every subsequent load the stored token is revalidated by `POST /api/leads/verify-access`.
+   Writing your own token into `sessionStorage` does not work, and an unreachable server fails
+   closed (the visitor is re-gated).
+4. Delivery failures never withhold access — the lead is already captured and logged, so a
+   webhook outage is not the visitor's problem.
+5. The gate's first name and email are prefilled into the end-of-wizard contact step so nobody
+   is asked for them twice.
+
+**SEO note:** because the page is hard-gated, crawlers see the gate copy only — the landing
+sections and wizard are behind the form. The route is still in `public/sitemap.xml`; the gate's
+own `<h1>` and meta description are what will be indexed.
+
 ## Architecture
 
 The site is a Vite + React SPA with no prior backend. This feature adds:
@@ -80,6 +105,9 @@ working deployment you need:
 | `DIAGNOSTIC_WEBHOOK_URL`, `DIAGNOSTIC_WEBHOOK_SECRET` | Optional CRM webhook (HMAC-signed) |
 | `DIAGNOSTIC_INTERNAL_RECIPIENTS` | Optional internal alert for High Need + Strong/Priority Fit leads |
 | `NEXT_PUBLIC_SITE_URL` | Used to build the result link in emails/webhooks |
+| `FUNERAL_LEAD_WEBHOOK_URL` | Optional override for where the page gate's captures are delivered. The live Zapier catch hook is checked in as `DEFAULT_FUNERAL_LEAD_WEBHOOK_URL` in `lib/server/env.ts`, so delivery works with no configuration; set this to move funeral leads elsewhere |
+| `FUNERAL_LEAD_WEBHOOK_SECRET` | Optional HMAC secret (`X-Lead-Signature: sha256=…`). Only applies alongside `FUNERAL_LEAD_WEBHOOK_URL` — the default catch hook is sent unsigned |
+| `LEAD_ACCESS_SECRET` | **Required in production.** Signs the token that unlocks the page after the gate. Without it each serverless instance mints its own secret and visitors get re-gated at random |
 
 The service-role Supabase key and Resend/webhook secrets are **server-only** — read in
 `lib/server/env.ts`, never referenced from `src/`, and never sent to the browser.
