@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import FuneralDiagnosticLanding from './FuneralDiagnosticLanding';
+import FuneralLeadGate from './FuneralLeadGate';
 import DiagnosticWizard from './DiagnosticWizard';
 import DraftResumeBanner from './components/DraftResumeBanner';
 import ResultsView from './components/ResultsView';
@@ -13,6 +14,11 @@ import { track } from './analytics';
 import useDocumentMeta from '../hooks/useDocumentMeta';
 
 type View = 'landing' | 'wizard' | 'results';
+type Access = 'checking' | 'gated' | 'unlocked';
+
+const TOKEN_KEY = 'avs.funeralDiagnostic.token';
+const NAME_KEY = 'avs.funeralDiagnostic.name';
+const EMAIL_KEY = 'avs.funeralDiagnostic.email';
 
 interface SubmitResponse {
   resultToken: string;
@@ -24,6 +30,9 @@ interface SubmitResponse {
 
 export default function FuneralDiagnosticPage() {
   const [searchParams] = useSearchParams();
+  const [access, setAccess] = useState<Access>('checking');
+  const [gateFirstName, setGateFirstName] = useState<string>('');
+  const [gateEmail, setGateEmail] = useState<string>('');
   const [view, setView] = useState<View>('landing');
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
@@ -36,8 +45,82 @@ export default function FuneralDiagnosticPage() {
 
   useDocumentMeta(
     'Funeral Plan Scale Readiness Diagnostic | AI Video Systems',
-    'Free diagnostic for funeral plan providers, funeral groups and funeral directors: find out whether your business could profitably handle another £10,000 a month in customer acquisition, and what would be most likely to break first.'
+    'Free diagnostic for funeral plan providers, funeral groups and funeral directors: find out what a completed plan sale is really costing you, what every 100 enquiries turns into in plans and contribution, and the one constraint losing you the most plan sales.'
   );
+
+  // The page is gated: nothing but the capture form renders until the server confirms a
+  // signed token issued by the gate. Editing sessionStorage does not open it — the token is
+  // HMAC-signed server-side and revalidated on every load.
+  useEffect(() => {
+    let cancelled = false;
+    let token: string | null = null;
+    try {
+      token = sessionStorage.getItem(TOKEN_KEY);
+    } catch {
+      // Storage unavailable (private browsing) — the visitor simply re-enters details.
+    }
+
+    if (!token) {
+      setAccess('gated');
+      return;
+    }
+
+    (async () => {
+      try {
+        const response = await fetch('/api/leads/verify-access', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ accessToken: token }),
+        });
+        const data = (await response.json().catch(() => null)) as { valid?: boolean } | null;
+        if (cancelled) return;
+
+        if (response.ok && data?.valid) {
+          try {
+            setGateFirstName(sessionStorage.getItem(NAME_KEY) ?? '');
+            setGateEmail(sessionStorage.getItem(EMAIL_KEY) ?? '');
+          } catch {
+            /* non-fatal */
+          }
+          setAccess('unlocked');
+        } else {
+          clearStoredAccess();
+          setAccess('gated');
+        }
+      } catch {
+        // Cannot reach the server to confirm — fail closed rather than open.
+        if (!cancelled) setAccess('gated');
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  function clearStoredAccess() {
+    try {
+      sessionStorage.removeItem(TOKEN_KEY);
+      sessionStorage.removeItem(NAME_KEY);
+      sessionStorage.removeItem(EMAIL_KEY);
+    } catch {
+      /* non-fatal */
+    }
+  }
+
+  function handleUnlock(name: string, email: string, accessToken: string) {
+    try {
+      sessionStorage.setItem(TOKEN_KEY, accessToken);
+      sessionStorage.setItem(NAME_KEY, name);
+      sessionStorage.setItem(EMAIL_KEY, email);
+    } catch {
+      // Non-fatal: this session still unlocks, it just will not survive a refresh.
+    }
+    setGateFirstName(name);
+    setGateEmail(email);
+    setAccess('unlocked');
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  }
 
   async function handleFinalSubmit(contact: ContactFormValues, consents: ConsentValues) {
     setSubmitting(true);
@@ -93,6 +176,21 @@ export default function FuneralDiagnosticPage() {
     }
   }
 
+  if (access !== 'unlocked') {
+    return (
+      <div className="bg-white">
+        <DiagnosticHeader showExit={false} />
+        {access === 'checking' ? (
+          <div className="flex min-h-[50vh] items-center justify-center" role="status" aria-live="polite">
+            <p className="font-mono text-[12px] uppercase tracking-[0.14em] text-carbon/40">Checking access…</p>
+          </div>
+        ) : (
+          <FuneralLeadGate onUnlock={handleUnlock} />
+        )}
+      </div>
+    );
+  }
+
   return (
     <div className="bg-white">
       <DiagnosticHeader showExit={view !== 'landing'} />
@@ -111,11 +209,18 @@ export default function FuneralDiagnosticPage() {
         <FuneralDiagnosticLanding
           onStart={() => setView('wizard')}
           partnerName={partner?.displayName}
+          firstName={gateFirstName || undefined}
         />
       )}
 
       {view === 'wizard' && (
-        <DiagnosticWizard draft={draft} onFinalSubmit={handleFinalSubmit} submitting={submitting} submitError={submitError} />
+        <DiagnosticWizard
+          draft={draft}
+          onFinalSubmit={handleFinalSubmit}
+          submitting={submitting}
+          submitError={submitError}
+          contactDefaults={{ firstName: gateFirstName, workEmail: gateEmail }}
+        />
       )}
 
       {view === 'results' && submitResult && (

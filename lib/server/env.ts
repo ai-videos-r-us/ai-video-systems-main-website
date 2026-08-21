@@ -16,6 +16,8 @@ export const env = {
   DIAGNOSTIC_WEBHOOK_SECRET: readEnv('DIAGNOSTIC_WEBHOOK_SECRET'),
   LEAD_WEBHOOK_URL: readEnv('LEAD_WEBHOOK_URL'),
   LEAD_WEBHOOK_SECRET: readEnv('LEAD_WEBHOOK_SECRET'),
+  FUNERAL_LEAD_WEBHOOK_URL: readEnv('FUNERAL_LEAD_WEBHOOK_URL'),
+  FUNERAL_LEAD_WEBHOOK_SECRET: readEnv('FUNERAL_LEAD_WEBHOOK_SECRET'),
   LEAD_ACCESS_SECRET: readEnv('LEAD_ACCESS_SECRET'),
   NEXT_PUBLIC_SITE_URL: readEnv('NEXT_PUBLIC_SITE_URL') ?? 'https://www.aivideosystems.org',
   PRIVACY_POLICY_URL: readEnv('PRIVACY_POLICY_URL') ?? '/privacy',
@@ -36,4 +38,30 @@ export function hasWebhookConfig(): boolean {
 
 export function hasLeadWebhookConfig(): boolean {
   return !!env.LEAD_WEBHOOK_URL;
+}
+
+export interface LeadWebhookTarget {
+  url: string;
+  secret?: string;
+}
+
+/** Destination for Revenue Leak Calculator gate captures. */
+export function getLeadWebhookTarget(): LeadWebhookTarget | null {
+  return env.LEAD_WEBHOOK_URL ? { url: env.LEAD_WEBHOOK_URL, secret: env.LEAD_WEBHOOK_SECRET } : null;
+}
+
+/**
+ * Destination for Funeral Plan Scale Readiness gate captures.
+ *
+ * Its own variable so funeral leads can go to a different Zap/CRM without disturbing the
+ * Revenue Leak calculator. Falls back to the shared lead webhook when unset, so setting
+ * only LEAD_WEBHOOK_URL still delivers both (the payload's `source` field tells them apart).
+ * A secret always belongs to the URL it was configured with — never signed with the other
+ * destination's key.
+ */
+export function getFuneralLeadWebhookTarget(): LeadWebhookTarget | null {
+  if (env.FUNERAL_LEAD_WEBHOOK_URL) {
+    return { url: env.FUNERAL_LEAD_WEBHOOK_URL, secret: env.FUNERAL_LEAD_WEBHOOK_SECRET };
+  }
+  return getLeadWebhookTarget();
 }

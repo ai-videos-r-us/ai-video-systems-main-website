@@ -3,6 +3,9 @@
 // only the event name and the safe props listed per call-site below.
 
 type DiagnosticEvent =
+  // Page gate — shown before anything else on /funeral-plan-scale-readiness.
+  | 'diagnostic_gate_viewed'
+  | 'diagnostic_gate_completed'
   | 'diagnostic_landing_view'
   | 'diagnostic_started'
   | 'diagnostic_context_completed'

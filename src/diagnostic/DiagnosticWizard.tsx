@@ -18,9 +18,17 @@ interface DiagnosticWizardProps {
   onFinalSubmit: (contact: ContactFormValues, consents: ConsentValues) => void;
   submitting: boolean;
   submitError: string | null;
+  /** Prefilled from the page gate so nobody types their name and email a second time. */
+  contactDefaults?: Partial<ContactFormValues>;
 }
 
-export default function DiagnosticWizard({ draft, onFinalSubmit, submitting, submitError }: DiagnosticWizardProps) {
+export default function DiagnosticWizard({
+  draft,
+  onFinalSubmit,
+  submitting,
+  submitError,
+  contactDefaults,
+}: DiagnosticWizardProps) {
   const { state, setContextAnswer, setScoredAnswer, setFinancial, goNext, goBack } = draft;
   const step = WIZARD_STEPS[state.stepIndex];
 
@@ -102,7 +110,12 @@ export default function DiagnosticWizard({ draft, onFinalSubmit, submitting, sub
       {step.type === 'financial' && <FinancialStep group={step.group} financial={state.financial} onChange={setFinancial} />}
 
       {step.type === 'contact' && (
-        <ContactGateForm onSubmit={onFinalSubmit} submitting={submitting} submitError={submitError} />
+        <ContactGateForm
+          onSubmit={onFinalSubmit}
+          submitting={submitting}
+          submitError={submitError}
+          initialValues={contactDefaults}
+        />
       )}
 
       {step.type !== 'contact' && (
