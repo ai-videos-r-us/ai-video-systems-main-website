@@ -14,7 +14,9 @@ marketing-consent tick, the only thing that renders is `src/diagnostic/FuneralLe
 1. The gate POSTs to `api/leads/funeral-diagnostic.ts`, which validates the capture (Zod,
    `marketingConsent` must be `true`), drops honeypot submissions, rate-limits by IP, forces
    `source: 'funeral-plan-scale-readiness'` server-side, and delivers to the funeral webhook
-   destination.
+   destination (`FUNERAL_LEAD_WEBHOOK_URL`, or the checked-in Zapier default). Because that
+   default lives in a public repo the hook URL is readable by anyone — rotate it in Zapier and
+   set the env var if it ever attracts junk.
 2. It returns an HMAC-signed access token (`lib/server/access-token.ts`, 12h TTL) which the
    client stores in `sessionStorage` alongside the first name and email.
 3. On every subsequent load the stored token is revalidated by `POST /api/leads/verify-access`.
@@ -103,8 +105,8 @@ working deployment you need:
 | `DIAGNOSTIC_WEBHOOK_URL`, `DIAGNOSTIC_WEBHOOK_SECRET` | Optional CRM webhook (HMAC-signed) |
 | `DIAGNOSTIC_INTERNAL_RECIPIENTS` | Optional internal alert for High Need + Strong/Priority Fit leads |
 | `NEXT_PUBLIC_SITE_URL` | Used to build the result link in emails/webhooks |
-| `FUNERAL_LEAD_WEBHOOK_URL` | Where the page gate's first-name + email captures are delivered. Falls back to `LEAD_WEBHOOK_URL` when unset; if neither is set the capture is written to the Vercel function log and the visitor is still let through |
-| `FUNERAL_LEAD_WEBHOOK_SECRET` | Optional HMAC secret for that destination (`X-Lead-Signature: sha256=…`) |
+| `FUNERAL_LEAD_WEBHOOK_URL` | Optional override for where the page gate's captures are delivered. The live Zapier catch hook is checked in as `DEFAULT_FUNERAL_LEAD_WEBHOOK_URL` in `lib/server/env.ts`, so delivery works with no configuration; set this to move funeral leads elsewhere |
+| `FUNERAL_LEAD_WEBHOOK_SECRET` | Optional HMAC secret (`X-Lead-Signature: sha256=…`). Only applies alongside `FUNERAL_LEAD_WEBHOOK_URL` — the default catch hook is sent unsigned |
 | `LEAD_ACCESS_SECRET` | **Required in production.** Signs the token that unlocks the page after the gate. Without it each serverless instance mints its own secret and visitors get re-gated at random |
 
 The service-role Supabase key and Resend/webhook secrets are **server-only** — read in

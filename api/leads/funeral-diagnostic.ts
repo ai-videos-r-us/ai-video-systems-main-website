@@ -63,16 +63,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   // withhold the diagnostic from someone who has just handed over their details.
   const accessToken = issueAccessToken(lead.email);
 
+  // Always resolves — FUNERAL_LEAD_WEBHOOK_URL when set, otherwise the checked-in default.
   const target = getFuneralLeadWebhookTarget();
-  if (!target) {
-    // No destination configured yet. Log it so the lead is at least recoverable from Vercel's
-    // function logs, and still let the visitor through to the diagnostic.
-    console.warn(
-      'funeral_lead_webhook_not_configured',
-      JSON.stringify({ firstName: lead.firstName, email: lead.email })
-    );
-    return res.status(200).json({ ok: true, delivery: 'not_configured', accessToken });
-  }
 
   const result = await sendLeadWebhook({
     lead,

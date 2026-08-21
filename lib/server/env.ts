@@ -51,17 +51,29 @@ export function getLeadWebhookTarget(): LeadWebhookTarget | null {
 }
 
 /**
+ * Sean's Zapier catch hook for funeral-plan gate captures. Checked in deliberately so the
+ * page delivers leads the moment it deploys, with no environment-variable step.
+ *
+ * This repository is public, so the URL is not a secret: anyone can read it and POST junk
+ * straight to the Zap, bypassing our validation and per-IP rate limiting. The capture
+ * endpoint in front of it is also public, so this raises the noise ceiling rather than
+ * opening a new door — but if the Zap ever starts eating task quota, rotate the hook in
+ * Zapier and set FUNERAL_LEAD_WEBHOOK_URL in Vercel to the new one instead of committing it.
+ */
+export const DEFAULT_FUNERAL_LEAD_WEBHOOK_URL = 'https://hooks.zapier.com/hooks/catch/8612096/4tfd8l6/';
+
+/**
  * Destination for Funeral Plan Scale Readiness gate captures.
  *
- * Its own variable so funeral leads can go to a different Zap/CRM without disturbing the
- * Revenue Leak calculator. Falls back to the shared lead webhook when unset, so setting
- * only LEAD_WEBHOOK_URL still delivers both (the payload's `source` field tells them apart).
- * A secret always belongs to the URL it was configured with — never signed with the other
- * destination's key.
+ * Its own variable so funeral leads can go somewhere different from the Revenue Leak
+ * calculator. FUNERAL_LEAD_WEBHOOK_URL wins when set; otherwise the checked-in default
+ * above is used, so this never silently stops delivering. A secret always belongs to the
+ * URL it was configured with — never signed with the other destination's key, and the
+ * default Zapier hook is sent unsigned because a catch hook cannot verify a signature.
  */
-export function getFuneralLeadWebhookTarget(): LeadWebhookTarget | null {
+export function getFuneralLeadWebhookTarget(): LeadWebhookTarget {
   if (env.FUNERAL_LEAD_WEBHOOK_URL) {
     return { url: env.FUNERAL_LEAD_WEBHOOK_URL, secret: env.FUNERAL_LEAD_WEBHOOK_SECRET };
   }
-  return getLeadWebhookTarget();
+  return { url: DEFAULT_FUNERAL_LEAD_WEBHOOK_URL };
 }

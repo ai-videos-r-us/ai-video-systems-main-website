@@ -50,27 +50,25 @@ describe('getFuneralLeadWebhookTarget', () => {
     expect(getFuneralLeadWebhookTarget()).toEqual({ url: 'https://hooks.example/funeral', secret: undefined });
   });
 
-  it('falls back to the shared lead destination when no funeral URL is set', async () => {
-    const { getFuneralLeadWebhookTarget } = await loadEnv({
+  it('uses the checked-in default when no funeral URL is set, never the revenue-leak one', async () => {
+    const { getFuneralLeadWebhookTarget, DEFAULT_FUNERAL_LEAD_WEBHOOK_URL } = await loadEnv({
       FUNERAL_LEAD_WEBHOOK_URL: undefined,
       FUNERAL_LEAD_WEBHOOK_SECRET: undefined,
       LEAD_WEBHOOK_URL: 'https://hooks.example/revenue-leak',
       LEAD_WEBHOOK_SECRET: 'revenue-secret',
     });
-    expect(getFuneralLeadWebhookTarget()).toEqual({
-      url: 'https://hooks.example/revenue-leak',
-      secret: 'revenue-secret',
-    });
+    expect(getFuneralLeadWebhookTarget()).toEqual({ url: DEFAULT_FUNERAL_LEAD_WEBHOOK_URL, secret: undefined });
   });
 
-  it('returns null when nothing is configured, so the handler logs instead of posting', async () => {
+  it('always has somewhere to deliver, even with nothing configured at all', async () => {
     const { getFuneralLeadWebhookTarget, getLeadWebhookTarget } = await loadEnv({
       FUNERAL_LEAD_WEBHOOK_URL: undefined,
       FUNERAL_LEAD_WEBHOOK_SECRET: undefined,
       LEAD_WEBHOOK_URL: undefined,
       LEAD_WEBHOOK_SECRET: undefined,
     });
-    expect(getFuneralLeadWebhookTarget()).toBeNull();
+    expect(getFuneralLeadWebhookTarget().url).toMatch(/^https:\/\//);
+    // The Revenue Leak destination is unaffected by the funeral default.
     expect(getLeadWebhookTarget()).toBeNull();
   });
 
