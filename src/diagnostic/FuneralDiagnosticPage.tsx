@@ -45,7 +45,7 @@ export default function FuneralDiagnosticPage() {
 
   useDocumentMeta(
     'Funeral Plan Scale Readiness Diagnostic | AI Video Systems',
-    'Free diagnostic for funeral plan providers, funeral groups and funeral directors: find out what a completed plan sale is really costing you, what every 100 enquiries turns into in plans and contribution, and the one constraint losing you the most plan sales.'
+    'Free diagnostic for funeral plan providers, funeral groups and funeral directors: find out what you really pay per lead and per plan sold, how much of your lead spend goes on enquiries that were never going to buy, and what that is leaving on the table every month.'
   );
 
   // The page is gated: nothing but the capture form renders until the server confirms a
