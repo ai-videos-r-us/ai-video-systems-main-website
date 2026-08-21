@@ -9,9 +9,9 @@ interface FuneralLeadGateProps {
 
 /** What the visitor gets for the email — every line is a number the diagnostic actually returns. */
 const PAYOFF = [
-  'What one completed plan sale is really costing you — not what an enquiry costs.',
-  'What every 100 enquiries you pay for currently turns into: plans on the books, and contribution in pounds.',
-  'The one constraint losing you the most plan sales right now, and what fixing it is worth per month.',
+  'What you really pay per plan sold, not per lead.',
+  'How much of your lead spend goes on enquiries that were never going to buy.',
+  'What one point of conversion is worth to you every month.',
 ];
 
 const inputClass = (hasError: boolean) =>
@@ -86,12 +86,10 @@ export default function FuneralLeadGate({ onUnlock }: FuneralLeadGateProps) {
         AI Video Systems &middot; Funeral Plan Scale Readiness Diagnostic
       </p>
       <h1 className="mt-4 font-display text-[30px] font-extrabold leading-[1.08] tracking-tight text-carbon sm:text-[40px]">
-        You are already paying for funeral plans you are not selling.
+        Your funeral plan leads cost too much and convert too little.
       </h1>
-      <p className="mt-4 text-[16px] leading-relaxed text-carbon/70">
-        Most providers can tell you their cost per enquiry. Far fewer can tell you what a completed plan sale actually
-        costs them — or where the other 90 enquiries in every 100 went. This free diagnostic gives you both numbers,
-        from your own figures, in under ten minutes.
+      <p className="mt-4 text-[17px] leading-relaxed text-carbon/70">
+        Work out what that is leaving on the table every month.
       </p>
 
       <ul className="mt-7 space-y-3 border-l-2 border-signal/30 pl-5">
@@ -203,8 +201,8 @@ export default function FuneralLeadGate({ onUnlock }: FuneralLeadGateProps) {
         </button>
 
         <p className="mt-5 text-[12px] leading-relaxed text-carbon/45">
-          No call and no download — the diagnostic opens on this page and takes 7–10 minutes. Your individual figures
-          stay confidential. By continuing you agree to our{' '}
+          No call, no download. Opens on this page, takes 7–10 minutes, your figures stay confidential. By continuing
+          you agree to our{' '}
           <a href={PRIVACY_POLICY_URL} className="underline hover:text-carbon">
             Privacy Policy
           </a>{' '}

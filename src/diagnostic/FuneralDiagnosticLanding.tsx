@@ -8,21 +8,21 @@ interface FuneralDiagnosticLandingProps {
 }
 
 const RECEIVES = [
-  'Your true cost per completed plan sale — not just your cost per enquiry.',
-  'What every 100 paid enquiries currently turns into: plans on the books, and contribution in pounds.',
-  'What one extra percentage point of enquiry-to-plan conversion would be worth to you every month.',
-  'What another £10,000 of acquisition would actually return at your conversion rate — and what it returns if your cost per enquiry rises 25% or 50%.',
-  'The contribution still sitting in enquiries you have already paid for and stopped working.',
-  'Seven category scores, the constraint most likely to break first, and the three things to fix before you scale.',
+  'What you actually pay per lead — and what you pay per plan sold.',
+  'How much of your lead spend goes on enquiries that were never going to buy.',
+  'What one extra percentage point of conversion would be worth to you every month.',
+  'What another £10,000 of lead spend would return at your conversion rate — and what it returns if your cost per lead rises 25% or 50%.',
+  'The contribution still sitting in leads you have already paid for and stopped working.',
+  'Seven category scores, the constraint costing you the most, and the three things to fix first.',
 ];
 
 const CURIOSITY_POINTS = [
-  'Whether cheap enquiries are turning into plans on the books, or just into activity.',
-  'Which stage is losing you the most plan sales: speed of contact, qualification, follow-up or trust.',
-  'What your current enquiry-to-plan rate costs you for every month it stays where it is.',
-  'Whether your team could convert more volume tomorrow, or whether extra enquiries would simply sit unworked.',
-  'How much of your plan volume depends on one platform, one campaign or one person.',
-  'What the enquiries you have already paid for are still worth if they were worked properly.',
+  'Whether the leads you buy are priced for the plans they actually produce.',
+  'How many of every 100 leads were never going to buy — and what those cost you.',
+  'Which stage loses the most: speed of contact, qualification, follow-up or trust.',
+  'What your current conversion rate costs you for every month it stays where it is.',
+  'Whether your team could work more volume tomorrow, or whether extra leads would sit untouched.',
+  'What the leads you have already paid for are still worth if they were worked properly.',
 ];
 
 const WHO_FOR = [
@@ -63,12 +63,11 @@ export default function FuneralDiagnosticLanding({ onStart, partnerName, firstNa
           Funeral Plan Scale Readiness Diagnostic
         </p>
         <h1 className="mt-4 font-display text-3xl font-bold leading-tight text-carbon sm:text-4xl md:text-5xl">
-          {firstName ? `${firstName}, let's work out what a completed plan sale is actually costing you.` : "Let's work out what a completed plan sale is actually costing you."}
+          {firstName ? `${firstName}, let's work out what your leads are really costing you.` : "Let's work out what your leads are really costing you."}
         </h1>
-        <p className="mx-auto mt-5 max-w-[640px] text-[16px] leading-relaxed text-carbon/65">
-          Answer a set of questions about how your enquiries are priced, handled and followed up. You get a scored
-          breakdown of your enquiry-to-plan system, the pound figure your current conversion rate leaves behind every
-          month, and the one constraint to fix before you spend another pound on acquisition.
+        <p className="mx-auto mt-5 max-w-[600px] text-[17px] leading-relaxed text-carbon/65">
+          A few questions about what you pay for leads and what happens to them. You get the pound figure you are
+          leaving on the table, and the one thing to fix first.
         </p>
         <p className="mt-5 font-mono text-[12.5px] uppercase tracking-[0.12em] text-carbon/45">
           Takes 7–10 minutes · Your figures stay confidential · No obligation
@@ -164,7 +163,7 @@ export default function FuneralDiagnosticLanding({ onStart, partnerName, firstNa
       <section className="border-t border-carbon/10 bg-carbon py-16 text-center sm:py-20">
         <div className="mx-auto max-w-[680px] px-5 md:px-8">
           <p className="font-display text-xl font-bold text-white sm:text-2xl">
-            Another hundred enquiries will not fix a business that is already losing the plans it has paid for.
+            A cheap lead that never buys is not a cheap lead.
           </p>
           <button
             type="button"
