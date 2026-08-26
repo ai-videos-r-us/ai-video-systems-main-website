@@ -3,8 +3,9 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { AUDIT_URL, trackAuditCtaClick } from '../components/CTA';
 
 const LINKS = [
-  { label: 'How It Works', href: '#how-it-works' },
-  { label: '90-Day Plan', href: '#90-day-plan' },
+  { label: 'AI Content Engine', href: '#content-engine' },
+  { label: 'Lead Gen Engine', href: '#lead-gen-engine' },
+  { label: 'Reviews', href: '#reviews' },
   { label: 'FAQ', href: '#faq' },
 ];
 

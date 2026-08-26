@@ -5,6 +5,10 @@ import { Eyebrow } from '../components/CTA';
 
 const FAQS = [
   {
+    q: 'Who do you work with?',
+    a: 'We work with service-based businesses, contractors, home service companies, roofers, funeral-related companies, coaches, consultants and small business owners who need a real marketing team behind them.',
+  },
+  {
     q: 'Does this replace our paid advertising or media buyer?',
     a: 'No. It strengthens an existing acquisition operation by adding a continuous creative, warm-audience and measurement layer. Confirm the exact scope during the audit.',
   },
@@ -21,8 +25,8 @@ const FAQS = [
     a: 'Relevance matters more in a narrow market. The messages are built from the specific problems, proof, objections and buying decisions inside that market. Fit still depends on audience size and unit economics, which are reviewed in the audit.',
   },
   {
-    q: 'How does the 90-day guarantee work?',
-    a: "Make back 100% of your fee in attributable new revenue within 90 days, or receive a refund. It applies while eligibility conditions are met: the agreed ad budget stays active, access and approvals are supplied on time, leads are contacted within the agreed response standard, and outcomes are recorded accurately in the CRM.",
+    q: 'How does the 45-day guarantee work?',
+    a: "Make back 100% of your fee in attributable new revenue within 45 days, or receive a refund. It applies while eligibility conditions are met: the agreed ad budget stays active, access and approvals are supplied on time, leads are contacted within the agreed response standard, and outcomes are recorded accurately in the CRM.",
   },
   {
     q: 'What does this cost?',
@@ -46,7 +50,7 @@ const FAQS = [
   },
   {
     q: 'How quickly will we see results?',
-    a: 'The first 90 days run in three phases: diagnose (days 1–14), launch (days 15–30) and improve (days 31–90) — see the 90-Day Plan above. Early creative and warm-audience campaigns typically launch inside the first month; qualified-appointment and revenue data builds through days 30–90 as winning messages are identified and scaled.',
+    a: 'The first weeks are diagnosis and build: creative, campaigns, qualification and tracking typically launch inside the first month. Qualified-appointment and revenue data builds from there as winning messages are identified and scaled — and the 45-day guarantee holds us to a commercial result, not activity.',
   },
 ];
 
@@ -111,7 +115,7 @@ export default function Faq() {
                     aria-expanded={open}
                   >
                     <span className="font-display text-[15.5px] font-bold text-carbon">{f.q}</span>
-                    <span className={`relative h-5 w-5 flex-shrink-0 text-action transition-transform duration-200 ${open ? 'rotate-45' : ''}`}>
+                    <span className={`relative h-5 w-5 flex-shrink-0 text-carbon transition-transform duration-200 ${open ? 'rotate-45' : ''}`}>
                       <span className="absolute left-1/2 top-1/2 h-[2.5px] w-4 -translate-x-1/2 -translate-y-1/2 bg-current" />
                       <span className="absolute left-1/2 top-1/2 h-4 w-[2.5px] -translate-x-1/2 -translate-y-1/2 bg-current" />
                     </span>

@@ -1,83 +1,57 @@
-import { lazy, Suspense } from 'react';
 import FadeIn from '../components/FadeIn';
 import CountUp from '../components/CountUp';
-import { Eyebrow, PrimaryCTA } from '../components/CTA';
+import { Eyebrow, PrimaryCTA, SecondaryCTA } from '../components/CTA';
 
-const SignalField = lazy(() => import('../components/SignalField'));
+const STATS = [
+  { value: <CountUp to={15} prefix="$" suffix="M+" duration={1.8} />, label: 'in Tracked Revenue.' },
+  { value: <CountUp to={96} suffix="+" duration={1.8} />, label: 'Clients.' },
+  { value: 'Two', label: 'Tailored Systems.' },
+] as const;
 
 export default function Hero() {
   return (
     <section id="top" className="relative overflow-hidden bg-white">
-      <div className="mx-auto grid max-w-[1360px] gap-10 px-5 pb-16 pt-12 md:px-8 md:pt-16 lg:grid-cols-[1.05fr_0.95fr]">
-        <div>
-          <FadeIn delay={0}>
-            <Eyebrow>For Established Service Businesses Spending $5k+/Month on Ads</Eyebrow>
-          </FadeIn>
-
-          <FadeIn delay={0.1}>
-            <h1 className="mt-5 font-display text-[clamp(2rem,4.4vw,3.6rem)] font-extrabold leading-[1.06] tracking-tight text-carbon">
-              Get More Qualified Sales Calls From the{' '}
-              <span className="text-signal">Same Ad Budget</span>
-            </h1>
-          </FadeIn>
-
-          <FadeIn delay={0.2}>
-            <p className="mt-7 max-w-[560px] text-[16.5px] leading-relaxed text-carbon/70">
-              We build and manage the buyer-aware video, retargeting and follow-up system that turns cold traffic
-              into better-prepared prospects — then shows you which messages create appointments and revenue.
-            </p>
-          </FadeIn>
-
-          <FadeIn delay={0.3}>
-            <div className="mt-8">
-              <PrimaryCTA placement="hero" />
-              <p className="mt-4 flex max-w-[520px] items-start gap-2.5 border-l-4 border-signal bg-cloud px-4 py-3 text-[13.5px] font-semibold leading-snug text-carbon">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" className="mt-0.5 flex-shrink-0 text-action">
-                  <path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" />
-                  <path d="M9 12l2 2 4-4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-                Find the biggest leak between ad spend and closed revenue — and see what we would fix first.
-              </p>
-            </div>
-          </FadeIn>
-
-          <FadeIn delay={0.4}>
-            <p className="mt-8 font-mono text-[11.5px] font-semibold uppercase tracking-[0.16em] text-carbon/55">
-              90-Day Revenue Guarantee · Fully Managed · No Weekly Filming
-            </p>
-          </FadeIn>
-        </div>
-
-        {/* Attention-to-revenue signal field */}
-        <FadeIn delay={0.35} x={30} y={0} className="relative min-h-[420px] lg:min-h-0">
-          <div className="absolute inset-0">
-            <Suspense fallback={<div className="flex h-full items-center justify-center"><img src="/brand/avs-symbol-black.svg" alt="" className="w-40 opacity-10" /></div>}>
-              <SignalField />
-            </Suspense>
+      <div className="mx-auto max-w-[1100px] px-5 pb-20 pt-14 text-center md:px-8 md:pb-24 md:pt-20">
+        <FadeIn delay={0}>
+          <div className="flex justify-center">
+            <Eyebrow>For Established Service Businesses</Eyebrow>
           </div>
+        </FadeIn>
 
-          <div className="pointer-events-none absolute left-0 top-4 border border-carbon/12 bg-white/90 px-3 py-2 backdrop-blur-sm">
-            <p className="font-mono text-[10px] uppercase tracking-wider text-carbon/50">Cold traffic</p>
-            <p className="font-display text-sm font-bold text-carbon">
-              <CountUp to={184203} duration={2.4} /> reached
-            </p>
+        <FadeIn delay={0.1}>
+          <p className="mt-6 font-display text-[clamp(2.2rem,5.2vw,4.2rem)] font-extrabold leading-[1.04] tracking-tight text-carbon">
+            {STATS.map((s) => (
+              <span key={s.label} className="block">
+                {s.value} <span className="text-carbon/60">{s.label}</span>
+              </span>
+            ))}
+          </p>
+        </FadeIn>
+
+        <FadeIn delay={0.2}>
+          <h1 className="mx-auto mt-8 max-w-[720px] font-display text-[clamp(1.25rem,2.3vw,1.7rem)] font-bold leading-snug text-carbon">
+            Business owners need ROI — not broken promises.
+          </h1>
+        </FadeIn>
+
+        <FadeIn delay={0.25}>
+          <p className="mx-auto mt-4 max-w-[680px] text-[16.5px] leading-relaxed text-carbon/70">
+            AI Video Systems leads with receipts: content, ads, lead generation, and a team that improves
+            everything daily — so no money is wasted.
+          </p>
+        </FadeIn>
+
+        <FadeIn delay={0.3}>
+          <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <PrimaryCTA placement="hero" />
+            <SecondaryCTA href="#systems">See the Two Systems</SecondaryCTA>
           </div>
-          <div className="pointer-events-none absolute right-0 top-1/2 border border-carbon/12 bg-white/90 px-3 py-2 backdrop-blur-sm">
-            <p className="font-mono text-[10px] uppercase tracking-wider text-carbon/50">Warm audience</p>
-            <p className="font-display text-sm font-bold text-signal">
-              <CountUp to={9412} duration={2.4} />
-            </p>
-          </div>
-          <div className="pointer-events-none absolute bottom-10 left-1/2 flex w-max -translate-x-1/2 items-center gap-2.5 border-l-4 border-signal bg-white px-4 py-2.5 shadow-[0_10px_28px_rgba(11,11,13,0.12)]">
-            <span className="flex h-7 w-7 items-center justify-center bg-signal">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
-                <rect x="3" y="5" width="18" height="16" rx="2" stroke="#fff" strokeWidth="1.8" />
-                <path d="M3 9h18M8 3v4M16 3v4" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" />
-                <path d="M9 14.5l2 2 4-4" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </span>
-            <p className="text-[12.5px] font-bold text-carbon">Qualified sales call booked</p>
-          </div>
+        </FadeIn>
+
+        <FadeIn delay={0.4}>
+          <p className="mt-9 font-mono text-[11.5px] font-semibold uppercase tracking-[0.16em] text-carbon/55">
+            45-Day Revenue Guarantee · Fully Managed · Receipts Included
+          </p>
         </FadeIn>
       </div>
     </section>

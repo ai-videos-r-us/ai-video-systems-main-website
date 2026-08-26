@@ -41,44 +41,27 @@ body,
   }
 }
 
-/* Traveling signal dot on thin red connector lines */
-.signal-track {
-  position: relative;
+/* Client logo bar — track scrolls left to right, duplicated content loops seamlessly */
+.marquee-track {
+  animation: marquee-ltr 55s linear infinite;
 }
-.signal-dot {
-  position: absolute;
-  width: 7px;
-  height: 7px;
-  margin: -3.5px;
-  border-radius: 50%;
-  background: #ff1f1f;
-  box-shadow: 0 0 8px rgba(255, 31, 31, 0.6);
+@keyframes marquee-ltr {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
-.signal-dot--v {
-  top: 0;
-  left: 50%;
-  animation: signal-v 2.4s linear infinite;
+.marquee-viewport:hover .marquee-track {
+  animation-play-state: paused;
 }
-@keyframes signal-v {
-  0% {
-    top: 0;
-    opacity: 0;
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
   }
-  12% {
-    opacity: 1;
-  }
-  88% {
-    opacity: 1;
-  }
-  100% {
-    top: 100%;
-    opacity: 0;
+  .marquee-viewport {
+    overflow-x: auto;
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .signal-dot--v {
-    animation: none;
-    top: 50%;
-  }
-}

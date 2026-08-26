@@ -2,15 +2,15 @@ import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './sections/Navbar';
 import Hero from './sections/Hero';
-import Problem from './sections/Problem';
-import Outcome from './sections/Outcome';
-import HowItWorks from './sections/HowItWorks';
-import FullyManaged from './sections/FullyManaged';
-import Testimonials from './sections/Testimonials';
-import Process from './sections/Process';
+import TwoSystems from './sections/TwoSystems';
+import ContentEngine from './sections/ContentEngine';
+import LogoMarquee from './sections/LogoMarquee';
+import LeadGenEngine from './sections/LeadGenEngine';
+import ProofWall from './sections/ProofWall';
 import Guarantee from './sections/Guarantee';
 import Fit from './sections/Fit';
 import Faq from './sections/Faq';
+import Articles from './sections/Articles';
 import FinalCta from './sections/FinalCta';
 import Footer from './sections/Footer';
 
@@ -25,15 +25,15 @@ function MainSite() {
     <main className="bg-white" style={{ overflowX: 'clip' }}>
       <Navbar />
       <Hero />
-      <Problem />
-      <Outcome />
-      <HowItWorks />
-      <FullyManaged />
-      <Testimonials />
-      <Process />
+      <TwoSystems />
+      <ContentEngine />
+      <LogoMarquee />
+      <LeadGenEngine />
+      <ProofWall />
       <Guarantee />
       <Fit />
       <Faq />
+      <Articles />
       <FinalCta />
       <Footer />
     </main>

@@ -2,7 +2,7 @@ import FadeIn from '../components/FadeIn';
 import { Eyebrow, PrimaryCTA } from '../components/CTA';
 
 const CONDITIONS = [
-  'Maintain the agreed advertising budget and keep the required campaigns active for the full 90 days',
+  'Maintain the agreed advertising budget and keep the required campaigns active for the full 45 days',
   'Supply required access, proof, assets and approvals within the agreed timelines',
   'Contact every lead within the agreed response-time standard and follow the documented sales process',
   'Record all lead, appointment, sale and revenue outcomes accurately in the agreed CRM',
@@ -11,16 +11,15 @@ const CONDITIONS = [
 
 export default function Guarantee() {
   return (
-    <section className="bg-cloud py-24 md:py-32">
+    <section className="bg-white py-24 md:py-32">
       <div className="mx-auto max-w-[1100px] px-5 md:px-8">
-        <div className="border-2 border-signal bg-white p-8 shadow-[0_30px_70px_rgba(255,31,31,0.1)] md:p-14">
+        <div className="border-2 border-signal bg-white p-8 shadow-[0_30px_70px_rgba(11,11,13,0.08)] md:p-14">
           <FadeIn>
-            <Eyebrow>90-Day Revenue Guarantee</Eyebrow>
+            <Eyebrow>45-Day Revenue Guarantee</Eyebrow>
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2 className="mt-5 font-display text-[clamp(1.8rem,3.4vw,2.8rem)] font-extrabold leading-[1.1] tracking-tight text-carbon">
-              Make Back <span className="text-signal">100% of Your Fee</span> in Attributable New Revenue Within 90
-              Days — or Receive a Refund
+              Make Back 100% of Your Fee in Attributable New Revenue Within 45 Days — or Receive a Refund
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>

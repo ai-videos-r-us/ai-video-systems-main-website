@@ -1,8 +1,9 @@
 import { AUDIT_URL, trackAuditCtaClick } from '../components/CTA';
 
 const QUICK_LINKS = [
-  { label: 'How It Works', href: '#how-it-works' },
-  { label: '90-Day Plan', href: '#90-day-plan' },
+  { label: 'The AI Content Engine', href: '#content-engine' },
+  { label: 'The Lead Gen Engine', href: '#lead-gen-engine' },
+  { label: 'Reviews', href: '#reviews' },
   { label: 'FAQ', href: '#faq' },
   { label: 'Contact', href: 'mailto:sean@aivideosystems.org' },
 ];
@@ -20,8 +21,8 @@ export default function Footer() {
           <div>
             <img src="/brand/avs-full-logo-white.svg" alt="AI Video Systems" className="h-12 w-auto" />
             <p className="mt-5 max-w-[340px] text-[14.5px] leading-relaxed text-steel">
-              AI Video Systems helps established service businesses turn more of their existing demand into
-              qualified sales calls and trackable revenue.
+              AI Video Systems installs two tailored marketing systems — the AI Content Engine and the Lead
+              Gen Engine — for established service businesses that need ROI they can see, backed by receipts.
             </p>
             <div className="mt-6 space-y-1.5 font-mono text-[12px] text-steel">
               <p>
@@ -78,7 +79,7 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-7 md:flex-row">
           <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-white/40">
-            More Qualified Sales Calls From the Ad Spend You Already Have
+            Two Tailored Systems · Receipts Included
           </p>
           <p className="font-mono text-[11px] text-white/30">
             © {new Date().getFullYear()} AI Video Systems. All rights reserved.
