@@ -72,7 +72,7 @@ export function Eyebrow({ children, light = false }: { children: ReactNode; ligh
   return (
     <p
       className={`inline-flex items-center gap-3 font-mono text-xs font-semibold uppercase tracking-[0.18em] ${
-        light ? 'text-steel' : 'text-action'
+        light ? 'text-steel' : 'text-carbon/60'
       }`}
     >
       <span className="inline-block h-[2px] w-6 bg-signal" />

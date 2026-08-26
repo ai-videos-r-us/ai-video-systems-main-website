@@ -25,7 +25,7 @@ export default function Fit() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2 className="mt-5 font-display text-[clamp(1.9rem,3.8vw,3.1rem)] font-extrabold leading-[1.08] tracking-tight text-carbon">
-              Built for Businesses With <span className="text-signal">Something Worth Scaling</span>
+              Built for Businesses With Something Worth Scaling
             </h2>
           </FadeIn>
         </div>
@@ -39,7 +39,7 @@ export default function Fit() {
               <ul className="mt-6 space-y-3">
                 {BEST_FIT.map((s) => (
                   <li key={s} className="flex items-start gap-2.5 text-[14px] text-white/85">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" className="mt-0.5 flex-shrink-0 text-signal">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" className="mt-0.5 flex-shrink-0 text-white/70">
                       <path d="M5 13l4 4 10-10" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     {s}

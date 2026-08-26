@@ -10,7 +10,7 @@ export default function FinalCta() {
         </FadeIn>
         <FadeIn delay={0.1}>
           <h2 className="mx-auto mt-5 font-display text-[clamp(1.9rem,3.8vw,3.1rem)] font-extrabold leading-[1.08] tracking-tight text-carbon">
-            Find the Biggest Leak Between <span className="text-signal">Your Ad Spend and Closed Revenue</span>
+            Find the Biggest Leak Between Your Ad Spend and Closed Revenue
           </h2>
         </FadeIn>
         <FadeIn delay={0.2}>
@@ -27,7 +27,7 @@ export default function FinalCta() {
         </FadeIn>
         <FadeIn delay={0.4}>
           <p className="mt-6 font-mono text-[11.5px] font-semibold uppercase tracking-[0.16em] text-carbon/50">
-            For established service businesses spending $5,000+ per month on ads
+            One call — routed to the system your business actually needs
           </p>
         </FadeIn>
       </div>
