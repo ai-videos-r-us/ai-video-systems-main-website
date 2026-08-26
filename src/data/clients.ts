@@ -16,12 +16,12 @@ export const CLIENT_LOGOS: ClientLogo[] = [
   { src: '/clients/logo-09.webp', alt: 'Home Transformations' },
   { src: '/clients/logo-10.webp', alt: 'Hearthline Kitchens' },
   { src: '/clients/logo-11.webp', alt: 'Ironclad Finance' },
-  { src: '/clients/logo-12.webp', alt: 'Client logo' },
+  { src: '/clients/logo-12.webp', alt: 'Lifesum' },
   { src: '/clients/logo-13.webp', alt: 'Listabl' },
   { src: '/clients/logo-14.webp', alt: 'Mortgage Fit' },
   { src: '/clients/logo-15.webp', alt: 'My Lead Machine' },
   { src: '/clients/logo-16.webp', alt: 'Novus Digital' },
-  { src: '/clients/logo-17.webp', alt: 'Client logo' },
+  { src: '/clients/logo-17.webp', alt: 'Quick Consign' },
   { src: '/clients/logo-18.webp', alt: 'Straight Up Stays' },
 ];
 
