@@ -3,10 +3,10 @@ import { Eyebrow, PrimaryCTA } from '../components/CTA';
 
 export default function LeadGenEngine() {
   return (
-    <section id="lead-gen-engine" className="clip-angle-both bg-carbon pb-32 pt-32 text-white md:pb-40 md:pt-40">
+    <section id="lead-gen-engine" className="clip-angle-both bg-carbon pb-24 pt-24 text-white md:pb-28 md:pt-28">
       <div className="mx-auto max-w-[1360px] px-5 md:px-8">
-        <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-          <div>
+        <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
+          <div className="max-w-[600px]">
             <FadeIn>
               <Eyebrow light>System Two</Eyebrow>
             </FadeIn>
@@ -41,32 +41,17 @@ export default function LeadGenEngine() {
             </FadeIn>
           </div>
 
-          <FadeIn delay={0.2} x={30} y={0}>
-            <div className="mx-auto flex max-w-[420px] flex-col items-center gap-5">
-              <figure className="border border-white/15 bg-white p-2.5">
-                <img
-                  src="/reviews/review-06.webp"
-                  alt="WhatsApp message from a client reporting 338 leads, 26 sales at just under a 17% close rate and trending to 21% overall for the month"
-                  width={283}
-                  height={608}
-                  loading="lazy"
-                  className="h-auto w-[240px] md:w-[260px]"
-                />
-                <figcaption className="px-2 py-2.5 text-center font-mono text-[10.5px] uppercase tracking-wider text-carbon/55">
-                  Actual client report · funeral comparison
-                </figcaption>
-              </figure>
-              <div className="grid w-full grid-cols-2 gap-4">
-                <div className="border border-white/15 bg-white/[0.04] px-4 py-3.5 text-center">
-                  <p className="font-display text-2xl font-extrabold text-white">338</p>
-                  <p className="mt-1 font-mono text-[10.5px] uppercase tracking-wider text-steel">Leads in one month</p>
-                </div>
-                <div className="border border-white/15 bg-white/[0.04] px-4 py-3.5 text-center">
-                  <p className="font-display text-2xl font-extrabold text-white">21%</p>
-                  <p className="mt-1 font-mono text-[10.5px] uppercase tracking-wider text-steel">Lead-to-sale rate</p>
-                </div>
-              </div>
-            </div>
+          {/* The receipts composite is rendered on the same carbon as the section
+              background, so it sits directly on the page with no frame. */}
+          <FadeIn delay={0.2} x={24} y={0}>
+            <img
+              src="/reviews/leadgen-receipts.webp"
+              alt="Live campaign receipts on five phones — Meta Ads Manager results, a client's WhatsApp report of 338 leads and 26 sales, and real lead conversations"
+              width={1080}
+              height={1080}
+              loading="lazy"
+              className="mx-auto h-auto w-full max-w-[560px]"
+            />
           </FadeIn>
         </div>
       </div>
