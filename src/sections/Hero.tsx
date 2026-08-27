@@ -36,8 +36,8 @@ export default function Hero() {
 
         <FadeIn delay={0.25}>
           <p className="mx-auto mt-4 max-w-[680px] text-[16.5px] leading-relaxed text-carbon/70">
-            AI Video Systems leads with receipts: content, ads, lead generation, and a team that improves
-            everything daily — so no money is wasted.
+            We install and run your content and lead generation for you — content, ads, CRM, and a team that
+            improves everything daily, so no money is wasted.
           </p>
         </FadeIn>
 
