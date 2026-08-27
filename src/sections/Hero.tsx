@@ -49,8 +49,7 @@ export default function Hero() {
 
         <FadeIn delay={0.35}>
           <p className="mx-auto mt-4 max-w-[440px] text-[13.5px] leading-snug text-carbon/60">
-            One 20-minute call. Leave knowing your biggest leak and what we&rsquo;d fix first — whether or not
-            you qualify.
+            One 20-minute call. Leave knowing your biggest leak and what we&rsquo;d fix first.
           </p>
         </FadeIn>
 
