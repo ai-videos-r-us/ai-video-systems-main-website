@@ -1,54 +1,31 @@
 import FadeIn from '../components/FadeIn';
 import { Eyebrow, PrimaryCTA } from '../components/CTA';
 
-const CONDITIONS = [
-  'Maintain the agreed advertising budget and keep the required campaigns active for the full 45 days',
-  'Supply required access, proof, assets and approvals within the agreed timelines',
-  'Contact every lead within the agreed response-time standard and follow the documented sales process',
-  'Record all lead, appointment, sale and revenue outcomes accurately in the agreed CRM',
-  'Keep the offer, pricing, service area, fulfilment capacity and sales team materially consistent',
-];
-
 export default function Guarantee() {
   return (
     <section className="bg-white py-24 md:py-32">
       <div className="mx-auto max-w-[1100px] px-5 md:px-8">
         <div className="border-2 border-signal bg-white p-8 shadow-[0_30px_70px_rgba(11,11,13,0.08)] md:p-14">
           <FadeIn>
-            <Eyebrow>45-Day Revenue Guarantee</Eyebrow>
+            <Eyebrow>30-Day Money-Back Guarantee</Eyebrow>
           </FadeIn>
           <FadeIn delay={0.1}>
             <h2 className="mt-5 font-display text-[clamp(1.8rem,3.4vw,2.8rem)] font-extrabold leading-[1.1] tracking-tight text-carbon">
-              Make Back 100% of Your Fee in Attributable New Revenue Within 45 Days — or Receive a Refund
+              Qualify as a Client and Your First 30 Days Are Risk-Free
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
             <p className="mt-6 max-w-[760px] text-[15.5px] leading-relaxed text-carbon/70">
-              Our compensation is aligned with the commercial result the system is built to produce — not with post
-              volume or views. The guarantee is available to approved clients who meet the conditions below.
+              Not every business qualifies — the Revenue System Audit decides that before any money changes
+              hands. If we take you on, we back the work with a simple promise: if it&rsquo;s not right within
+              your first 30 days — for any reason — you get your money back.
             </p>
           </FadeIn>
-
           <FadeIn delay={0.25}>
-            <div className="mt-8">
-              <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-carbon/50">
-                Guarantee eligibility conditions
-              </p>
-              <ul className="mt-4 grid gap-x-8 gap-y-2.5 md:grid-cols-2">
-                {CONDITIONS.map((c) => (
-                  <li key={c} className="flex items-start gap-2.5 text-[13.5px] font-medium text-carbon/75">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" className="mt-0.5 flex-shrink-0 text-action">
-                      <path d="M5 13l4 4 10-10" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                    {c}
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-4 font-mono text-[11px] leading-relaxed text-carbon/45">
-                Revenue is counted only when attributable to the system and supported by verifiable sales records.
-                Advertising spend and third-party software costs are excluded.
-              </p>
-            </div>
+            <p className="mt-5 font-mono text-[11px] leading-relaxed text-carbon/45">
+              Qualification is confirmed on the Revenue System Audit. Advertising spend and third-party
+              software costs are excluded.
+            </p>
           </FadeIn>
 
           <FadeIn delay={0.3}>
