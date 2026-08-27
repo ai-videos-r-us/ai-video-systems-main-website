@@ -23,7 +23,7 @@ export function trackAuditCtaClick(placement: string): void {
 }
 
 export function PrimaryCTA({
-  children = 'Book a Revenue System Audit',
+  children = 'See If You Qualify',
   className = '',
   placement = 'unknown',
 }: {

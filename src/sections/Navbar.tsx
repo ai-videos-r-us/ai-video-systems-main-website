@@ -40,7 +40,7 @@ export default function Navbar() {
             className="inline-block bg-signal px-4 py-2.5 font-display text-xs font-bold uppercase tracking-wider text-white transition-colors hover:bg-action sm:px-5"
             style={{ clipPath: 'polygon(0 0, 100% 0, calc(100% - 10px) 100%, 0 100%)' }}
           >
-            Book a Revenue System Audit
+            See If You Qualify
           </a>
           <button
             type="button"

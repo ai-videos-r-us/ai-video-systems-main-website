@@ -16,15 +16,15 @@ export default function Guarantee() {
           </FadeIn>
           <FadeIn delay={0.2}>
             <p className="mt-6 max-w-[760px] text-[15.5px] leading-relaxed text-carbon/70">
-              Not every business qualifies — the Revenue System Audit decides that before any money changes
-              hands. If we take you on, we back the work with a simple promise: if it&rsquo;s not right within
-              your first 30 days — for any reason — you get your money back.
+              Not every business qualifies — one short call decides that before any money changes hands. If
+              we take you on, we back the work with a simple promise: if it&rsquo;s not right within your
+              first 30 days — for any reason — you get your money back.
             </p>
           </FadeIn>
           <FadeIn delay={0.25}>
             <p className="mt-5 font-mono text-[11px] leading-relaxed text-carbon/45">
-              Qualification is confirmed on the Revenue System Audit. Advertising spend and third-party
-              software costs are excluded.
+              Qualification is decided on the call. Advertising spend and third-party software costs are
+              excluded.
             </p>
           </FadeIn>
 
