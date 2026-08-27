@@ -12,17 +12,46 @@ export default function ContentEngine() {
     const video = videoRef.current;
     if (!video) return;
     if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) {
-      video.pause();
+      video.controls = true;
       return;
     }
-    // Autoplay is deferred by the browser when the page loads in a background
-    // tab — retry whenever the tab becomes visible.
+
+    let inView = false;
     const tryPlay = () => {
+      video.muted = true; // iOS drops autoplay permission if muted isn't set at play time
       video.play().catch(() => {});
     };
-    tryPlay();
-    document.addEventListener('visibilitychange', tryPlay);
-    return () => document.removeEventListener('visibilitychange', tryPlay);
+
+    // Drive playback from viewport visibility: iOS suspends autoplaying
+    // videos that start offscreen and never resumes them on scroll. Pausing
+    // offscreen also saves battery.
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        inView = entry.isIntersecting;
+        if (inView) tryPlay();
+        else video.pause();
+      },
+      { threshold: 0.2 }
+    );
+    io.observe(video);
+
+    // Background-tab loads defer autoplay — retry when the tab is shown.
+    const onVisible = () => {
+      if (document.visibilityState === 'visible' && inView) tryPlay();
+    };
+    document.addEventListener('visibilitychange', onVisible);
+
+    // Low Power Mode rejects non-gesture play(); a touch counts as a gesture.
+    const onTouch = () => {
+      if (inView && video.paused) tryPlay();
+    };
+    document.addEventListener('touchstart', onTouch, { passive: true });
+
+    return () => {
+      io.disconnect();
+      document.removeEventListener('visibilitychange', onVisible);
+      document.removeEventListener('touchstart', onTouch);
+    };
   }, []);
 
   return (
@@ -72,9 +101,8 @@ export default function ContentEngine() {
                 poster="/videos/avs-showreel-poster.webp"
                 muted
                 loop
-                autoPlay
                 playsInline
-                preload="metadata"
+                preload="auto"
                 aria-label="AI Video Systems showreel — real client creative playing on a phone"
                 className="h-auto w-[min(74vw,330px)] lg:w-[400px] xl:w-[430px]"
               />
