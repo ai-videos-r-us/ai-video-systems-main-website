@@ -46,18 +46,6 @@ export const REVIEW_SHOTS: ReviewShot[] = [
     height: 286,
   },
   {
-    src: '/reviews/review-04.webp',
-    alt: 'LinkedIn recommendation from Steve Hallam, Real-Estate Lender at Zenzic Capital — “He very quickly grasped the specific sector of investment banking I work in… I would have no hesitation in recommending his services.”',
-    width: 1080,
-    height: 343,
-  },
-  {
-    src: '/reviews/review-07.webp',
-    alt: 'Instagram comments and WhatsApp messages from qualified mortgage leads asking to apply, generated for Ironclad Finance',
-    width: 940,
-    height: 788,
-  },
-  {
     src: '/reviews/review-05.webp',
     alt: 'LinkedIn recommendation from Dave Wiltsher, specialist finance broker — “Sean is nothing but professional… sets him heads and tails above most marketers.”',
     width: 1400,
