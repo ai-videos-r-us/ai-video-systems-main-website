@@ -248,8 +248,7 @@ export default function Calculator({ firstName }: { firstName?: string }) {
         </h2>
         <p className="mt-4 max-w-[60ch] text-[15px] leading-relaxed text-white/75">
           Knowing which stage costs you the most is not the same as knowing what&rsquo;s causing it, what fixes it, or who
-          builds it. That&rsquo;s a Revenue System Audit &mdash; 45 minutes on your actual ad account and CRM. You leave
-          with the fix mapped out whether or not we work together.
+          builds it. That&rsquo;s what the call is for &mdash; 45 minutes on your actual ad account and CRM. You leave          with the fix mapped out whether or not we work together.
         </p>
         <p className="mt-3 max-w-[60ch] text-[15px] leading-relaxed text-white/75">
           I run these myself, so I take a limited number each month.

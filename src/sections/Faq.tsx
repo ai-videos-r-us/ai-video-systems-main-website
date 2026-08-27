@@ -10,7 +10,7 @@ const FAQS = [
   },
   {
     q: 'Does this replace our paid advertising or media buyer?',
-    a: 'No. It strengthens an existing acquisition operation by adding a continuous creative, warm-audience and measurement layer. Confirm the exact scope during the audit.',
+    a: 'No. It strengthens an existing acquisition operation by adding a continuous creative, warm-audience and measurement layer. Confirm the exact scope on the call.',
   },
   {
     q: 'We already post content. How is this different?',
@@ -22,31 +22,31 @@ const FAQS = [
   },
   {
     q: 'Can this work with a specialist audience?',
-    a: 'Relevance matters more in a narrow market. The messages are built from the specific problems, proof, objections and buying decisions inside that market. Fit still depends on audience size and unit economics, which are reviewed in the audit.',
+    a: 'Relevance matters more in a narrow market. The messages are built from the specific problems, proof, objections and buying decisions inside that market. Fit still depends on audience size and unit economics, which are reviewed on the call.',
   },
   {
     q: 'How does the 30-day money-back guarantee work?',
-    a: 'Simply: qualify as a client on the Revenue System Audit, and your engagement starts with a 30-day money-back guarantee. If you decide within the first 30 days that it isn’t right — for any reason — you get your fee back. Advertising spend and third-party software costs are excluded.',
+    a: 'Simply: qualify as a client on the call, and your engagement starts with a 30-day money-back guarantee. If you decide within the first 30 days that it isn’t right — for any reason — you get your fee back. Advertising spend and third-party software costs are excluded.',
   },
   {
     q: 'What does this cost?',
-    a: "It's priced as a one-time system installation plus ongoing monthly management — not a per-video fee. The investment is anchored to the value of creating additional qualified demand for a business already spending $5k+/month on ads, not to a fixed number of deliverables, and your paid media budget stays separate and remains yours. Exact numbers are confirmed during the Revenue System Audit once we understand your economics.",
+    a: "It's priced as a one-time system installation plus ongoing monthly management — not a per-video fee. The investment is anchored to the value of creating additional qualified demand for a business already spending $5k+/month on ads, not to a fixed number of deliverables, and your paid media budget stays separate and remains yours. Exact numbers are confirmed on the call once we understand your economics.",
   },
   {
     q: 'Do you replace our existing agency or media buyer?',
-    a: "No — it's built to sit alongside them. We add the buyer-aware creative, warm-audience retargeting and revenue-feedback layer most agencies aren't scoped to build. The audit maps exactly what sits inside and outside your current agency's remit before anything starts.",
+    a: "No — it's built to sit alongside them. We add the buyer-aware creative, warm-audience retargeting and revenue-feedback layer most agencies aren't scoped to build. The call maps exactly what sits inside and outside your current agency's remit before anything starts.",
   },
   {
     q: 'Our campaigns already look like they’re performing — why would we need this?',
-    a: 'A healthy cost per lead can hide a weak downstream result. Platform dashboards show clicks and leads; they don’t show which message actually produced a qualified appointment or a sale. The audit checks whether your qualified-appointment rate, sales conversion and customer acquisition cost tell the same story as the dashboard — and if they do, this isn’t the right fit.',
+    a: 'A healthy cost per lead can hide a weak downstream result. Platform dashboards show clicks and leads; they don’t show which message actually produced a qualified appointment or a sale. The call checks whether your qualified-appointment rate, sales conversion and customer acquisition cost tell the same story as the dashboard — and if they do, this isn’t the right fit.',
   },
   {
     q: 'Why not just increase our ad budget instead?',
-    a: 'Increasing spend multiplies whatever is already happening in your funnel — including the leaks. If the constraint is trust, qualification or follow-up rather than traffic volume, more budget just produces more of the same weak conversations at a higher cost. The audit identifies the specific leak so you know whether spend is actually the constraint before you commit more of it.',
+    a: 'Increasing spend multiplies whatever is already happening in your funnel — including the leaks. If the constraint is trust, qualification or follow-up rather than traffic volume, more budget just produces more of the same weak conversations at a higher cost. The call identifies the specific leak so you know whether spend is actually the constraint before you commit more of it.',
   },
   {
     q: 'What if the real problem turns out to be our sales team, not marketing?',
-    a: "Then we'll say so. The audit is a diagnosis, not a pitch — if the biggest leak is offer, sales process, follow-up or fulfilment rather than demand, that's the honest read you'll get, and it may mean this isn't the right engagement yet.",
+    a: "Then we'll say so. The call is a diagnosis, not a pitch — if the biggest leak is offer, sales process, follow-up or fulfilment rather than demand, that's the honest read you'll get, and it may mean this isn't the right engagement yet.",
   },
   {
     q: 'How quickly will we see results?',

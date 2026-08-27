@@ -36,7 +36,7 @@ export default function Footer() {
                   onClick={() => trackAuditCtaClick('footer')}
                   className="text-signal hover:text-white"
                 >
-                  Book a Revenue System Audit →
+                  See If You Qualify →
                 </a>
               </p>
               <p>AI Video Systems Ltd</p>
