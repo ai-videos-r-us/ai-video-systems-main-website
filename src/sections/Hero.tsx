@@ -50,7 +50,7 @@ export default function Hero() {
 
         <FadeIn delay={0.4}>
           <p className="mt-9 font-mono text-[11.5px] font-semibold uppercase tracking-[0.16em] text-carbon/55">
-            45-Day Revenue Guarantee · Fully Managed · Receipts Included
+            30-Day Money-Back Guarantee · Fully Managed · Receipts Included
           </p>
         </FadeIn>
       </div>

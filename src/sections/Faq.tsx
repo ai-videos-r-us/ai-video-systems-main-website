@@ -25,8 +25,8 @@ const FAQS = [
     a: 'Relevance matters more in a narrow market. The messages are built from the specific problems, proof, objections and buying decisions inside that market. Fit still depends on audience size and unit economics, which are reviewed in the audit.',
   },
   {
-    q: 'How does the 45-day guarantee work?',
-    a: "Make back 100% of your fee in attributable new revenue within 45 days, or receive a refund. It applies while eligibility conditions are met: the agreed ad budget stays active, access and approvals are supplied on time, leads are contacted within the agreed response standard, and outcomes are recorded accurately in the CRM.",
+    q: 'How does the 30-day money-back guarantee work?',
+    a: 'Simply: qualify as a client on the Revenue System Audit, and your engagement starts with a 30-day money-back guarantee. If you decide within the first 30 days that it isn’t right — for any reason — you get your fee back. Advertising spend and third-party software costs are excluded.',
   },
   {
     q: 'What does this cost?',
@@ -50,7 +50,7 @@ const FAQS = [
   },
   {
     q: 'How quickly will we see results?',
-    a: 'The first weeks are diagnosis and build: creative, campaigns, qualification and tracking typically launch inside the first month. Qualified-appointment and revenue data builds from there as winning messages are identified and scaled — and the 45-day guarantee holds us to a commercial result, not activity.',
+    a: 'The first weeks are diagnosis and build: creative, campaigns, qualification and tracking typically launch inside the first month. Qualified-appointment and revenue data builds from there as winning messages are identified and scaled — and your first 30 days are covered by the money-back guarantee.',
   },
 ];
 
