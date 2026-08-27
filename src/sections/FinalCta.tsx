@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import FadeIn from '../components/FadeIn';
 import { Eyebrow, PrimaryCTA } from '../components/CTA';
 
@@ -21,8 +22,14 @@ export default function FinalCta() {
           </p>
         </FadeIn>
         <FadeIn delay={0.3}>
-          <div className="mt-9 flex justify-center">
+          <div className="mt-9 flex flex-col items-center gap-5">
             <PrimaryCTA placement="final-cta" />
+            <Link
+              to="/revenue-leak-calculator"
+              className="text-[13.5px] font-semibold text-carbon/60 underline decoration-carbon/25 underline-offset-4 transition-colors hover:text-carbon"
+            >
+              Not ready for a call? Run your numbers through the free Revenue Leak Calculator →
+            </Link>
           </div>
         </FadeIn>
         <FadeIn delay={0.4}>
