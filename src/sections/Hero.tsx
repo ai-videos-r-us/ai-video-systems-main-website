@@ -47,8 +47,15 @@ export default function Hero() {
           </div>
         </FadeIn>
 
+        <FadeIn delay={0.35}>
+          <p className="mx-auto mt-4 max-w-[440px] text-[13.5px] leading-snug text-carbon/60">
+            One 20-minute call. Leave knowing your biggest leak and what we&rsquo;d fix first — whether or not
+            you qualify.
+          </p>
+        </FadeIn>
+
         <FadeIn delay={0.4}>
-          <p className="mt-9 font-mono text-[11.5px] font-semibold uppercase tracking-[0.16em] text-carbon/55">
+          <p className="mt-8 font-mono text-[11.5px] font-semibold uppercase tracking-[0.16em] text-carbon/55">
             30-Day Money-Back Guarantee · Fully Managed · Receipts Included
           </p>
         </FadeIn>

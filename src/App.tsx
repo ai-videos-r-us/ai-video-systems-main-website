@@ -25,9 +25,9 @@ function MainSite() {
     <main className="bg-white" style={{ overflowX: 'clip' }}>
       <Navbar />
       <Hero />
+      <LogoMarquee />
       <TwoSystems />
       <ContentEngine />
-      <LogoMarquee />
       <LeadGenEngine />
       <ProofWall />
       <Guarantee />
