@@ -1,18 +1,35 @@
+import { useEffect, useRef } from 'react';
 import FadeIn from '../components/FadeIn';
 import { Eyebrow, PrimaryCTA } from '../components/CTA';
 
-const SHOWREEL = [
-  { src: '/videos/compare-funerals.mp4', label: 'Compare Funerals' },
-  { src: '/videos/novus-digital.mp4', label: 'Novus Digital' },
-  { src: '/videos/pn-digital.mp4', label: 'PN Digital' },
-];
-
+// The showreel is a phone mockup rendered on a pure-white canvas, so it sits
+// directly on the section background with no card, border or mask — it reads
+// as part of the page itself.
 export default function ContentEngine() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) {
+      video.pause();
+      return;
+    }
+    // Autoplay is deferred by the browser when the page loads in a background
+    // tab — retry whenever the tab becomes visible.
+    const tryPlay = () => {
+      video.play().catch(() => {});
+    };
+    tryPlay();
+    document.addEventListener('visibilitychange', tryPlay);
+    return () => document.removeEventListener('visibilitychange', tryPlay);
+  }, []);
+
   return (
-    <section id="content-engine" className="bg-white py-24 md:py-32">
+    <section id="content-engine" className="relative overflow-hidden bg-white py-24 md:py-28 lg:py-32">
       <div className="mx-auto max-w-[1360px] px-5 md:px-8">
-        <div className="grid gap-12 lg:grid-cols-[1fr_1fr] lg:items-center">
-          <div>
+        <div className="grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8">
+          <div className="max-w-[600px]">
             <FadeIn>
               <Eyebrow>System One</Eyebrow>
             </FadeIn>
@@ -47,31 +64,24 @@ export default function ContentEngine() {
             </FadeIn>
           </div>
 
-          <FadeIn delay={0.2} x={30} y={0}>
-            <div className="grid gap-4">
-              {SHOWREEL.map((v, i) => (
-                <figure
-                  key={v.src}
-                  className={`relative overflow-hidden border border-carbon/12 bg-carbon ${i === 1 ? 'lg:ml-10' : ''}`}
-                >
-                  <video
-                    src={v.src}
-                    muted
-                    loop
-                    autoPlay
-                    playsInline
-                    preload="metadata"
-                    className="aspect-[840/472] w-full object-cover"
-                  />
-                  <figcaption className="absolute bottom-0 left-0 bg-white px-3 py-1.5 font-mono text-[10.5px] font-semibold uppercase tracking-wider text-carbon">
-                    {v.label}
-                  </figcaption>
-                </figure>
-              ))}
-              <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-carbon/45">
-                Real client creative produced by the engine
-              </p>
-            </div>
+          <FadeIn delay={0.2} x={24} y={0}>
+            <figure className="flex flex-col items-center">
+              <video
+                ref={videoRef}
+                src="/videos/avs-showreel.mp4"
+                poster="/videos/avs-showreel-poster.webp"
+                muted
+                loop
+                autoPlay
+                playsInline
+                preload="metadata"
+                aria-label="AI Video Systems showreel — real client creative playing on a phone"
+                className="h-auto w-[min(74vw,330px)] lg:w-[400px] xl:w-[430px]"
+              />
+              <figcaption className="mt-2 font-mono text-[11px] uppercase tracking-[0.16em] text-carbon/45">
+                Real client creative · one engine, every platform
+              </figcaption>
+            </figure>
           </FadeIn>
         </div>
       </div>
