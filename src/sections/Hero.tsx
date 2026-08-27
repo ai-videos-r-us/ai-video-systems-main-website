@@ -1,6 +1,6 @@
 import FadeIn from '../components/FadeIn';
 import CountUp from '../components/CountUp';
-import { Eyebrow, PrimaryCTA, SecondaryCTA } from '../components/CTA';
+import { Eyebrow, PrimaryCTA } from '../components/CTA';
 
 const STATS = [
   { value: <CountUp to={15} prefix="$" suffix="M+" duration={1.8} />, label: 'in Tracked Revenue.' },
@@ -42,9 +42,8 @@ export default function Hero() {
         </FadeIn>
 
         <FadeIn delay={0.3}>
-          <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <div className="mt-9 flex justify-center">
             <PrimaryCTA placement="hero" />
-            <SecondaryCTA href="#systems">See the Two Systems</SecondaryCTA>
           </div>
         </FadeIn>
 
