@@ -15,12 +15,6 @@ export default function ProofWall() {
               Real Businesses. Real Results. Receipts Included.
             </h2>
           </FadeIn>
-          <FadeIn delay={0.2}>
-            <p className="mt-6 text-[16px] leading-relaxed text-carbon/70">
-              Straight from our clients — LinkedIn recommendations, WhatsApp reports and live lead
-              conversations, exactly as they arrived.
-            </p>
-          </FadeIn>
         </div>
 
         <FadeIn delay={0.2}>
