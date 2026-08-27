@@ -1,28 +1,32 @@
 export interface ClientLogo {
   src: string;
   alt: string;
+  /** Intrinsic pixel size — rendered as width/height attributes so every
+   *  marquee slot reserves its exact space before the file loads. */
+  width: number;
+  height: number;
 }
 
 // Order matches the logo list supplied for the client bar.
 export const CLIENT_LOGOS: ClientLogo[] = [
-  { src: '/clients/logo-01.svg', alt: 'Client logo' },
-  { src: '/clients/logo-02.svg', alt: 'PN Digital' },
-  { src: '/clients/logo-03.webp', alt: 'Stonebridge' },
-  { src: '/clients/logo-04.webp', alt: 'Black Sheep Coffee' },
-  { src: '/clients/logo-05.webp', alt: 'Bristol CBD' },
-  { src: '/clients/logo-06.webp', alt: 'Clear Sky' },
-  { src: '/clients/logo-07.webp', alt: 'Credit Ascension' },
-  { src: '/clients/logo-08.webp', alt: 'Gregory Law Financial Planning' },
-  { src: '/clients/logo-09.webp', alt: 'Home Transformations' },
-  { src: '/clients/logo-10.webp', alt: 'Hearthline Kitchens' },
-  { src: '/clients/logo-11.webp', alt: 'Ironclad Finance' },
-  { src: '/clients/logo-12.webp', alt: 'Lifesum' },
-  { src: '/clients/logo-13.webp', alt: 'Listabl' },
-  { src: '/clients/logo-14.webp', alt: 'Mortgage Fit' },
-  { src: '/clients/logo-15.webp', alt: 'My Lead Machine' },
-  { src: '/clients/logo-16.webp', alt: 'Novus Digital' },
-  { src: '/clients/logo-17.webp', alt: 'Quick Consign' },
-  { src: '/clients/logo-18.webp', alt: 'Straight Up Stays' },
+  { src: '/clients/logo-01.svg', alt: 'Client logo', width: 278, height: 145 },
+  { src: '/clients/logo-02.svg', alt: 'PN Digital', width: 791, height: 188 },
+  { src: '/clients/logo-03.webp', alt: 'Stonebridge', width: 359, height: 107 },
+  { src: '/clients/logo-04.webp', alt: 'Black Sheep Coffee', width: 240, height: 240 },
+  { src: '/clients/logo-05.webp', alt: 'Bristol CBD', width: 240, height: 240 },
+  { src: '/clients/logo-06.webp', alt: 'Clear Sky', width: 513, height: 240 },
+  { src: '/clients/logo-07.webp', alt: 'Credit Ascension', width: 240, height: 240 },
+  { src: '/clients/logo-08.webp', alt: 'Gregory Law Financial Planning', width: 1057, height: 207 },
+  { src: '/clients/logo-09.webp', alt: 'Home Transformations', width: 240, height: 240 },
+  { src: '/clients/logo-10.webp', alt: 'Hearthline Kitchens', width: 240, height: 240 },
+  { src: '/clients/logo-11.webp', alt: 'Ironclad Finance', width: 916, height: 240 },
+  { src: '/clients/logo-12.webp', alt: 'Lifesum', width: 225, height: 225 },
+  { src: '/clients/logo-13.webp', alt: 'Listabl', width: 236, height: 65 },
+  { src: '/clients/logo-14.webp', alt: 'Mortgage Fit', width: 184, height: 175 },
+  { src: '/clients/logo-15.webp', alt: 'My Lead Machine', width: 240, height: 240 },
+  { src: '/clients/logo-16.webp', alt: 'Novus Digital', width: 240, height: 240 },
+  { src: '/clients/logo-17.webp', alt: 'Quick Consign', width: 240, height: 240 },
+  { src: '/clients/logo-18.webp', alt: 'Straight Up Stays', width: 582, height: 240 },
 ];
 
 export interface ReviewShot {
@@ -32,8 +36,8 @@ export interface ReviewShot {
   height: number;
 }
 
-// Screenshot proof displayed in the reviews wall. review-06 is used inside the
-// Lead Gen Engine section as the featured client report instead.
+// Screenshot proof displayed in the reviews wall. The Lead Gen Engine section
+// uses its own five-phone receipts composite instead.
 export const REVIEW_SHOTS: ReviewShot[] = [
   {
     src: '/reviews/review-01.webp',
@@ -49,7 +53,7 @@ export const REVIEW_SHOTS: ReviewShot[] = [
   },
   {
     src: '/reviews/review-07.webp',
-    alt: 'Instagram comments and WhatsApp messages from qualified mortgage prospects asking how to apply, generated for Ironclad Finance',
+    alt: 'Instagram comments and WhatsApp messages from qualified mortgage leads asking to apply, generated for Ironclad Finance',
     width: 940,
     height: 788,
   },

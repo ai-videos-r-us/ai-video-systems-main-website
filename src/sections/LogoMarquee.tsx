@@ -1,7 +1,10 @@
 import { CLIENT_LOGOS } from '../data/clients';
 
 // White client-logo bar. Logos render black-and-white (CSS grayscale) and the
-// track scrolls continuously left to right. Duplicated list = seamless loop.
+// track scrolls continuously left to right; the duplicated list gives a
+// seamless loop. Every img is eager-loaded with explicit width/height so the
+// track's width never changes mid-animation — lazy loading inside a moving,
+// clipped track leaves logos unloaded (invisible) and makes the loop jump.
 export default function LogoMarquee() {
   return (
     <section aria-label="Client logos" className="border-y border-carbon/10 bg-white py-10 md:py-12">
@@ -16,8 +19,12 @@ export default function LogoMarquee() {
               src={logo.src}
               alt={i < CLIENT_LOGOS.length ? logo.alt : ''}
               aria-hidden={i >= CLIENT_LOGOS.length}
-              loading="lazy"
-              className="h-10 w-auto max-w-[130px] flex-shrink-0 object-contain grayscale opacity-70 md:h-12 md:max-w-[150px]"
+              width={logo.width}
+              height={logo.height}
+              loading="eager"
+              decoding="async"
+              draggable={false}
+              className="h-10 w-auto max-w-[130px] flex-shrink-0 select-none object-contain grayscale opacity-70 md:h-12 md:max-w-[150px]"
             />
           ))}
         </div>
