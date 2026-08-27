@@ -41,9 +41,12 @@ body,
   }
 }
 
-/* Client logo bar — track scrolls left to right, duplicated content loops seamlessly */
+/* Client logo bar — track scrolls left to right, duplicated content loops
+   seamlessly. Runs unconditionally (no hover pause: sticky :hover on touch
+   devices would stop it). */
 .marquee-track {
   animation: marquee-ltr 55s linear infinite;
+  will-change: transform;
 }
 @keyframes marquee-ltr {
   from {
@@ -53,15 +56,9 @@ body,
     transform: translateX(0);
   }
 }
-.marquee-viewport:hover .marquee-track {
-  animation-play-state: paused;
-}
 @media (prefers-reduced-motion: reduce) {
   .marquee-track {
-    animation: none;
-  }
-  .marquee-viewport {
-    overflow-x: auto;
+    animation-duration: 220s;
   }
 }
 
