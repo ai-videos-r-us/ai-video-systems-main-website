@@ -84,4 +84,16 @@ export const REVIEW_SHOTS: ReviewShot[] = [
     width: 1080,
     height: 246,
   },
+  {
+    src: '/reviews/review-04.webp',
+    alt: 'LinkedIn recommendation from Steve Hallam, Real-Estate Lender at Zenzic Capital — “He very quickly grasped the specific sector of investment banking I work in… I would have no hesitation in recommending his services.”',
+    width: 1080,
+    height: 343,
+  },
+  {
+    src: '/reviews/review-08.webp',
+    alt: 'LinkedIn recommendation from Chantel Hall, CR Property Professionals Ltd — “Since becoming a client of Sean’s my connections and response rate on LinkedIn has hit an all-time high! …I really recommend his services.”',
+    width: 1080,
+    height: 342,
+  },
 ];
