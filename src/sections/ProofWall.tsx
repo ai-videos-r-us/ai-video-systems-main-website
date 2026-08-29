@@ -10,14 +10,9 @@ export default function ProofWall() {
           <FadeIn>
             <Eyebrow>Verified Client Feedback</Eyebrow>
           </FadeIn>
-          <FadeIn delay={0.1}>
-            <h2 className="mt-5 font-display text-[clamp(1.9rem,3.8vw,3.1rem)] font-extrabold leading-[1.08] tracking-tight text-carbon">
-              Real Businesses. Real Results. Receipts Included.
-            </h2>
-          </FadeIn>
         </div>
 
-        <FadeIn delay={0.2}>
+        <FadeIn delay={0.1}>
           <div className="mt-12 columns-1 gap-5 md:columns-2">
             {REVIEW_SHOTS.map((r) => (
               <figure
@@ -32,6 +27,16 @@ export default function ProofWall() {
                   loading="lazy"
                   className="h-auto w-full"
                 />
+                {r.proof && (
+                  <img
+                    src={r.proof.src}
+                    alt={r.proof.alt}
+                    width={r.proof.width}
+                    height={r.proof.height}
+                    loading="lazy"
+                    className="mt-3 h-auto w-full"
+                  />
+                )}
               </figure>
             ))}
           </div>
