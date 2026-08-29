@@ -1,5 +1,6 @@
 import FadeIn from '../components/FadeIn';
 import CountUp from '../components/CountUp';
+import VslPlayer from '../components/VslPlayer';
 import { Eyebrow, PrimaryCTA } from '../components/CTA';
 
 const STATS = [
@@ -42,18 +43,22 @@ export default function Hero() {
         </FadeIn>
 
         <FadeIn delay={0.3}>
+          <VslPlayer className="mx-auto mt-10 w-full max-w-[820px]" />
+        </FadeIn>
+
+        <FadeIn delay={0.35}>
           <div className="mt-9 flex justify-center">
             <PrimaryCTA placement="hero" />
           </div>
         </FadeIn>
 
-        <FadeIn delay={0.35}>
+        <FadeIn delay={0.4}>
           <p className="mx-auto mt-4 max-w-[440px] text-[13.5px] leading-snug text-carbon/60">
             One 20-minute call. Leave knowing your biggest leak and what we&rsquo;d fix first.
           </p>
         </FadeIn>
 
-        <FadeIn delay={0.4}>
+        <FadeIn delay={0.45}>
           <p className="mt-8 font-mono text-[11.5px] font-semibold uppercase tracking-[0.16em] text-carbon/55">
             30-Day Money-Back Guarantee · Fully Managed · Receipts Included
           </p>
