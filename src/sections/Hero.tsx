@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="mx-auto max-w-[1100px] px-5 pb-20 pt-14 text-center md:px-8 md:pb-24 md:pt-20">
         <FadeIn delay={0}>
           <div className="flex justify-center">
-            <Eyebrow>For Established Service Businesses</Eyebrow>
+            <Eyebrow>For Service Businesses Spending $5,000+/Month on Ads</Eyebrow>
           </div>
         </FadeIn>
 

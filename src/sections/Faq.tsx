@@ -6,7 +6,7 @@ import { Eyebrow } from '../components/CTA';
 const FAQS = [
   {
     q: 'Who do you work with?',
-    a: 'We work with service-based businesses, contractors, home service companies, roofers, funeral-related companies, coaches, consultants and small business owners who need a real marketing team behind them.',
+    a: 'Established service businesses already spending $5,000+ per month on ads — professional services, financial services, legal, healthcare, home improvement, property, funeral services and other high-value local or specialist B2B services — with real proof, a working sales process and the capacity to take on more qualified demand. If you are not running paid ads yet, we are not the right fit for you today.',
   },
   {
     q: 'Does this replace our paid advertising or media buyer?',
