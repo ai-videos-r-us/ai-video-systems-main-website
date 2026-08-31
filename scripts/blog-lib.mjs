@@ -136,6 +136,7 @@ export function loadPosts({ includeDrafts = false } = {}) {
       dateISO: iso,
       dateDisplay: iso ? displayDate(iso) : '',
       updatedISO: data.updated ? toISODate(data.updated) : iso,
+      updatedDisplay: displayDate(data.updated ? toISODate(data.updated) : iso),
       image: absImage(data.image),
       noindex: Boolean(data.noindex),
       readingMinutes: Math.max(1, Math.round(words / 200)),

@@ -9,16 +9,6 @@ Referrals aren't enough to grow a service business because you control none of t
 
 That last part is the bit almost every founder underestimates. This article explains both: why referral growth stalls, and why the obvious fix — "just run some ads" — usually fails on the first attempt.
 
-## On this page
-
-- [Why do referrals stop being enough?](#why-do-referrals-stop-being-enough)
-- [The Referral Ceiling: three inputs you don't control](#the-referral-ceiling-three-inputs-you-dont-control)
-- [What referrals hide about your sales process](#what-referrals-hide-about-your-sales-process)
-- [Why cold leads behave so differently](#why-cold-leads-behave-so-differently)
-- [What growing past referrals actually requires](#what-growing-past-referrals-actually-requires)
-- [When referrals really are enough](#when-referrals-really-are-enough)
-- [Frequently asked questions](#frequently-asked-questions)
-
 ## Why do referrals stop being enough?
 
 Referrals stop being enough the moment your growth target exceeds what your network happens to produce. Nothing is wrong with the referrals themselves — the problem is structural. A referral is someone else's decision, made on someone else's timeline, about someone else's contact. You are the beneficiary, not the operator.
@@ -93,6 +83,3 @@ Usually it's proof that cold enquiries were fed into a referral-era process. Bad
 
 If the offer and sales capacity are already proven, the first version is a 90-day build, not a two-week one — and the first weeks are extraction and setup, not results. Anyone promising referral-quality cold leads in week one is describing something other than cold leads.
 
----
-
-*Sean Munn is the founder of AI Video Systems and has spent 11 years in sales and lead generation — including two years delivering pre-qualified appointments to mortgage brokers. More on [the About page](/about).*
