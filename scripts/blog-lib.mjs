@@ -29,6 +29,20 @@ export const BLOG_ID = `${SITE_URL}/blog#blog`;
 
 marked.setOptions({ gfm: true, breaks: false });
 
+// Give every heading a stable slug id so posts support jump links ("On this
+// page") and answer engines can cite section fragments.
+marked.use({
+  renderer: {
+    heading(text, level) {
+      // text is rendered inline HTML: drop tags and entities (e.g. &#39;) so
+      // "you don't control" slugs to you-dont-control, matching hand-written
+      // "On this page" anchors.
+      const id = slugify(String(text).replace(/<[^>]*>/g, '').replace(/&[#\w]+;/g, ''));
+      return `<h${level} id="${id}">${text}</h${level}>\n`;
+    },
+  },
+});
+
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
 export function escapeHtml(s) {
