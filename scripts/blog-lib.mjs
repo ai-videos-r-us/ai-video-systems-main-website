@@ -138,6 +138,12 @@ export function loadPosts({ includeDrafts = false } = {}) {
       updatedISO: data.updated ? toISODate(data.updated) : iso,
       updatedDisplay: displayDate(data.updated ? toISODate(data.updated) : iso),
       image: absImage(data.image),
+      // Relative src for on-page rendering (works on previews); absolute stays in og/JSON-LD.
+      imageSrc: data.image
+        ? (/^https?:\/\//.test(String(data.image)) ? String(data.image) : `/${String(data.image).replace(/^\/+/, '')}`)
+        : '',
+      hasHero: Boolean(data.image),
+      imageAlt: String(data.imageAlt || data.title),
       noindex: Boolean(data.noindex),
       readingMinutes: Math.max(1, Math.round(words / 200)),
       wordCount: words,

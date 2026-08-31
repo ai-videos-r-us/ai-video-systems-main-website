@@ -100,6 +100,15 @@ img{max-width:100%;height:auto}
 .byline a{color:var(--carbon);font-weight:600}.byline a:hover{color:var(--action)}
 .byline .dot{color:rgba(11,11,13,.3)}
 
+/* Post hero image */
+.post-hero{margin:28px 0 0;max-width:900px}
+.post-hero img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border:1px solid var(--line)}
+.post-hero figcaption{font-family:"IBM Plex Mono",monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:rgba(11,11,13,.4);margin:8px 0 0}
+
+/* Card thumbnails */
+.card .thumb{display:block;margin:-24px -24px 18px}
+.card .thumb img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-bottom:1px solid var(--line)}
+
 /* The short answer — the AEO block, visually first-class */
 .answer{margin:30px 0 0;border:2px solid var(--carbon);border-left:6px solid var(--signal);padding:24px 28px;max-width:900px;background:#fff}
 .answer .label{display:flex;align-items:center;gap:10px;font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(11,11,13,.55);margin:0 0 10px}
@@ -401,8 +410,11 @@ function relatedPosts(post, posts) {
 }
 
 function postCard(p) {
+  const thumb = p.hasHero
+    ? `<a class="thumb" href="${p.path}" tabindex="-1" aria-hidden="true"><img src="${p.imageSrc}" alt="" width="1600" height="900" loading="lazy" /></a>\n`
+    : '';
   return `<article class="card" data-tag="${escapeHtml(p.tag)}">
-<p class="tag">${escapeHtml(p.tag)}</p>
+${thumb}<p class="tag">${escapeHtml(p.tag)}</p>
 <p class="t"><a href="${p.path}">${escapeHtml(p.title)}</a></p>
 <p class="ex">${escapeHtml(p.description)}</p>
 <p class="meta"><span>${escapeHtml(p.dateDisplay)} &middot; ${p.readingMinutes} min</span><a href="${p.path}" aria-label="Read ${escapeHtml(p.title)}">Read &rarr;</a></p>
@@ -544,6 +556,7 @@ ${showUpdated ? `<span class="dot">&middot;</span><span>Updated <time datetime="
 <span>${post.readingMinutes} min read</span>
 </div>
 </header>
+${post.hasHero ? `<figure class="post-hero"><img src="${post.imageSrc}" alt="${escapeHtml(post.imageAlt)}" width="1600" height="900" loading="eager" fetchpriority="high" /></figure>` : ''}
 ${answerBlock}
 ${tocMobile}
 <div class="layout">
