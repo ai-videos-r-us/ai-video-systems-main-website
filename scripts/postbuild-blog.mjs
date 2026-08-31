@@ -14,11 +14,14 @@
 //   dist/sitemap.xml                complete sitemap (core pages + posts)
 //   dist/robots.txt                 crawl rules + sitemap pointer (AI bots allowed)
 //   dist/llms.txt                   plain-text index for AI crawlers
+//   dist/about/index.html           static founder/author entity page (from content/about.md)
 
 import fs from 'node:fs';
 import path from 'node:path';
+import matter from 'gray-matter';
+import { marked } from 'marked';
 import {
-  loadPosts, escapeHtml, DIST_DIR, SITE_URL, SITE_NAME,
+  loadPosts, escapeHtml, ROOT, DIST_DIR, SITE_URL, SITE_NAME,
   DEFAULT_OG_IMAGE, LOGO_URL, ORG_ID, FOUNDER_ID, BLOG_ID,
 } from './blog-lib.mjs';
 
@@ -29,6 +32,7 @@ const BLOG_DESCRIPTION =
 // Core indexable pages (kept in sync with the router in src/App.tsx).
 const CORE_PAGES = [
   { loc: `${SITE_URL}/`, changefreq: 'weekly', priority: '1.0' },
+  { loc: `${SITE_URL}/about`, changefreq: 'monthly', priority: '0.6' },
   { loc: `${SITE_URL}/revenue-leak-calculator`, changefreq: 'monthly', priority: '0.6' },
   { loc: `${SITE_URL}/funeral-plan-scale-readiness`, changefreq: 'monthly', priority: '0.5' },
   { loc: `${SITE_URL}/privacy`, changefreq: 'yearly', priority: '0.1' },
@@ -97,12 +101,12 @@ article h1{font-family:Sora,sans-serif;font-weight:800;font-size:clamp(2rem,5vw,
 
 const HEADER = `<header class="site-header"><div class="bar">
 <a href="/" aria-label="AI Video Systems home"><img src="/brand/avs-full-logo-black.svg" alt="AI Video Systems" width="140" height="22" /></a>
-<nav><a href="/blog">Blog</a><a href="/">Home</a></nav>
+<nav><a href="/blog">Blog</a><a href="/about">About</a><a href="/">Home</a></nav>
 </div></header>`;
 
 const FOOTER = `<footer class="site-footer"><div class="bar">
 <span>&copy; ${YEAR} AI Video Systems Ltd</span>
-<span><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a></span>
+<span><a href="/">Home</a> &middot; <a href="/blog">Blog</a> &middot; <a href="/about">About</a> &middot; <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a></span>
 </div></footer>`;
 
 const CTA = `<aside class="cta">
@@ -180,7 +184,7 @@ ${jsonLd({
         keywords: post.tag,
         image: post.image,
         inLanguage: 'en',
-        author: { '@type': 'Person', '@id': FOUNDER_ID, name: post.author, url: `${SITE_URL}/` },
+        author: { '@type': 'Person', '@id': FOUNDER_ID, name: post.author, url: `${SITE_URL}/about` },
         publisher: {
           '@type': 'Organization',
           '@id': ORG_ID,
@@ -204,7 +208,7 @@ ${jsonLd({
 <p class="eyebrow">${escapeHtml(post.tag)}</p>
 <article>
 <h1>${title}</h1>
-<p class="byline">By ${escapeHtml(post.author)} &middot; <time datetime="${post.dateISO}">${escapeHtml(post.dateDisplay)}</time> &middot; ${post.readingMinutes} min read</p>
+<p class="byline">By <a href="/about">${escapeHtml(post.author)}</a> &middot; <time datetime="${post.dateISO}">${escapeHtml(post.dateDisplay)}</time> &middot; ${post.readingMinutes} min read</p>
 <div class="prose">${post.bodyHtml}</div>
 </article>
 ${CTA}
@@ -287,12 +291,122 @@ ${items}
 }
 
 // ---------------------------------------------------------------------------
+// About page (founder/author entity page — content/about.md)
+// ---------------------------------------------------------------------------
+
+// Must stay in sync with the #founder sameAs list in index.html.
+const FOUNDER_SAMEAS = [
+  'https://www.linkedin.com/in/sean-munn/',
+  'https://www.facebook.com/seanharry.johnmunn',
+  'https://www.instagram.com/seanmunn.ai/',
+  'https://x.com/sean_H_J_munn',
+  'https://www.youtube.com/@Seanmunn.aivideo',
+  'https://www.tiktok.com/@itsseanmunn',
+];
+
+function loadAbout() {
+  const file = path.join(ROOT, 'content', 'about.md');
+  if (!fs.existsSync(file)) return null;
+  const { data, content } = matter(fs.readFileSync(file, 'utf8'));
+  if (!data.title) {
+    console.warn('[blog] content/about.md: missing "title" — skipping about page');
+    return null;
+  }
+  return {
+    title: String(data.title),
+    description: String(data.description || ''),
+    updatedISO: data.updated ? String(data.updated).slice(0, 10) : '',
+    bodyHtml: marked.parse(content),
+  };
+}
+
+function renderAbout(about) {
+  const title = escapeHtml(about.title);
+  const desc = escapeHtml(about.description);
+  const url = `${SITE_URL}/about`;
+  const image = `${SITE_URL}/sean-headshot.jpg`;
+
+  const head = `<title>${title} &mdash; ${SITE_NAME}</title>
+<meta name="description" content="${desc}" />
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
+<link rel="canonical" href="${url}" />
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="${title}" />
+<meta property="og:description" content="${desc}" />
+<meta property="og:url" content="${url}" />
+<meta property="og:site_name" content="${SITE_NAME}" />
+<meta property="og:image" content="${image}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="${title}" />
+<meta name="twitter:description" content="${desc}" />
+<meta name="twitter:image" content="${image}" />
+${jsonLd({
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'ProfilePage',
+        '@id': `${url}#page`,
+        url,
+        name: about.title,
+        description: about.description,
+        ...(about.updatedISO ? { dateModified: about.updatedISO } : {}),
+        inLanguage: 'en',
+        isPartOf: { '@id': ORG_ID },
+        mainEntity: { '@id': FOUNDER_ID },
+      },
+      {
+        '@type': 'Person',
+        '@id': FOUNDER_ID,
+        name: 'Sean Munn',
+        jobTitle: 'Founder',
+        worksFor: { '@id': ORG_ID },
+        url,
+        mainEntityOfPage: url,
+        image,
+        email: 'sean@aivideosystems.org',
+        description:
+          'Founder of AI Video Systems. 11 years across sales, lead generation and content systems — appointment setting for mortgage brokers, B2B outbound, Web3 go-to-market, and AI video demand generation. $15M+ in tracked revenue across 96+ clients.',
+        knowsAbout: [
+          'AI video marketing',
+          'Demand generation',
+          'Lead generation',
+          'Paid social advertising',
+          'Appointment setting and sales development',
+          'Marketing attribution and closed-loop reporting',
+          'Founder-led service business growth',
+        ],
+        sameAs: FOUNDER_SAMEAS,
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+          { '@type': 'ListItem', position: 2, name: 'About', item: url },
+        ],
+      },
+    ],
+  })}`;
+
+  const body = `<main class="wrap">
+<p class="eyebrow">AI Video Systems</p>
+<article>
+<h1>${title}</h1>
+<div class="prose">${about.bodyHtml}</div>
+</article>
+${CTA}
+</main>`;
+
+  return shell({ head, body });
+}
+
+// ---------------------------------------------------------------------------
 // Feeds / crawl files
 // ---------------------------------------------------------------------------
 
-function renderSitemap(posts) {
+function renderSitemap(posts, about) {
   const urls = [
-    ...CORE_PAGES.map((p) => ({ loc: p.loc, changefreq: p.changefreq, priority: p.priority })),
+    ...CORE_PAGES.filter((p) => about || p.loc !== `${SITE_URL}/about`)
+      .map((p) => ({ loc: p.loc, changefreq: p.changefreq, priority: p.priority })),
   ];
   if (posts.length) {
     urls.push({ loc: `${SITE_URL}/blog`, changefreq: 'daily', priority: '0.8', lastmod: posts[0].updatedISO });
@@ -356,12 +470,15 @@ ${items}
 `;
 }
 
-function renderLlms(posts) {
+function renderLlms(posts, about) {
   const lines = [
     `# ${SITE_NAME}`,
     '',
     `> ${SITE_NAME} installs two tailored marketing systems for established, founder-led service businesses: the AI Content Engine (AI content and authority at volume) and the Lead Gen Engine (managed paid ads, landing pages, CRM and closed-loop reporting). $15m+ in tracked revenue across 96+ clients.`,
     '',
+    ...(about
+      ? ['## About', '', `- [${about.title}](${SITE_URL}/about): ${about.description}`, '']
+      : []),
     '## Blog',
     '',
     ...posts.map((p) => `- [${p.title}](${p.url}): ${p.description}`),
@@ -388,6 +505,7 @@ function main() {
   }
 
   const posts = loadPosts();
+  const about = loadAbout();
   const written = [];
 
   for (const post of posts) {
@@ -399,10 +517,14 @@ function main() {
     written.push(writeFile(path.join('blog', 'rss.xml'), renderRss(posts)));
   }
 
+  if (about) {
+    written.push(writeFile(path.join('about', 'index.html'), renderAbout(about)));
+  }
+
   // Always regenerate crawl files so they reflect current content.
-  written.push(writeFile('sitemap.xml', renderSitemap(posts)));
+  written.push(writeFile('sitemap.xml', renderSitemap(posts, about)));
   written.push(writeFile('robots.txt', renderRobots()));
-  written.push(writeFile('llms.txt', renderLlms(posts)));
+  written.push(writeFile('llms.txt', renderLlms(posts, about)));
 
   console.log(`[blog] ${posts.length} post(s) -> ${written.length} file(s) in dist/`);
   if (posts.length) {
