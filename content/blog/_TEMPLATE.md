@@ -4,9 +4,13 @@ description: "One or two sentences (roughly 140–160 characters). This is the m
 date: 2026-09-01
 tag: "Playbook"
 author: "Sean Munn"
+# Hero image (every post should have one):
+# image: "/blog-images/my-slug.jpg"  # 16:9, ~1600x900, <350KB. Renders as the hero at the
+#                                    # top of the post, the card thumbnail on /blog and in
+#                                    # "Keep reading", the og:image, and BlogPosting.image.
+# imageAlt: "Describe the scene."    # REQUIRED with image — real alt text, not keywords.
 # Optional:
 # slug: "custom-url-slug"          # defaults to the filename (minus any leading YYYY-MM-DD-)
-# image: "/blog/my-post-og.png"    # social/preview image; defaults to /og-image.png
 # updated: 2026-09-15              # sets dateModified; defaults to `date`
 # draft: true                      # keep it out of the build until ready
 # noindex: true                    # publish but ask search engines not to index it
