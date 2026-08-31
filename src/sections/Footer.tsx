@@ -5,6 +5,8 @@ const QUICK_LINKS = [
   { label: 'The Lead Gen Engine', href: '#lead-gen-engine' },
   { label: 'Reviews', href: '#reviews' },
   { label: 'Revenue Leak Calculator', href: '/revenue-leak-calculator' },
+  { label: 'About Sean', href: '/about' },
+  { label: 'Blog', href: '/blog' },
   { label: 'FAQ', href: '#faq' },
   { label: 'Contact', href: 'mailto:sean@aivideosystems.org' },
 ];
