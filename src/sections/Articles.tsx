@@ -44,6 +44,17 @@ export default function Articles() {
             </FadeIn>
           ))}
         </div>
+
+        <FadeIn delay={0.2}>
+          <p className="mt-10">
+            <a
+              href="/blog"
+              className="font-mono text-[12px] font-semibold uppercase tracking-[0.16em] text-carbon transition-colors hover:text-action"
+            >
+              View all articles →
+            </a>
+          </p>
+        </FadeIn>
       </div>
     </section>
   );

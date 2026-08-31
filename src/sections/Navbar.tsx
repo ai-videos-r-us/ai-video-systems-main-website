@@ -6,6 +6,7 @@ const LINKS = [
   { label: 'AI Content Engine', href: '#content-engine' },
   { label: 'Lead Gen Engine', href: '#lead-gen-engine' },
   { label: 'Reviews', href: '#reviews' },
+  { label: 'Blog', href: '/blog' },
   { label: 'FAQ', href: '#faq' },
 ];
 
