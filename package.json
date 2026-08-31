@@ -4,8 +4,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "node scripts/prebuild-blog.mjs && vite",
+    "build": "node scripts/prebuild-blog.mjs && tsc && vite build && node scripts/postbuild-blog.mjs",
+    "build:blog": "node scripts/prebuild-blog.mjs && node scripts/postbuild-blog.mjs",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
@@ -26,6 +27,8 @@
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^7.0.1",
+    "gray-matter": "^4.0.3",
+    "marked": "^12.0.2",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^14.6.4",
     "@types/node": "^26.2.0",
