@@ -231,6 +231,54 @@ img{max-width:100%;height:auto}
 @media(min-width:1024px){.post-grid{grid-template-columns:repeat(3,1fr)}}
 
 /* About page */
+.about-hero{display:grid;gap:36px;padding:30px 0 0}
+@media(min-width:900px){.about-hero{grid-template-columns:minmax(0,1fr) 340px;gap:70px;align-items:start}}
+.about-hero h1{font-family:Sora,sans-serif;font-weight:800;font-size:clamp(2.1rem,4.5vw,3.1rem);line-height:1.08;letter-spacing:-.02em;margin:.9rem 0 0}
+.about-lede{margin-top:22px;max-width:640px}
+.about-photo{margin:0}
+.about-photo img{display:block;width:100%;border:1px solid var(--line);border-bottom:6px solid var(--signal)}
+.about-photo figcaption{font-family:"IBM Plex Mono",monospace;font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:rgba(11,11,13,.5);margin:12px 0 0}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line);margin:56px 0 0}
+@media(min-width:760px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stats>div{padding:24px 22px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats .n{font-family:Sora,sans-serif;font-size:clamp(1.6rem,3vw,2.1rem);font-weight:800;margin:0}
+.stats .l{font-family:"IBM Plex Mono",monospace;font-size:10.5px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:rgba(11,11,13,.5);margin:8px 0 0}
+.sec-head{margin:64px 0 0}
+.sec-head h2{font-family:Sora,sans-serif;font-weight:800;font-size:clamp(1.55rem,3vw,2.1rem);letter-spacing:-.015em;margin:.7rem 0 0}
+.timeline{margin:30px 0 0;padding-left:28px;border-left:2px solid var(--line)}
+.titem{position:relative;padding:0 0 34px;max-width:720px}
+.titem:last-child{padding-bottom:6px}
+.titem::before{content:"";position:absolute;left:-35px;top:7px;width:12px;height:12px;background:var(--signal)}
+.titem .yrs{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:rgba(11,11,13,.5);margin:0}
+.titem h3{font-family:Sora,sans-serif;font-size:1.15rem;font-weight:700;margin:.5rem 0}
+.titem .tx{margin:0;color:rgba(11,11,13,.75);font-size:15.5px;line-height:1.65}
+.beliefs{display:grid;gap:18px;margin:30px 0 0}
+@media(min-width:760px){.beliefs{grid-template-columns:repeat(2,1fr)}}
+.belief{border:1px solid var(--line);padding:24px;transition:border-color .2s}
+.belief:hover{border-color:var(--carbon)}
+.belief .num{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;color:var(--action);margin:0}
+.belief .bt{font-family:Sora,sans-serif;font-size:16.5px;font-weight:700;line-height:1.35;margin:10px 0 0}
+.belief .bs{font-size:13.5px;color:rgba(11,11,13,.65);line-height:1.6;margin:8px 0 0}
+.results-grid{display:grid;gap:18px;margin:30px 0 0}
+@media(min-width:760px){.results-grid{grid-template-columns:repeat(3,1fr)}}
+.rcard{border:1px solid var(--line);padding:24px;background:var(--cloud)}
+.rcard .tag{font-family:"IBM Plex Mono",monospace;font-size:10.5px;font-weight:600;text-transform:uppercase;letter-spacing:.16em;color:rgba(11,11,13,.5);margin:0}
+.rcard .rstat{font-family:Sora,sans-serif;font-size:1.9rem;font-weight:800;margin:10px 0 0}
+.rcard .rtext{font-size:13.5px;color:rgba(11,11,13,.7);line-height:1.6;margin:10px 0 0}
+.fitgrid{display:grid;gap:18px;margin:30px 0 0}
+@media(min-width:760px){.fitgrid{grid-template-columns:repeat(2,1fr)}}
+.fit-card{border:1px solid var(--line);padding:26px}
+.fit-card.dark{background:var(--carbon);color:#fff;border-color:var(--carbon)}
+.fit-card .fh{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.16em;margin:0 0 14px;color:rgba(11,11,13,.5)}
+.fit-card.dark .fh{color:var(--steel)}
+.fit-card ul{list-style:none;margin:0;padding:0}
+.fit-card li{position:relative;padding:0 0 10px 22px;font-size:14.5px;line-height:1.55}
+.fit-card li::before{content:"";position:absolute;left:0;top:9px;width:10px;height:2px;background:var(--signal)}
+.fitnote{max-width:720px;margin:22px 0 0;font-size:15px;color:rgba(11,11,13,.7)}
+.fitnote a{text-decoration:underline}
+.socials{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 0}
+.schip{display:inline-block;border:1px solid var(--line);padding:10px 18px;font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--carbon);transition:all .15s}
+.schip:hover{border-color:var(--carbon);background:var(--carbon);color:#fff}
 .about-prose img:first-child{margin-top:.5rem}
 main{padding-bottom:0}
 </style>`;
@@ -682,6 +730,7 @@ function loadAbout() {
     description: String(data.description || ''),
     updatedISO: data.updated ? String(data.updated).slice(0, 10) : '',
     bodyHtml: marked.parse(content),
+    data,
   };
 }
 
@@ -752,15 +801,62 @@ ${jsonLd({
     ],
   })}`;
 
+  const d = about.data || {};
+  const structured =
+    Array.isArray(d.stats) && Array.isArray(d.timeline) && Array.isArray(d.beliefs);
+
+  const sec = (id, eyebrow, h) =>
+    `<div class="sec-head" id="${id}"><p class="eyebrow">${eyebrow}</p><h2>${h}</h2></div>`;
+
+  const content = structured
+    ? `<div class="about-hero">
+<div>
+<p class="eyebrow">The Founder</p>
+<h1>${title}</h1>
+<div class="prose about-lede">${about.bodyHtml}</div>
+</div>
+<figure class="about-photo">
+<img src="/sean-headshot.jpg" alt="Sean Munn, founder of AI Video Systems" width="400" height="400" loading="eager" fetchpriority="high" />
+<figcaption>Sean Munn &middot; Founder, AI Video Systems</figcaption>
+</figure>
+</div>
+<div class="stats">
+${d.stats.map((s) => `<div><p class="n">${escapeHtml(s.n)}</p><p class="l">${escapeHtml(s.l)}</p></div>`).join('\n')}
+</div>
+${sec('how-i-got-here', 'The Road Here', 'How I got here')}
+<div class="timeline">
+${d.timeline.map((t) => `<div class="titem"><p class="yrs">${escapeHtml(t.years)}</p><h3>${escapeHtml(t.name)}</h3><p class="tx">${escapeHtml(t.text)}</p></div>`).join('\n')}
+</div>
+${sec('what-i-believe', 'Operating Principles', 'What I believe about marketing')}
+<div class="beliefs">
+${d.beliefs.map((b, i) => `<div class="belief"><p class="num">${String(i + 1).padStart(2, '0')}</p><p class="bt">${escapeHtml(b.t)}</p><p class="bs">${escapeHtml(b.s)}</p></div>`).join('\n')}
+</div>
+${sec('results', 'Receipts', 'Results I point to')}
+<div class="results-grid">
+${(d.results || []).map((r) => `<div class="rcard"><p class="tag">${escapeHtml(r.client)}</p><p class="rstat">${escapeHtml(r.stat)}</p><p class="rtext">${escapeHtml(r.text)}</p></div>`).join('\n')}
+</div>
+${sec('who-i-work-with', 'Fit', 'Who I work with &mdash; and who I don&rsquo;t')}
+<div class="fitgrid">
+<div class="fit-card dark"><p class="fh">A good fit</p><ul>${(d.fit || []).map((x) => `<li>${escapeHtml(x)}</li>`).join('')}</ul></div>
+<div class="fit-card"><p class="fh">Not a fit (yet)</p><ul>${(d.notfit || []).map((x) => `<li>${escapeHtml(x)}</li>`).join('')}</ul></div>
+</div>
+${d.fitnote ? `<p class="fitnote">${marked.parseInline(String(d.fitnote))}</p>` : ''}
+${sec('find-me', 'Elsewhere', 'Where to find me')}
+<div class="socials">
+${(d.socials || []).map((s) => `<a class="schip" href="${s.href}" target="_blank" rel="noopener">${escapeHtml(s.label)}</a>`).join('\n')}
+<a class="schip" href="mailto:sean@aivideosystems.org">Email</a>
+</div>`
+    : `<header class="post-head">
+<p class="eyebrow">AI Video Systems</p>
+<h1>${title}</h1>
+</header>
+<div class="narrow" style="margin:30px 0 0"><article class="prose about-prose">${about.bodyHtml}</article></div>`;
+
   const body = `${HEADER}
 <main>
 <div class="wrap">
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">/</span><span>About</span></nav>
-<header class="post-head">
-<p class="eyebrow">AI Video Systems</p>
-<h1>${title}</h1>
-</header>
-<div class="narrow" style="margin:30px 0 0"><article class="prose about-prose">${about.bodyHtml}</article></div>
+${content}
 </div>
 </main>
 ${CTA}
