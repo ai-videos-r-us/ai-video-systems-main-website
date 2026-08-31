@@ -4,7 +4,7 @@ description: Sean Munn is the founder of AI Video Systems. 11 years in sales, le
 updated: 2026-08-31
 ---
 
-![Sean Munn, founder of AI Video Systems](/sean-head.png)
+![Sean Munn, founder of AI Video Systems](/sean-headshot.jpg)
 
 I'm Sean Munn, founder of AI Video Systems. I install marketing systems for established, founder-led service businesses — systems that turn attention into qualified sales calls and revenue you can actually trace. Across 11 years in sales, lead generation and content, the businesses I've worked with have generated **$15M+ in tracked revenue across 96+ clients**.
 

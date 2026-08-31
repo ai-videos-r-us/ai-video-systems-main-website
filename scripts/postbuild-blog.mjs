@@ -324,7 +324,7 @@ function renderAbout(about) {
   const title = escapeHtml(about.title);
   const desc = escapeHtml(about.description);
   const url = `${SITE_URL}/about`;
-  const image = `${SITE_URL}/sean-head.png`;
+  const image = `${SITE_URL}/sean-headshot.jpg`;
 
   const head = `<title>${title} &mdash; ${SITE_NAME}</title>
 <meta name="description" content="${desc}" />
