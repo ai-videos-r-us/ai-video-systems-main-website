@@ -28,3 +28,13 @@ JSON-LD structured data wired into the site's Organization / Sean Munn entity gr
 That's what makes them legible to Google, ChatGPT, Perplexity and AI Overviews.
 
 Full details: `docs/blog-system.md`.
+
+## Page architecture (added 2026-08-31)
+
+Post pages are assembled by `scripts/postbuild-blog.mjs` in the main site's design
+system (Sora/Inter/IBM Plex Mono, signal/action reds, angled CTAs). From plain
+markdown the build generates: the "short answer" card (first paragraph), a sticky
+scroll-tracking "On this page" rail (from H2 ids), a reading-progress bar, an FAQ
+accordion + FAQPage JSON-LD (from `## Frequently asked questions` + `###` pairs),
+the author card, "Keep reading" related cards, and the See If You Qualify CTA band.
+Authors write only the article markdown — see `_TEMPLATE.md` for the conventions.
