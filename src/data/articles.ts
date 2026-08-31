@@ -7,13 +7,9 @@ export interface Article {
   comingSoon?: boolean;
 }
 
-// Latest-articles area. The section renders only when this array has entries —
-// add the first real post and it appears automatically. Example shape:
-//   {
-//     tag: 'Case Study',
-//     title: 'How a Funeral Comparison Business Hit a 21% Lead-to-Sale Rate',
-//     excerpt: 'One-paragraph teaser shown on the card.',
-//     date: '26 Aug 2026',
-//     href: '/blog/funeral-case-study',
-//   }
-export const ARTICLES: Article[] = [];
+// The homepage "Latest Articles" teaser (src/sections/Articles.tsx) renders only
+// when this array has entries. It is generated from content/blog/*.md by
+// scripts/prebuild-blog.mjs (the single source of truth for posts) — add a
+// markdown post and it appears automatically. Do not edit the generated file by
+// hand; edit or add posts under content/blog/ instead.
+export { ARTICLES } from './articles.generated';
