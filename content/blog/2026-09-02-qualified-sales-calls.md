@@ -1,7 +1,7 @@
 ---
 title: "What Is a Qualified Sales Call — and Why It's the Only Marketing Metric That Matters"
 description: "A qualified sales call is a prepared conversation with a buyer who fits, has the problem, and can pay. Here's how to define it, cost it, and manufacture more."
-date: 2026-09-01
+date: 2026-09-02
 tag: Demand Generation
 image: /blog-images/qualified-sales-calls.jpg
 imageAlt: "A business owner circling a small number of appointments in a mostly empty paper diary with a red marker."
