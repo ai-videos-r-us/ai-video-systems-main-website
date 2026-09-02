@@ -5,9 +5,23 @@ import type { Article } from './articles';
 export const ARTICLES: Article[] = [
   {
     tag: "Demand Generation",
-    title: "Why Referrals Aren't Enough to Grow a Service Business Anymore",
-    excerpt: "Referrals stall because you control none of the inputs — volume, timing or fit. Here's the referral ceiling, and what growing past it actually takes.",
-    date: "31 Aug 2026",
-    href: "/blog/referrals-arent-enough",
+    title: "Demand Generation vs Lead Generation: What's the Difference for a Service Business?",
+    excerpt: "Demand generation creates buyers who want you before they enquire; lead generation captures them. Most service businesses need both — here's how to sequence them.",
+    date: "1 Sep 2026",
+    href: "/blog/demand-generation-vs-lead-generation",
+  },
+  {
+    tag: "Demand Generation",
+    title: "Why Your Ads Get Leads but No Sales (and Where the Revenue Actually Leaks)",
+    excerpt: "Leads without sales usually means the leak is downstream of the click. Walk the four links of the revenue chain and find exactly where yours breaks.",
+    date: "1 Sep 2026",
+    href: "/blog/leads-but-no-sales",
+  },
+  {
+    tag: "Demand Generation",
+    title: "What Is a Qualified Sales Call — and Why It's the Only Marketing Metric That Matters",
+    excerpt: "A qualified sales call is a prepared conversation with a buyer who fits, has the problem, and can pay. Here's how to define it, cost it, and manufacture more.",
+    date: "1 Sep 2026",
+    href: "/blog/qualified-sales-calls",
   },
 ];
