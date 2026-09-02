@@ -19,6 +19,6 @@
     }
   ],
   "rewrites": [
-    { "source": "/((?!api/|blog|about).*)", "destination": "/index.html" }
+    { "source": "/((?!api/|blog|about).+)", "destination": "/app.html" }
   ]
 }
