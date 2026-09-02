@@ -56,20 +56,26 @@ const FAQS = [
 
 const FAQ_SCHEMA_ID = 'faq-page-schema';
 
+// Shared with src/entry-server.tsx, which emits this schema statically into
+// dist/index.html at build time so crawlers get it without running JS.
+export function buildFaqSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: FAQS.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: f.a,
+      },
+    })),
+  };
+}
+
 function useFaqSchema() {
   useEffect(() => {
-    const schema = {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: FAQS.map((f) => ({
-        '@type': 'Question',
-        name: f.q,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: f.a,
-        },
-      })),
-    };
+    const schema = buildFaqSchema();
 
     let script = document.getElementById(FAQ_SCHEMA_ID) as HTMLScriptElement | null;
     if (!script) {

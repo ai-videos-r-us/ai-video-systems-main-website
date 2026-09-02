@@ -84,7 +84,7 @@ export default function Footer() {
           <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-white/40">
             Two Tailored Systems · Receipts Included
           </p>
-          <p className="font-mono text-[11px] text-white/30">
+          <p className="font-mono text-[11px] text-white/30" suppressHydrationWarning>
             © {new Date().getFullYear()} AI Video Systems. All rights reserved.
           </p>
         </div>
