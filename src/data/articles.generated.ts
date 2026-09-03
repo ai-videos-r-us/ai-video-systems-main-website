@@ -5,23 +5,23 @@ import type { Article } from './articles';
 export const ARTICLES: Article[] = [
   {
     tag: "Demand Generation",
-    title: "Demand Generation vs Lead Generation: What's the Difference for a Service Business?",
-    excerpt: "Demand generation creates buyers who want you before they enquire; lead generation captures them. Most service businesses need both — here's how to sequence them.",
-    date: "1 Sep 2026",
-    href: "/blog/demand-generation-vs-lead-generation",
-  },
-  {
-    tag: "Demand Generation",
-    title: "Why Your Ads Get Leads but No Sales (and Where the Revenue Actually Leaks)",
-    excerpt: "Leads without sales usually means the leak is downstream of the click. Walk the four links of the revenue chain and find exactly where yours breaks.",
-    date: "1 Sep 2026",
-    href: "/blog/leads-but-no-sales",
+    title: "How Much Does It Cost to Market a Service Business in 2026?",
+    excerpt: "Established service businesses spend 5–10% of revenue on marketing: a $2,500–$10,000/month retainer or an in-house hire, plus ad spend. The real ranges, and the number that matters more.",
+    date: "3 Sep 2026",
+    href: "/blog/service-business-marketing-cost",
   },
   {
     tag: "Demand Generation",
     title: "What Is a Qualified Sales Call — and Why It's the Only Marketing Metric That Matters",
     excerpt: "A qualified sales call is a prepared conversation with a buyer who fits, has the problem, and can pay. Here's how to define it, cost it, and manufacture more.",
-    date: "1 Sep 2026",
+    date: "2 Sep 2026",
     href: "/blog/qualified-sales-calls",
+  },
+  {
+    tag: "Demand Generation",
+    title: "Demand Generation vs Lead Generation: What's the Difference for a Service Business?",
+    excerpt: "Demand generation creates buyers who want you before they enquire; lead generation captures them. Most service businesses need both — here's how to sequence them.",
+    date: "1 Sep 2026",
+    href: "/blog/demand-generation-vs-lead-generation",
   },
 ];
