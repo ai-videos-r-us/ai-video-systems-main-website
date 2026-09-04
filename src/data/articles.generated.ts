@@ -5,6 +5,13 @@ import type { Article } from './articles';
 export const ARTICLES: Article[] = [
   {
     tag: "Demand Generation",
+    title: "Cost Per Lead vs Cost Per Customer: Which Should You Actually Track?",
+    excerpt: "Track cost per customer. Cost per lead is a diagnostic, not a scoreboard. The difference, a worked example of a healthy CPL hiding a broken business, and how to track CAC.",
+    date: "4 Sep 2026",
+    href: "/blog/cpl-vs-cac",
+  },
+  {
+    tag: "Demand Generation",
     title: "Case Study: 2.5× More Qualified Funeral-Plan Opportunities on 29.5% Less Ad Spend in 30 Days",
     excerpt: "In 30 days, Compare Funerals went from 24 to 60 qualified funeral-plan opportunities a month on 29.5% less Meta spend. Cost per qualified lead fell 71.7%. What changed.",
     date: "3 Sep 2026",
@@ -16,12 +23,5 @@ export const ARTICLES: Article[] = [
     excerpt: "Established service businesses spend 5–10% of revenue on marketing: a $2,500–$10,000/month retainer or an in-house hire, plus ad spend. The real ranges, and the number that matters more.",
     date: "3 Sep 2026",
     href: "/blog/service-business-marketing-cost",
-  },
-  {
-    tag: "Demand Generation",
-    title: "What Is a Qualified Sales Call — and Why It's the Only Marketing Metric That Matters",
-    excerpt: "A qualified sales call is a prepared conversation with a buyer who fits, has the problem, and can pay. Here's how to define it, cost it, and manufacture more.",
-    date: "2 Sep 2026",
-    href: "/blog/qualified-sales-calls",
   },
 ];
