@@ -6,19 +6,46 @@
     {
       "source": "/funeral-plan-scale-readiness/results/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, nofollow" },
-        { "key": "Cache-Control", "value": "private, no-store" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
+        }
       ]
     },
     {
       "source": "/api/diagnostic/results/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, nofollow" },
-        { "key": "Cache-Control", "value": "private, no-store" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "private, no-store"
+        }
       ]
     }
   ],
+  "redirects": [
+    {
+      "source": "/mortgage-clients",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/mortgage-clients/",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
   "rewrites": [
-    { "source": "/((?!api/|blog|about).+)", "destination": "/app.html" }
+    {
+      "source": "/((?!api/|blog|about).+)",
+      "destination": "/app.html"
+    }
   ]
 }
