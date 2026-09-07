@@ -4,6 +4,13 @@ import type { Article } from './articles';
 
 export const ARTICLES: Article[] = [
   {
+    tag: "AI Video",
+    title: "Is AI Video Marketing Worth It for an Established Service Business?",
+    excerpt: "Yes, if four things hold: a proven offer, unused proof, someone closing qualified calls, and something capturing the attention. Otherwise it amplifies the gap.",
+    date: "7 Sep 2026",
+    href: "/blog/is-ai-video-marketing-worth-it",
+  },
+  {
     tag: "Demand Generation",
     title: "Cost Per Lead vs Cost Per Customer: Which Should You Actually Track?",
     excerpt: "Track cost per customer. Cost per lead is a diagnostic, not a scoreboard. The difference, a worked example of a healthy CPL hiding a broken business, and how to track CAC.",
@@ -16,12 +23,5 @@ export const ARTICLES: Article[] = [
     excerpt: "In 30 days, Compare Funerals went from 24 to 60 qualified funeral-plan opportunities a month on 29.5% less Meta spend. Cost per qualified lead fell 71.7%. What changed.",
     date: "3 Sep 2026",
     href: "/blog/compare-funerals-30-day-case-study",
-  },
-  {
-    tag: "Demand Generation",
-    title: "How Much Does It Cost to Market a Service Business in 2026?",
-    excerpt: "Established service businesses spend 5–10% of revenue on marketing: a $2,500–$10,000/month retainer or an in-house hire, plus ad spend. The real ranges, and the number that matters more.",
-    date: "3 Sep 2026",
-    href: "/blog/service-business-marketing-cost",
   },
 ];
