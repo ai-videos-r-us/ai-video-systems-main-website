@@ -4,6 +4,13 @@ import type { Article } from './articles';
 
 export const ARTICLES: Article[] = [
   {
+    tag: "Demand Generation",
+    title: "The 5-Minute Rule: Hard Data on Why Lead Response Time Decides Conversion",
+    excerpt: "Call new leads within five minutes. Across 5.7 million leads, conversion was 8X higher inside five minutes, yet under 1% of first attempts happen that fast.",
+    date: "8 Sep 2026",
+    href: "/blog/speed-to-lead-5-minute-rule",
+  },
+  {
     tag: "Hiring an Agency",
     title: "What Does a Demand Generation Agency Actually Do?",
     excerpt: "A demand generation agency owns the path from first impression to closed revenue: message, demand, qualification and revenue feedback. What it does and doesn't.",
@@ -16,12 +23,5 @@ export const ARTICLES: Article[] = [
     excerpt: "Yes, if four things hold: a proven offer, unused proof, someone closing qualified calls, and something capturing the attention. Otherwise it amplifies the gap.",
     date: "7 Sep 2026",
     href: "/blog/is-ai-video-marketing-worth-it",
-  },
-  {
-    tag: "Demand Generation",
-    title: "Cost Per Lead vs Cost Per Customer: Which Should You Actually Track?",
-    excerpt: "Track cost per customer. Cost per lead is a diagnostic, not a scoreboard. The difference, a worked example of a healthy CPL hiding a broken business, and how to track CAC.",
-    date: "4 Sep 2026",
-    href: "/blog/cpl-vs-cac",
   },
 ];
