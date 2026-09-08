@@ -4,6 +4,13 @@ import type { Article } from './articles';
 
 export const ARTICLES: Article[] = [
   {
+    tag: "Hiring an Agency",
+    title: "What Does a Demand Generation Agency Actually Do?",
+    excerpt: "A demand generation agency owns the path from first impression to closed revenue: message, demand, qualification and revenue feedback. What it does and doesn't.",
+    date: "8 Sep 2026",
+    href: "/blog/what-does-a-demand-generation-agency-do",
+  },
+  {
     tag: "AI Video",
     title: "Is AI Video Marketing Worth It for an Established Service Business?",
     excerpt: "Yes, if four things hold: a proven offer, unused proof, someone closing qualified calls, and something capturing the attention. Otherwise it amplifies the gap.",
@@ -16,12 +23,5 @@ export const ARTICLES: Article[] = [
     excerpt: "Track cost per customer. Cost per lead is a diagnostic, not a scoreboard. The difference, a worked example of a healthy CPL hiding a broken business, and how to track CAC.",
     date: "4 Sep 2026",
     href: "/blog/cpl-vs-cac",
-  },
-  {
-    tag: "Demand Generation",
-    title: "Case Study: 2.5× More Qualified Funeral-Plan Opportunities on 29.5% Less Ad Spend in 30 Days",
-    excerpt: "In 30 days, Compare Funerals went from 24 to 60 qualified funeral-plan opportunities a month on 29.5% less Meta spend. Cost per qualified lead fell 71.7%. What changed.",
-    date: "3 Sep 2026",
-    href: "/blog/compare-funerals-30-day-case-study",
   },
 ];
