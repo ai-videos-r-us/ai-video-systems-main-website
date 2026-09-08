@@ -17,7 +17,7 @@ Marketing cost has two halves that get quoted as one: the **fee** you pay whoeve
 
 | Option | Typical monthly cost (US, 2026) | What you're buying | The catch |
 |---|---|---|---|
-| Full-service agency retainer | $4,000–$10,000+ · small-business scopes commonly $2,500–$5,000 | Strategy, creative, campaign management across channels | Scope drives price more than quality does; ask what's excluded |
+| Full-service agency retainer | $4,000–$10,000+ · small-business scopes commonly $2,500–$5,000 | Strategy, creative, campaign management across channels | Scope drives price more than quality does; ask what's excluded and [what a demand generation agency should cover](/blog/what-does-a-demand-generation-agency-do) |
 | Single-channel agency (paid ads or SEO) | $1,000–$1,500 basic · $2,500–$5,000 mid-tier · or 10–20% of ad spend | Management of one channel | Nobody owns what happens after the lead arrives |
 | In-house marketing manager | ~$13,900/month salary at the US median ($166,790/yr), roughly $19,900/month fully loaded | A person who knows your business | One person can't be a strategist, a videographer, a media buyer and a copywriter |
 | Freelancer or consultant | $75–$250/hour independent · $150–$500/hour senior or fractional · retainers $1,500–$10,000+ | Specific expertise, flexibly | You become the project manager |
@@ -33,7 +33,7 @@ The benchmark isn't wrong. It's answering a different question. Percent of reven
 
 ## The number that actually matters: cost per customer
 
-**Cost per customer** (customer acquisition cost, or CAC) is everything you spend to acquire clients in a period, divided by the number of new clients you signed. Fees plus media plus the sales time consumed, over the customers who actually paid. It's the only marketing cost that can be compared to something real: what a customer is worth to you.
+**Cost per customer** (customer acquisition cost, or CAC) is everything you spend to acquire clients in a period, divided by the number of new clients you signed. Fees plus media plus the sales time consumed, over the customers who actually paid. It's the only marketing cost that can be compared to something real: what a customer is worth to you. [Cost per lead vs cost per customer](/blog/cpl-vs-cac) shows how the first can improve while the second gets worse.
 
 Here's why the total budget and the cost per lead both hide it. Two businesses each spend $6,000 a month:
 

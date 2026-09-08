@@ -50,14 +50,14 @@ I learned this gap first-hand before I ever ran ads for anyone. I spent two year
 
 ## What growing past referrals actually requires
 
-If cold demand is a different operating system, the fix is to build the parts a referral used to provide for free. Four of them:
+If cold demand is a different operating system, the fix is to build the parts a referral used to provide for free ([a referrer was doing your demand generation](/blog/demand-generation-vs-lead-generation), you just didn't call it that). Four of them:
 
 - **Pre-education.** Content and proof that do the trust-building *before* the first conversation — so a stranger arrives at the call somewhere near where a referral used to start. This is the real job of marketing content; visibility is a side effect.
 - **Speed.** A response system that reaches a new enquiry in minutes, not days, while the moment of intent still exists. This is a marketing metric, not an admin detail, and it's the cheapest fix on this list.
-- **Qualification and nurture.** A deliberate filter so your team only talks to viable prospects — and a follow-up path for the "not yet" majority, who make up most of any cold audience.
-- **Measurement to revenue.** Referrals never needed tracking; you knew where they came from. Cold demand does. If you can't trace spend through to closed revenue, you can't tell weak leads from a weak process — and you'll scale the wrong thing.
+- **Qualification and nurture.** A deliberate filter so your team only talks to [viable prospects](/blog/qualified-sales-calls) — and a follow-up path for the "not yet" majority, who make up most of any cold audience.
+- **Measurement to revenue.** Referrals never needed tracking; you knew where they came from. Cold demand does. If you can't trace spend through to closed revenue, you can't tell [weak leads from a weak process](/blog/leads-but-no-sales) — and you'll scale the wrong thing.
 
-Notice none of these is "better ads." Ads are just the tap. These four are the plumbing, and they're what referred growth never forced you to build.
+Notice none of these is "better ads." Ads are just the tap. These four are the plumbing, and they're what referred growth never forced you to build. Managed as one loop, that plumbing is the [Attention-to-Revenue System](/blog/attention-to-revenue-system).
 
 ## When referrals really are enough
 
