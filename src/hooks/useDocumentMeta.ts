@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const DEFAULT_TITLE = 'Get more qualified sales calls.';
+const DEFAULT_TITLE = 'AI Video Systems - Get More Qualified Sales Calls.';
 const DEFAULT_DESCRIPTION =
   '$15m+ in tracked revenue across 96+ clients. AI Video Systems installs two tailored systems for service businesses: the AI Content Engine (AI content, branding and authority at volume) and the Lead Gen Engine (managed ads, landing pages, CRM and closed-loop reporting). 30-day money-back guarantee.';
 
