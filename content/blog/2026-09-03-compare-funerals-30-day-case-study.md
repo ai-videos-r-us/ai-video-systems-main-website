@@ -80,7 +80,7 @@ Because the advertising got better, not because the auction got cheaper. Two num
 - **CPM (cost per 1,000 impressions) fell 11.9%.** Cheaper attention, but only slightly.
 - **Leads per 1,000 impressions rose 97.3%.** The same thousand people seeing an ad were almost twice as likely to enquire.
 
-If the improvement had come from cheaper traffic, those two numbers would have moved together. They didn't. The gain came from creative, messaging, offer presentation and audience response, the part of a campaign an agency actually controls. Cheaper impressions are a gift from the auction that can be taken back next quarter. Ads that convert attention twice as well are an asset.
+If the improvement had come from cheaper traffic, those two numbers would have moved together. They didn't. The gain came from creative, messaging, offer presentation and audience response, [the part of a campaign an agency actually controls](/blog/what-does-a-demand-generation-agency-do). Cheaper impressions are a gift from the auction that can be taken back next quarter. Ads that convert attention twice as well are an asset.
 
 One caveat: part of a 97% lift from a new creative set is novelty. Fresh ads outperform tired ones in their first month, and some of this gain will decay. That's why the next result matters more than this one.
 

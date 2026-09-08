@@ -62,7 +62,7 @@ The honest general answer: an established service business at scale needs both, 
 
 ## How the two become one system
 
-This split is exactly why AI Video Systems is built as two engines rather than one service. The **AI Content Engine** is demand generation: buyer-aware creative at volume, distributed to build recognition and retargetable warm audiences. The **Lead Gen Engine** is lead generation: managed paid acquisition, landing pages, CRM and closed-loop reporting that captures demand and traces it to revenue.
+This split is exactly why AI Video Systems is built as two engines rather than one service. The **AI Content Engine** is demand generation: buyer-aware creative at volume, distributed to build recognition and retargetable warm audiences. The **Lead Gen Engine** is lead generation: managed paid acquisition, landing pages, CRM and closed-loop reporting that captures demand and traces it to revenue. [What a demand generation agency actually manages](/blog/what-does-a-demand-generation-agency-do) across both is its own post.
 
 Run together, they loop: the content engine warms the audience, the lead gen engine harvests it, and the revenue data feeds back into what gets made next — which is the [Attention-to-Revenue System](/blog/attention-to-revenue-system) end to end. Run separately, each still works; it just works on whichever half of the problem you actually have. That's a diagnosis question, not a preference question.
 

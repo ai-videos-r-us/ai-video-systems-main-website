@@ -77,7 +77,7 @@ Usually no — you'd be switching off the data you need to diagnose with. Reduce
 
 ### My cost per lead is great. Doesn't that mean the ads are working?
 
-It means the ads are producing responses cheaply — nothing more. Cost per lead is a diagnostic, not a scoreboard; a healthy CPL can hide catastrophic downstream economics. The number that deserves the scoreboard is cost per qualified call, and eventually cost per customer.
+It means the ads are producing responses cheaply — nothing more. Cost per lead is a diagnostic, not a scoreboard; [a healthy CPL can hide catastrophic downstream economics](/blog/cpl-vs-cac). The number that deserves the scoreboard is cost per qualified call, and eventually cost per customer.
 
 ### How do I know if the leads are bad or my follow-up is bad?
 

@@ -15,19 +15,19 @@ This is the complete guide to how it works. It's the system I install for client
 
 The traditional direct-response model breaks because it asks a single cold advertisement to do six jobs at once: interrupt a stranger, explain the problem, establish trust, overcome objections, present the offer, and generate the lead. Then, if the prospect responds, the landing page and the sales team usually have to repeat the same work from scratch — and the original message is almost never connected to the eventual sale.
 
-This can produce leads. What it can't produce is a durable system. Performance hangs on a handful of ads doing too much at once, so when they fatigue — and winning ads always fatigue — the business pays more for the same result or quietly accepts worse lead quality. Meanwhile the dashboard says the campaigns are fine, and the sales team says the leads are weak, and both are telling the truth about different halves of a disconnected machine.
+This can produce leads. What it can't produce is a durable system. Performance hangs on a handful of ads doing too much at once, so when they fatigue — and winning ads always fatigue — the business pays more for the same result or quietly accepts worse lead quality. Meanwhile the dashboard says the campaigns are fine, and the sales team says the leads are weak, and both are telling the truth about different halves of a disconnected machine. [Here's where the revenue actually leaks between them](/blog/leads-but-no-sales).
 
 Here's the belief underneath everything that follows: **you shouldn't have to keep buying more cold reach to grow — the revenue is already sitting inside the traffic you're paying for.** The job is to stop it leaking.
 
 ## What is the Attention-to-Revenue System?
 
-The Attention-to-Revenue System is the commercial path between an advertisement and a closed sale, managed as one accountable loop instead of four disconnected vendors. The strategic change is simple to say: stop asking one cold ad to do all the selling. Move the trust-building upstream of the conversion request, and use revenue data — not platform metrics — to decide what the market sees next.
+The Attention-to-Revenue System is the commercial path between an advertisement and a closed sale, managed as one accountable loop instead of four disconnected vendors. That accountability is [the difference between a demand generation agency and a deliverables agency](/blog/what-does-a-demand-generation-agency-do). The strategic change is simple to say: stop asking one cold ad to do all the selling. Move the trust-building upstream of the conversion request, and use revenue data — not platform metrics — to decide what the market sees next.
 
 In practice that means three moves:
 
 1. **Find what already sells.** The strongest messages aren't invented by a copywriter; they already exist in your sales calls, reviews, and customer outcomes.
 2. **Put it in front of the right buyers, repeatedly.** Nobody absorbs a considered purchase in one ad. Sequencing and retargeting let a buyer meet your proof several times before anyone asks them to book.
-3. **Scale what creates revenue.** Messages get rewarded for producing qualified appointments and customers — never for views.
+3. **Scale what creates revenue.** Messages get rewarded for producing [qualified appointments](/blog/qualified-sales-calls) and customers — never for views.
 
 The five stages below are those moves turned into an operating system.
 
@@ -45,7 +45,7 @@ The AI Video Engine turns the Demand Intelligence library into platform-native v
 
 Be clear about what AI is doing here, because it's the most misunderstood part: **AI provides the production leverage, not the persuasion.** It makes it economical to produce and test dozens of buyer-aware messages instead of hoping three ads survive the quarter. The persuasion still comes from your proof and your understanding of the buyer. AI is the engine inside the system — it is not the product, and it's not the reason any of this works.
 
-Which is also why buying "a batch of AI videos" from a content mill does nothing: volume without the intelligence layer underneath it is just noise, produced faster.
+Which is also why buying "a batch of AI videos" from a content mill does nothing: volume without the intelligence layer underneath it is just noise, produced faster. [Whether AI video is worth it at all](/blog/is-ai-video-marketing-worth-it) depends entirely on what you point it at.
 
 ## Stage 3: Attention Distribution — reaching the right buyers, not the most people
 
@@ -67,7 +67,7 @@ The final stage manages everything after the click: a landing path that continue
 
 This is the least glamorous stage and the most profitable one. A lead is worth nothing until something happens next — and the research on response time alone is brutal: contact within five minutes converts at roughly eight times the rate of waiting even half an hour, yet most firms take over a day. Fixing the follow-up window is routinely the cheapest revenue increase available to an established business.
 
-The feedback half is what makes the whole thing a system rather than a campaign. Cost per lead stays visible, but the scorecard moves to booking rate, show rate, qualification rate, close rate, customer acquisition cost and attributable revenue. Weak messages get killed. Winners get variations. The market gets a steadily better version of your argument every month.
+The feedback half is what makes the whole thing a system rather than a campaign. Cost per lead stays visible, but the scorecard moves to booking rate, show rate, qualification rate, close rate, [customer acquisition cost](/blog/cpl-vs-cac) and attributable revenue. Weak messages get killed. Winners get variations. The market gets a steadily better version of your argument every month.
 
 ## How the system changes your economics
 
@@ -75,7 +75,7 @@ The commercial result of any acquisition system is a chain, not a metric:
 
 **Attributable revenue = leads × booking rate × show rate × qualification rate × close rate × average first-sale revenue.**
 
-That chain is why lead volume is so misleading. As an illustration: 100 leads with a 40% booking rate, 70% show rate, 50% qualification rate and 20% close rate produce about 2.8 customers. The same 100 leads at 50% booking, 80% show, 60% qualification and 25% close produce 6 customers — more than double the revenue, with **zero** extra ad spend and zero extra leads. Every stage of the system exists to push one or more of those multipliers up.
+That chain is why lead volume is so misleading. As an illustration: 100 leads with a 40% booking rate, 70% show rate, 50% qualification rate and 20% close rate produce about 2.8 customers. The same 100 leads at 50% booking, 80% show, 60% qualification and 25% close produce 6 customers — more than double the revenue, with **zero** extra ad spend and zero extra leads. Every stage of the system exists to push one or more of those multipliers up. What running that chain typically costs a service business is covered in [how much marketing costs in 2026](/blog/service-business-marketing-cost).
 
 Those figures are illustrative, but the principle is the entire reason the system exists. If you want to see the chain with your own numbers in it, the [Revenue Leak Calculator](/revenue-leak-calculator) walks through exactly this math for your business.
 
@@ -84,13 +84,13 @@ Those figures are illustrative, but the principle is the entire reason the syste
 Honest proof for a system like this should mirror the chain, not the view count. Two examples from my own client work:
 
 - **Ironclad Finance** — 5M+ views and 74 inbound enquiries in 7 weeks. The views made a nice screenshot; the enquiries were the result, and they happened because the attention was aimed and captured, not broad.
-- **Compare Funerals** — $300k+ in tracked revenue from funeral plan leads at a 20% close rate, with lead quality the business described as above expectations. That's stages 4 and 5 doing their job: the story isn't the leads, it's what the leads became.
+- **Compare Funerals** — $300k+ in tracked revenue from funeral plan leads at a 20% close rate, with lead quality the business described as above expectations. That's stages 4 and 5 doing their job: the story isn't the leads, it's what the leads became. The same account's current numbers are in the [30-day acquisition-efficiency case study](/blog/compare-funerals-30-day-case-study).
 
 The standard I hold case studies to is the full chain — spend, leads, booking and show rates, qualified calls, close rate, attributable revenue — because a system should change business economics, not just attention. Where a number in that chain isn't tracked yet, building the tracking is part of the work.
 
 ## Do you need the whole system?
 
-No — and pretending otherwise would be selling, not diagnosing. The five stages ship as two standalone engines:
+No — and pretending otherwise would be selling, not diagnosing. The five stages ship as two standalone engines, [demand generation and lead generation respectively](/blog/demand-generation-vs-lead-generation):
 
 | Engine | Stages | Built for |
 |---|---|---|

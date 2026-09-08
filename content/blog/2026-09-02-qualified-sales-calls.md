@@ -24,7 +24,7 @@ Vocabulary worth untangling: a **lead** is contact details with intent attached 
 
 ## Why is it the only marketing metric that matters?
 
-Because every metric upstream of it is a proxy, and every proxy can be gamed — usually by accident. Impressions measure the platform's activity. Clicks measure curiosity. Cost per lead measures how cheaply you can collect contact details, which is why chasing it produces cheap contact details rather than customers. **CPL is a diagnostic, not the scoreboard.** A dashboard full of healthy proxies is precisely how a business ends up with [plenty of leads and no sales](/blog/leads-but-no-sales).
+Because every metric upstream of it is a proxy, and every proxy can be gamed — usually by accident. Impressions measure the platform's activity. Clicks measure curiosity. [Cost per lead measures how cheaply you can collect contact details](/blog/cpl-vs-cac), which is why chasing it produces cheap contact details rather than customers. **CPL is a diagnostic, not the scoreboard.** A dashboard full of healthy proxies is precisely how a business ends up with [plenty of leads and no sales](/blog/leads-but-no-sales).
 
 Qualified calls are different in kind, not just degree: they're the first point where revenue becomes arithmetic. For an established service business, the close rate on genuinely qualified calls is remarkably stable month to month — it reflects your offer and your salespeople, not the weather on Meta. Which means once you know your monthly qualified-call count, revenue stops being a hope and starts being a forecast: calls × close rate × average sale. Marketing's real job description is moving that first number.
 
