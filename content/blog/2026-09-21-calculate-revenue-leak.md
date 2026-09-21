@@ -4,7 +4,8 @@ description: "Your revenue leak is what a multiplicative acquisition chain costs
 date: 2026-09-21
 tag: "demand-generation"
 author: "Sean Munn"
-# image + imageAlt pending: media workspace out of credits on 2026-09-21 (generate hero at /blog-images/calculate-revenue-leak.jpg later)
+image: "/blog-images/calculate-revenue-leak.jpg"
+imageAlt: "A descending row of five bars representing an acquisition chain shrinking stage by stage, with a single red stream leaking out from beneath the last stage."
 ---
 
 Your revenue leak is the money lost between the ad spend you pay for and the customers you actually win, calculated stage by stage. Attributable revenue is a chain: leads, then booking rate, then show rate, then qualification rate, then close rate, then average first-sale value. Multiply them. The leak is the gap between what that chain produces today and what it would produce with each stage at a healthy rate. Same spend. Bigger number.
