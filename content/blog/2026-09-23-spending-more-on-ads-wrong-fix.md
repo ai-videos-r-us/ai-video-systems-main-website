@@ -4,9 +4,8 @@ description: "More ad spend multiplies whatever your funnel already does — inc
 date: 2026-09-23
 tag: "demand-generation"
 author: "Sean Munn"
-# image pending — media workspace out of credits on 2026-09-23; add hero before or after merge:
-# image: "/blog-images/spending-more-on-ads-wrong-fix.jpg"
-# imageAlt: "A founder at a desk studying a marketing dashboard while a single red budget slider sits pushed to maximum, the office around them muted and grey."
+image: "/blog-images/spending-more-on-ads-wrong-fix.jpg"
+imageAlt: "A wide stream of grey pours into a narrowing funnel that ends in a blocked drain, while a single red leak escapes out the side — spend arriving faster but leaking before it converts."
 ---
 
 Spending more on ads only works when your funnel already turns leads into customers profitably. If it doesn't, more budget buys you more of the same leaks — cold prospects, slow follow-up, weak qualification — at a higher monthly cost. Ad spend is the most visible lever, so it becomes the default fix. But the leak is almost always downstream of the click, and more traffic magnifies it instead of solving it.
