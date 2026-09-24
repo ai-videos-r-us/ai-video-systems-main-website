@@ -44,7 +44,7 @@
   ],
   "rewrites": [
     {
-      "source": "/((?!api/|blog|about).+)",
+      "source": "/((?!api/|blog|about|meta-ads-lead-generation|qualified-lead-generation|video-lead-generation|lead-generation-for-funeral-homes|mortgage-broker-lead-generation).+)",
       "destination": "/app.html"
     }
   ]

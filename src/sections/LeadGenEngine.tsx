@@ -22,16 +22,22 @@ export default function LeadGenEngine() {
             </FadeIn>
             <FadeIn delay={0.2}>
               <p className="mt-5 text-[15.5px] leading-relaxed text-steel">
-                Trying to generate leads and not succeeding? Are your Meta ad campaigns not delivering the
-                results you&rsquo;re looking for? Have you tried every AI tech system in the marketplace, only
-                to find it hallucinates and never produces the leads you need?
+                Trying to generate leads and not succeeding? Are your{' '}
+                <a href="/meta-ads-lead-generation" className="underline underline-offset-2 hover:text-white">
+                  Meta ad campaigns
+                </a>{' '}
+                not delivering the results you&rsquo;re looking for? Have you tried every AI tech system in
+                the marketplace, only to find it hallucinates and never produces the leads you need?
               </p>
             </FadeIn>
             <FadeIn delay={0.25}>
               <p className="mt-4 text-[15.5px] leading-relaxed text-steel">
-                The Lead Gen Engine solves exactly these problems — the practical, immediate fix for lead
-                generation in your business: managed paid ads, landing pages, CRM and closed-loop reporting,
-                run by a team that improves everything daily.
+                The Lead Gen Engine solves exactly these problems — the practical, immediate fix for{' '}
+                <a href="/qualified-lead-generation" className="underline underline-offset-2 hover:text-white">
+                  qualified lead generation
+                </a>{' '}
+                in your business: managed paid ads, landing pages, CRM and closed-loop reporting, run by a
+                team that improves everything daily.
               </p>
             </FadeIn>
             <FadeIn delay={0.3}>

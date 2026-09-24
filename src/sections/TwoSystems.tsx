@@ -8,15 +8,20 @@ const SITUATIONS = [
     body: 'You need the best brand in your marketplace — one that truly represents you. You need to populate every platform, with coverage everywhere and cinematic work that scales and grows your brand. You need your website to represent you. AI can do this for you.',
     linkLabel: 'The AI Content Engine programme is made for you',
     href: '#content-engine',
+    subLinks: [{ label: 'AI video ads for lead generation', href: '/video-lead-generation' }],
   },
   {
     label: 'Situation Two',
     heading: 'You need qualified leads — now.',
-    body: 'You need qualified leads for your sales team, and you have probably tried everything under the sun: multiple agencies who promised the world, but never a system that actually works — and never real results. You spent and you spent, and you never received the leads you needed. Until now.',
+    body: 'You need lead generation for your sales team, and you have probably tried everything under the sun: multiple agencies who promised the world, but never a system that actually works — and never real results. You spent and you spent, and you never received the leads you needed. Until now.',
     linkLabel: 'The Lead Gen Engine programme is exactly what you need',
     href: '#lead-gen-engine',
+    subLinks: [
+      { label: 'Meta ads lead generation', href: '/meta-ads-lead-generation' },
+      { label: 'Qualified lead generation', href: '/qualified-lead-generation' },
+    ],
   },
-];
+] as const;
 
 export default function TwoSystems() {
   return (
@@ -35,7 +40,8 @@ export default function TwoSystems() {
           </FadeIn>
           <FadeIn delay={0.2}>
             <p className="mt-6 text-[16px] leading-relaxed text-carbon/70">
-              You have one of two situations to handle. Thankfully, AI Video Systems can help with both.
+              You need brand-building content, lead generation, or both. Thankfully, AI Video Systems — a
+              lead generation agency for service businesses — can help with all of it.
             </p>
           </FadeIn>
         </div>
@@ -43,16 +49,29 @@ export default function TwoSystems() {
         <div className="mt-14 grid gap-6 lg:grid-cols-2">
           {SITUATIONS.map((s, i) => (
             <FadeIn key={s.label} delay={i * 0.1}>
-              <a
-                href={s.href}
-                className="group flex h-full flex-col border border-carbon/15 bg-white p-8 transition-colors duration-200 hover:border-carbon md:p-10"
-              >
+              <div className="group flex h-full flex-col border border-carbon/15 bg-white p-8 transition-colors duration-200 hover:border-carbon md:p-10">
                 <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-carbon/45">
                   {s.label}
                 </p>
                 <h3 className="mt-4 font-display text-2xl font-bold leading-snug text-carbon">{s.heading}</h3>
                 <p className="mt-4 flex-1 text-[15px] leading-relaxed text-carbon/70">{s.body}</p>
-                <p className="mt-7 inline-flex items-center gap-2 font-display text-[14px] font-bold uppercase tracking-wide text-carbon">
+                {s.subLinks?.length ? (
+                  <p className="mt-4 flex flex-wrap gap-x-4 gap-y-1.5">
+                    {s.subLinks.map((sl) => (
+                      <a
+                        key={sl.href}
+                        href={sl.href}
+                        className="font-mono text-[11.5px] font-semibold uppercase tracking-[0.1em] text-carbon/55 underline underline-offset-2 hover:text-action"
+                      >
+                        {sl.label}
+                      </a>
+                    ))}
+                  </p>
+                ) : null}
+                <a
+                  href={s.href}
+                  className="mt-7 inline-flex items-center gap-2 font-display text-[14px] font-bold uppercase tracking-wide text-carbon hover:text-action"
+                >
                   {s.linkLabel}
                   <svg
                     width="15"
@@ -63,8 +82,8 @@ export default function TwoSystems() {
                   >
                     <path d="M12 5v14M6 13l6 6 6-6" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
-                </p>
-              </a>
+                </a>
+              </div>
             </FadeIn>
           ))}
         </div>

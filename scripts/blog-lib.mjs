@@ -15,6 +15,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export const ROOT = path.resolve(__dirname, '..');
 export const CONTENT_DIR = path.join(ROOT, 'content', 'blog');
+export const PAGES_DIR = path.join(ROOT, 'content', 'pages');
 export const DIST_DIR = path.join(ROOT, 'dist');
 
 // Canonical origin. Matches the www. host used by the existing canonical tags and
@@ -155,4 +156,59 @@ export function loadPosts({ includeDrafts = false } = {}) {
 
   posts.sort((a, b) => (a.dateISO < b.dateISO ? 1 : a.dateISO > b.dateISO ? -1 : 0));
   return posts;
+}
+
+/**
+ * Load every static commercial/service page from content/pages/*.md — the Layer-1
+ * SEO pages (one real search intent per page: Meta ads, qualified lead gen, video
+ * lead gen, an industry vertical, etc). Same static-HTML-at-build-time approach as
+ * loadPosts(), but structured frontmatter (stats/fit/faqs/related) drives most of
+ * the page instead of freeform prose — the commercial-page equivalent of how
+ * content/about.md's frontmatter drives the About page.
+ * Filename (minus .md) is the slug and the URL path, so it must exactly match the
+ * intended route (e.g. meta-ads-lead-generation.md -> /meta-ads-lead-generation).
+ */
+export function loadPages() {
+  if (!fs.existsSync(PAGES_DIR)) return [];
+
+  const files = fs.readdirSync(PAGES_DIR).filter((f) => f.endsWith('.md') && !f.startsWith('_'));
+  const pages = [];
+  const seen = new Set();
+
+  for (const file of files) {
+    const raw = fs.readFileSync(path.join(PAGES_DIR, file), 'utf8');
+    const { data, content } = matter(raw);
+
+    if (!data.title) {
+      console.warn(`[pages] skipping ${file}: missing "title" in frontmatter`);
+      continue;
+    }
+
+    const slug = slugify(file.replace(/\.md$/, ''));
+    if (seen.has(slug)) {
+      console.warn(`[pages] duplicate slug "${slug}" (${file}) — skipping the duplicate`);
+      continue;
+    }
+    seen.add(slug);
+
+    pages.push({
+      slug,
+      title: String(data.title),
+      description: String(data.description || ''),
+      tag: String(data.tag || 'Lead Generation'),
+      h1: String(data.h1 || data.title),
+      subhead: String(data.subhead || ''),
+      stats: Array.isArray(data.stats) ? data.stats : [],
+      fit: Array.isArray(data.fit) ? data.fit : [],
+      notfit: Array.isArray(data.notfit) ? data.notfit : [],
+      faqs: Array.isArray(data.faqs) ? data.faqs : [],
+      related: Array.isArray(data.related) ? data.related : [],
+      updatedISO: data.updated ? toISODate(data.updated) : '',
+      bodyHtml: marked.parse(content),
+      url: `${SITE_URL}/${slug}`,
+      path: `/${slug}`,
+    });
+  }
+
+  return pages;
 }
