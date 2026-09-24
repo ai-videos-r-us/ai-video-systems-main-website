@@ -31,13 +31,13 @@ export default function Hero() {
 
         <FadeIn delay={0.2}>
           <h1 className="mx-auto mt-8 max-w-[720px] font-display text-[clamp(1.25rem,2.3vw,1.7rem)] font-bold leading-snug text-carbon">
-            Business owners need ROI — not broken promises.
+            The lead generation agency for service businesses done with broken promises.
           </h1>
         </FadeIn>
 
         <FadeIn delay={0.25}>
           <p className="mx-auto mt-4 max-w-[680px] text-[16.5px] leading-relaxed text-carbon/70">
-            We install and run your content and lead generation for you — content, ads, CRM, and a team that
+            We install and run lead generation for you — content, ads, landing pages, CRM, and a team that
             improves everything daily, so no money is wasted.
           </p>
         </FadeIn>

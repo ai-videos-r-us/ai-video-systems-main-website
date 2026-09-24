@@ -15,13 +15,15 @@
 //   dist/robots.txt                 crawl rules + sitemap pointer (AI bots allowed)
 //   dist/llms.txt                   plain-text index for AI crawlers
 //   dist/about/index.html           static founder/author entity page (from content/about.md)
+//   dist/<slug>/index.html          one static commercial page per content/pages/*.md file
+//                                   (the Layer-1 SEO pages — Meta ads, qualified lead gen, etc.)
 
 import fs from 'node:fs';
 import path from 'node:path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
 import {
-  loadPosts, escapeHtml, ROOT, DIST_DIR, SITE_URL, SITE_NAME,
+  loadPosts, loadPages, escapeHtml, ROOT, DIST_DIR, SITE_URL, SITE_NAME,
   DEFAULT_OG_IMAGE, LOGO_URL, ORG_ID, FOUNDER_ID, BLOG_ID,
 } from './blog-lib.mjs';
 
@@ -29,7 +31,8 @@ const YEAR = new Date().getFullYear();
 const BLOG_DESCRIPTION =
   'Field notes on AI content, lead generation and marketing systems for established, founder-led service businesses — from the team behind AI Video Systems.';
 
-// Core indexable pages (kept in sync with the router in src/App.tsx).
+// Core indexable pages (kept in sync with the router in src/App.tsx). The
+// content/pages/*.md commercial pages are added separately, below, from `pages`.
 const CORE_PAGES = [
   { loc: `${SITE_URL}/`, changefreq: 'weekly', priority: '1.0' },
   { loc: `${SITE_URL}/about`, changefreq: 'monthly', priority: '0.6' },
@@ -207,7 +210,8 @@ img{max-width:100%;height:auto}
 /* Footer — static replica of the SPA footer */
 .site-footer{background:var(--carbon);color:#fff;padding:56px 0 36px}
 .site-footer .cols{max-width:1360px;margin:0 auto;padding:0 20px;display:grid;gap:40px}
-@media(min-width:900px){.site-footer .cols{grid-template-columns:1.2fr 1fr 1fr}}
+@media(min-width:700px){.site-footer .cols{grid-template-columns:1fr 1fr}}
+@media(min-width:1100px){.site-footer .cols{grid-template-columns:1.1fr 0.9fr 0.9fr 0.7fr}}
 .site-footer .blurb{max-width:340px;font-size:14px;line-height:1.65;color:var(--steel);margin:18px 0 0}
 .site-footer .contact{margin:20px 0 0;font-family:"IBM Plex Mono",monospace;font-size:12px;line-height:2}
 .site-footer .contact a{color:var(--steel)}.site-footer .contact a:hover{color:#fff}
@@ -297,7 +301,7 @@ const FOOTER = `<footer class="site-footer">
 <div class="cols">
 <div>
 <img src="/brand/avs-full-logo-white.svg" alt="AI Video Systems" width="150" height="40" style="height:40px;width:auto" />
-<p class="blurb">AI Video Systems installs two tailored marketing systems &mdash; the AI Content Engine and the Lead Gen Engine &mdash; for established service businesses that need ROI they can see, backed by receipts.</p>
+<p class="blurb">AI Video Systems is a lead generation agency for established service businesses, installing two tailored systems &mdash; the AI Content Engine and the Lead Gen Engine &mdash; for ROI they can see, backed by receipts.</p>
 <p class="contact"><a href="mailto:sean@aivideosystems.org">sean@aivideosystems.org</a><br />
 <a class="q" href="${AUDIT_URL}" target="_blank" rel="noopener">See If You Qualify &rarr;</a><br />
 AI Video Systems Ltd</p>
@@ -309,6 +313,16 @@ AI Video Systems Ltd</p>
 <li><a href="/blog">Blog</a></li>
 <li><a href="/about">About Sean</a></li>
 <li><a href="/revenue-leak-calculator">Revenue Leak Calculator</a></li>
+</ul>
+</div>
+<div>
+<p class="head">Services</p>
+<ul>
+<li><a href="/meta-ads-lead-generation">Meta Ads Lead Generation</a></li>
+<li><a href="/qualified-lead-generation">Qualified Lead Generation</a></li>
+<li><a href="/video-lead-generation">Video Lead Generation</a></li>
+<li><a href="/lead-generation-for-funeral-homes">Funeral Home Lead Generation</a></li>
+<li><a href="/mortgage-broker-lead-generation">Mortgage Broker Lead Generation</a></li>
 </ul>
 </div>
 <div>
@@ -330,7 +344,7 @@ const CTA = `<section class="cta-band">
 <div class="inner">
 <p class="eyebrow">The Next Step</p>
 <h2>Want a system like this installed for your business?</h2>
-<p class="s">AI Video Systems installs the AI Content Engine and the Lead Gen Engine for established, founder-led service businesses. If you have a proven offer and the capacity for more clients, find out if you qualify &mdash; the first 30 days are covered by a money-back guarantee.</p>
+<p class="s">AI Video Systems is a lead generation agency for established, founder-led service businesses, installing the AI Content Engine and the Lead Gen Engine. If you have a proven offer and the capacity for more clients, find out if you qualify &mdash; the first 30 days are covered by a money-back guarantee.</p>
 <a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">See If You Qualify
 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
 <p class="proof">$15m+ tracked revenue &middot; 96+ clients &middot; 30-day money-back guarantee</p>
@@ -867,13 +881,159 @@ ${INLINE_JS}`;
 }
 
 // ---------------------------------------------------------------------------
+// Commercial pages (content/pages/*.md — the Layer-1 SEO pages)
+// ---------------------------------------------------------------------------
+
+function renderServicePage(page) {
+  const title = escapeHtml(page.title);
+  const desc = escapeHtml(page.description);
+  const h1 = escapeHtml(page.h1);
+
+  const { answerHtml, rest } = splitShortAnswer(page.bodyHtml);
+  const toc = buildToc(rest);
+
+  const graph = [
+    {
+      '@type': 'Service',
+      '@id': `${page.url}#service`,
+      name: page.h1,
+      serviceType: page.tag,
+      description: page.description,
+      provider: { '@id': ORG_ID },
+      areaServed: { '@type': 'Country', name: 'United States' },
+      audience: { '@type': 'BusinessAudience', audienceType: 'Established, founder-led service businesses' },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+        { '@type': 'ListItem', position: 2, name: page.title, item: page.url },
+      ],
+    },
+  ];
+  if (page.faqs.length) {
+    graph.push({
+      '@type': 'FAQPage',
+      '@id': `${page.url}#faq`,
+      mainEntity: page.faqs.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    });
+  }
+
+  const head = `<title>${title} &mdash; ${SITE_NAME}</title>
+<meta name="description" content="${desc}" />
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
+<link rel="canonical" href="${page.url}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="${title}" />
+<meta property="og:description" content="${desc}" />
+<meta property="og:url" content="${page.url}" />
+<meta property="og:site_name" content="${SITE_NAME}" />
+<meta property="og:image" content="${DEFAULT_OG_IMAGE}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="${title}" />
+<meta name="twitter:description" content="${desc}" />
+<meta name="twitter:image" content="${DEFAULT_OG_IMAGE}" />
+${jsonLd({ '@context': 'https://schema.org', '@graph': graph })}`;
+
+  const tocList = toc.map((t) => `<li><a href="#${t.id}">${escapeHtml(t.label)}</a></li>`).join('\n');
+  const tocBlock = toc.length >= 2
+    ? `<nav aria-label="On this page"><p class="toc-label">On this page</p><ul class="toc">${tocList}</ul></nav>`
+    : '';
+  const tocMobile = toc.length >= 2
+    ? `<details class="toc-m"><summary>On this page</summary><ul class="toc">${tocList}</ul></details>`
+    : '';
+
+  const railCta = `<div class="rail-cta">
+<p class="t">Want this installed, not just explained?</p>
+<p class="s">One qualification call. 30 days risk-free.</p>
+<a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">See If You Qualify</a>
+</div>`;
+
+  const statsBlock = page.stats.length
+    ? `<div class="stats">
+${page.stats.map((s) => `<div><p class="n">${escapeHtml(s.n)}</p><p class="l">${escapeHtml(s.l)}</p></div>`).join('\n')}
+</div>`
+    : '';
+
+  const answerBlock = answerHtml
+    ? `<section class="answer" aria-label="The short answer"><p class="label">The short answer</p><p>${answerHtml}</p></section>`
+    : '';
+
+  const fitBlock = (page.fit.length || page.notfit.length)
+    ? `${sec2('who-this-is-for', 'Fit', 'Who this is for &mdash; and who it isn&rsquo;t')}
+<div class="fitgrid">
+<div class="fit-card dark"><p class="fh">A good fit</p><ul>${page.fit.map((x) => `<li>${escapeHtml(x)}</li>`).join('')}</ul></div>
+<div class="fit-card"><p class="fh">Not a fit (yet)</p><ul>${page.notfit.map((x) => `<li>${escapeHtml(x)}</li>`).join('')}</ul></div>
+</div>`
+    : '';
+
+  const faqBlock = page.faqs.length
+    ? `${sec2('faq', 'Questions', 'Frequently asked questions')}
+${page.faqs.map((f, i) => `<details class="faq-item" id="faq-${i}"><summary>${escapeHtml(f.q)}</summary><div class="faq-a"><p>${escapeHtml(f.a)}</p></div></details>`).join('\n')}`
+    : '';
+
+  const relatedBlock = page.related.length
+    ? `<section class="related"><p class="toc-label">Keep exploring</p><div class="related-grid">
+${page.related.map((r) => `<article class="card"><p class="tag">${escapeHtml(r.tag || page.tag)}</p><p class="t"><a href="${r.href}">${escapeHtml(r.label)}</a></p><p class="ex">${escapeHtml(r.desc || '')}</p></article>`).join('\n')}
+</div></section>`
+    : '';
+
+  const body = `<div class="progress" aria-hidden="true"><i id="pbar"></i></div>
+${HEADER}
+<main>
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">/</span><span>${title}</span></nav>
+<header class="post-head">
+<p class="eyebrow">${escapeHtml(page.tag)}</p>
+<h1>${h1}</h1>
+${page.subhead ? `<p style="margin-top:16px;font-family:Sora,sans-serif;font-weight:700;font-size:17px;line-height:1.5;max-width:760px;color:rgba(11,11,13,.85)">${escapeHtml(page.subhead)}</p>` : ''}
+<div style="margin-top:24px"><a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">See If You Qualify
+<svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+</header>
+${statsBlock}
+${answerBlock}
+${tocMobile}
+<div class="layout">
+<aside class="rail"><div class="rail-inner">
+${tocBlock}
+${railCta}
+</div></aside>
+<article class="prose">${rest}</article>
+</div>
+${fitBlock}
+${faqBlock}
+${relatedBlock}
+</div>
+</main>
+${CTA}
+${FOOTER}
+${INLINE_JS}`;
+
+  return shell({ head, body });
+}
+
+function sec2(id, eyebrow, h) {
+  return `<div class="sec-head" id="${id}"><p class="eyebrow">${eyebrow}</p><h2>${h}</h2></div>`;
+}
+
+// ---------------------------------------------------------------------------
 // Feeds / crawl files
 // ---------------------------------------------------------------------------
 
-function renderSitemap(posts, about) {
+function renderSitemap(posts, about, pages) {
   const urls = [
     ...CORE_PAGES.filter((p) => about || p.loc !== `${SITE_URL}/about`)
       .map((p) => ({ loc: p.loc, changefreq: p.changefreq, priority: p.priority })),
+    ...pages.map((p) => ({
+      loc: p.url,
+      changefreq: 'monthly',
+      priority: '0.9',
+      lastmod: p.updatedISO || undefined,
+    })),
   ];
   if (posts.length) {
     urls.push({ loc: `${SITE_URL}/blog`, changefreq: 'daily', priority: '0.8', lastmod: posts[0].updatedISO });
@@ -937,12 +1097,15 @@ ${items}
 `;
 }
 
-function renderLlms(posts, about) {
+function renderLlms(posts, about, pages) {
   const lines = [
     `# ${SITE_NAME}`,
     '',
-    `> ${SITE_NAME} installs two tailored marketing systems for established, founder-led service businesses: the AI Content Engine (AI content and authority at volume) and the Lead Gen Engine (managed paid ads, landing pages, CRM and closed-loop reporting). $15m+ in tracked revenue across 96+ clients.`,
+    `> ${SITE_NAME} is a lead generation agency for established, founder-led service businesses, installing two tailored systems: the AI Content Engine (AI content and authority at volume) and the Lead Gen Engine (managed paid ads, landing pages, CRM and closed-loop reporting). $15m+ in tracked revenue across 96+ clients.`,
     '',
+    ...(pages.length
+      ? ['## Services', '', ...pages.map((p) => `- [${p.title}](${p.url}): ${p.description}`), '']
+      : []),
     ...(about
       ? ['## About', '', `- [${about.title}](${SITE_URL}/about): ${about.description}`, '']
       : []),
@@ -973,6 +1136,7 @@ function main() {
 
   const posts = loadPosts();
   const about = loadAbout();
+  const pages = loadPages();
   const written = [];
 
   for (const post of posts) {
@@ -988,17 +1152,22 @@ function main() {
     written.push(writeFile(path.join('about', 'index.html'), renderAbout(about)));
   }
 
-  // Always regenerate crawl files so they reflect current content.
-  written.push(writeFile('sitemap.xml', renderSitemap(posts, about)));
-  written.push(writeFile('robots.txt', renderRobots()));
-  written.push(writeFile('llms.txt', renderLlms(posts, about)));
+  for (const page of pages) {
+    written.push(writeFile(path.join(page.slug, 'index.html'), renderServicePage(page)));
+  }
 
-  console.log(`[blog] ${posts.length} post(s) -> ${written.length} file(s) in dist/`);
+  // Always regenerate crawl files so they reflect current content.
+  written.push(writeFile('sitemap.xml', renderSitemap(posts, about, pages)));
+  written.push(writeFile('robots.txt', renderRobots()));
+  written.push(writeFile('llms.txt', renderLlms(posts, about, pages)));
+
+  console.log(`[blog] ${posts.length} post(s), ${pages.length} page(s) -> ${written.length} file(s) in dist/`);
   if (posts.length) {
     for (const p of posts) console.log(`         /blog/${p.slug}  (${p.dateISO}, ${p.readingMinutes}m)`);
   } else {
     console.log('         no posts yet — blog index/RSS skipped, sitemap/robots/llms refreshed');
   }
+  for (const p of pages) console.log(`         /${p.slug}`);
 }
 
 main();

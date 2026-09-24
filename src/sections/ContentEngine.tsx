@@ -82,8 +82,11 @@ export default function ContentEngine() {
             <FadeIn delay={0.25}>
               <p className="mt-4 text-[15.5px] leading-relaxed text-carbon/70">
                 The AI Content Engine is a unique marketing experience that scales your brand, scales your
-                followers and scales your platforms with content — AI content at volume, distributed
-                everywhere your buyers look.
+                followers and scales your platforms with content — including{' '}
+                <a href="/video-lead-generation" className="underline underline-offset-2 hover:text-action">
+                  video ads for lead generation
+                </a>
+                , distributed everywhere your buyers look.
               </p>
             </FadeIn>
             <FadeIn delay={0.3}>

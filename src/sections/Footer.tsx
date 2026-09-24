@@ -11,6 +11,14 @@ const QUICK_LINKS = [
   { label: 'Contact', href: 'mailto:sean@aivideosystems.org' },
 ];
 
+const SERVICE_LINKS = [
+  { label: 'Meta Ads Lead Generation', href: '/meta-ads-lead-generation' },
+  { label: 'Qualified Lead Generation', href: '/qualified-lead-generation' },
+  { label: 'Video Lead Generation', href: '/video-lead-generation' },
+  { label: 'Funeral Home Lead Generation', href: '/lead-generation-for-funeral-homes' },
+  { label: 'Mortgage Broker Lead Generation', href: '/mortgage-broker-lead-generation' },
+];
+
 const LEGAL_LINKS = [
   { label: 'Privacy Policy', href: '/privacy' },
   { label: 'Terms', href: '/terms' },
@@ -20,12 +28,13 @@ export default function Footer() {
   return (
     <footer className="clip-angle-top bg-carbon pb-10 pt-28 text-white">
       <div className="mx-auto max-w-[1360px] px-5 md:px-8">
-        <div className="grid gap-12 lg:grid-cols-[1.2fr_1fr_1fr]">
+        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-[1.1fr_0.9fr_0.9fr_0.7fr]">
           <div>
             <img src="/brand/avs-full-logo-white.svg" alt="AI Video Systems" className="h-12 w-auto" />
             <p className="mt-5 max-w-[340px] text-[14.5px] leading-relaxed text-steel">
-              AI Video Systems installs two tailored marketing systems — the AI Content Engine and the Lead
-              Gen Engine — for established service businesses that need ROI they can see, backed by receipts.
+              AI Video Systems is a lead generation agency for established service businesses, installing
+              two tailored systems — the AI Content Engine and the Lead Gen Engine — for ROI they can see,
+              backed by receipts.
             </p>
             <div className="mt-6 space-y-1.5 font-mono text-[12px] text-steel">
               <p>
@@ -57,6 +66,21 @@ export default function Footer() {
                     href={l.href}
                     className="text-[13px] text-steel transition-colors hover:text-white"
                   >
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-white/40">
+              Services
+            </p>
+            <ul className="mt-4 space-y-2.5">
+              {SERVICE_LINKS.map((l) => (
+                <li key={l.label}>
+                  <a href={l.href} className="text-[13px] text-steel transition-colors hover:text-white">
                     {l.label}
                   </a>
                 </li>
