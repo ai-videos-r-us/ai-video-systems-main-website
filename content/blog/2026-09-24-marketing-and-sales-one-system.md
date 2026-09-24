@@ -4,6 +4,8 @@ description: "When marketing celebrates cost per lead and sales complains about 
 date: 2026-09-24
 tag: "demand-generation"
 author: "Sean Munn"
+image: "/blog-images/marketing-and-sales-one-system.jpg"
+imageAlt: "Three colleagues around a table in a grey office mid-disagreement — one gesturing at a laptop dashboard, one holding a printed sales report, a founder in the middle seen from behind — with a single red trend line on a shared sheet of paper between them."
 ---
 
 Marketing and sales aren't two departments — they're one loop with a leak in the middle. When marketing celebrates a low cost per lead while sales complains the leads are weak, they're usually both telling the truth. The problem isn't either team. It's that the handoff between attention and revenue has no owner, no shared scoreboard, and no feedback. Fix the loop and the argument disappears.
