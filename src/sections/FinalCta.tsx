@@ -4,7 +4,7 @@ import { Eyebrow, PrimaryCTA } from '../components/CTA';
 
 export default function FinalCta() {
   return (
-    <section className="relative overflow-hidden bg-cloud py-24 md:py-32">
+    <section id="final-cta" className="relative overflow-hidden bg-cloud py-24 md:py-32">
       <div className="mx-auto max-w-[820px] px-5 text-center md:px-8">
         <FadeIn>
           <Eyebrow>One Short Call</Eyebrow>
