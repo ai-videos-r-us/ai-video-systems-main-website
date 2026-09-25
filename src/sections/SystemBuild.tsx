@@ -63,18 +63,26 @@ export default function SystemBuild() {
           </FadeIn>
         </div>
 
-        <div className="mt-14 space-y-8">
-          {STEPS.map((s, i) => (
-            <FadeIn key={s.n} delay={i * 0.06}>
-              <div className="flex gap-5 border-b border-carbon/12 pb-8 last:border-b-0">
-                <p className="font-display text-2xl font-extrabold text-carbon/25">{s.n}</p>
-                <div>
-                  <h3 className="font-display text-lg font-bold leading-snug text-carbon">{s.title}</h3>
-                  <p className="mt-2 text-[14.5px] leading-relaxed text-carbon/70">{s.body}</p>
+        <div className="mt-14">
+          {STEPS.map((s, i) => {
+            const isLast = i === STEPS.length - 1;
+            return (
+              <FadeIn key={s.n} delay={i * 0.06}>
+                <div className="flex gap-5">
+                  <div className="flex flex-col items-center">
+                    <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-carbon font-display text-lg font-extrabold text-white">
+                      {s.n}
+                    </div>
+                    {!isLast && <div className="mt-1 w-0.5 flex-1 bg-carbon" />}
+                  </div>
+                  <div className={isLast ? 'pt-2.5' : 'pb-10 pt-2.5'}>
+                    <h3 className="font-display text-lg font-bold leading-snug text-carbon">{s.title}</h3>
+                    <p className="mt-2 text-[14.5px] leading-relaxed text-carbon/70">{s.body}</p>
+                  </div>
                 </div>
-              </div>
-            </FadeIn>
-          ))}
+              </FadeIn>
+            );
+          })}
         </div>
 
         <FadeIn delay={0.5}>
