@@ -3,12 +3,6 @@ import CountUp from '../components/CountUp';
 import VslPlayer from '../components/VslPlayer';
 import { Eyebrow, PrimaryCTA } from '../components/CTA';
 
-const STATS = [
-  { value: <CountUp to={15} prefix="$" suffix="M+" duration={1.8} />, label: 'in Tracked Revenue.' },
-  { value: <CountUp to={96} suffix="+" duration={1.8} />, label: 'Clients.' },
-  { value: 'Two', label: 'Tailored Systems.' },
-] as const;
-
 export default function Hero() {
   return (
     <section id="top" className="relative overflow-hidden bg-white">
@@ -20,19 +14,18 @@ export default function Hero() {
         </FadeIn>
 
         <FadeIn delay={0.1}>
-          <p className="mt-6 font-display text-[clamp(2.2rem,5.2vw,4.2rem)] font-extrabold leading-[1.04] tracking-tight text-carbon">
-            {STATS.map((s) => (
-              <span key={s.label} className="block">
-                {s.value} <span className="text-carbon/60">{s.label}</span>
-              </span>
-            ))}
-          </p>
+          <h1 className="mx-auto mt-6 max-w-[840px] font-display text-[clamp(1.9rem,4.4vw,3.4rem)] font-extrabold leading-[1.1] tracking-tight text-carbon">
+            The lead generation agency for local service businesses.{' '}
+            <span className="text-carbon/60">Done with broken promises.</span>
+          </h1>
         </FadeIn>
 
         <FadeIn delay={0.2}>
-          <h1 className="mx-auto mt-8 max-w-[720px] font-display text-[clamp(1.25rem,2.3vw,1.7rem)] font-bold leading-snug text-carbon">
-            The lead generation agency for service businesses done with broken promises.
-          </h1>
+          <p className="mx-auto mt-6 max-w-[560px] font-display text-[clamp(1.05rem,2vw,1.35rem)] font-bold text-carbon/80">
+            <CountUp to={15} prefix="$" suffix="M+" duration={1.8} /> Tracked Revenue{' '}
+            <span className="text-carbon/30">·</span> <CountUp to={96} suffix="+" duration={1.8} /> Clients{' '}
+            <span className="text-carbon/30">·</span> Two Tailored Systems
+          </p>
         </FadeIn>
 
         <FadeIn delay={0.25}>
