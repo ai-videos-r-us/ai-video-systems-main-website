@@ -13,6 +13,7 @@ import Faq from './sections/Faq';
 import Articles from './sections/Articles';
 import FinalCta from './sections/FinalCta';
 import Footer from './sections/Footer';
+import MobileStickyCta from './components/MobileStickyCta';
 
 const FuneralDiagnosticPage = lazy(() => import('./diagnostic/FuneralDiagnosticPage'));
 const ResultsPage = lazy(() => import('./diagnostic/ResultsPage'));
@@ -36,6 +37,7 @@ function MainSite() {
       <Articles />
       <FinalCta />
       <Footer />
+      <MobileStickyCta />
     </main>
   );
 }
