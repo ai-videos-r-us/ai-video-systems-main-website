@@ -1,5 +1,4 @@
 import FadeIn from '../components/FadeIn';
-import CountUp from '../components/CountUp';
 import VslPlayer from '../components/VslPlayer';
 import { Eyebrow, PrimaryCTA } from '../components/CTA';
 
@@ -14,24 +13,16 @@ export default function Hero() {
         </FadeIn>
 
         <FadeIn delay={0.1}>
-          <h1 className="mx-auto mt-6 max-w-[840px] font-display text-[clamp(1.9rem,4.4vw,3.4rem)] font-extrabold leading-[1.1] tracking-tight text-carbon">
-            The lead generation agency for local service businesses.{' '}
-            <span className="text-carbon/60">Done with broken promises.</span>
+          <h1 className="mx-auto mt-6 max-w-[880px] font-display text-[clamp(1.9rem,4.4vw,3.4rem)] font-extrabold leading-[1.1] tracking-tight text-carbon">
+            A Done-For-You Lead Generation System That Pays For Itself In 30 Days{' '}
+            <span className="text-carbon/60">— Or You Don&rsquo;t Pay.</span>
           </h1>
         </FadeIn>
 
         <FadeIn delay={0.2}>
-          <p className="mx-auto mt-6 max-w-[560px] font-display text-[clamp(1.05rem,2vw,1.35rem)] font-bold text-carbon/80">
-            <CountUp to={15} prefix="$" suffix="M+" duration={1.8} /> Tracked Revenue{' '}
-            <span className="text-carbon/30">·</span> <CountUp to={96} suffix="+" duration={1.8} /> Clients{' '}
-            <span className="text-carbon/30">·</span> Two Tailored Systems
-          </p>
-        </FadeIn>
-
-        <FadeIn delay={0.25}>
-          <p className="mx-auto mt-4 max-w-[680px] text-[16.5px] leading-relaxed text-carbon/70">
-            We install and run lead generation for you — content, ads, landing pages, CRM, and a team that
-            improves everything daily, so no money is wasted.
+          <p className="mx-auto mt-6 max-w-[680px] text-[16.5px] leading-relaxed text-carbon/70">
+            We run your content, ads, funnel and email marketing — all tailored to your specific business —
+            so cold traffic starts converting the same way your referrals do.
           </p>
         </FadeIn>
 

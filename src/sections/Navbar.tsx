@@ -3,8 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { AUDIT_URL, trackAuditCtaClick } from '../components/CTA';
 
 const LINKS = [
-  { label: 'AI Content Engine', href: '#content-engine' },
-  { label: 'Lead Gen Engine', href: '#lead-gen-engine' },
+  { label: 'What We Build', href: '#system-build' },
   { label: 'Reviews', href: '#reviews' },
   { label: 'Blog', href: '/blog' },
   { label: 'FAQ', href: '#faq' },

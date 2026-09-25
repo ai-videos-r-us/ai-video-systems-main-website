@@ -1,8 +1,7 @@
 import { AUDIT_URL, trackAuditCtaClick } from '../components/CTA';
 
 const QUICK_LINKS = [
-  { label: 'The AI Content Engine', href: '#content-engine' },
-  { label: 'The Lead Gen Engine', href: '#lead-gen-engine' },
+  { label: 'What We Build', href: '#system-build' },
   { label: 'Reviews', href: '#reviews' },
   { label: 'Revenue Leak Calculator', href: '/revenue-leak-calculator' },
   { label: 'About Sean', href: '/about' },
@@ -32,9 +31,9 @@ export default function Footer() {
           <div>
             <img src="/brand/avs-full-logo-white.svg" alt="AI Video Systems" className="h-12 w-auto" />
             <p className="mt-5 max-w-[340px] text-[14.5px] leading-relaxed text-steel">
-              AI Video Systems is a lead generation agency for established service businesses, installing
-              two tailored systems — the AI Content Engine and the Lead Gen Engine — for ROI they can see,
-              backed by receipts.
+              AI Video Systems is a done-for-you lead generation system for established service businesses —
+              content, ads, funnel and email marketing, installed and run for ROI they can see, backed by
+              receipts.
             </p>
             <div className="mt-6 space-y-1.5 font-mono text-[12px] text-steel">
               <p>
@@ -106,7 +105,7 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-7 md:flex-row">
           <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-white/40">
-            Two Tailored Systems · Receipts Included
+            Done-For-You System · Receipts Included
           </p>
           <p className="font-mono text-[11px] text-white/30" suppressHydrationWarning>
             © {new Date().getFullYear()} AI Video Systems. All rights reserved.

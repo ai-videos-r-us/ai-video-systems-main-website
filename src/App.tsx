@@ -2,10 +2,12 @@ import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './sections/Navbar';
 import Hero from './sections/Hero';
-import TwoSystems from './sections/TwoSystems';
-import ContentEngine from './sections/ContentEngine';
 import LogoMarquee from './sections/LogoMarquee';
-import LeadGenEngine from './sections/LeadGenEngine';
+import OnTheCall from './sections/OnTheCall';
+import StatsStrip from './sections/StatsStrip';
+import RiskReversal from './sections/RiskReversal';
+import PainPoints from './sections/PainPoints';
+import SystemBuild from './sections/SystemBuild';
 import ProofWall from './sections/ProofWall';
 import Guarantee from './sections/Guarantee';
 import Fit from './sections/Fit';
@@ -27,9 +29,11 @@ function MainSite() {
       <Navbar />
       <Hero />
       <LogoMarquee />
-      <TwoSystems />
-      <ContentEngine />
-      <LeadGenEngine />
+      <OnTheCall />
+      <StatsStrip />
+      <RiskReversal />
+      <PainPoints />
+      <SystemBuild />
       <ProofWall />
       <Guarantee />
       <Fit />
