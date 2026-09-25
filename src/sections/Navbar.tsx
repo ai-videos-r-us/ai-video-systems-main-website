@@ -3,8 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { AUDIT_URL, trackAuditCtaClick } from '../components/CTA';
 
 const LINKS = [
-  { label: 'AI Content Engine', href: '#content-engine' },
-  { label: 'Lead Gen Engine', href: '#lead-gen-engine' },
+  { label: 'What We Build', href: '#system-build' },
   { label: 'Reviews', href: '#reviews' },
   { label: 'Blog', href: '/blog' },
   { label: 'FAQ', href: '#faq' },
@@ -41,7 +40,7 @@ export default function Navbar() {
             className="inline-block bg-signal px-4 py-2.5 font-display text-xs font-bold uppercase tracking-wider text-white transition-colors hover:bg-action sm:px-5"
             style={{ clipPath: 'polygon(0 0, 100% 0, calc(100% - 10px) 100%, 0 100%)' }}
           >
-            See If You Qualify
+            Book A Free Call
           </a>
           <button
             type="button"

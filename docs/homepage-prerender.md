@@ -42,7 +42,7 @@ missing any of the main section ids, so a broken render fails the build
 instead of shipping an empty homepage. After deploying, confirm with:
 
 ```bash
-curl -s https://www.aivideosystems.org/ | grep -c 'id="content-engine"'
+curl -s https://www.aivideosystems.org/ | grep -c 'id="system-build"'
 ```
 
 Should print `1` (previously `0`).

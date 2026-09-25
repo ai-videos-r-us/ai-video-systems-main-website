@@ -64,7 +64,7 @@ async function main() {
   html = html.replace(/<video(?![^>]*\bmuted\b)([^>]*)>/g, '<video muted$1>');
 
   // Sanity checks: refuse to ship a half-rendered homepage.
-  const mustContain = ['id="top"', 'id="content-engine"', 'id="lead-gen-engine"', 'id="faq"', '<footer'];
+  const mustContain = ['id="top"', 'id="system-build"', 'id="reviews"', 'id="faq"', '<footer'];
   for (const needle of mustContain) {
     if (!html.includes(needle)) fail(`rendered homepage is missing ${needle}`);
   }
