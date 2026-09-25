@@ -34,7 +34,7 @@ faqs:
   - q: "Will you take over our existing Meta ad account or start fresh?"
     a: "Either. Most clients already have an account with history worth keeping — we audit it first, keep what's working, and rebuild what isn't. Starting fresh only happens when the account has no usable data or tracking to build on."
   - q: "How is this priced?"
-    a: "As part of the Lead Gen Engine — a system installation plus ongoing monthly management, not a per-lead or percentage-of-spend fee. Your ad budget stays separate and remains yours. Exact numbers are confirmed on the qualification call once we understand your account and economics."
+    a: "As part of the system — a system installation plus ongoing monthly management, not a per-lead or percentage-of-spend fee. Your ad budget stays separate and remains yours. Exact numbers are confirmed on the qualification call once we understand your account and economics."
 related:
   - label: "The Compare Funerals 30-day case study"
     href: "/blog/compare-funerals-30-day-case-study"

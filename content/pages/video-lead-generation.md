@@ -38,7 +38,7 @@ related:
     desc: "The honest case for and against AI video, including the Ironclad Finance and Mortgage Fit numbers in full context."
   - label: "Demand generation vs. lead generation"
     href: "/blog/demand-generation-vs-lead-generation"
-    desc: "Why video's real job is building the warm audience that lead generation then converts — and how the two engines connect."
+    desc: "Why video's real job is building the warm audience that lead generation then converts — and how the two halves connect."
   - label: "Meta Ads Lead Generation"
     href: "/meta-ads-lead-generation"
     desc: "Where video creative actually gets distributed and measured to the qualified opportunity."
@@ -56,7 +56,7 @@ The advantage of AI production isn't cheaper video. It's volume and speed at a q
 
 Video demonstrates expertise and builds trust in a way static images can't always match — which is why it performs disproportionately well in categories where the buyer needs to believe you before they'll talk to you: financial services, home services, anything consultative or high-trust. For Mortgage Fit, that meant hundreds of thousands of targeted views and 20+ qualified mortgage leads in five weeks, in a category where trust is the entire sale.
 
-None of that happens on video alone. Video's real function in the Attention-to-Revenue System is building the warm audience — the [demand generation half](/blog/demand-generation-vs-lead-generation) of the system — that the Lead Gen Engine then captures and converts. Views that don't convert to a retargetable, followed-up audience are an Attention Leak, not a result.
+None of that happens on video alone. Video's real function in the Attention-to-Revenue System is building the warm audience — the [demand generation half](/blog/demand-generation-vs-lead-generation) of the system — that the paid acquisition and follow-up layer then captures and converts. Views that don't convert to a retargetable, followed-up audience are an Attention Leak, not a result.
 
 ## What we actually manage
 

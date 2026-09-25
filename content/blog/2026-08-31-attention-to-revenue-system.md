@@ -90,15 +90,9 @@ The standard I hold case studies to is the full chain — spend, leads, booking 
 
 ## Do you need the whole system?
 
-No — and pretending otherwise would be selling, not diagnosing. The five stages ship as two standalone engines, [demand generation and lead generation respectively](/blog/demand-generation-vs-lead-generation):
+Yes, in the sense that all five stages install together now. [Demand generation and lead generation](/blog/demand-generation-vs-lead-generation) used to ship as two separate products; today they're one build, because businesses buying just one half kept hitting the same wall — demand with nowhere to land, or ads harvesting an audience nobody warmed up first. What still varies business to business is which of the five stages is the actual constraint, and that's exactly what the qualification call is for: diagnosing which stage is leaking before anything gets built, so the system gets weighted toward your real problem instead of a generic template.
 
-| Engine | Stages | Built for |
-|---|---|---|
-| **AI Content Engine** | 1–3 | "We need to be visible and can't produce content" — creative volume, distribution, and a growing warm audience |
-| **Lead Gen Engine** | 4–5 | "We need leads our sales team can actually close" — managed paid acquisition, landing pages, CRM, speed-to-lead, closed-loop reporting |
-| **AI Video Demand System** | 1–5 | Both engines as one compounding loop |
-
-The Lead Gen Engine runs whatever creative converts — image ads outperform video in plenty of accounts, and the system follows the evidence, not the brand name on the door. The full system is for businesses that want the loop: creative that learns from revenue data, and ads fed by a warm audience the content built.
+Stage 5 runs whatever creative converts — image ads outperform video in plenty of accounts, and the system follows the evidence, not the format. All five stages exist as one loop because that's what compounds: creative that learns from revenue data, and ads fed by a warm audience the content built.
 
 ## Who is this for — and who isn't it for?
 
@@ -131,7 +125,7 @@ No. Stage 1 extracts your expertise, conviction and proof in a handful of struct
 
 ### How much does it cost?
 
-It depends on which engine fits — and whether you qualify at all, since the system only works on businesses with a proven offer and real sales capacity. That's what the qualification call establishes; it's a diagnosis, not a pitch, and if the honest answer is that you only need one engine — or neither yet — that's what you'll hear.
+It's priced as a system installation plus ongoing monthly management, not a per-video or per-lead fee — and whether it's right at all depends on whether you qualify, since the system only works on businesses with a proven offer and real sales capacity. That's what the qualification call establishes; it's a diagnosis, not a pitch, and if the honest answer is that this isn't the right fit yet, that's what you'll hear.
 
 ### Can my existing agency or team run parts of this?
 
