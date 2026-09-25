@@ -43,8 +43,7 @@ export interface ReviewShot {
   };
 }
 
-// Screenshot proof displayed in the reviews wall. The Lead Gen Engine section
-// uses its own five-phone receipts composite instead.
+// Screenshot proof displayed in the reviews wall.
 // Order: the two reviews with results screenshots lead the wall, each proof
 // shown directly beneath its review; the remaining reviews follow.
 export const REVIEW_SHOTS: ReviewShot[] = [

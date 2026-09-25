@@ -15,7 +15,7 @@ That last sentence is the whole article. Here's the distinction properly, and �
 
 Demand generation is everything that makes the right buyers know you, trust you and want what you sell *before* they're ready to enquire. It works upstream of the enquiry: content that demonstrates proof, answers objections and changes beliefs; distribution that puts it in front of the right people repeatedly; and the warm audiences that accumulate as a result.
 
-The key property of demand generation is that it doesn't produce a contact record this week. It produces a growing pool of people who, when their moment arrives, come to you with context — or respond to your ads like a warm prospect instead of a cold sceptic. In the [Attention-to-Revenue System](/blog/attention-to-revenue-system), this is stages 1–3: extract what already sells, turn it into buyer-aware creative, and distribute it to the right audience. It's what our AI Content Engine does.
+The key property of demand generation is that it doesn't produce a contact record this week. It produces a growing pool of people who, when their moment arrives, come to you with context — or respond to your ads like a warm prospect instead of a cold sceptic. In the [Attention-to-Revenue System](/blog/attention-to-revenue-system), this is stages 1–3: extract what already sells, turn it into buyer-aware creative, and distribute it to the right audience. It's the demand-generation half of what we install.
 
 Here's the part most founders don't realise: **you've been running demand generation for years — you just called it referrals.** A referrer builds recognition and trust in a buyer before you ever meet them. That's demand generation, performed for free by your network. The reason [referrals feel so effortless to close](/blog/referrals-arent-enough) is that the demand work arrived pre-done.
 
@@ -23,7 +23,7 @@ Here's the part most founders don't realise: **you've been running demand genera
 
 Lead generation converts existing interest into identifiable prospects: a name, a number, a booked slot. It's the machinery of capture — ads with a conversion objective, lead forms, landing pages with message match, qualification questions, CRM routing, speed-to-lead follow-up, and reporting that ties enquiries to appointments and revenue.
 
-The key property of lead generation is that it's *harvesting*, not planting. It performs in proportion to the demand that already exists — whether that demand was built by your content, your reputation, your referrers, or your category. In the Attention-to-Revenue System this is stages 4–5, and it's what our Lead Gen Engine does: managed paid acquisition, landing pages, CRM integration and closed-loop reporting, running whatever creative converts — image or video.
+The key property of lead generation is that it's *harvesting*, not planting. It performs in proportion to the demand that already exists — whether that demand was built by your content, your reputation, your referrers, or your category. In the Attention-to-Revenue System this is stages 4–5 — the lead-generation half of what we install: managed paid acquisition, landing pages, CRM integration and closed-loop reporting, running whatever creative converts — image or video.
 
 ## What's the actual difference?
 
@@ -56,15 +56,15 @@ Sequence it by where your demand currently comes from:
 - **Grown on referrals, now flat?** You have proven demand economics but no owned demand source. Start with demand generation to replace what your referrers were doing for free — but wire the capture layer (retargeting audiences, follow-up) from day one so nothing leaks.
 - **Already running ads with mediocre lead quality?** You have capture without warmth. Layer demand generation in front of the ads you already run — warm audiences make the same ad budget produce noticeably better conversations before you spend a pound more.
 - **Getting attention but no enquiries?** You have warmth without capture. Fix lead generation first: retargeting on your existing watchers, a real landing path, speed-to-lead. This is the fastest win on the list, because the demand already exists and is currently being wasted.
-- **Neither, and capacity to fill?** Demand intelligence first, then both engines — but that's a bigger conversation than this article.
+- **Neither, and capacity to fill?** Demand intelligence first, then the full build — but that's a bigger conversation than this article.
 
 The honest general answer: an established service business at scale needs both, running as one loop. But "both" is a destination, not a starting point — start where the leak is, and you can find yours in the [Revenue Leak Calculator](/revenue-leak-calculator).
 
 ## How the two become one system
 
-This split is exactly why AI Video Systems is built as two engines rather than one service. The **AI Content Engine** is demand generation: buyer-aware creative at volume, distributed to build recognition and retargetable warm audiences. The **Lead Gen Engine** is lead generation: managed paid acquisition, landing pages, CRM and closed-loop reporting that captures demand and traces it to revenue. [What a demand generation agency actually manages](/blog/what-does-a-demand-generation-agency-do) across both is its own post.
+This split is exactly why AI Video Systems installs both halves as one system rather than selling either in isolation. Demand generation is buyer-aware creative at volume, distributed to build recognition and retargetable warm audiences. Lead generation is managed paid acquisition, landing pages, CRM and closed-loop reporting that captures that demand and traces it to revenue. Sell either alone and the other's absence becomes the leak: demand with nowhere to land, or ads harvesting an audience nobody warmed up first. [What a demand generation agency actually manages](/blog/what-does-a-demand-generation-agency-do) across both is its own post.
 
-Run together, they loop: the content engine warms the audience, the lead gen engine harvests it, and the revenue data feeds back into what gets made next — which is the [Attention-to-Revenue System](/blog/attention-to-revenue-system) end to end. Run separately, each still works; it just works on whichever half of the problem you actually have. That's a diagnosis question, not a preference question.
+Together, they loop: the content warms the audience, the paid acquisition harvests it, and the revenue data feeds back into what gets made next — which is the [Attention-to-Revenue System](/blog/attention-to-revenue-system) end to end. Which stages need rebuilding versus which are already working is a diagnosis question, not a preference question — exactly what the qualification call maps before anything gets built.
 
 ## Frequently asked questions
 

@@ -263,12 +263,6 @@ img{max-width:100%;height:auto}
 .belief .num{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;color:var(--action);margin:0}
 .belief .bt{font-family:Sora,sans-serif;font-size:16.5px;font-weight:700;line-height:1.35;margin:10px 0 0}
 .belief .bs{font-size:13.5px;color:rgba(11,11,13,.65);line-height:1.6;margin:8px 0 0}
-.results-grid{display:grid;gap:18px;margin:30px 0 0}
-@media(min-width:760px){.results-grid{grid-template-columns:repeat(3,1fr)}}
-.rcard{border:1px solid var(--line);padding:24px;background:var(--cloud)}
-.rcard .tag{font-family:"IBM Plex Mono",monospace;font-size:10.5px;font-weight:600;text-transform:uppercase;letter-spacing:.16em;color:rgba(11,11,13,.5);margin:0}
-.rcard .rstat{font-family:Sora,sans-serif;font-size:1.9rem;font-weight:800;margin:10px 0 0}
-.rcard .rtext{font-size:13.5px;color:rgba(11,11,13,.7);line-height:1.6;margin:10px 0 0}
 .fitgrid{display:grid;gap:18px;margin:30px 0 0}
 @media(min-width:760px){.fitgrid{grid-template-columns:repeat(2,1fr)}}
 .fit-card{border:1px solid var(--line);padding:26px}
@@ -292,7 +286,7 @@ const HEADER = `<header class="site-header"><div class="bar">
 <nav aria-label="Site">
 <a href="/blog">Blog</a>
 <a href="/about">About</a>
-<a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">See If You Qualify
+<a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">Book A Free Call
 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
 </nav>
 </div></header>`;
@@ -301,9 +295,9 @@ const FOOTER = `<footer class="site-footer">
 <div class="cols">
 <div>
 <img src="/brand/avs-full-logo-white.svg" alt="AI Video Systems" width="150" height="40" style="height:40px;width:auto" />
-<p class="blurb">AI Video Systems is a lead generation agency for established service businesses, installing two tailored systems &mdash; the AI Content Engine and the Lead Gen Engine &mdash; for ROI they can see, backed by receipts.</p>
+<p class="blurb">AI Video Systems is a done-for-you lead generation system for established service businesses &mdash; content, ads, funnel and email marketing, installed and run for ROI they can see, backed by receipts.</p>
 <p class="contact"><a href="mailto:sean@aivideosystems.org">sean@aivideosystems.org</a><br />
-<a class="q" href="${AUDIT_URL}" target="_blank" rel="noopener">See If You Qualify &rarr;</a><br />
+<a class="q" href="${AUDIT_URL}" target="_blank" rel="noopener">Book A Free Call &rarr;</a><br />
 AI Video Systems Ltd</p>
 </div>
 <div>
@@ -334,7 +328,7 @@ AI Video Systems Ltd</p>
 </div>
 </div>
 <div class="bottom">
-<span>Two Tailored Systems &middot; Receipts Included</span>
+<span>Done-For-You System &middot; Receipts Included</span>
 <span>&copy; ${YEAR} AI Video Systems. All rights reserved.</span>
 </div>
 </footer>`;
@@ -344,10 +338,10 @@ const CTA = `<section class="cta-band">
 <div class="inner">
 <p class="eyebrow">The Next Step</p>
 <h2>Want a system like this installed for your business?</h2>
-<p class="s">AI Video Systems is a lead generation agency for established, founder-led service businesses, installing the AI Content Engine and the Lead Gen Engine. If you have a proven offer and the capacity for more clients, find out if you qualify &mdash; the first 30 days are covered by a money-back guarantee.</p>
-<a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">See If You Qualify
+<p class="s">AI Video Systems is a done-for-you lead generation system for established, founder-led service businesses &mdash; content, ads, funnel and email marketing, installed and run for you. If you have a proven offer and the capacity for more clients, book a free call &mdash; the first 30 days are covered by a money-back guarantee.</p>
+<a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">Book A Free Call
 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-<p class="proof">$15m+ tracked revenue &middot; 96+ clients &middot; 30-day money-back guarantee</p>
+<p class="proof">$60m+ tracked revenue &middot; 96+ clients &middot; 30-day money-back guarantee</p>
 </div>
 </section>`;
 
@@ -488,7 +482,7 @@ const AUTHOR_CARD = `<section class="author-card">
 <div>
 <p class="n"><a href="/about">Sean Munn</a></p>
 <p class="r">Founder, AI Video Systems</p>
-<p class="b">11 years in sales, lead generation and content systems &mdash; $15M+ in tracked revenue across 96+ clients. Sean writes every article from work inside live client systems. <a href="/about">More about Sean &rarr;</a></p>
+<p class="b">11 years in sales, lead generation and content systems &mdash; $60M+ in tracked revenue across 96+ clients. Sean writes every article from work inside live client systems. <a href="/about">More about Sean &rarr;</a></p>
 </div>
 </section>`;
 
@@ -587,7 +581,7 @@ ${jsonLd({ '@context': 'https://schema.org', '@graph': graph })}`;
   const railCta = `<div class="rail-cta">
 <p class="t">Want this installed, not just explained?</p>
 <p class="s">Two engines. One qualification call. 30 days risk-free.</p>
-<a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">See If You Qualify</a>
+<a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">Book A Free Call</a>
 </div>`;
 
   const relatedBlock = related.length
@@ -793,7 +787,7 @@ ${jsonLd({
         image,
         email: 'sean@aivideosystems.org',
         description:
-          'Founder of AI Video Systems. 11 years across sales, lead generation and content systems — appointment setting for mortgage brokers, B2B outbound, Web3 go-to-market, and AI video demand generation. $15M+ in tracked revenue across 96+ clients.',
+          'Founder of AI Video Systems. 11 years across sales, lead generation and content systems — appointment setting for mortgage brokers, B2B outbound, Web3 go-to-market, and AI video demand generation. $60M+ in tracked revenue across 96+ clients.',
         knowsAbout: [
           'AI video marketing',
           'Demand generation',
@@ -844,10 +838,6 @@ ${d.timeline.map((t) => `<div class="titem"><p class="yrs">${escapeHtml(t.years)
 ${sec('what-i-believe', 'Operating Principles', 'What I believe about marketing')}
 <div class="beliefs">
 ${d.beliefs.map((b, i) => `<div class="belief"><p class="num">${String(i + 1).padStart(2, '0')}</p><p class="bt">${escapeHtml(b.t)}</p><p class="bs">${escapeHtml(b.s)}</p></div>`).join('\n')}
-</div>
-${sec('results', 'Receipts', 'Results I point to')}
-<div class="results-grid">
-${(d.results || []).map((r) => `<div class="rcard"><p class="tag">${escapeHtml(r.client)}</p><p class="rstat">${escapeHtml(r.stat)}</p><p class="rtext">${escapeHtml(r.text)}</p></div>`).join('\n')}
 </div>
 ${sec('who-i-work-with', 'Fit', 'Who I work with &mdash; and who I don&rsquo;t')}
 <div class="fitgrid">
@@ -950,7 +940,7 @@ ${jsonLd({ '@context': 'https://schema.org', '@graph': graph })}`;
   const railCta = `<div class="rail-cta">
 <p class="t">Want this installed, not just explained?</p>
 <p class="s">One qualification call. 30 days risk-free.</p>
-<a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">See If You Qualify</a>
+<a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">Book A Free Call</a>
 </div>`;
 
   const statsBlock = page.stats.length
@@ -991,7 +981,7 @@ ${HEADER}
 <p class="eyebrow">${escapeHtml(page.tag)}</p>
 <h1>${h1}</h1>
 ${page.subhead ? `<p style="margin-top:16px;font-family:Sora,sans-serif;font-weight:700;font-size:17px;line-height:1.5;max-width:760px;color:rgba(11,11,13,.85)">${escapeHtml(page.subhead)}</p>` : ''}
-<div style="margin-top:24px"><a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">See If You Qualify
+<div style="margin-top:24px"><a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">Book A Free Call
 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
 </header>
 ${statsBlock}
@@ -1101,7 +1091,7 @@ function renderLlms(posts, about, pages) {
   const lines = [
     `# ${SITE_NAME}`,
     '',
-    `> ${SITE_NAME} is a lead generation agency for established, founder-led service businesses, installing two tailored systems: the AI Content Engine (AI content and authority at volume) and the Lead Gen Engine (managed paid ads, landing pages, CRM and closed-loop reporting). $15m+ in tracked revenue across 96+ clients.`,
+    `> ${SITE_NAME} is a done-for-you lead generation system for established, founder-led service businesses — content, ads, funnel and email marketing, tailored to the business and run for you, installed so it pays for itself in 30 days or the client doesn't pay. $60m+ in tracked revenue across 96+ clients.`,
     '',
     ...(pages.length
       ? ['## Services', '', ...pages.map((p) => `- [${p.title}](${p.url}): ${p.description}`), '']

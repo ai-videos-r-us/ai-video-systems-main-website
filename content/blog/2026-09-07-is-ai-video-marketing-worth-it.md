@@ -89,7 +89,7 @@ Answer these five honestly. They're the questions I'd ask you on a call anyway.
 4. Has a winning ad fatigued in the last six months with nothing ready to replace it?
 5. If someone asked what last quarter's ad spend produced in revenue, would you be guessing?
 
-A "yes" on the first question matters most: it means your paid leads are arriving cold, and warmth is what content supplies. Three or more "yes" answers is the profile of a business where AI video pays. The call that follows is a diagnostic, not a pitch: qualification cuts both ways, and the honest outcome is sometimes that the leak is in follow-up or sales and video should wait. That's why the question is [See If You Qualify](/), not "can you buy".
+A "yes" on the first question matters most: it means your paid leads are arriving cold, and warmth is what content supplies. Three or more "yes" answers is the profile of a business where AI video pays. The call that follows is a diagnostic, not a pitch: qualification cuts both ways, and the honest outcome is sometimes that the leak is in follow-up or sales and video should wait. That's why the question is [Book A Free Call](/), not "can you buy".
 
 ## Frequently asked questions
 
