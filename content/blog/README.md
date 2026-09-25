@@ -36,5 +36,5 @@ system (Sora/Inter/IBM Plex Mono, signal/action reds, angled CTAs). From plain
 markdown the build generates: the "short answer" card (first paragraph), a sticky
 scroll-tracking "On this page" rail (from H2 ids), a reading-progress bar, an FAQ
 accordion + FAQPage JSON-LD (from `## Frequently asked questions` + `###` pairs),
-the author card, "Keep reading" related cards, and the See If You Qualify CTA band.
+the author card, "Keep reading" related cards, and the Book A Free Call CTA band.
 Authors write only the article markdown — see `_TEMPLATE.md` for the conventions.

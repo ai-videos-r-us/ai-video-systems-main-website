@@ -292,7 +292,7 @@ const HEADER = `<header class="site-header"><div class="bar">
 <nav aria-label="Site">
 <a href="/blog">Blog</a>
 <a href="/about">About</a>
-<a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">See If You Qualify
+<a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">Book A Free Call
 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
 </nav>
 </div></header>`;
@@ -303,7 +303,7 @@ const FOOTER = `<footer class="site-footer">
 <img src="/brand/avs-full-logo-white.svg" alt="AI Video Systems" width="150" height="40" style="height:40px;width:auto" />
 <p class="blurb">AI Video Systems is a lead generation agency for established service businesses, installing two tailored systems &mdash; the AI Content Engine and the Lead Gen Engine &mdash; for ROI they can see, backed by receipts.</p>
 <p class="contact"><a href="mailto:sean@aivideosystems.org">sean@aivideosystems.org</a><br />
-<a class="q" href="${AUDIT_URL}" target="_blank" rel="noopener">See If You Qualify &rarr;</a><br />
+<a class="q" href="${AUDIT_URL}" target="_blank" rel="noopener">Book A Free Call &rarr;</a><br />
 AI Video Systems Ltd</p>
 </div>
 <div>
@@ -345,7 +345,7 @@ const CTA = `<section class="cta-band">
 <p class="eyebrow">The Next Step</p>
 <h2>Want a system like this installed for your business?</h2>
 <p class="s">AI Video Systems is a lead generation agency for established, founder-led service businesses, installing the AI Content Engine and the Lead Gen Engine. If you have a proven offer and the capacity for more clients, find out if you qualify &mdash; the first 30 days are covered by a money-back guarantee.</p>
-<a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">See If You Qualify
+<a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">Book A Free Call
 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
 <p class="proof">$15m+ tracked revenue &middot; 96+ clients &middot; 30-day money-back guarantee</p>
 </div>
@@ -587,7 +587,7 @@ ${jsonLd({ '@context': 'https://schema.org', '@graph': graph })}`;
   const railCta = `<div class="rail-cta">
 <p class="t">Want this installed, not just explained?</p>
 <p class="s">Two engines. One qualification call. 30 days risk-free.</p>
-<a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">See If You Qualify</a>
+<a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">Book A Free Call</a>
 </div>`;
 
   const relatedBlock = related.length
@@ -950,7 +950,7 @@ ${jsonLd({ '@context': 'https://schema.org', '@graph': graph })}`;
   const railCta = `<div class="rail-cta">
 <p class="t">Want this installed, not just explained?</p>
 <p class="s">One qualification call. 30 days risk-free.</p>
-<a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">See If You Qualify</a>
+<a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">Book A Free Call</a>
 </div>`;
 
   const statsBlock = page.stats.length
@@ -991,7 +991,7 @@ ${HEADER}
 <p class="eyebrow">${escapeHtml(page.tag)}</p>
 <h1>${h1}</h1>
 ${page.subhead ? `<p style="margin-top:16px;font-family:Sora,sans-serif;font-weight:700;font-size:17px;line-height:1.5;max-width:760px;color:rgba(11,11,13,.85)">${escapeHtml(page.subhead)}</p>` : ''}
-<div style="margin-top:24px"><a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">See If You Qualify
+<div style="margin-top:24px"><a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">Book A Free Call
 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
 </header>
 ${statsBlock}

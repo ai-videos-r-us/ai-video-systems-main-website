@@ -107,7 +107,7 @@ It fits an established, founder-led service business with a proven offer, real p
 
 It doesn't fit start-ups still proving the offer, low-margin transactional businesses, teams with no follow-up or spare capacity, or anyone whose real goal is followers and views. For those businesses the honest advice is cheaper: fix the offer, fix the follow-up, or run a single channel well until the economics justify more.
 
-If you're in the first group, the useful next step is a diagnosis rather than a proposal. Ours is the call behind [See If You Qualify](/): it maps where your demand is leaking and says plainly whether a system is the fix, or whether the leak is somewhere we'd be wrong to sell into.
+If you're in the first group, the useful next step is a diagnosis rather than a proposal. Ours is the call behind [Book A Free Call](/): it maps where your demand is leaking and says plainly whether a system is the fix, or whether the leak is somewhere we'd be wrong to sell into.
 
 ## Frequently asked questions
 

@@ -31,7 +31,7 @@ The build AUTO-GENERATES from your headings — do not write these by hand:
 - **"On this page"** — a sticky, scroll-tracking table of contents built from the H2s.
 - **Author card** — appended after the article (photo, credential, /about link).
 - **"Keep reading"** — related-article cards (same tag first).
-- **CTA** — the See If You Qualify band closes every page.
+- **CTA** — the Book A Free Call band closes every page.
 
 ### Smaller sub-points use H3
 
