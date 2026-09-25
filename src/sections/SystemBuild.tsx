@@ -13,21 +13,18 @@ const STEPS = [
     title: 'Content — AI Video Creative',
     body:
       'We turn your proof, expertise and real customer outcomes into AI video your ideal buyers actually watch — scripted, produced and tested, without asking you to film every week.',
-    proof: 'Ironclad Finance: 5M+ views and 74 inbound enquiries in 7 weeks.',
   },
   {
     n: '3',
     title: 'Ads — Meta Demand & Retargeting',
     body:
       'We distribute that content through Meta to find out which message creates real demand, then build layered retargeting audiences from everyone who’s already watched, visited or engaged.',
-    proof: 'Mortgage Fit: hundreds of thousands of views and 20+ leads in 5 weeks.',
   },
   {
     n: '4',
     title: 'Funnel — Landing Pages & Booking',
     body:
       'A conversion-focused landing page built around your specific offer, with qualification built in — so the right prospects book, and tire-kickers don’t.',
-    proof: 'Compare Funerals: 338 leads, 155 accepted as qualified — in a single month.',
   },
   {
     n: '5',
@@ -40,7 +37,6 @@ const STEPS = [
     title: 'Reporting — Closed-Loop Revenue Tracking',
     body:
       'Every lead tracked from first view to booked call to closed sale, so you always know which content, which ad and which message actually made you money.',
-    proof: '$15M+ tracked across 96+ clients — not platform clicks, actual revenue.',
   },
 ] as const;
 
@@ -75,11 +71,6 @@ export default function SystemBuild() {
                 <div>
                   <h3 className="font-display text-lg font-bold leading-snug text-carbon">{s.title}</h3>
                   <p className="mt-2 text-[14.5px] leading-relaxed text-carbon/70">{s.body}</p>
-                  {'proof' in s && (
-                    <p className="mt-3 font-mono text-[11.5px] font-semibold uppercase tracking-[0.1em] text-carbon/50">
-                      Proof: {s.proof}
-                    </p>
-                  )}
                 </div>
               </div>
             </FadeIn>
