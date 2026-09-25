@@ -109,7 +109,7 @@ Two examples from live client work, both showing the same lesson: the system, no
 
 **Ironclad Finance.** A content-led engine produced over 5 million views and 74 inbound enquiries in 7 weeks. The views only mattered because the system aimed them at the right buyer and captured the hand-raises — reach without capture would have evaporated.
 
-Across 96+ clients and $15M+ in tracked revenue, the pattern is consistent: the win almost never comes from a cleverer ad or a better lead vendor. It comes from wiring the six stages into one loop that's accountable to revenue.
+Across 96+ clients and $60M+ in tracked revenue, the pattern is consistent: the win almost never comes from a cleverer ad or a better lead vendor. It comes from wiring the six stages into one loop that's accountable to revenue.
 
 ## When lead generation is NOT your priority (the honest exception)
 

@@ -2,7 +2,7 @@ import FadeIn from '../components/FadeIn';
 import CountUp from '../components/CountUp';
 
 const STATS = [
-  { value: <CountUp to={15} prefix="$" suffix="M+" duration={1.8} />, label: 'Tracked Revenue' },
+  { value: <CountUp to={60} prefix="$" suffix="M+" duration={1.8} />, label: 'Tracked Revenue' },
   { value: <CountUp to={96} suffix="+" duration={1.8} />, label: 'Clients Served' },
   { value: '30-Day', label: 'Money-Back Guarantee' },
 ] as const;

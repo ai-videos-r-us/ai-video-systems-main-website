@@ -1,9 +1,9 @@
 ---
 title: About Sean Munn
-description: Sean Munn is the founder of AI Video Systems. 11 years in sales, lead generation and content systems — $15M+ in tracked revenue across 96+ clients.
+description: Sean Munn is the founder of AI Video Systems. 11 years in sales, lead generation and content systems — $60M+ in tracked revenue across 96+ clients.
 updated: 2026-08-31
 stats:
-  - n: "$15M+"
+  - n: "$60M+"
     l: "Tracked client revenue"
   - n: "96+"
     l: "Clients served"
@@ -78,6 +78,6 @@ socials:
     href: https://www.facebook.com/seanharry.johnmunn
 ---
 
-I'm Sean Munn, founder of AI Video Systems. I install marketing systems for established, founder-led service businesses — systems that turn attention into qualified sales calls and revenue you can actually trace. Across 11 years in sales, lead generation and content, the businesses I've worked with have generated **$15M+ in tracked revenue across 96+ clients**.
+I'm Sean Munn, founder of AI Video Systems. I install marketing systems for established, founder-led service businesses — systems that turn attention into qualified sales calls and revenue you can actually trace. Across 11 years in sales, lead generation and content, the businesses I've worked with have generated **$60M+ in tracked revenue across 96+ clients**.
 
 This page exists so you know exactly whose advice you're reading on [the blog](/blog), and why it sounds different from most marketing content: it comes from someone who has spent a decade qualifying leads, sitting in sales conversations and being accountable for what closed — not from a content calendar.

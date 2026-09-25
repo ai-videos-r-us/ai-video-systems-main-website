@@ -488,7 +488,7 @@ const AUTHOR_CARD = `<section class="author-card">
 <div>
 <p class="n"><a href="/about">Sean Munn</a></p>
 <p class="r">Founder, AI Video Systems</p>
-<p class="b">11 years in sales, lead generation and content systems &mdash; $15M+ in tracked revenue across 96+ clients. Sean writes every article from work inside live client systems. <a href="/about">More about Sean &rarr;</a></p>
+<p class="b">11 years in sales, lead generation and content systems &mdash; $60M+ in tracked revenue across 96+ clients. Sean writes every article from work inside live client systems. <a href="/about">More about Sean &rarr;</a></p>
 </div>
 </section>`;
 
@@ -793,7 +793,7 @@ ${jsonLd({
         image,
         email: 'sean@aivideosystems.org',
         description:
-          'Founder of AI Video Systems. 11 years across sales, lead generation and content systems — appointment setting for mortgage brokers, B2B outbound, Web3 go-to-market, and AI video demand generation. $15M+ in tracked revenue across 96+ clients.',
+          'Founder of AI Video Systems. 11 years across sales, lead generation and content systems — appointment setting for mortgage brokers, B2B outbound, Web3 go-to-market, and AI video demand generation. $60M+ in tracked revenue across 96+ clients.',
         knowsAbout: [
           'AI video marketing',
           'Demand generation',

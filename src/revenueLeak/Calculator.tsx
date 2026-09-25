@@ -264,7 +264,7 @@ export default function Calculator({ firstName }: { firstName?: string }) {
           Learn More
         </a>
         <p className="mt-7 border-t border-white/15 pt-5 font-mono text-[11.5px] text-white/55">
-          Sean Munn &middot; AI Video Systems &middot; $11M+ generated for clients
+          Sean Munn &middot; AI Video Systems &middot; $60M+ generated for clients
         </p>
       </section>
 
