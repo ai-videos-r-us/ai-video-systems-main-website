@@ -43,16 +43,6 @@ beliefs:
     s: "AI video is infrastructure inside an acquisition system, not the product."
   - t: "Marketing and sales are one loop."
     s: "Most \"marketing problems\" are a leak in the middle of that loop."
-results:
-  - client: "Compare Funerals"
-    stat: "$300k+"
-    text: "Generated from funeral plan leads at a 20% close rate — running both our full system and separately managed image ads."
-  - client: "Ironclad Finance"
-    stat: "74 enquiries"
-    text: "5M+ views converted into 74 inbound enquiries in 7 weeks — attention that was aimed and captured, not broad."
-  - client: "Mortgage Fit"
-    stat: "20+ leads"
-    text: "Hundreds of thousands of views and 20+ qualified mortgage leads in 5 weeks, in a trust-dependent category."
 fit:
   - "Established, founder-led service businesses"
   - "Already spending $5,000+/month on advertising"

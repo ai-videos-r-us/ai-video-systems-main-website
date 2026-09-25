@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 const DEFAULT_TITLE = 'AI Video Systems - Get More Qualified Sales Calls.';
 const DEFAULT_DESCRIPTION =
-  '$15m+ in tracked revenue across 96+ clients. AI Video Systems installs two tailored systems for service businesses: the AI Content Engine (AI content, branding and authority at volume) and the Lead Gen Engine (managed ads, landing pages, CRM and closed-loop reporting). 30-day money-back guarantee.';
+  '$60m+ in tracked revenue across 96+ clients. AI Video Systems installs a done-for-you lead generation system for service businesses: content, ads, funnel and email marketing, tailored to the business and run for you. 30-day money-back guarantee.';
 
 function setMetaTag(name: string, content: string) {
   let meta = document.querySelector(`meta[name="${name}"]`);
