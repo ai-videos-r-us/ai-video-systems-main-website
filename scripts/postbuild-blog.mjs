@@ -580,7 +580,7 @@ ${jsonLd({ '@context': 'https://schema.org', '@graph': graph })}`;
 
   const railCta = `<div class="rail-cta">
 <p class="t">Want this installed, not just explained?</p>
-<p class="s">Two engines. One qualification call. 30 days risk-free.</p>
+<p class="s">One system. Built and run for you. 30 days risk-free.</p>
 <a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">Book A Free Call</a>
 </div>`;
 
