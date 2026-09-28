@@ -5,6 +5,13 @@ import type { Article } from './articles';
 export const ARTICLES: Article[] = [
   {
     tag: "lead-generation",
+    title: "What is lead generation, really? (a service-business owner's definition)",
+    excerpt: "Most definitions of lead generation describe an activity — capturing contacts. Here's the one that matters once you're paying for it: a revenue system.",
+    date: "28 Sep 2026",
+    href: "/blog/what-is-lead-generation",
+  },
+  {
+    tag: "lead-generation",
     title: "Lead generation for service businesses: the complete guide",
     excerpt: "Lead generation for a service business isn't a lead-count game — it's a revenue system. Here's the full engine: targeting, creative, capture, speed-to-lead, CRM and closed-loop reporting, judged by qualified sales calls.",
     date: "25 Sep 2026",
@@ -16,12 +23,5 @@ export const ARTICLES: Article[] = [
     excerpt: "When marketing celebrates cost per lead and sales complains about lead quality, they're usually both right. The revenue leak lives in the handoff between them — and nobody owns it. Here's how to fix that.",
     date: "24 Sep 2026",
     href: "/blog/marketing-and-sales-one-system",
-  },
-  {
-    tag: "demand-generation",
-    title: "Why \"spend more on ads\" is usually the wrong fix",
-    excerpt: "More ad spend multiplies whatever your funnel already does — including its leaks. Here's how to tell whether you have a traffic problem or a conversion problem, and when spending more is actually right.",
-    date: "23 Sep 2026",
-    href: "/blog/spending-more-on-ads-wrong-fix",
   },
 ];
