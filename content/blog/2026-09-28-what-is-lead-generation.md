@@ -5,7 +5,7 @@ date: 2026-09-28
 tag: "lead-generation"
 author: "Sean Munn"
 image: "/blog-images/what-is-lead-generation.jpg"
-imageAlt: "A service-business owner seen from behind studies two identical-looking printed lead sheets pinned side by side on a corkboard, one marked with a single red checkmark, in a muted grey office."
+imageAlt: "A founder seen from behind studies a branding and marketing mood board pinned to a corkboard in a bright office."
 ---
 
 Lead generation has two different definitions, and most of what you'll find online uses the wrong one. The common one: the activity of attracting strangers and capturing their contact details — forms, ads, landing pages. The one that actually matters once you're spending real money on it: the accountable system that turns a stranger into a qualified sales call and, eventually, revenue. A lead by itself is worth nothing — it's only worth what happens to it next.
