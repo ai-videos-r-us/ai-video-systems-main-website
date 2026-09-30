@@ -84,7 +84,7 @@ img{max-width:100%;height:auto}
 .btn-cta{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;background:var(--signal);color:#fff !important;font-family:Sora,sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:12px 20px;clip-path:polygon(0 0,100% 0,calc(100% - 12px) 100%,0 100%);transition:background .2s}
 .btn-cta:hover{background:var(--action)}
 .btn-cta svg{transition:transform .2s}.btn-cta:hover svg{transform:translateX(4px)}
-@media(max-width:560px){.site-header .bar{height:64px}.site-header nav{gap:12px}.site-header nav a{font-size:12.5px}.site-header .logo img{height:26px}.btn-cta{padding:9px 12px;font-size:10px;letter-spacing:.05em;gap:5px}.btn-cta svg{width:11px;height:11px}}
+@media(max-width:560px){.site-header .bar{height:64px}.site-header nav{gap:12px}.site-header nav a.hide-m{display:none}.site-header nav a{font-size:12.5px}.site-header .logo img{height:26px}.btn-cta{padding:9px 12px;font-size:10px;letter-spacing:.05em;gap:5px}.btn-cta svg{width:11px;height:11px}}
 
 /* Eyebrow — mono label with signal dash */
 .eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(11,11,13,.6);margin:0}
@@ -284,7 +284,9 @@ main{padding-bottom:0}
 const HEADER = `<header class="site-header"><div class="bar">
 <a class="logo" href="/" aria-label="AI Video Systems home"><img src="/brand/avs-full-logo-black.svg" alt="AI Video Systems" width="140" height="38" /></a>
 <nav aria-label="Site">
-<a href="/blog">Blog</a>
+<a href="/guides">Guides</a>
+<a class="hide-m" href="/compare">Compare</a>
+<a class="hide-m" href="/blog">Blog</a>
 <a href="/about">About</a>
 <a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">Book A Free Call
 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
@@ -304,7 +306,10 @@ AI Video Systems Ltd</p>
 <p class="head">Quick Links</p>
 <ul>
 <li><a href="/">Home</a></li>
+<li><a href="/guides">Guides</a></li>
+<li><a href="/compare">Compare</a></li>
 <li><a href="/blog">Blog</a></li>
+<li><a href="/what-is-ai-video-systems">What is AI Video Systems?</a></li>
 <li><a href="/about">About Sean</a></li>
 <li><a href="/revenue-leak-calculator">Revenue Leak Calculator</a></li>
 </ul>
@@ -482,7 +487,7 @@ const AUTHOR_CARD = `<section class="author-card">
 <div>
 <p class="n"><a href="/about">Sean Munn</a></p>
 <p class="r">Founder, AI Video Systems</p>
-<p class="b">11 years in sales, lead generation and content systems &mdash; $60M+ in tracked revenue across 96+ clients. Sean writes every article from work inside live client systems. <a href="/about">More about Sean &rarr;</a></p>
+<p class="b">I've spent 11 years figuring out what happens between attention and revenue: from selling &pound;800 websites door to door, to an appointment-setting agency for mortgage brokers, to the done-for-you system behind $60M+ in tracked client revenue across 96+ clients. <a href="/about">More about Sean &rarr;</a></p>
 </div>
 </section>`;
 
@@ -882,8 +887,42 @@ function renderServicePage(page) {
   const { answerHtml, rest } = splitShortAnswer(page.bodyHtml);
   const toc = buildToc(rest);
 
-  const graph = [
-    {
+  const crumbs = [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` }];
+  if (page.parent) crumbs.push({ '@type': 'ListItem', position: crumbs.length + 1, name: page.parent.label, item: `${SITE_URL}${page.parent.href}` });
+  crumbs.push({ '@type': 'ListItem', position: crumbs.length + 1, name: page.title, item: page.url });
+
+  const isArticle = page.kind === 'guide' || page.kind === 'compare';
+  const hubLinks = page.kind === 'hub'
+    ? [...new Set([...page.bodyHtml.matchAll(/href="(\/[a-z0-9\-\/]+)"/g)].map((m) => m[1]))]
+    : [];
+  let main;
+  if (isArticle) {
+    main = {
+      '@type': 'Article',
+      '@id': `${page.url}#article`,
+      headline: page.h1,
+      description: page.description,
+      datePublished: page.dateISO || page.updatedISO || undefined,
+      dateModified: page.updatedISO || page.dateISO || undefined,
+      author: { '@type': 'Person', '@id': FOUNDER_ID, name: page.author, url: `${SITE_URL}/about` },
+      publisher: { '@id': ORG_ID },
+      mainEntityOfPage: page.url,
+    };
+  } else if (page.kind === 'hub') {
+    main = {
+      '@type': 'CollectionPage',
+      '@id': `${page.url}#collection`,
+      name: page.h1,
+      description: page.description,
+      url: page.url,
+      publisher: { '@id': ORG_ID },
+      mainEntity: {
+        '@type': 'ItemList',
+        itemListElement: hubLinks.map((h, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE_URL}${h}` })),
+      },
+    };
+  } else {
+    main = {
       '@type': 'Service',
       '@id': `${page.url}#service`,
       name: page.h1,
@@ -892,15 +931,9 @@ function renderServicePage(page) {
       provider: { '@id': ORG_ID },
       areaServed: { '@type': 'Country', name: 'United States' },
       audience: { '@type': 'BusinessAudience', audienceType: 'Established, founder-led service businesses' },
-    },
-    {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
-        { '@type': 'ListItem', position: 2, name: page.title, item: page.url },
-      ],
-    },
-  ];
+    };
+  }
+  const graph = [main, { '@type': 'BreadcrumbList', itemListElement: crumbs }];
   if (page.faqs.length) {
     graph.push({
       '@type': 'FAQPage',
@@ -913,7 +946,7 @@ function renderServicePage(page) {
     });
   }
 
-  const head = `<title>${title} &mdash; ${SITE_NAME}</title>
+  const head = `<title>${page.metaTitle ? escapeHtml(page.metaTitle) : `${title} &mdash; ${SITE_NAME}`}</title>
 <meta name="description" content="${desc}" />
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
 <link rel="canonical" href="${page.url}" />
@@ -976,10 +1009,11 @@ ${page.related.map((r) => `<article class="card"><p class="tag">${escapeHtml(r.t
 ${HEADER}
 <main>
 <div class="wrap">
-<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">/</span><span>${title}</span></nav>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">/</span>${page.parent ? `<a href="${page.parent.href}">${escapeHtml(page.parent.label)}</a><span class="sep">/</span>` : ''}<span>${title}</span></nav>
 <header class="post-head">
 <p class="eyebrow">${escapeHtml(page.tag)}</p>
 <h1>${h1}</h1>
+${isArticle ? `<p class="byline" style="margin-top:12px;font-size:14px;color:rgba(11,11,13,.6)">By <a href="/about">${escapeHtml(page.author)}</a>, founder of AI Video Systems${page.updatedDisplay ? ` &middot; Updated ${page.updatedDisplay}` : ''}</p>` : ''}
 ${page.subhead ? `<p style="margin-top:16px;font-family:Sora,sans-serif;font-weight:700;font-size:17px;line-height:1.5;max-width:760px;color:rgba(11,11,13,.85)">${escapeHtml(page.subhead)}</p>` : ''}
 <div style="margin-top:24px"><a class="btn-cta" href="${AUDIT_URL}" target="_blank" rel="noopener">Book A Free Call
 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
@@ -996,6 +1030,7 @@ ${railCta}
 </div>
 ${fitBlock}
 ${faqBlock}
+${isArticle ? AUTHOR_CARD : ''}
 ${relatedBlock}
 </div>
 </main>
@@ -1050,10 +1085,16 @@ ${body}
 }
 
 function renderRobots() {
-  // Permissive by design: AI crawlers (GPTBot, PerplexityBot, ClaudeBot, Google-Extended,
-  // etc.) are covered by "User-agent: *" and are intentionally NOT blocked — the whole
-  // point of the blog is to be readable by AI and organic search.
-  return `User-agent: *
+  // Permissive by design. AI crawlers are named explicitly (Allow) so the policy is
+  // unambiguous to answer engines and to anyone auditing it; the private diagnostic
+  // results are the only disallow. Bot names checked 2026-09-30.
+  const bots = [
+    'GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-User', 'Claude-SearchBot',
+    'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Applebot-Extended', 'Bingbot', 'CCBot', 'Bytespider',
+  ];
+  const named = bots.map((b) => `User-agent: ${b}\nAllow: /\nDisallow: /funeral-plan-scale-readiness/results/\n`).join('\n');
+  return `${named}
+User-agent: *
 Allow: /
 Disallow: /funeral-plan-scale-readiness/results/
 
@@ -1087,24 +1128,44 @@ ${items}
 `;
 }
 
+const LLMS_SUMMARY = `${SITE_NAME} is a done-for-you lead generation system for established, founder-led service businesses — content, ads, funnel and email marketing, tailored to the business and run for you, installed so it pays for itself in 30 days or the client doesn't pay. $60m+ in tracked revenue across 96+ clients.`;
+
+// Order and labels of the llms.txt sections for content/pages/*.md, keyed by frontmatter `group`.
+const LLMS_GROUPS = [
+  ['start', 'Start here'],
+  ['guides', 'Guides: cost, results and choosing a provider'],
+  ['compare', 'Comparisons and alternatives'],
+  ['services', 'Services'],
+];
+
 function renderLlms(posts, about, pages) {
-  const lines = [
-    `# ${SITE_NAME}`,
-    '',
-    `> ${SITE_NAME} is a done-for-you lead generation system for established, founder-led service businesses — content, ads, funnel and email marketing, tailored to the business and run for you, installed so it pays for itself in 30 days or the client doesn't pay. $60m+ in tracked revenue across 96+ clients.`,
-    '',
-    ...(pages.length
-      ? ['## Services', '', ...pages.map((p) => `- [${p.title}](${p.url}): ${p.description}`), '']
-      : []),
-    ...(about
-      ? ['## About', '', `- [${about.title}](${SITE_URL}/about): ${about.description}`, '']
-      : []),
-    '## Blog',
-    '',
-    ...posts.map((p) => `- [${p.title}](${p.url}): ${p.description}`),
-    '',
-  ];
+  const today = new Date().toISOString().slice(0, 10);
+  const byGroup = (g) => pages.filter((p) => (p.group || 'services') === g);
+  const lines = [`# ${SITE_NAME}`, '', `> ${LLMS_SUMMARY}`, '', `Last updated: ${today}. Full text of every page below: ${SITE_URL}/llms-full.txt`, ''];
+  for (const [g, label] of LLMS_GROUPS) {
+    const items = byGroup(g);
+    if (!items.length) continue;
+    lines.push(`## ${label}`, '', ...items.map((p) => `- [${p.title}](${p.url}): ${p.description}`), '');
+  }
+  if (about) lines.push('## About', '', `- [${about.title}](${SITE_URL}/about): ${about.description}`, '');
+  lines.push('## Blog', '', ...posts.map((p) => `- [${p.title}](${p.url}): ${p.description}`), '');
   return lines.join('\n');
+}
+
+// llms-full.txt: the readable text of every commercial page, guide, comparison and post, so an
+// assistant can read the whole site in one fetch. Plain markdown; FAQs appended as Q/A.
+function renderLlmsFull(posts, about, pages) {
+  const today = new Date().toISOString().slice(0, 10);
+  const out = [`# ${SITE_NAME}: full site text`, '', `> ${LLMS_SUMMARY}`, '', `Generated ${today}. Index: ${SITE_URL}/llms.txt`, ''];
+  for (const p of pages) {
+    out.push('---', '', `# ${p.h1}`, `URL: ${p.url}`, p.updatedISO ? `Updated: ${p.updatedISO}` : '', '', p.description, '', p.bodyMd, '');
+    if (p.faqs.length) out.push('## Frequently asked questions', '', ...p.faqs.flatMap((f) => [`### ${f.q}`, '', f.a, '']));
+  }
+  for (const p of posts) {
+    if (p.noindex) continue;
+    out.push('---', '', `# ${p.title}`, `URL: ${p.url}`, `Published: ${p.dateISO}`, '', p.description, '', p.bodyMd, '');
+  }
+  return out.join('\n');
 }
 
 // ---------------------------------------------------------------------------
@@ -1150,6 +1211,7 @@ function main() {
   written.push(writeFile('sitemap.xml', renderSitemap(posts, about, pages)));
   written.push(writeFile('robots.txt', renderRobots()));
   written.push(writeFile('llms.txt', renderLlms(posts, about, pages)));
+  written.push(writeFile('llms-full.txt', renderLlmsFull(posts, about, pages)));
 
   console.log(`[blog] ${posts.length} post(s), ${pages.length} page(s) -> ${written.length} file(s) in dist/`);
   if (posts.length) {

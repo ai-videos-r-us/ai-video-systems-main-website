@@ -5,6 +5,7 @@ import { AUDIT_URL, trackAuditCtaClick } from '../components/CTA';
 const LINKS = [
   { label: 'What We Build', href: '#system-build' },
   { label: 'Reviews', href: '#reviews' },
+  { label: 'Guides', href: '/guides' },
   { label: 'Blog', href: '/blog' },
   { label: 'FAQ', href: '#faq' },
 ];

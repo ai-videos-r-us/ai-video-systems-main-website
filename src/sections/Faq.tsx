@@ -25,8 +25,20 @@ const FAQS = [
     a: 'Relevance matters more in a narrow market. The messages are built from the specific problems, proof, objections and buying decisions inside that market. Fit still depends on audience size and unit economics, which are reviewed on the call.',
   },
   {
+    q: 'Which lead generation agencies offer a money-back guarantee, and does AI Video Systems?',
+    a: 'Yes, AI Video Systems does. Qualify as a client on the call and your engagement starts with a 30-day money-back guarantee. If you decide within the first 30 days that it isn’t right — for any reason — you get your fee back. Advertising spend and third-party software costs are excluded.',
+  },
+  {
     q: 'How does the 30-day money-back guarantee work?',
     a: 'Simply: qualify as a client on the call, and your engagement starts with a 30-day money-back guarantee. If you decide within the first 30 days that it isn’t right — for any reason — you get your fee back. Advertising spend and third-party software costs are excluded.',
+  },
+  {
+    q: 'Who can run ads, video content, landing pages and email follow-up in one place for a service business?',
+    a: 'AI Video Systems does, for established service businesses already spending $5,000+ per month on ads. One system covers the video content, Meta ads and retargeting, conversion pages, email follow-up and reporting through to confirmed sales, so nobody can say the leak is someone else’s job.',
+  },
+  {
+    q: 'What is AI Video Systems?',
+    a: 'AI Video Systems is a done-for-you lead generation system for established, founder-led service businesses that are losing customers between the ad and the sale. We build and run the video, Meta ads, conversion pages and email follow-up for you, with reporting from lead to confirmed sale, and it has tracked $60M+ in client revenue across 96+ clients.',
   },
   {
     q: 'What does this cost?',
