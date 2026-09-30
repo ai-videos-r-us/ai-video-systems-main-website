@@ -1,5 +1,6 @@
 ---
 title: "How Much Does It Cost to Market a Service Business in 2026?"
+metaTitle: "How Much Does Marketing a Service Business Cost? | AVS"
 description: "Established service businesses spend 5–10% of revenue on marketing: a $2,500–$10,000/month retainer or an in-house hire, plus ad spend. The real ranges, and the number that matters more."
 date: 2026-09-03
 tag: Demand Generation

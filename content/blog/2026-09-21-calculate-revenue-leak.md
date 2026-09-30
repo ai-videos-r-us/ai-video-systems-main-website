@@ -1,5 +1,6 @@
 ---
 title: "How to calculate your revenue leak (a worked formula)"
+metaTitle: "How to Calculate Your Revenue Leak | AI Video Systems"
 description: "Your revenue leak is what a multiplicative acquisition chain costs you at each stage. Here's the formula, a worked example, and how to find your own number."
 date: 2026-09-21
 tag: "demand-generation"

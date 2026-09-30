@@ -44,7 +44,7 @@
   ],
   "rewrites": [
     {
-      "source": "/((?!api/|blog|guides|compare|alternatives|what-is-ai-video-systems|llms|about|meta-ads-lead-generation|qualified-lead-generation|video-lead-generation|lead-generation-for-funeral-homes|mortgage-broker-lead-generation).+)",
+      "source": "/((?!api/|blog|lead-generation-for-|guides|compare|alternatives|what-is-ai-video-systems|llms|about|meta-ads-lead-generation|qualified-lead-generation|video-lead-generation|lead-generation-for-funeral-homes|mortgage-broker-lead-generation).+)",
       "destination": "/app.html"
     }
   ]

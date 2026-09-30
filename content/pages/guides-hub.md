@@ -24,9 +24,9 @@ related:
   - label: "Compare providers"
     href: "/compare"
     desc: "Side-by-side comparisons and alternatives."
-  - label: "Revenue Leak Calculator"
-    href: "/revenue-leak-calculator"
-    desc: "Find where your acquisition chain leaks."
+  - label: "How to calculate your revenue leak"
+    href: "/blog/calculate-revenue-leak"
+    desc: "A worked formula for finding where your acquisition chain leaks."
 ---
 
 These guides answer the questions established service businesses ask about lead generation, in the order they usually come up: what it costs, why results disappoint, how to fix them and how to choose help. Each one leads with the answer, shows its numbers and names its sources.
@@ -56,18 +56,34 @@ These guides answer the questions established service businesses ask about lead 
 - [What is a qualified sales call?](/blog/qualified-sales-calls)
 - [The 5-minute rule: response time and conversion](/blog/speed-to-lead-5-minute-rule)
 
+## How do AI video ads work for a service business?
+
+- [Is AI video marketing worth it for an established service business?](/blog/is-ai-video-marketing-worth-it)
+- [Will AI video ads look fake and damage my brand?](/guides/will-ai-video-ads-look-fake-and-damage-my-brand)
+- [How to make video ads without filming every week](/guides/video-ads-without-filming-every-week)
+- [How to turn testimonials and case studies into video ads](/guides/turn-testimonials-and-case-studies-into-video-ads)
+- [How to choose an AI video ads agency](/guides/how-to-choose-an-ai-video-ads-agency)
+
 ## How do you choose a provider?
 
 - [How to choose a done-for-you lead generation company](/guides/how-to-choose-a-done-for-you-lead-generation-company)
 - [Who can run ads, video, landing page and follow-up in one place?](/guides/one-provider-for-ads-video-landing-page-and-follow-up)
 - [How to avoid getting burned by another marketing agency](/guides/how-to-avoid-getting-burned-by-a-marketing-agency)
+- [What to expect in the first 30 days with an agency](/guides/what-to-expect-first-30-days-lead-generation-agency)
+- [Should you buy leads or build your own system?](/guides/buy-leads-or-build-your-own-lead-generation-system)
 - [Comparisons and alternatives](/compare)
+
+## How does it work for your kind of business?
+
+- [Kitchen fitters and remodellers](/lead-generation-for-kitchen-fitters-and-remodellers)
+- [Law firms](/lead-generation-for-law-firms)
+- [Financial advisors](/lead-generation-for-financial-advisors)
+- [Private healthcare clinics](/lead-generation-for-private-clinics)
+- [Funeral homes](/lead-generation-for-funeral-homes) and [mortgage brokers](/mortgage-broker-lead-generation)
 
 ## What does the system look like in practice?
 
 - [The Attention-to-Revenue System](/blog/attention-to-revenue-system)
 - [Compare Funerals: the 30-day case study](/blog/compare-funerals-30-day-case-study)
-- [Lead generation for funeral homes](/lead-generation-for-funeral-homes)
-- [Mortgage broker lead generation](/mortgage-broker-lead-generation)
 - [Meta ads lead generation](/meta-ads-lead-generation)
 - [All articles on the blog](/blog)

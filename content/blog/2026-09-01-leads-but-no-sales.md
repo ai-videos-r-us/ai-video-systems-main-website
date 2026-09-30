@@ -1,5 +1,6 @@
 ---
 title: "Why Your Ads Get Leads but No Sales (and Where the Revenue Actually Leaks)"
+metaTitle: "Ads Get Leads but No Sales? Where It Leaks | AVS"
 description: "Leads without sales usually means the leak is downstream of the click. Walk the four links of the revenue chain and find exactly where yours breaks."
 updated: 2026-09-30
 date: 2026-09-01

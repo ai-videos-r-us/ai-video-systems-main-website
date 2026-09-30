@@ -131,6 +131,7 @@ export function loadPosts({ includeDrafts = false } = {}) {
     posts.push({
       slug,
       title: String(data.title),
+      metaTitle: data.metaTitle ? String(data.metaTitle) : '',
       description: String(data.description || ''),
       tag: String(data.tag || 'Article'),
       author: String(data.author || 'Sean Munn'),

@@ -1,5 +1,6 @@
 ---
 title: "Lead Generation for Funeral Homes & Funeral-Plan Providers"
+metaTitle: "Lead Generation for Funeral Homes | AI Video Systems"
 description: "Lead generation for funeral homes and pre-need providers, built on a documented 30-day account: qualified opportunities up 148.8%, cost per qualified lead down 71.7%."
 tag: "Funeral Homes"
 h1: "Lead Generation for Funeral Homes, Built on a Documented 30-Day Result"

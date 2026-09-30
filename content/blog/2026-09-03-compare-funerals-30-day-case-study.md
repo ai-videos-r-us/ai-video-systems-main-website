@@ -1,5 +1,6 @@
 ---
 title: "Case Study: 2.5× More Qualified Funeral-Plan Opportunities on 29.5% Less Ad Spend in 30 Days"
+metaTitle: "Case Study: 2.5x Qualified Funeral Leads, 30 Days | AVS"
 description: "In 30 days, Compare Funerals went from 24 to 60 qualified funeral-plan opportunities a month on 29.5% less Meta spend. Cost per qualified lead fell 71.7%. What changed."
 date: 2026-09-03
 tag: Demand Generation

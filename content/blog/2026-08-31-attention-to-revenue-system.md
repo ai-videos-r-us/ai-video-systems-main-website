@@ -1,5 +1,6 @@
 ---
 title: "The Attention-to-Revenue System: How Service Businesses Turn Attention Into Clients"
+metaTitle: "The Attention-to-Revenue System | AI Video Systems"
 description: "The Attention-to-Revenue System moves trust-building before the sales call and connects message, retargeting and follow-up to closed revenue. The full guide."
 date: 2026-08-31
 tag: Demand Generation

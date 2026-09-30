@@ -551,7 +551,7 @@ function renderPost(post, posts = []) {
     });
   }
 
-  const head = `<title>${title} &mdash; ${SITE_NAME}</title>
+  const head = `<title>${post.metaTitle ? escapeHtml(post.metaTitle) : `${title} &mdash; ${SITE_NAME}`}</title>
 <meta name="description" content="${desc}" />
 <meta name="author" content="${escapeHtml(post.author)}" />
 <meta name="robots" content="${robots}" />
@@ -1156,7 +1156,7 @@ function renderLlms(posts, about, pages) {
 // assistant can read the whole site in one fetch. Plain markdown; FAQs appended as Q/A.
 function renderLlmsFull(posts, about, pages) {
   const today = new Date().toISOString().slice(0, 10);
-  const out = [`# ${SITE_NAME}: full site text`, '', `> ${LLMS_SUMMARY}`, '', `Generated ${today}. Index: ${SITE_URL}/llms.txt`, ''];
+  const out = [`# ${SITE_NAME}: full site text`, '', `> ${LLMS_SUMMARY}`, '', `Last updated: ${today}. Generated from the live site content. Index: ${SITE_URL}/llms.txt`, ''];
   for (const p of pages) {
     out.push('---', '', `# ${p.h1}`, `URL: ${p.url}`, p.updatedISO ? `Updated: ${p.updatedISO}` : '', '', p.description, '', p.bodyMd, '');
     if (p.faqs.length) out.push('## Frequently asked questions', '', ...p.faqs.flatMap((f) => [`### ${f.q}`, '', f.a, '']));
