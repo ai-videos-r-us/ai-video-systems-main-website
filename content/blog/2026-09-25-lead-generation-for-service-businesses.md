@@ -2,6 +2,7 @@
 title: "Lead generation for service businesses: the complete guide"
 metaTitle: "Lead Generation for Service Businesses: Guide | AVS"
 description: "Lead generation for a service business isn't a lead-count game — it's a revenue system. Here's the full engine: targeting, creative, capture, speed-to-lead, CRM and closed-loop reporting, judged by qualified sales calls."
+updated: 2026-09-30
 date: 2026-09-25
 tag: "lead-generation"
 author: "Sean Munn"
@@ -130,9 +131,21 @@ If your **offer isn't proven** — you can't yet point to customers who bought a
 
 A good lead generation system tells you which of these is true before it takes your money. That honesty is the point of a diagnostic, not a sales tactic.
 
-If your offer is proven, your sales team can close, and you're leaving demand on the table, then a managed lead system is exactly the right move — and you can [see if you qualify](/) for one built the way this guide describes.
+If your offer is proven, your sales team can close, and you're leaving demand on the table, then a managed lead system is exactly the right move — and you can [Book A Free Call](https://calendly.com/sean_munn/seanspersonallink) for one built the way this guide describes.
+
+## What do the numbers say about lead generation for service businesses?
+
+- Chain example: 100 leads at a 40% booking rate, 70% show rate, 50% qualification rate and a 20% close rate produce about 2.8 customers; nudging each link to 50%, 80%, 60% and 25% produces 6, on the same ads and budget (see [the revenue chain](/blog/leads-but-no-sales)).
+- The average Facebook cost per lead across industries was $27.66 in 2025 ([WordStream by LocaliQ, Facebook Ads Benchmarks 2025](https://www.wordstream.com/blog/facebook-ads-benchmarks-2025)), which says what a form fill costs, not what a customer costs.
+- Across 5.7 million leads, conversion was 8 times higher inside five minutes; under 1% of first attempts happen that fast ([InsideSales, Lead Response Management 2021](https://www.insidesales.com/wp-content/uploads/2021/02/infographic_LeadRespMgmt2021.pdf)).
+- In one documented 30-day account, qualified opportunities rose from 24 to 60 a month on 29.5% less ad spend, and cost per qualified lead fell 71.7% ([Compare Funerals 30-day case study](/blog/compare-funerals-30-day-case-study)).
+- AI Video Systems has tracked $60M+ in revenue across 96+ clients.
 
 ## Frequently asked questions
+
+### Who can run lead generation for an established service business from ad to booked call, and does AI Video Systems?
+
+Yes. AI Video Systems builds and runs the whole path for established, founder-led service businesses: video content, Meta ads and retargeting, conversion pages, email follow-up and reporting through to confirmed sales. It has tracked $60M+ in revenue across 96+ clients, and qualified clients get the first 30 days under a money-back guarantee (ad spend and third-party software excluded).
 
 ### What is the difference between lead generation and getting customers?
 

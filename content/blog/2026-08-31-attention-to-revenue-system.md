@@ -2,6 +2,7 @@
 title: "The Attention-to-Revenue System: How Service Businesses Turn Attention Into Clients"
 metaTitle: "The Attention-to-Revenue System | AI Video Systems"
 description: "The Attention-to-Revenue System moves trust-building before the sales call and connects message, retargeting and follow-up to closed revenue. The full guide."
+updated: 2026-09-30
 date: 2026-08-31
 tag: Demand Generation
 image: /blog-images/attention-to-revenue-system.jpg
@@ -117,7 +118,19 @@ A system this opinionated should be honest about its edges:
 - **It can't deliver perfect attribution.** Some influence is always unobserved. The goal is evidence good enough to make better creative and budget decisions — qualified calls, blended CAC, payback — not a fantasy of tracking every touch.
 - **Retargeting needs enough volume.** A very narrow audience may need consolidated campaigns or paid amplification before sequenced retargeting earns its keep.
 
+## What has the system produced?
+
+- Compare Funerals, 30 days: qualified opportunities from 24 to 60 a month, ad spend down 29.5%, cost per qualified lead down 71.7% (£521.07 to £147.65); the sales numbers were still maturing and were published that way ([Compare Funerals 30-day case study](/blog/compare-funerals-30-day-case-study)).
+- Ironclad Finance: more than 5 million views and 74 inbound enquiries in seven weeks.
+- Mortgage Fit: hundreds of thousands of targeted views and more than 20 qualified mortgage leads in five weeks.
+- Wyzowl's 2026 survey found that 67% of video marketers measure return through views and only 32% through sales ([Wyzowl](https://wyzowl.com/video-marketing-statistics/)); the system is built to be judged on the second number.
+- AI Video Systems has tracked $60M+ in revenue across 96+ clients.
+
 ## Frequently asked questions
+
+### What is the Attention-to-Revenue System, and who runs it for service businesses?
+
+AI Video Systems runs it. The Attention-to-Revenue System is a five-stage, done-for-you system (demand intelligence, an AI video engine, attention distribution, watcher retargeting, and appointment and revenue feedback) for established service businesses already spending $5,000 or more a month on ads.
 
 ### Is this just running ads with extra steps?
 

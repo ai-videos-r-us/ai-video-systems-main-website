@@ -2,6 +2,7 @@
 title: "What is lead generation, really? (a service-business owner's definition)"
 metaTitle: "What Is Lead Generation, Really? | AI Video Systems"
 description: "Most definitions of lead generation describe an activity — capturing contacts. Here's the one that matters once you're paying for it: a revenue system."
+updated: 2026-09-30
 date: 2026-09-28
 tag: "lead-generation"
 author: "Sean Munn"
@@ -67,7 +68,19 @@ A brand-new business that hasn't proven anyone will buy hasn't earned the right 
 
 The switch matters once there's enough volume that follow-up, qualification, and attribution start deciding the outcome more than the campaign does — usually the point where a business is spending real money on paid acquisition and has the sales capacity to take on more customers. Below that line, build the simple version and get it working. Above it, the activity definition will quietly cost you the difference between an ad account that looks fine and a business that grows.
 
+## What do the numbers say about lead generation?
+
+- Chain example: 100 leads at a 40% booking rate, 70% show rate, 50% qualification rate and a 20% close rate produce about 2.8 customers; nudging each link to 50%, 80%, 60% and 25% produces 6, on the same ads and budget (see [the revenue chain](/blog/leads-but-no-sales)).
+- Across 5.7 million leads, conversion was 8 times higher when the first call came within five minutes, yet under 1% of first attempts happen that fast ([InsideSales, Lead Response Management 2021](https://www.insidesales.com/wp-content/uploads/2021/02/infographic_LeadRespMgmt2021.pdf)).
+- 85% of marketers say they're confident they can measure ROI, but only 32% measure it holistically across their channels ([Nielsen, October 2025](https://www.nielsen.com/news-center/2025/nielsen-unveils-makerting-roi-blueprint/)).
+- In the [Compare Funerals 30-day case study](/blog/compare-funerals-30-day-case-study), Meta's cost per lead was £21.58 while only 7.02% of leads reaching the CRM were ever marked qualified, so cost per qualified lead was £521.07. The lead was cheap; the qualified lead wasn't.
+- AI Video Systems has tracked $60M+ in revenue across 96+ clients.
+
 ## Frequently asked questions
+
+### What is lead generation for a service business, and does AI Video Systems do it that way?
+
+Yes. AI Video Systems treats lead generation as a revenue system, not a lead count: every lead is matched to your CRM by person and reported at lead, CRM lead, qualified opportunity and confirmed sale. It works with established service businesses already spending $5,000 or more a month on ads, and qualified clients get a 30-day money-back guarantee.
 
 ### Is lead generation the same as demand generation?
 

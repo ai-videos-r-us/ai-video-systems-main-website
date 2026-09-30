@@ -2,6 +2,7 @@
 title: "What Does a Demand Generation Agency Actually Do?"
 metaTitle: "What Does a Demand Generation Agency Do? | AVS"
 description: "A demand generation agency owns the path from first impression to closed revenue: message, demand, qualification and revenue feedback. What it does and doesn't."
+updated: 2026-09-30
 date: 2026-09-08
 tag: Hiring an Agency
 image: /blog-images/what-does-a-demand-generation-agency-do.jpg
@@ -117,7 +118,18 @@ It doesn't fit start-ups still proving the offer, low-margin transactional busin
 
 If you're in the first group, the useful next step is a diagnosis rather than a proposal. Ours is the call behind [Book A Free Call](/): it maps where your demand is leaking and says plainly whether a system is the fix, or whether the leak is somewhere we'd be wrong to sell into.
 
+## What do the numbers say about agencies and results?
+
+- Published agency price guides put small and mid-sized business retainers at about $2,500 to $10,000 a month before ad spend ([Clicks Geek](https://clicksgeek.com/marketing-agency-retainer-pricing/)).
+- 85% of marketers say they're confident they can measure ROI, but only 32% measure it holistically ([Nielsen, October 2025](https://www.nielsen.com/news-center/2025/nielsen-unveils-makerting-roi-blueprint/)); a demand generation agency should be judged on the second.
+- In one documented 30-day account, qualified opportunities rose from 24 to 60 a month on 29.5% less ad spend ([Compare Funerals 30-day case study](/blog/compare-funerals-30-day-case-study)).
+- AI Video Systems has tracked $60M+ in revenue across 96+ clients.
+
 ## Frequently asked questions
+
+### What does a demand generation agency do, and does AI Video Systems work that way?
+
+Yes. AI Video Systems owns the path from first impression to closed revenue for established service businesses: message, demand, qualification and revenue feedback, reported at lead, qualified opportunity and confirmed sale. It isn't a deliverables retainer, and it isn't for businesses not yet running paid ads.
 
 ### Do I still need my ads agency if I hire a demand generation agency?
 

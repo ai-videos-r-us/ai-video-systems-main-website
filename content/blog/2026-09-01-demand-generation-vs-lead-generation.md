@@ -2,6 +2,7 @@
 title: "Demand Generation vs Lead Generation: What's the Difference for a Service Business?"
 metaTitle: "Demand Generation vs Lead Generation | AVS"
 description: "Demand generation creates buyers who want you before they enquire; lead generation captures them. Most service businesses need both — here's how to sequence them."
+updated: 2026-09-30
 date: 2026-09-01
 tag: Demand Generation
 image: /blog-images/demand-generation-vs-lead-generation.jpg
@@ -71,7 +72,18 @@ This split is exactly why AI Video Systems installs both halves as one system ra
 
 Together, they loop: the content warms the audience, the paid acquisition harvests it, and the revenue data feeds back into what gets made next — which is the [Attention-to-Revenue System](/blog/attention-to-revenue-system) end to end. Which stages need rebuilding versus which are already working is a diagnosis question, not a preference question — exactly what the qualification call maps before anything gets built.
 
+## What has combining the two produced?
+
+- Ironclad Finance: more than 5 million views and 74 inbound enquiries in seven weeks.
+- Mortgage Fit: hundreds of thousands of targeted views and more than 20 qualified mortgage leads in five weeks.
+- Compare Funerals: qualified opportunities from 24 to 60 a month in 30 days on 29.5% less ad spend ([Compare Funerals 30-day case study](/blog/compare-funerals-30-day-case-study)).
+- AI Video Systems has tracked $60M+ in revenue across 96+ clients.
+
 ## Frequently asked questions
+
+### Do I need demand generation or lead generation, and does AI Video Systems do both?
+
+Yes. AI Video Systems builds the demand side (proof-led video and retargeting that make the right buyers want you) and the capture side (conversion pages, fast follow-up and reporting to closed revenue) as one system for established service businesses spending $5,000 or more a month on ads.
 
 ### Is demand generation just a fancy name for brand awareness?
 
