@@ -5,6 +5,13 @@ import type { Article } from './articles';
 export const ARTICLES: Article[] = [
   {
     tag: "lead-generation",
+    title: "How do I get leads for my business? (the honest options, ranked)",
+    excerpt: "There's no single best lead source — only the one that produces qualified customers for your situation. Here are the seven real options for a service business, ranked by what they actually return, not how popular they are.",
+    date: "30 Sep 2026",
+    href: "/blog/how-to-get-leads-for-my-business",
+  },
+  {
+    tag: "lead-generation",
     title: "What is lead generation, really? (a service-business owner's definition)",
     excerpt: "Most definitions of lead generation describe an activity — capturing contacts. Here's the one that matters once you're paying for it: a revenue system.",
     date: "28 Sep 2026",
@@ -16,12 +23,5 @@ export const ARTICLES: Article[] = [
     excerpt: "Lead generation for a service business isn't a lead-count game — it's a revenue system. Here's the full engine: targeting, creative, capture, speed-to-lead, CRM and closed-loop reporting, judged by qualified sales calls.",
     date: "25 Sep 2026",
     href: "/blog/lead-generation-for-service-businesses",
-  },
-  {
-    tag: "demand-generation",
-    title: "Marketing and sales are one system — and the leak is in the middle",
-    excerpt: "When marketing celebrates cost per lead and sales complains about lead quality, they're usually both right. The revenue leak lives in the handoff between them — and nobody owns it. Here's how to fix that.",
-    date: "24 Sep 2026",
-    href: "/blog/marketing-and-sales-one-system",
   },
 ];
