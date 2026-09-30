@@ -1,5 +1,6 @@
 ---
 title: "The 5-Minute Rule: Hard Data on Why Lead Response Time Decides Conversion"
+metaTitle: "The 5-Minute Rule: Lead Response Time Data | AVS"
 description: "Call new leads within five minutes. Across 5.7 million leads, conversion was 8X higher inside five minutes, yet under 1% of first attempts happen that fast."
 date: 2026-09-08
 tag: Demand Generation

@@ -31,9 +31,9 @@ related:
   - label: "Which agencies track leads to closed sales?"
     href: "/guides/lead-generation-agency-that-tracks-closed-sales"
     desc: "What closed-loop tracking is and how to ask for it."
-  - label: "Revenue Leak Calculator"
-    href: "/revenue-leak-calculator"
-    desc: "Find where your acquisition chain leaks."
+  - label: "How to calculate your revenue leak"
+    href: "/blog/calculate-revenue-leak"
+    desc: "A worked formula for finding where your chain leaks."
 ---
 
 The real ROI of Facebook ads for a service business is the gross profit from customers the ads produced, minus ad spend and fees, divided by that total cost. You can only calculate it if every lead is traced to an outcome in your CRM. Platform numbers such as clicks and cost per lead are inputs, not ROI.
@@ -82,7 +82,7 @@ Report in stages: lead, qualified opportunity, confirmed sale. A month proves ac
 
 Compare Funerals started with only 7.02% of CRM leads ever marked qualified and a marketing-source field that was often blank. Matching leads to the CRM by person (email, then phone, then name) is what made each qualified opportunity traceable to the ad behind it, and reporting in four stages (Meta lead, CRM lead, qualified opportunity, confirmed sale) is what we set up for you.
 
-Try the [Revenue Leak Calculator](/revenue-leak-calculator) to see where your own chain leaks, or [Book A Free Call](https://calendly.com/sean_munn/seanspersonallink) if you spend $5,000 or more a month on ads and can't yet trace it to customers.
+Use the [revenue leak formula](/blog/calculate-revenue-leak) to see where your own chain leaks, or [Book A Free Call](https://calendly.com/sean_munn/seanspersonallink) if you spend $5,000 or more a month on ads and can't yet trace it to customers.
 
 ## Sources
 

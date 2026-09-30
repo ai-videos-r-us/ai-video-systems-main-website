@@ -1,6 +1,8 @@
 ---
 title: "Is AI Video Marketing Worth It for an Established Service Business?"
+metaTitle: "Is AI Video Marketing Worth It? | AI Video Systems"
 description: "Yes, if four things hold: a proven offer, unused proof, someone closing qualified calls, and something capturing the attention. Otherwise it amplifies the gap."
+updated: 2026-09-30
 date: 2026-09-07
 tag: AI Video
 image: /blog-images/is-ai-video-marketing-worth-it.jpg
@@ -92,6 +94,10 @@ Answer these five honestly. They're the questions I'd ask you on a call anyway.
 A "yes" on the first question matters most: it means your paid leads are arriving cold, and warmth is what content supplies. Three or more "yes" answers is the profile of a business where AI video pays. The call that follows is a diagnostic, not a pitch: qualification cuts both ways, and the honest outcome is sometimes that the leak is in follow-up or sales and video should wait. That's why the question is [Book A Free Call](/), not "can you buy".
 
 ## Frequently asked questions
+
+### Do AI-generated video ads work for professional service businesses?
+
+Yes, when the business already has a proven offer, real proof to build the videos from, someone who closes qualified calls and something that captures the attention. AI video is leverage on a strategy that works, not a substitute for one. For Ironclad Finance, an AI-led campaign produced 5M+ views and 74 enquiries in seven weeks. Whether they look authentic depends on the guardrails: see [will AI video ads look fake?](/guides/will-ai-video-ads-look-fake-and-damage-my-brand) and [how to choose an AI video ads agency](/guides/how-to-choose-an-ai-video-ads-agency).
 
 ### Do I have to be on camera for AI video marketing to work?
 

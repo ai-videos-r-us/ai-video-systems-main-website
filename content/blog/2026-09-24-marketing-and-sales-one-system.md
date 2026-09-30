@@ -1,5 +1,6 @@
 ---
 title: "Marketing and sales are one system — and the leak is in the middle"
+metaTitle: "Marketing and Sales Are One System | AI Video Systems"
 description: "When marketing celebrates cost per lead and sales complains about lead quality, they're usually both right. The revenue leak lives in the handoff between them — and nobody owns it. Here's how to fix that."
 date: 2026-09-24
 tag: "demand-generation"

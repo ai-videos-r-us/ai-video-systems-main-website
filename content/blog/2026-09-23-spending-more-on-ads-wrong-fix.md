@@ -1,5 +1,6 @@
 ---
 title: "Why \"spend more on ads\" is usually the wrong fix"
+metaTitle: "Why Spending More on Ads Is Usually the Wrong Fix | AVS"
 description: "More ad spend multiplies whatever your funnel already does — including its leaks. Here's how to tell whether you have a traffic problem or a conversion problem, and when spending more is actually right."
 updated: 2026-09-30
 date: 2026-09-23

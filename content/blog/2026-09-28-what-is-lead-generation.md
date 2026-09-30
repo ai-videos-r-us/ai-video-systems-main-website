@@ -1,5 +1,6 @@
 ---
 title: "What is lead generation, really? (a service-business owner's definition)"
+metaTitle: "What Is Lead Generation, Really? | AI Video Systems"
 description: "Most definitions of lead generation describe an activity — capturing contacts. Here's the one that matters once you're paying for it: a revenue system."
 date: 2026-09-28
 tag: "lead-generation"

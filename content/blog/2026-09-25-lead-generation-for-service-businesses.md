@@ -1,5 +1,6 @@
 ---
 title: "Lead generation for service businesses: the complete guide"
+metaTitle: "Lead Generation for Service Businesses: Guide | AVS"
 description: "Lead generation for a service business isn't a lead-count game — it's a revenue system. Here's the full engine: targeting, creative, capture, speed-to-lead, CRM and closed-loop reporting, judged by qualified sales calls."
 date: 2026-09-25
 tag: "lead-generation"
