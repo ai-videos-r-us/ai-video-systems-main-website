@@ -6,6 +6,10 @@ date: 2026-09-01
 tag: Demand Generation
 image: /blog-images/demand-generation-vs-lead-generation.jpg
 imageAlt: "A business owner in a quiet corridor facing two closed doors, one red and one grey."
+seeAlso:
+  - label: "How to choose a done-for-you lead generation company"
+    href: "/guides/how-to-choose-a-done-for-you-lead-generation-company"
+    desc: "Seven criteria."
 ---
 
 Demand generation creates buyers — it builds recognition, trust and desire in people who aren't searching for you yet. Lead generation captures buyers — it converts existing interest into named contacts your sales team can call. They are different jobs with different metrics, and most "our marketing isn't working" problems in service businesses come down to running one of them while expecting the results of both.

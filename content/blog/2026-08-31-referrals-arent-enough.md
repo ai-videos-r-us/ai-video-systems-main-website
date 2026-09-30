@@ -6,6 +6,13 @@ date: 2026-08-31
 tag: Demand Generation
 image: /blog-images/referrals-arent-enough.jpg
 imageAlt: "A business owner at his desk holding a quiet phone, with a near-empty wall calendar behind him."
+seeAlso:
+  - label: "Ads that convert like referrals"
+    href: "/guides/paid-ads-customers-as-good-as-referrals"
+    desc: "Moving trust before the click."
+  - label: "Buy leads or build your own system?"
+    href: "/guides/buy-leads-or-build-your-own-lead-generation-system"
+    desc: "Renting versus owning demand."
 ---
 
 Referrals aren't enough to grow a service business because you control none of the inputs: not how many arrive, not when they arrive, and not whether they're the right fit for the business you run today. They built you — but they can't scale you. Growing past them means adding a source of demand you actually control, and cold demand behaves nothing like referred demand.

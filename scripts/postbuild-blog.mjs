@@ -279,6 +279,7 @@ img{max-width:100%;height:auto}
 .schip:hover{border-color:var(--carbon);background:var(--carbon);color:#fff}
 .about-prose img:first-child{margin-top:.5rem}
 main{padding-bottom:0}
+.tool{background:var(--cloud);border:1px solid var(--line);padding:22px 24px;margin:26px 0}.tool label{display:block;font-weight:600;font-size:14px;margin:14px 0 4px}.tool input{width:100%;max-width:300px;padding:10px 12px;border:1px solid var(--line);font-size:16px;font-family:inherit;background:#fff}.tool .out{margin-top:20px;padding-top:16px;border-top:1px solid var(--line)}.tool .out p{margin:6px 0}.tool .out .big{font-family:Sora,sans-serif;font-weight:800;font-size:26px}.tool small{color:rgba(11,11,13,.6)}
 </style>`;
 
 const HEADER = `<header class="site-header"><div class="bar">
@@ -595,6 +596,12 @@ ${related.map(postCard).join('\n')}
 </div></section>`
     : `<section class="related"><p class="toc-label">Keep reading</p><p><a href="/blog">Browse all articles &rarr;</a></p></section>`;
 
+  const seeAlsoBlock = post.seeAlso.length
+    ? `<section class="related"><p class="toc-label">Go deeper</p><div class="related-grid">
+${post.seeAlso.map((r) => `<article class="card"><p class="tag">Guide</p><p class="t"><a href="${r.href}">${escapeHtml(r.label)}</a></p><p class="ex">${escapeHtml(r.desc || '')}</p></article>`).join('\n')}
+</div></section>`
+    : '';
+
   const answerBlock = answerHtml
     ? `<section class="answer" aria-label="The short answer"><p class="label">The short answer</p><p>${answerHtml}</p></section>`
     : '';
@@ -628,6 +635,7 @@ ${railCta}
 <article class="prose">${rest}</article>
 </div>
 ${AUTHOR_CARD}
+${seeAlsoBlock}
 ${relatedBlock}
 </div>
 </main>
@@ -891,12 +899,26 @@ function renderServicePage(page) {
   if (page.parent) crumbs.push({ '@type': 'ListItem', position: crumbs.length + 1, name: page.parent.label, item: `${SITE_URL}${page.parent.href}` });
   crumbs.push({ '@type': 'ListItem', position: crumbs.length + 1, name: page.title, item: page.url });
 
-  const isArticle = page.kind === 'guide' || page.kind === 'compare';
+  const isArticle = page.kind === 'guide' || page.kind === 'compare' || page.kind === 'tool';
   const hubLinks = page.kind === 'hub'
     ? [...new Set([...page.bodyHtml.matchAll(/href="(\/[a-z0-9\-\/]+)"/g)].map((m) => m[1]))]
     : [];
   let main;
-  if (isArticle) {
+  if (page.kind === 'tool') {
+    main = {
+      '@type': 'WebApplication',
+      '@id': `${page.url}#tool`,
+      name: page.h1,
+      description: page.description,
+      url: page.url,
+      applicationCategory: 'BusinessApplication',
+      operatingSystem: 'Any',
+      isAccessibleForFree: true,
+      author: { '@type': 'Person', '@id': FOUNDER_ID, name: page.author, url: `${SITE_URL}/about` },
+      publisher: { '@id': ORG_ID },
+      dateModified: page.updatedISO || page.dateISO || undefined,
+    };
+  } else if (isArticle) {
     main = {
       '@type': 'Article',
       '@id': `${page.url}#article`,
@@ -1135,6 +1157,7 @@ const LLMS_GROUPS = [
   ['start', 'Start here'],
   ['guides', 'Guides: cost, results and choosing a provider'],
   ['compare', 'Comparisons and alternatives'],
+  ['tools', 'Free tools'],
   ['services', 'Services'],
 ];
 
@@ -1179,6 +1202,43 @@ function writeFile(rel, contents) {
   return rel;
 }
 
+
+// ---------------------------------------------------------------------------
+// Route shells: the SPA-only routes (privacy, terms, diagnostic, calculator) all shipped the
+// homepage's title, description and canonical in their raw HTML. Write a per-route copy of the
+// untouched app shell with its own head and a <noscript> summary, so crawlers see the right page.
+// The shell's #root stays empty, so client rendering is unchanged. Vercel serves a real file first.
+// ---------------------------------------------------------------------------
+const ROUTE_SHELLS = [
+  { path: 'privacy', title: 'Privacy Policy', desc: 'The AI Video Systems privacy policy: what personal data is collected through this website, how it is used and your rights.', h1: 'Privacy Policy' },
+  { path: 'terms', title: 'Terms', desc: 'The terms that apply to the AI Video Systems website and services.', h1: 'Terms' },
+  { path: 'funeral-plan-scale-readiness', title: 'Funeral Plan Scale-Readiness Diagnostic', desc: 'A free, short diagnostic to check whether your funeral home or pre-need business is ready to scale paid lead generation, or whether something else needs fixing first.', h1: 'Funeral Plan Scale-Readiness Diagnostic' },
+  { path: 'revenue-leak-calculator', title: 'Revenue Leak Calculator', desc: 'Find where your acquisition chain leaks between ad spend and closed revenue, with the revenue leak calculator from AI Video Systems.', h1: 'Revenue Leak Calculator' },
+];
+
+function writeRouteShells() {
+  const shellPath = path.join(DIST_DIR, 'app.html');
+  if (!fs.existsSync(shellPath)) return [];
+  const shell = fs.readFileSync(shellPath, 'utf8');
+  const out = [];
+  for (const r of ROUTE_SHELLS) {
+    const url = `${SITE_URL}/${r.path}`;
+    const t = `${r.title} - ${SITE_NAME}`;
+    let html = shell
+      .replace(/<title>[^<]*<\/title>/, `<title>${escapeHtml(t)}</title>`)
+      .replace(/(<meta name="description" content=")[^"]*(")/, `$1${escapeHtml(r.desc)}$2`)
+      .replace(/(<meta property="og:title" content=")[^"]*(")/, `$1${escapeHtml(t)}$2`)
+      .replace(/(<meta property="og:description" content=")[^"]*(")/, `$1${escapeHtml(r.desc)}$2`)
+      .replace(/(<meta property="og:url" content=")[^"]*(")/, `$1${url}$2`)
+      .replace(/(<meta name="twitter:title" content=")[^"]*(")/, `$1${escapeHtml(t)}$2`)
+      .replace(/(<meta name="twitter:description" content=")[^"]*(")/, `$1${escapeHtml(r.desc)}$2`)
+      .replace(/(<link rel="canonical" href=")[^"]*(")/, `$1${url}$2`)
+      .replace('<div id="root"></div>', `<noscript><h1>${escapeHtml(r.h1)}</h1><p>${escapeHtml(r.desc)}</p><p><a href="/">AI Video Systems</a></p></noscript>\n    <div id="root"></div>`);
+    out.push(writeFile(path.join(r.path, 'index.html'), html));
+  }
+  return out;
+}
+
 function main() {
   if (!fs.existsSync(DIST_DIR)) {
     console.error('[blog] dist/ not found — run `vite build` before postbuild-blog.mjs');
@@ -1206,6 +1266,8 @@ function main() {
   for (const page of pages) {
     written.push(writeFile(path.join(page.slug, 'index.html'), renderServicePage(page)));
   }
+
+  written.push(...writeRouteShells());
 
   // Always regenerate crawl files so they reflect current content.
   written.push(writeFile('sitemap.xml', renderSitemap(posts, about, pages)));

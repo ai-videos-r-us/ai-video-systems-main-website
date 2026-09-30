@@ -7,6 +7,16 @@ date: 2026-09-01
 tag: Demand Generation
 image: /blog-images/leads-but-no-sales.jpg
 imageAlt: "A business owner kneeling in his office, placing a red bucket under a thin water leak."
+seeAlso:
+  - label: "Leads never pick up: what to fix first"
+    href: "/guides/facebook-ads-leads-never-pick-up-the-phone"
+    desc: "A fix order for a $5,000-a-month advertiser."
+  - label: "Is it a lead problem or a follow-up problem?"
+    href: "/guides/lead-problem-or-sales-follow-up-problem"
+    desc: "A five-checkpoint diagnostic."
+  - label: "Agency reports full of clicks but no calls"
+    href: "/guides/agency-reports-clicks-impressions-phone-not-ringing"
+    desc: "What to demand instead."
 ---
 
 If your ads generate leads but few sales, the problem is almost never the ads — it's one of four links downstream of the click. Revenue is a chain: leads × booking rate × show rate × qualification rate × close rate × average sale. Leads without sales means one of those multipliers is broken, and fixing that one link raises revenue without a penny of extra ad spend.

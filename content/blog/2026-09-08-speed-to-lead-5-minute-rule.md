@@ -6,6 +6,13 @@ date: 2026-09-08
 tag: Demand Generation
 image: /blog-images/speed-to-lead-5-minute-rule.jpg
 imageAlt: "An empty sales desk after hours with a headset beside a dark monitor, a printed lead sheet under a mug, and a single red message light glowing on the desk phone."
+seeAlso:
+  - label: "Why Facebook ad leads go cold"
+    href: "/guides/why-facebook-ad-leads-go-cold"
+    desc: "The speed-to-lead fix."
+  - label: "Leads never pick up: what to fix first"
+    href: "/guides/facebook-ads-leads-never-pick-up-the-phone"
+    desc: "A fix order for a $5,000-a-month advertiser."
 ---
 
 Respond to a new inbound lead within five minutes. Across 5.7 million leads and 55 million sales activities at 400+ companies, conversion rates were 8 times higher when the first call came inside five minutes than when it came six minutes or later. Yet under 1% of first attempts happen that fast, and 57.1% wait more than a week. Response time isn't admin. It's a top-three conversion lever, and almost nobody is pulling it.

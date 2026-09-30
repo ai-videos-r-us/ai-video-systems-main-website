@@ -6,6 +6,16 @@ date: 2026-09-03
 tag: Demand Generation
 image: /blog-images/service-business-marketing-cost.jpg
 imageAlt: "A founder at a dark wooden desk working through marketing costs on a desktop calculator, a stack of blank paper and a red pen beside a cup of coffee."
+seeAlso:
+  - label: "Is a $5,000-a-month agency worth it?"
+    href: "/guides/is-5000-a-month-lead-generation-agency-worth-it"
+    desc: "The break-even calculation."
+  - label: "What's a normal setup fee and retainer?"
+    href: "/guides/agency-setup-fee-and-monthly-retainer"
+    desc: "What each fee line should buy."
+  - label: "How much to spend on ads before hiring an agency"
+    href: "/guides/how-much-to-spend-on-ads-before-hiring-a-lead-generation-agency"
+    desc: "The spend floor and the proof threshold."
 ---
 
 An established service business typically spends 5–10% of revenue on marketing in 2026. In money terms that's a $2,500–$10,000 monthly agency retainer or an in-house marketer costing $160,000-plus a year, plus ad spend that usually starts at $2,000–$5,000 a month before it produces reliable data. But the total is the wrong number to fixate on. The only figure that tells you whether marketing is expensive is what it costs you per new customer.

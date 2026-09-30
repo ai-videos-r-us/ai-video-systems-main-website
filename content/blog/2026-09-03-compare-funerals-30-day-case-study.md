@@ -6,6 +6,16 @@ date: 2026-09-03
 tag: Demand Generation
 image: /blog-images/compare-funerals-30-day-case-study.jpg
 imageAlt: "A sales desk at a funeral-plan provider: a landline phone, a tall stack of enquiry forms beside a much smaller stack marked with a single red sticky note, and a laptop showing an out-of-focus dashboard."
+seeAlso:
+  - label: "Agencies that track leads to closed sales"
+    href: "/guides/lead-generation-agency-that-tracks-closed-sales"
+    desc: "Closed-loop reporting and how to test for it."
+  - label: "What to expect in the first 30 days"
+    href: "/guides/what-to-expect-first-30-days-lead-generation-agency"
+    desc: "Week by week."
+  - label: "Results and proof"
+    href: "/results"
+    desc: "Every result we publish, with what it does and doesn't prove."
 ---
 
 Compare Funerals, a funeral-plan provider serving British expatriates in Spain, was spending about £12,500 a month on Meta ads and getting 24 qualified opportunities every 30 days. In our first month, monthly spend fell 29.5% to £8,859 and qualified opportunities rose to 60, a 148.8% increase. Cost per qualified lead fell from £521.07 to £147.65. The objective was never cheaper Facebook leads. It was more people who could realistically become customers.

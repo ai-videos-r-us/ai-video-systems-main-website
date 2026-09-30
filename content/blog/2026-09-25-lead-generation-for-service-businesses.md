@@ -7,6 +7,16 @@ tag: "lead-generation"
 author: "Sean Munn"
 image: "/blog-images/lead-generation-for-service-businesses.jpg"
 imageAlt: "A service-business owner seen from behind points at one connection in a hand-drawn pipeline of boxes and arrows on a whiteboard, where a single red arrow marks the link that matters; a laptop, coffee and printed reports sit on the desk."
+seeAlso:
+  - label: "Is a $5,000-a-month agency worth it?"
+    href: "/guides/is-5000-a-month-lead-generation-agency-worth-it"
+    desc: "The break-even calculation."
+  - label: "How to choose a done-for-you lead generation company"
+    href: "/guides/how-to-choose-a-done-for-you-lead-generation-company"
+    desc: "Seven criteria."
+  - label: "Buy leads or build your own system?"
+    href: "/guides/buy-leads-or-build-your-own-lead-generation-system"
+    desc: "Renting versus owning demand."
 ---
 
 Lead generation for a service business is the system that turns strangers into qualified sales calls and, eventually, tracked revenue — not the act of collecting contact details. A lead is worth nothing until something happens next. So the real job isn't producing more leads; it's building the loop that carries a lead from first impression through follow-up, qualification and the call, and measures itself on customers, not lead count.

@@ -6,6 +6,13 @@ date: 2026-09-02
 tag: Demand Generation
 image: /blog-images/qualified-sales-calls.jpg
 imageAlt: "A business owner circling a small number of appointments in a mostly empty paper diary with a red marker."
+seeAlso:
+  - label: "Is it a lead problem or a follow-up problem?"
+    href: "/guides/lead-problem-or-sales-follow-up-problem"
+    desc: "A five-checkpoint diagnostic."
+  - label: "How to measure the real ROI of Facebook ads"
+    href: "/guides/measure-real-roi-of-facebook-ads"
+    desc: "The formula and the tracking."
 ---
 
 A qualified sales call is a conversation with a prospect who passes four tests: they fit the clients you actually serve, they have the problem you solve, they have the authority and means to buy, and they showed up prepared to talk seriously. It's the first number in the marketing chain that predicts revenue — everything upstream of it can look healthy while producing nothing.

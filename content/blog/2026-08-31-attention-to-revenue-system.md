@@ -6,6 +6,13 @@ date: 2026-08-31
 tag: Demand Generation
 image: /blog-images/attention-to-revenue-system.jpg
 imageAlt: "A business owner studying a pinboard of charts and photographs connected by a single red thread."
+seeAlso:
+  - label: "What is AI Video Systems?"
+    href: "/what-is-ai-video-systems"
+    desc: "The company, system and who it's for."
+  - label: "One provider for ads, video, pages and follow-up"
+    href: "/guides/one-provider-for-ads-video-landing-page-and-follow-up"
+    desc: "What an all-in-one setup includes."
 ---
 
 The Attention-to-Revenue System is an acquisition model for established service businesses that refuses to let one cold ad do the entire sale. It spreads the selling work across five connected stages — extract what already sells, turn it into buyer-aware creative, distribute it, retarget the people who respond, and feed appointment and revenue data back into the next cycle — so more of the demand you already pay for becomes qualified sales calls.
