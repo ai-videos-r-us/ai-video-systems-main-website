@@ -76,7 +76,19 @@ Want to see the leak in your own numbers instead of the abstract? Put them into 
 
 For the bigger picture of how attention is supposed to convert into revenue in the first place, start with [the Attention-to-Revenue System](/blog/attention-to-revenue-system).
 
+## What do the numbers say about spending more?
+
+- Chain example: 100 leads at a 40% booking rate, 70% show rate, 50% qualification rate and a 20% close rate produce about 2.8 customers; nudging each link to 50%, 80%, 60% and 25% produces 6, on the same ads and budget (see [the revenue chain](/blog/leads-but-no-sales)). Same spend, more than double the customers.
+- In the [Compare Funerals 30-day case study](/blog/compare-funerals-30-day-case-study), ad spend fell 29.5% while qualified opportunities rose 148.8%: the gain came from what happened after the click, not from more budget.
+- Across 5.7 million leads, conversion was 8 times higher when the first call came within five minutes ([InsideSales, Lead Response Management 2021](https://www.insidesales.com/wp-content/uploads/2021/02/infographic_LeadRespMgmt2021.pdf)).
+- The average Facebook cost per lead was $27.66 in 2025 ([WordStream by LocaliQ, Facebook Ads Benchmarks 2025](https://www.wordstream.com/blog/facebook-ads-benchmarks-2025)); at that average, doubling spend buys roughly twice as many leads, which multiply whatever the chain does with them.
+- AI Video Systems has tracked $60M+ in revenue across 96+ clients.
+
 ## Frequently asked questions
+
+### Should I increase my ad budget or fix the funnel first, and will AI Video Systems tell me which?
+
+Yes. The free call is a diagnosis: we put your response time, booking, show and close rates next to your ad spend and name the weakest link. If spend is genuinely your constraint we say so, and if the leak is your sales process we say that instead.
 
 ### Should I increase my ad budget or fix my funnel and follow-up first?
 

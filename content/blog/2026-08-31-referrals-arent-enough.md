@@ -2,6 +2,7 @@
 title: "Why Referrals Aren't Enough to Grow a Service Business Anymore"
 metaTitle: "Why Referrals Aren't Enough for a Service Business | AVS"
 description: "Referrals stall because you control none of the inputs — volume, timing or fit. Here's the referral ceiling, and what growing past it actually takes."
+updated: 2026-09-30
 date: 2026-08-31
 tag: Demand Generation
 image: /blog-images/referrals-arent-enough.jpg
@@ -75,7 +76,18 @@ If you're at capacity and don't want to grow headcount, a referral-only pipeline
 
 The moment to build past them is specific: proven offer, real client results, spare capacity you want filled, and a growth target your network can't hit. That's when the leak between "we do great work" and "strangers can find and trust us" starts costing you real revenue every month.
 
+## What do the numbers say about referrals versus cold leads?
+
+- Cold enquiries decay fast: across 5.7 million leads, conversion was 8 times higher inside five minutes, and 57.1% of first attempts waited more than a week ([InsideSales, Lead Response Management 2021](https://www.insidesales.com/wp-content/uploads/2021/02/infographic_LeadRespMgmt2021.pdf)).
+- In the [Compare Funerals 30-day case study](/blog/compare-funerals-30-day-case-study), only 7.02% of leads reaching the CRM had ever been marked qualified before the account was rebuilt, which is what cold, un-warmed leads look like next to referrals.
+- Chain example: 100 leads at a 40% booking rate, 70% show rate, 50% qualification rate and a 20% close rate produce about 2.8 customers; nudging each link to 50%, 80%, 60% and 25% produces 6, on the same ads and budget (see [the revenue chain](/blog/leads-but-no-sales)).
+- AI Video Systems has tracked $60M+ in revenue across 96+ clients.
+
 ## Frequently asked questions
+
+### How do I grow past referrals, and can AI Video Systems help?
+
+Yes, if you're an established service business already spending $5,000 or more a month on ads. AI Video Systems builds trust before the enquiry, with your proof and expertise in video and retargeting for the people who watched, so ad leads arrive closer to referral quality. It isn't right if you're not running paid ads yet.
 
 ### Should I stop asking for referrals?
 
