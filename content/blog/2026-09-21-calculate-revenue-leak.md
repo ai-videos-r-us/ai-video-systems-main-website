@@ -7,6 +7,13 @@ tag: "demand-generation"
 author: "Sean Munn"
 image: "/blog-images/calculate-revenue-leak.jpg"
 imageAlt: "A descending row of five bars representing an acquisition chain shrinking stage by stage, with a single red stream leaking out from beneath the last stage."
+seeAlso:
+  - label: "How to measure the real ROI of Facebook ads"
+    href: "/guides/measure-real-roi-of-facebook-ads"
+    desc: "The formula and the tracking."
+  - label: "Free tools"
+    href: "/tools"
+    desc: "Break-even and cost-per-customer calculators."
 ---
 
 Your revenue leak is the money lost between the ad spend you pay for and the customers you actually win, calculated stage by stage. Attributable revenue is a chain: leads, then booking rate, then show rate, then qualification rate, then close rate, then average first-sale value. Multiply them. The leak is the gap between what that chain produces today and what it would produce with each stage at a healthy rate. Same spend. Bigger number.

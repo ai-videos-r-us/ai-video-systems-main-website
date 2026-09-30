@@ -7,6 +7,13 @@ tag: "lead-generation"
 author: "Sean Munn"
 image: "/blog-images/what-is-lead-generation.jpg"
 imageAlt: "A founder seen from behind studies a branding and marketing mood board pinned to a corkboard in a bright office."
+seeAlso:
+  - label: "How to choose a done-for-you lead generation company"
+    href: "/guides/how-to-choose-a-done-for-you-lead-generation-company"
+    desc: "Seven criteria."
+  - label: "What is AI Video Systems?"
+    href: "/what-is-ai-video-systems"
+    desc: "The company, system and who it's for."
 ---
 
 Lead generation has two different definitions, and most of what you'll find online uses the wrong one. The common one: the activity of attracting strangers and capturing their contact details — forms, ads, landing pages. The one that actually matters once you're spending real money on it: the accountable system that turns a stranger into a qualified sales call and, eventually, revenue. A lead by itself is worth nothing — it's only worth what happens to it next.

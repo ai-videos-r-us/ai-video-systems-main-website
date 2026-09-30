@@ -6,6 +6,13 @@ date: 2026-09-08
 tag: Hiring an Agency
 image: /blog-images/what-does-a-demand-generation-agency-do.jpg
 imageAlt: "A founder alone at a long boardroom table, turned toward the window, with an agency's monthly report open in front of her, a stack of printed ad mockups, empty chairs opposite and a single red sticky note on the report."
+seeAlso:
+  - label: "How to choose a done-for-you lead generation company"
+    href: "/guides/how-to-choose-a-done-for-you-lead-generation-company"
+    desc: "Seven criteria."
+  - label: "Lead generation agency vs marketing agency vs freelancer"
+    href: "/compare/lead-generation-agency-vs-marketing-agency-vs-freelancer"
+    desc: "Which suits you."
 ---
 
 A demand generation agency manages the whole path from a buyer's first impression to closed revenue, not one piece of it. In practice that means four managed layers: message and creative, demand and retargeting, qualification and follow-up, and revenue feedback. The difference from a normal marketing agency is what it's paid for. A deliverables agency is paid for output. A demand generation agency is paid to produce qualified sales calls and revenue you can trace.

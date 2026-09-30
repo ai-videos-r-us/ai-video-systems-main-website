@@ -8,6 +8,13 @@ tag: "demand-generation"
 author: "Sean Munn"
 image: "/blog-images/spending-more-on-ads-wrong-fix.jpg"
 imageAlt: "A founder seen from behind studies a greyscale marketing dashboard on a monitor, its single red upward trend line the only colour, a coffee cup and printed reports on the desk — the moment of deciding whether to spend more."
+seeAlso:
+  - label: "How much to spend on ads before hiring an agency"
+    href: "/guides/how-much-to-spend-on-ads-before-hiring-a-lead-generation-agency"
+    desc: "The spend floor and the proof threshold."
+  - label: "Is it a lead problem or a follow-up problem?"
+    href: "/guides/lead-problem-or-sales-follow-up-problem"
+    desc: "A five-checkpoint diagnostic."
 ---
 
 Spending more on ads only works when your funnel already turns leads into customers profitably. If it doesn't, more budget buys you more of the same leaks — cold prospects, slow follow-up, weak qualification — at a higher monthly cost. Ad spend is the most visible lever, so it becomes the default fix. But the leak is almost always downstream of the click, and more traffic magnifies it instead of solving it.

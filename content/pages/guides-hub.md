@@ -64,6 +64,12 @@ These guides answer the questions established service businesses ask about lead 
 - [How to turn testimonials and case studies into video ads](/guides/turn-testimonials-and-case-studies-into-video-ads)
 - [How to choose an AI video ads agency](/guides/how-to-choose-an-ai-video-ads-agency)
 
+## Which free calculators can you use?
+
+- [Agency break-even calculator](/tools/agency-break-even-calculator): how many extra customers does the fee need?
+- [Cost per customer calculator](/tools/cost-per-customer-calculator): what do your ads really cost per sale?
+- [All calculators](/tools)
+
 ## How do you choose a provider?
 
 - [How to choose a done-for-you lead generation company](/guides/how-to-choose-a-done-for-you-lead-generation-company)
@@ -80,10 +86,12 @@ These guides answer the questions established service businesses ask about lead 
 - [Financial advisors](/lead-generation-for-financial-advisors)
 - [Private healthcare clinics](/lead-generation-for-private-clinics)
 - [Funeral homes](/lead-generation-for-funeral-homes) and [mortgage brokers](/mortgage-broker-lead-generation)
+- [UK service businesses](/lead-generation-for-uk-service-businesses)
 
 ## What does the system look like in practice?
 
 - [The Attention-to-Revenue System](/blog/attention-to-revenue-system)
+- [Results and proof, with the limits of each](/results)
 - [Compare Funerals: the 30-day case study](/blog/compare-funerals-30-day-case-study)
 - [Meta ads lead generation](/meta-ads-lead-generation)
 - [All articles on the blog](/blog)

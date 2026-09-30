@@ -144,6 +144,7 @@ export function loadPosts({ includeDrafts = false } = {}) {
       imageSrc: data.image
         ? (/^https?:\/\//.test(String(data.image)) ? String(data.image) : `/${String(data.image).replace(/^\/+/, '')}`)
         : '',
+      seeAlso: Array.isArray(data.seeAlso) ? data.seeAlso : [],
       hasHero: Boolean(data.image),
       imageAlt: String(data.imageAlt || data.title),
       noindex: Boolean(data.noindex),
