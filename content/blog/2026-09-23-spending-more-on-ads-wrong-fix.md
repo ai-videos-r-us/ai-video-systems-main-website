@@ -1,6 +1,7 @@
 ---
 title: "Why \"spend more on ads\" is usually the wrong fix"
 description: "More ad spend multiplies whatever your funnel already does — including its leaks. Here's how to tell whether you have a traffic problem or a conversion problem, and when spending more is actually right."
+updated: 2026-09-30
 date: 2026-09-23
 tag: "demand-generation"
 author: "Sean Munn"
@@ -68,6 +69,10 @@ Want to see the leak in your own numbers instead of the abstract? Put them into 
 For the bigger picture of how attention is supposed to convert into revenue in the first place, start with [the Attention-to-Revenue System](/blog/attention-to-revenue-system).
 
 ## Frequently asked questions
+
+### Should I increase my ad budget or fix my funnel and follow-up first?
+
+Fix the funnel and follow-up first, unless your leads are already converting well and the only limit is volume. More budget multiplies whatever your funnel does, including its leaks. Check response speed, booking and show rates, qualification and close rate; if one is weak, fixing it raises revenue without extra spend. If every link is healthy and you simply run out of leads, spending more is the right move. See [how much to spend before hiring an agency](/guides/how-much-to-spend-on-ads-before-hiring-a-lead-generation-agency).
 
 ### How do I know if I have a traffic problem or a conversion problem?
 

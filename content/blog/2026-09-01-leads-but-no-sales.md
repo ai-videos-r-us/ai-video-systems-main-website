@@ -1,6 +1,7 @@
 ---
 title: "Why Your Ads Get Leads but No Sales (and Where the Revenue Actually Leaks)"
 description: "Leads without sales usually means the leak is downstream of the click. Walk the four links of the revenue chain and find exactly where yours breaks."
+updated: 2026-09-30
 date: 2026-09-01
 tag: Demand Generation
 image: /blog-images/leads-but-no-sales.jpg
@@ -70,6 +71,10 @@ If you'd rather have the math done for you, the [Revenue Leak Calculator](/reven
 Sometimes the chain is healthy and the input is wrong, and honesty demands the checklist: targeting a genuinely wrong audience, an ad promising something the business doesn't sell (message mismatch collects doomed leads at the door), or creative so broad it attracts everyone and therefore no one. The tell is leak 3 maxed out — almost nothing survives qualification no matter how fast and warm the process is. If every rate downstream of qualification looks fine on referrals and terrible on paid, and fixing speed and warmth moved nothing, then rebuild the front end: message first, targeting second, budget last.
 
 ## Frequently asked questions
+
+### Why is my cost per lead good but I'm still not getting more booked calls or sales?
+
+Because cost per lead stops at the form. It tells you what a form fill cost, not whether anyone answered, booked, showed up or bought. A healthy cost per lead next to weak sales usually means the leak is after the click: slow first contact, thin qualification, or trust that was not built before the enquiry. Trace last month's leads through contact, booking, show and close to find the link, then manage to [cost per customer](/blog/cpl-vs-cac). The [follow-up diagnostic](/guides/lead-problem-or-sales-follow-up-problem) walks it step by step.
 
 ### Should I pause my ads while I fix the chain?
 

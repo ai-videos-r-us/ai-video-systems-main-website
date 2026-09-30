@@ -149,6 +149,7 @@ export function loadPosts({ includeDrafts = false } = {}) {
       readingMinutes: Math.max(1, Math.round(words / 200)),
       wordCount: words,
       bodyHtml: marked.parse(content),
+      bodyMd: content.trim(),
       url: `${SITE_URL}/blog/${slug}`,
       path: `/blog/${slug}`,
     });
@@ -184,7 +185,13 @@ export function loadPages() {
       continue;
     }
 
-    const slug = slugify(file.replace(/\.md$/, ''));
+    // A `slug:` in frontmatter may include folders (e.g. compare/x) so guides, comparisons
+    // and alternatives live under real hub paths; otherwise the filename is the slug.
+    const slug = String(data.slug || file.replace(/\.md$/, ''))
+      .split('/')
+      .map(slugify)
+      .filter(Boolean)
+      .join('/');
     if (seen.has(slug)) {
       console.warn(`[pages] duplicate slug "${slug}" (${file}) — skipping the duplicate`);
       continue;
@@ -194,6 +201,7 @@ export function loadPages() {
     pages.push({
       slug,
       title: String(data.title),
+      metaTitle: data.metaTitle ? String(data.metaTitle) : '',
       description: String(data.description || ''),
       tag: String(data.tag || 'Lead Generation'),
       h1: String(data.h1 || data.title),
@@ -203,8 +211,16 @@ export function loadPages() {
       notfit: Array.isArray(data.notfit) ? data.notfit : [],
       faqs: Array.isArray(data.faqs) ? data.faqs : [],
       related: Array.isArray(data.related) ? data.related : [],
-      updatedISO: data.updated ? toISODate(data.updated) : '',
+      // kind: service (default, Service schema) | guide | compare | hub (CollectionPage)
+      kind: String(data.kind || 'service'),
+      group: String(data.group || ''),
+      author: String(data.author || 'Sean Munn'),
+      parent: data.parent && data.parent.href ? data.parent : null,
+      dateISO: data.date ? toISODate(data.date) : '',
+      updatedISO: data.updated ? toISODate(data.updated) : (data.date ? toISODate(data.date) : ''),
+      updatedDisplay: data.updated ? displayDate(toISODate(data.updated)) : (data.date ? displayDate(toISODate(data.date)) : ''),
       bodyHtml: marked.parse(content),
+      bodyMd: content.trim(),
       url: `${SITE_URL}/${slug}`,
       path: `/${slug}`,
     });
