@@ -38,7 +38,7 @@ related:
 
 The real ROI of Facebook ads for a service business is the gross profit from customers the ads produced, minus ad spend and fees, divided by that total cost. You can only calculate it if every lead is traced to an outcome in your CRM. Platform numbers such as clicks and cost per lead are inputs, not ROI.
 
-Most businesses cannot answer "what did we make from Facebook last quarter?" because the trace is missing, not because the ads failed.
+Most businesses can't answer "what did we make from Facebook last quarter?" because the trace is missing, not because the ads failed.
 
 ## What is the formula?
 
@@ -68,17 +68,21 @@ In our documented Compare Funerals account, only 7.02% of CRM leads had ever bee
 
 - **Cost per lead** on its own. It stops at the form.
 - **Clicks, reach, impressions and CTR.** Diagnostics for creative, not results.
-- **ROAS from the platform** for anything sold offline, because the platform cannot see it.
+- **ROAS from the platform** for anything sold offline, because the platform can't see it.
 
-Nielsen's 2025 research found 85% of marketers say they are confident they can measure ROI, but only 32% measure it holistically across channels. Do not assume your dashboard is in the 32%.
+Nielsen's 2025 research found 85% of marketers say they are confident they can measure ROI, but only 32% measure it holistically across channels. Don't assume your dashboard is in the 32%.
+
+The first ROI lesson I learned was with a fish and chip shop: the website wasn't the outcome, footfall was. Clicks, views and even leads are the same. Revenue is downstream of all of them.
 
 ## How do you judge results when the sales cycle is long?
 
-Report in stages: lead, qualified opportunity, confirmed sale. A month proves acquisition efficiency; sales may take weeks or months for a considered purchase. Label what is proven and what is still developing rather than forcing a revenue number early.
+Report in stages: lead, qualified opportunity, confirmed sale. A month proves acquisition efficiency; sales may take weeks or months for a considered purchase. Label what's proven and what's still developing rather than forcing a revenue number early.
 
-## How does AI Video Systems report ROI?
+## What does this look like on a real account?
 
-AI Video Systems reports four stages (Meta lead, CRM lead, qualified opportunity, confirmed sale) matched by person, so cost per customer is a real figure by campaign and message. It is built for established service businesses spending $5,000 or more a month on ads. Try the [Revenue Leak Calculator](/revenue-leak-calculator) to see where your own chain leaks, or [Book A Free Call](https://calendly.com/sean_munn/seanspersonallink).
+Compare Funerals started with only 7.02% of CRM leads ever marked qualified and a marketing-source field that was often blank. Matching leads to the CRM by person (email, then phone, then name) is what made each qualified opportunity traceable to the ad behind it, and reporting in four stages (Meta lead, CRM lead, qualified opportunity, confirmed sale) is what we set up for you.
+
+Try the [Revenue Leak Calculator](/revenue-leak-calculator) to see where your own chain leaks, or [Book A Free Call](https://calendly.com/sean_munn/seanspersonallink) if you spend $5,000 or more a month on ads and can't yet trace it to customers.
 
 ## Sources
 

@@ -15,9 +15,9 @@ parent:
   href: /guides
 faqs:
   - q: "What should I ask a lead generation agency before signing?"
-    a: "Ask what is included and excluded in writing, how results are reported (to lead or to customer), who owns the accounts, pages and data, the minimum term and exit terms, who handles follow-up, and for a client with a similar business who will speak to you."
+    a: "Ask what's included and excluded in writing, how results are reported (to lead or to customer), who owns the accounts, pages and data, the minimum term and exit terms, who handles follow-up, and for a client with a similar business who will speak to you."
   - q: "Are money-back guarantees from agencies worth anything?"
-    a: "Only if you read the terms. Check what triggers a refund, what is excluded (ad spend and software usually are), how long the window is, and whether there are conditions that are hard to meet. A guarantee that asks nothing of you is stronger than one with conditions."
+    a: "Only if you read the terms. Check what triggers a refund, what's excluded (ad spend and software usually are), how long the window is, and whether there are conditions that are hard to meet. A guarantee that asks nothing of you is stronger than one with conditions."
   - q: "What are the warning signs an agency will not deliver?"
     a: "A vague scope, reports that stop at clicks and cost per lead, promises of a lead number, long minimum terms with no exit, accounts held in the agency's name, and no access for you to see your own data."
   - q: "How long before I should see results?"
@@ -44,16 +44,16 @@ Most bad agency experiences are predictable, and most are visible before you sig
 
 Ask these ten questions and write down the answers:
 
-1. **What exactly is included, and what is excluded?** In writing, by deliverable.
+1. **What exactly is included, and what's excluded?** In writing, by deliverable.
 2. **How do you report results?** To lead, or to qualified call and customer? Ask to see a sample report.
 3. **What will you track, and do you need access to my CRM?** If not, how will you know?
 4. **Who owns the ad account, pages, audiences and data?** It should be you.
 5. **Who follows up with the leads, and how fast?** Speed to lead decides conversion (see [the data](/blog/speed-to-lead-5-minute-rule)).
-6. **What is the minimum term and how do I exit?**
-7. **What is the total monthly cost, fee plus media?** See [what a normal retainer looks like](/guides/agency-setup-fee-and-monthly-retainer).
-8. **What happens if it does not work?** Read the guarantee terms.
+6. **What's the minimum term and how do I exit?**
+7. **What's the total monthly cost, fee plus media?** See [what a normal retainer looks like](/guides/agency-setup-fee-and-monthly-retainer).
+8. **What happens if it doesn't work?** Read the guarantee terms.
 9. **Can I speak to a client in a similar business?**
-10. **What would make you say we are not a fit?** Any agency that says "nothing" is selling, not diagnosing.
+10. **What would make you say we aren't a fit?** Any agency that says "nothing" is selling, not diagnosing.
 
 ## What contract terms matter most?
 
@@ -74,15 +74,17 @@ Ask these ten questions and write down the answers:
 
 ## How do you judge the first 30 days?
 
-Look for a launched build (campaigns, pages, tracking, follow-up), a working connection between leads and your CRM, and early acquisition data such as cost per qualified lead. On a longer sales cycle, revenue takes longer, and an honest agency separates what is proven from what is still developing. Our [Compare Funerals account](/blog/compare-funerals-30-day-case-study) reports exactly that way.
+Look for a launched build (campaigns, pages, tracking, follow-up), a working connection between leads and your CRM, and early acquisition data such as cost per qualified lead. On a longer sales cycle, revenue takes longer, and an honest agency separates what's proven from what's still developing. Our [Compare Funerals account](/blog/compare-funerals-30-day-case-study) reports exactly that way.
 
 ## How do you read a money-back guarantee?
 
-Check four things: the trigger (any reason, or only if a target is missed), the window, the exclusions (ad spend and third-party software are normally excluded), and the conditions you must meet. Fewer conditions mean a stronger guarantee. Also note what is guaranteed: a refund of the fee is real; a guaranteed lead count is not the same as customers.
+Check four things: the trigger (any reason, or only if a target is missed), the window, the exclusions (ad spend and third-party software are normally excluded), and the conditions you must meet. Fewer conditions mean a stronger guarantee. Also note what's guaranteed: a refund of the fee is real; a guaranteed lead count isn't the same as customers.
 
-## What does AI Video Systems offer here?
+## What does our own guarantee look like?
 
-AI Video Systems is a done-for-you lead generation system for established, founder-led service businesses spending $5,000 or more a month on ads. Qualify as a client on the call and the first 30 days are covered by a money-back guarantee for any reason, ad spend and third-party software excluded. Results are reported from lead to confirmed sale. If your problem is your follow-up or your offer rather than your marketing, the call says so. [Book A Free Call](https://calendly.com/sean_munn/seanspersonallink).
+Hold it to the checklist above. Qualify as a client on the call and the first 30 days are covered by a money-back guarantee, for any reason. Ad spend and third-party software are excluded, and there are no operational conditions for you to meet. Reporting runs from lead to confirmed sale, so you can see cost per customer, not just cost per lead.
+
+And if your real problem is your offer or your follow-up rather than your marketing, the call will say so. [Book A Free Call](https://calendly.com/sean_munn/seanspersonallink).
 
 ## Sources
 

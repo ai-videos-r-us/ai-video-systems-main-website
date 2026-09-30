@@ -17,7 +17,7 @@ faqs:
   - q: "Why are referral customers better than paid-ad customers?"
     a: "A referral arrives with trust already transferred from someone the buyer believes, plus context on what you do and roughly what it costs. An ad lead arrives as a stranger with none of that. The difference is how much selling the sales call has to do."
   - q: "Can paid ads ever match referral quality?"
-    a: "They can get closer, by building trust before the ask: showing real proof, real customer results and your expertise in content people watch, then following up with the people who engaged. It will not be identical, but the gap narrows."
+    a: "They can get closer, by building trust before the ask: showing real proof, real customer results and your expertise in content people watch, then following up with the people who engaged. It won't be identical, but the gap narrows."
   - q: "Should I use testimonials in ads?"
     a: "Yes, real ones, with permission. Customer proof is the closest ad substitute for a referral. Generated visuals must never be presented as real customer proof."
   - q: "Do video ads help with trust?"
@@ -48,7 +48,7 @@ Three things travel with a referral: **trust** (someone the buyer believes vouch
 
 Reproduce what a referral does, in the ad and the journey around it:
 
-1. **Lead with proof, not claims.** Real results, real customer stories, real before-and-after work. For a kitchen fitter or remodeller that is finished projects and customer voices; for a funeral provider it is families' real reasons and outcomes.
+1. **Lead with proof, not claims.** Real results, real customer stories, real before-and-after work. For a kitchen fitter or remodeller that's finished projects and customer voices; for a funeral provider it's families' real reasons and outcomes.
 2. **Show the person.** Video puts a face and voice to the business before any contact. Expertise explained plainly is trust.
 3. **Answer objections in advance.** Price, process, timelines and risk are what a referrer would have told the buyer.
 4. **Retarget people who engaged.** Someone who watched your content is warmer than a stranger. Continue the conversation before you ask.
@@ -58,14 +58,17 @@ This is the logic of the [Attention-to-Revenue System](/blog/attention-to-revenu
 
 ## How do you measure whether it is working?
 
-Compare customers from ads with customers from referrals on three numbers: qualified rate, close rate and average value. When ad-sourced close rate and value rise toward referral levels, trust is arriving earlier. Track by source in your CRM; if you cannot, [closed-loop tracking](/guides/lead-generation-agency-that-tracks-closed-sales) is the first thing to build.
+Compare customers from ads with customers from referrals on three numbers: qualified rate, close rate and average value. When ad-sourced close rate and value rise toward referral levels, trust is arriving earlier. Track by source in your CRM; if you can't, [closed-loop tracking](/guides/lead-generation-agency-that-tracks-closed-sales) is the first thing to build.
 
 ## What should you avoid?
 
-- **Generated or staged "customers" presented as real.** It destroys the trust you are trying to build.
+- **Generated or staged "customers" presented as real.** It destroys the trust you're trying to build.
 - **Chasing views.** Attention only counts when it reaches the right buyers.
 - **Skipping the qualification step.** Referral-quality is about fit as much as trust.
 
-## How does AI Video Systems do this?
+## How do we build referral-style trust into your ads?
 
-AI Video Systems builds and manages a done-for-you system that turns your proof, expertise and customer outcomes into AI-assisted video, distributes it through Meta, retargets viewers into a conversion-focused page and email follow-up, and reports through to closed revenue. Every asset uses brand rules, factual guardrails and human approval. It is built for established, founder-led service businesses already spending $5,000 or more a month on ads. [Book A Free Call](https://calendly.com/sean_munn/seanspersonallink) to see how your proof would translate; the first 30 days are covered by a money-back guarantee for qualified clients.
+That's the job of the Attention-to-Revenue System. We turn your proof, expertise and customer outcomes into video, put it in front of the right buyers on Meta, retarget the people who watched and follow up fast, so the trust arrives before the call. Everything goes through brand rules, factual guardrails and your approval.
+
+It suits established, founder-led service businesses already spending $5,000 or more a month on ads. [Book A Free Call](https://calendly.com/sean_munn/seanspersonallink) to see how your proof would translate; qualified clients get the first 30 days under a money-back guarantee (ad spend and third-party software excluded).
+

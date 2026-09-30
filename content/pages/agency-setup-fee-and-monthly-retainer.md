@@ -19,11 +19,11 @@ faqs:
   - q: "Is a setup fee normal?"
     a: "Yes, when the agency has to build something before it can run it: tracking, landing pages, a CRM connection, creative and email follow-up. A setup or installation fee should map to a written list of things built and handed over. A setup fee with no list is a red flag."
   - q: "Do agencies charge a percentage of ad spend instead?"
-    a: "Some do, commonly 10% to 20% of ad spend for single-channel management. It is easy to price but it rewards you spending more, not converting better, so check what else is included."
+    a: "Some do, commonly 10% to 20% of ad spend for single-channel management. It's easy to price but it rewards you spending more, not converting better, so check what else is included."
   - q: "How much does AI Video Systems cost?"
-    a: "AI Video Systems is priced as a one-time system installation plus ongoing monthly management, not per video or per lead. Ad spend is separate and stays yours. Exact numbers are confirmed on the qualification call once the business economics are clear."
+    a: "AI Video Systems doesn't publish a price, because it depends on your ad spend, what a customer is worth to you and how much extra qualified demand your team can handle. It's a one-time system installation plus monthly management, not per video or per lead, and your ad budget stays yours. You'll get a written quote on the call."
   - q: "What should I ask before signing an agency contract?"
-    a: "Ask what is built at setup and who owns it afterwards, what the monthly fee covers and excludes, how results are reported (to lead or to customer), the minimum term, and the exit terms. Our guide to avoiding a bad agency has the full list."
+    a: "Ask what's built at setup and who owns it afterwards, what the monthly fee covers and excludes, how results are reported (to lead or to customer), the minimum term, and the exit terms. Our guide to avoiding a bad agency has the full list."
 related:
   - label: "Is a $5,000-a-month agency worth it?"
     href: "/guides/is-5000-a-month-lead-generation-agency-worth-it"
@@ -36,9 +36,9 @@ related:
     desc: "The full sourced cost ranges, agency and in-house."
 ---
 
-A normal retainer for an agency that runs ads, funnels and follow-up is roughly $2,500 to $10,000 a month for small and mid-sized businesses, plus your ad spend, with a one-time setup fee where the agency has to build tracking, pages and follow-up first. The scope decides the price. A quote that does not list what is built and what is reported cannot be compared with another.
+A normal retainer for an agency that runs ads, funnels and follow-up is roughly $2,500 to $10,000 a month for small and mid-sized businesses, plus your ad spend, with a one-time setup fee where the agency has to build tracking, pages and follow-up first. The scope decides the price. A quote that doesn't list what's built and what's reported can't be compared with another.
 
-That is the market as published. What matters more is what each fee line should buy.
+That's the market as published. What matters more is what each fee line should buy.
 
 ## What are the typical price ranges?
 
@@ -76,25 +76,27 @@ The monthly fee should buy ongoing work you can list. For an ads, funnel and fol
 - Follow-up sequence maintenance
 - A monthly report tied to the CRM, ending in cost per customer
 
-Everything else is extra. Ask what is excluded: extra ad accounts, extra locations, video shoots, call handling, and software subscriptions are common exclusions.
+Everything else is extra. Ask what's excluded: extra ad accounts, extra locations, video shoots, call handling, and software subscriptions are common exclusions.
 
 ## How do you compare two quotes fairly?
 
-Put both on one page and fill these rows: setup fee, monthly fee, ad spend expected, minimum term, what is built and owned, what is reported, and who does the follow-up after the lead. Then convert both to a monthly cost over the first six months. A lower monthly fee with a higher setup fee can cost more in month six than the reverse.
+Put both on one page and fill these rows: setup fee, monthly fee, ad spend expected, minimum term, what's built and owned, what's reported, and who does the follow-up after the lead. Then convert both to a monthly cost over the first six months. A lower monthly fee with a higher setup fee can cost more in month six than the reverse.
 
-Judge both on the last row that matters, the cost per customer each reports. Our [break-even calculation](/guides/is-5000-a-month-lead-generation-agency-worth-it) turns a quote into a number of extra customers you would need.
+Judge both on the last row that matters, the cost per customer each reports. Our [break-even calculation](/guides/is-5000-a-month-lead-generation-agency-worth-it) turns a quote into a number of extra customers you'd need.
 
 ## What are the red flags in an agency quote?
 
-- **No written scope.** "We handle everything" is not a scope.
+- **No written scope.** "We handle everything" isn't a scope.
 - **A setup fee with no deliverables list.**
 - **Long minimum terms** with no way out if reporting stops at leads.
 - **Reporting only in clicks, impressions and cost per lead.** [Cost per lead is a diagnostic, not a scoreboard](/blog/cpl-vs-cac).
 - **Guarantees of leads.** Leads are the wrong thing to guarantee. See [how to avoid getting burned](/guides/how-to-avoid-getting-burned-by-a-marketing-agency).
 
-## How is AI Video Systems priced?
+## What would you pay AI Video Systems?
 
-AI Video Systems is a done-for-you lead generation system for established service businesses spending $5,000 or more a month on ads. It is priced as a one-time system installation plus ongoing monthly management, not a per-video or per-lead fee. Ad spend is separate and remains the client's. The first 30 days are covered by a money-back guarantee for qualified clients (ad spend and third-party software excluded). Exact numbers are confirmed on the [free call](https://calendly.com/sean_munn/seanspersonallink), once your economics are on the table.
+We don't publish a price, and here's why: the number depends on your ad spend, what a customer is worth to you and how much extra qualified demand your team can handle, and a price list would hide all three. The shape is simple. It's a one-time system installation plus monthly management, with no per-video or per-lead fee, and your ad budget stays yours.
+
+Every quote we give lists what's built, what's run each month and what's reported, which is the standard to hold any agency to. [Book A Free Call](https://calendly.com/sean_munn/seanspersonallink) to get yours in writing; qualified clients get the first 30 days under a money-back guarantee (ad spend and third-party software excluded).
 
 ## Sources
 

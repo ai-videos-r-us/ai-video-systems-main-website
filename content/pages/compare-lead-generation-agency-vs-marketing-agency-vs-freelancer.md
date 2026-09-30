@@ -21,7 +21,7 @@ faqs:
   - q: "Which is best for a service business spending $5,000 a month on ads?"
     a: "Usually a lead generation agency, because the job is turning ad spend into qualified calls and customers, which needs creative, ads, pages and follow-up working together. A freelancer suits a single, well-defined task; a general agency suits brand work."
   - q: "How do I decide?"
-    a: "Decide by what is broken. If the problem is a single skill, hire a freelancer for it. If it is brand, choose a marketing agency. If it is the path from ad to customer, choose a lead generation provider that reports to customers."
+    a: "Decide by what's broken. If the problem is a single skill, hire a freelancer for it. If it's brand, choose a marketing agency. If it's the path from ad to customer, choose a lead generation provider that reports to customers."
   - q: "Where does AI Video Systems fit?"
     a: "AI Video Systems is a lead generation provider: a done-for-you system for established service businesses spending $5,000 or more a month on ads, reporting from lead to confirmed sale."
 related:
@@ -36,7 +36,7 @@ related:
     desc: "The vetting checklist."
 ---
 
-For a service business spending around $5,000 a month on ads, a lead generation agency is usually the better fit, because its job is the whole path from ad to customer. A general marketing agency suits brand and content work. A freelancer suits one well-defined task you can manage yourself. Pick by what is broken, not by price.
+For a service business spending around $5,000 a month on ads, a lead generation agency is usually the better fit, because its job is the whole path from ad to customer. A general marketing agency suits brand and content work. A freelancer suits one well-defined task you can manage yourself. Pick by what's broken, not by price.
 
 ## How do the three compare?
 
@@ -54,23 +54,25 @@ Ranges are from published price guides (see our [cost breakdown](/blog/service-b
 
 **Lead generation agency.** Strength: specialisation in turning spend into customers, with follow-up and reporting as part of the job. Limit: narrower on brand; check how it handles anything outside lead generation.
 
-**General marketing agency.** Strength: breadth, and good for brand and content. Limit: breadth dilutes accountability for a number such as cost per customer, and reports often lean on reach and clicks. See [why reports full of clicks do not mean calls](/guides/agency-reports-clicks-impressions-phone-not-ringing).
+**General marketing agency.** Strength: breadth, and good for brand and content. Limit: breadth dilutes accountability for a number such as cost per customer, and reports often lean on reach and clicks. See [why reports full of clicks don't mean calls](/guides/agency-reports-clicks-impressions-phone-not-ringing).
 
 **Freelancer.** Strength: flexibility and cost for a defined task. Limit: one person rarely covers strategy, creative, media buying and follow-up, and coordination falls to you.
 
 ## How do you decide?
 
-Ask what is broken:
+Ask what's broken:
 
 - **A single skill** (a landing page, ad creative, copy): a freelancer.
 - **Brand, positioning, content:** a marketing agency.
-- **Leads arrive but customers do not, or you cannot trace ad spend to sales:** a lead generation provider that reports to customers.
+- **Leads arrive but customers don't, or you can't trace ad spend to sales:** a lead generation provider that reports to customers.
 
 Then vet whoever you choose with [our checklist](/guides/how-to-avoid-getting-burned-by-a-marketing-agency).
 
-## Where does AI Video Systems fit?
+## Which one is AI Video Systems?
 
-AI Video Systems is a lead generation provider: AI-assisted video content, Meta advertising and retargeting, landing pages, email follow-up and reporting matched to your CRM through to confirmed sale, for established, founder-led service businesses spending $5,000 or more a month on ads. It is not built for brand-only work or a single small task. [Book A Free Call](https://calendly.com/sean_munn/seanspersonallink); the call says plainly if another type of provider suits you better.
+A lead generation provider. If your problem is the path from ad to customer (ads that produce leads, leads that don't become calls, reports that stop at clicks), that's the job we do, for established service businesses spending $5,000 or more a month on ads, with reporting matched to your CRM through to confirmed sale.
+
+If you need brand work or one small task, you'll be better served elsewhere, and we'll say so. [Book A Free Call](https://calendly.com/sean_munn/seanspersonallink) to find out which kind of help you need.
 
 ## Sources
 

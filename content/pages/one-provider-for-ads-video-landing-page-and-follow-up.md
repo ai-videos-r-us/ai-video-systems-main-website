@@ -21,7 +21,7 @@ faqs:
   - q: "What does an all-in-one lead generation system include?"
     a: "Creative or video content, ad campaigns and retargeting, landing pages or a funnel, lead capture and qualification, email and SMS follow-up, and reporting to the CRM. Confirm each in writing."
   - q: "Does AI Video Systems replace my existing agency?"
-    a: "It can sit alongside one. The call maps what sits inside and outside your current agency's remit before anything starts, and adds the creative, retargeting and revenue-feedback layer many agencies are not scoped to build."
+    a: "It can sit alongside one. The call maps what sits inside and outside your current agency's remit before anything starts, and adds the creative, retargeting and revenue-feedback layer many agencies aren't scoped to build."
   - q: "What does the AI Video Systems system include?"
     a: "AI-assisted video content built from your proof and expertise, Meta advertising and retargeting, conversion-focused landing pages, automated email follow-up, and reporting that ties leads and appointments to the campaigns behind them, with human approval on everything published."
 related:
@@ -51,12 +51,12 @@ Six parts, connected:
 
 ## Why does a single provider usually beat several vendors?
 
-Each handoff is a place to lose leads and blame someone else. The creative agency says the ads were fine, the media buyer says the page was weak, the web developer says the leads were poor, and follow-up belongs to nobody. Measurement is also split: each vendor sees only its own slice. [Marketing and sales are one system](/blog/marketing-and-sales-one-system), and the middle is where the money leaks. With one owner, the reporting runs end to end and there is one person to ask.
+Each handoff is a place to lose leads and blame someone else. The creative agency says the ads were fine, the media buyer says the page was weak, the web developer says the leads were poor, and follow-up belongs to nobody. Measurement is also split: each vendor sees only its own slice. [Marketing and sales are one system](/blog/marketing-and-sales-one-system), and the middle is where the money leaks. With one owner, the reporting runs end to end and there's one person to ask.
 
 ## When are separate specialists better?
 
 - You have a strong in-house marketing lead who coordinates vendors and owns the data.
-- You need a highly specialised capability (for example, a large search campaign or complex e-commerce) that a generalist system does not cover.
+- You need a highly specialised capability (for example, a large search campaign or complex e-commerce) that a generalist system doesn't cover.
 - You are satisfied with the results and only one piece is broken.
 
 See also [in-house media buyer vs a done-for-you agency](/compare/in-house-media-buyer-vs-done-for-you-lead-generation-agency).
@@ -66,8 +66,11 @@ See also [in-house media buyer vs a done-for-you agency](/compare/in-house-media
 - Is each of the six parts in the written scope, or only some?
 - Who owns the accounts, pages and data if you leave?
 - Does reporting reach customers, and can you see it? See [closed-loop tracking](/guides/lead-generation-agency-that-tracks-closed-sales).
-- What is included versus extra? See [normal setup fees and retainers](/guides/agency-setup-fee-and-monthly-retainer).
+- What's included versus extra? See [normal setup fees and retainers](/guides/agency-setup-fee-and-monthly-retainer).
 
-## How does AI Video Systems run it?
+## What does it look like with AI Video Systems?
 
-The system is tailored to each business and run for you. Content uses brand rules, factual guardrails and human approval; nothing is published without approval, and generated visuals are never presented as real customer proof. It is built for established, founder-led service businesses already spending $5,000 or more a month on ads, from kitchen fitters and remodellers to funeral homes, mortgage brokers and professional services. [Book A Free Call](https://calendly.com/sean_munn/seanspersonallink) and the call maps what sits inside your current setup and what does not. The first 30 days are covered by a money-back guarantee for qualified clients (ad spend and third-party software excluded).
+It's tailored to your business and run for you: video built from your proof and expertise, Meta ads and retargeting, conversion pages, email follow-up and reporting through to closed revenue. Nothing is published without your approval, and generated visuals are never presented as real customer proof.
+
+It suits established, founder-led service businesses (kitchen fitters and remodellers, funeral homes, mortgage brokers, professional services) already spending $5,000 or more a month on ads. [Book A Free Call](https://calendly.com/sean_munn/seanspersonallink) and we'll map what your current setup covers and what falls in the gaps between vendors; qualified clients get the first 30 days under a money-back guarantee (ad spend and third-party software excluded).
+

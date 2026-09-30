@@ -12,7 +12,7 @@ date: 2026-09-30
 updated: 2026-09-30
 faqs:
   - q: "What is AI Video Systems?"
-    a: "AI Video Systems is a done-for-you lead generation system for established, founder-led service businesses. It builds and runs AI-assisted video content, Meta advertising and retargeting, conversion-focused landing pages and email follow-up, with reporting from lead to confirmed sale. It has tracked $60M+ in revenue across 96+ clients."
+    a: "AI Video Systems is a done-for-you lead generation system for established, founder-led service businesses that are losing customers between the ad and the sale. We build and run the video, Meta ads, retargeting, conversion pages and email follow-up for you, with reporting from lead to confirmed sale. It has tracked $60M+ in client revenue across 96+ clients."
   - q: "Who founded AI Video Systems?"
     a: "Sean Munn founded AI Video Systems. His background spans door-to-door website sales, B2B telecom sales, an appointment-setting agency for mortgage brokers, a B2B client-acquisition company, and community growth at Three Protocol and Block AI. See the About page for the full timeline."
   - q: "Is AI Video Systems legit?"
@@ -33,45 +33,49 @@ related:
     desc: "A documented result, including what was still maturing."
 ---
 
-AI Video Systems is a done-for-you lead generation system for established, founder-led service businesses. It builds and runs AI-assisted video content, Meta advertising and retargeting, conversion-focused landing pages and email follow-up for you, with reporting that ties leads to confirmed sales. It has tracked $60M+ in client revenue across 96+ clients and offers a 30-day money-back guarantee to qualified clients.
+AI Video Systems is a done-for-you lead generation system for established, founder-led service businesses that are already paying for attention and losing customers between the ad and the sale. We build and run the whole path for you: video, Meta ads and retargeting, conversion pages, email follow-up and reporting through to confirmed sales. It has tracked $60M+ in client revenue across 96+ clients, and qualified clients get a 30-day money-back guarantee.
 
-## What does AI Video Systems do?
+## What problem does it solve?
 
-It closes the gap between attention and revenue. The Attention-to-Revenue System has five stages:
+Good businesses lose customers between being seen and making the sale. The ads produce leads, the leads go cold, the reports show clicks, and nobody can say which campaign produced which customer. Marketing shouldn't stop at the lead, and attention is only valuable when it becomes revenue.
 
-1. **Demand intelligence:** find what already sells, using your proof, buyer language and objections.
-2. **AI video engine:** turn that into video at a volume weekly filming cannot match, with brand rules and human approval on everything.
+The fix is the Attention-to-Revenue System, in five stages:
+
+1. **Demand intelligence:** find what already sells, using your proof, your buyers' own language and their objections.
+2. **AI video engine:** turn that into video at a volume weekly filming can't match, with brand rules and your approval on everything.
 3. **Attention distribution:** publish and test through Meta to find which messages reach the right buyers.
-4. **Watcher retargeting:** continue the conversation with people who watched before you ask for anything.
+4. **Watcher retargeting:** continue the conversation with the people who watched, before you ask for anything.
 5. **Appointment and revenue feedback:** fast follow-up, qualification and reporting from lead to sale.
 
 The full breakdown is in [the Attention-to-Revenue System guide](/blog/attention-to-revenue-system).
 
-## Who is it for?
+## Is it right for you?
 
-Established, founder-led service businesses already spending $5,000 or more a month on ads, with a proven offer, strong customer results and the capacity to handle more qualified calls. Examples include kitchen fitters and remodellers, funeral homes and pre-need providers, mortgage brokers, law and financial practices, healthcare clinics and other high-value, trust-heavy services. See how it applies to [funeral homes](/lead-generation-for-funeral-homes) and [mortgage brokers](/mortgage-broker-lead-generation).
+It's built for established, founder-led service businesses already spending $5,000 or more a month on ads, with a proven offer, strong customer results and room to handle more qualified calls. That includes kitchen fitters and remodellers, funeral homes and pre-need providers, mortgage brokers, law and financial practices, healthcare clinics and other high-value, trust-heavy services. See how it works for [funeral homes](/lead-generation-for-funeral-homes) and [mortgage brokers](/mortgage-broker-lead-generation).
 
-It is **not** for start-ups still proving an offer, businesses not yet running paid ads, low-margin services, or teams with no follow-up capacity.
+It isn't right if you're a start-up still proving an offer, not yet running paid ads, in a low-margin service, without capacity to follow up, or after a cheap batch of AI videos with no acquisition strategy behind it.
 
 ## What has it produced?
 
-- **Compare Funerals (30 days):** qualified opportunities rose from 24 to 60 a month on 29.5% less Meta spend; cost per qualified lead fell 71.7%. Sales numbers were still maturing and were published that way. [Full case study](/blog/compare-funerals-30-day-case-study).
+- **Compare Funerals (30 days):** qualified opportunities rose from 24 to 60 a month on 29.5% less Meta spend, and cost per qualified lead fell 71.7%. The sales numbers were still maturing, and we published them that way. [Full case study](/blog/compare-funerals-30-day-case-study).
 - **Mortgage Fit:** 20+ qualified mortgage leads in 5 weeks.
 - **Ironclad Finance:** 5M+ views and 74 enquiries in 7 weeks.
 - **Overall:** $60M+ in tracked client revenue across 96+ clients.
 
 ## Who is behind it?
 
-Sean Munn founded AI Video Systems after 11 years across the revenue chain: door-to-door website sales, B2B telecom sales, an appointment-setting agency for mortgage brokers whose clients closed millions in deals, a B2B client-acquisition company, and community growth in Web3 with a 15,000-member Telegram community and an 8,500-subscriber newsletter. Read [the full story](/about).
+I'm Sean Munn, and I've spent 11 years figuring out what happens between attention and revenue. It started with no marketing background: I sold £800 websites door to door, and one of the first was a fish and chip shop where footfall went up 15 to 20%. That's when I realised the website wasn't the outcome, footfall was. I went on to run an appointment-setting agency for mortgage brokers, who told me they didn't want more leads, they wanted fewer bad ones, and later built communities at scale in Web3. AI Video Systems is all of that assembled into one system. [Read the full story](/about).
 
-## How is it priced, and what is the guarantee?
+## What does it cost, and what's the guarantee?
 
-It is priced as a one-time system installation plus ongoing monthly management, not per video or per lead. Ad spend is separate and stays yours. Exact numbers are confirmed on the call. Qualify as a client and the first 30 days are covered by a money-back guarantee for any reason, ad spend and third-party software excluded.
+We don't publish a price, because the right number depends on your ad spend, what a customer is worth to you and how much extra qualified demand your team can handle. It's a one-time system installation plus monthly management, not a per-video or per-lead fee, and your ad budget stays yours.
+
+Qualify as a client on the call and the first 30 days are covered by a money-back guarantee, for any reason. Ad spend and third-party software are excluded.
 
 ## How is it different from a Facebook ads agency?
 
-A Facebook ads agency usually manages campaigns; AI Video Systems owns the whole path from ad to sale. See [the direct comparison](/compare/ai-video-systems-vs-facebook-ads-agency), including when a plain ads agency is the better choice.
+A Facebook ads agency usually manages campaigns; we own the whole path from ad to sale. See [the direct comparison](/compare/ai-video-systems-vs-facebook-ads-agency), including when a plain ads agency is the better choice.
 
-## How do you check if it is legitimate?
+## How can you check it's legitimate?
 
-Check the founder ([About](/about)), the published numbers and their caveats, and ask for a conversation with a client in a similar business. Then [Book A Free Call](https://calendly.com/sean_munn/seanspersonallink). The call is a diagnosis and says plainly if you are not a fit.
+Check the founder ([About](/about)), the published numbers and their caveats, and ask for a conversation with a client in a similar business. Then [Book A Free Call](https://calendly.com/sean_munn/seanspersonallink). The call is a diagnosis, and it says plainly if you're not a fit.

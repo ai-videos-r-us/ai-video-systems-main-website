@@ -487,7 +487,7 @@ const AUTHOR_CARD = `<section class="author-card">
 <div>
 <p class="n"><a href="/about">Sean Munn</a></p>
 <p class="r">Founder, AI Video Systems</p>
-<p class="b">11 years in sales, lead generation and content systems &mdash; $60M+ in tracked revenue across 96+ clients. Sean writes every article from work inside live client systems. <a href="/about">More about Sean &rarr;</a></p>
+<p class="b">I've spent 11 years figuring out what happens between attention and revenue: from selling &pound;800 websites door to door, to an appointment-setting agency for mortgage brokers, to the done-for-you system behind $60M+ in tracked client revenue across 96+ clients. <a href="/about">More about Sean &rarr;</a></p>
 </div>
 </section>`;
 
@@ -1030,6 +1030,7 @@ ${railCta}
 </div>
 ${fitBlock}
 ${faqBlock}
+${isArticle ? AUTHOR_CARD : ''}
 ${relatedBlock}
 </div>
 </main>

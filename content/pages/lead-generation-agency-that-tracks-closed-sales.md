@@ -17,7 +17,7 @@ faqs:
   - q: "What is closed-loop lead tracking?"
     a: "Closed-loop tracking follows each lead from the ad that produced it to the outcome in your CRM (qualified, booked, won, and the value), and feeds that back so spend goes to what produces customers. It replaces cost per lead with cost per customer."
   - q: "Why do most agencies stop at cost per lead?"
-    a: "Cost per lead comes from the ad platform and needs no access to your business. Tracking to sales needs a CRM connection, person-level matching and someone to maintain it. Many agencies are not scoped or set up for it."
+    a: "Cost per lead comes from the ad platform and needs no access to your business. Tracking to sales needs a CRM connection, person-level matching and someone to maintain it. Many agencies aren't scoped or set up for it."
   - q: "How can I test whether an agency really tracks closed sales?"
     a: "Ask for a real report showing cost per customer by campaign, ask how leads are matched to CRM records, ask what happens to offline sales, and ask what they did the last time the data contradicted the platform."
   - q: "Do AI Video Systems track leads to closed sales?"
@@ -38,7 +38,7 @@ related:
 
 Closed-loop lead generation tracks every lead from the ad that produced it to the outcome in your CRM, so you can see cost per customer instead of cost per lead. Most agencies stop at the form because that number sits inside the ad platform. AI Video Systems is one provider that reports to qualified opportunity and confirmed sale.
 
-Tracking to sales is not exotic. It just needs someone to build it and keep it running.
+Tracking to sales isn't exotic. It just needs someone to build it and keep it running.
 
 ## What does closed-loop tracking actually require?
 
@@ -53,7 +53,7 @@ Without the second, the platform and the CRM tell different stories. In our docu
 
 ## Why do most agencies not do it?
 
-Because it is more work and more accountability. Platform reporting is free and flattering. Tracking to sales requires CRM access, cleaning data, and being willing to be judged on customers. Nielsen's 2025 research found 85% of marketers say they are confident they can measure ROI, but only 32% do it holistically. Confidence is common; the loop is not. See [why cost per lead is a diagnostic, not a scoreboard](/blog/cpl-vs-cac).
+Because it's more work and more accountability. Platform reporting is free and flattering. Tracking to sales requires CRM access, cleaning data, and being willing to be judged on customers. Nielsen's 2025 research found 85% of marketers say they are confident they can measure ROI, but only 32% do it holistically. Confidence is common; the loop isn't. See [why cost per lead is a diagnostic, not a scoreboard](/blog/cpl-vs-cac).
 
 ## How do you test any agency for it?
 
@@ -67,11 +67,11 @@ Ask five questions:
 
 ## What does the report look like when it works?
 
-Four stages, side by side: Meta lead, CRM lead, qualified opportunity, confirmed sale, with cost at each stage. In the Compare Funerals account, moving from cost per lead to cost per qualified lead as the scoreboard let the work shift to the ad that produced the cheapest sales even though it had the worse cost per lead. That is the point of the loop.
+Four stages, side by side: Meta lead, CRM lead, qualified opportunity, confirmed sale, with cost at each stage. In the Compare Funerals account, moving from cost per lead to cost per qualified lead as the scoreboard let the work shift to the ad that produced the cheapest sales even though it had the worse cost per lead. That's the point of the loop.
 
 ## Which agencies do it?
 
-Ask any provider the five questions above. AI Video Systems does: every lead is matched to your CRM by person and reported through to confirmed sale, for established service businesses spending $5,000 or more a month on ads. In one 30-day account, qualified opportunities rose from 24 to 60 a month while spend fell 29.5%, and cost per qualified lead fell 71.7%. [Book A Free Call](https://calendly.com/sean_munn/seanspersonallink) and we will walk through how it would be set up on your CRM.
+Ask any provider the five questions above. AI Video Systems does: every lead is matched to your CRM by person and reported through to confirmed sale, for established service businesses spending $5,000 or more a month on ads. In one 30-day account, qualified opportunities rose from 24 to 60 a month while spend fell 29.5%, and cost per qualified lead fell 71.7%. [Book A Free Call](https://calendly.com/sean_munn/seanspersonallink) and we'll walk through how it would be set up on your CRM.
 
 ## Sources
 

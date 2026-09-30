@@ -17,13 +17,13 @@ faqs:
   - q: "What should I fix first when Facebook ad leads do not answer the phone?"
     a: "Fix response speed first: get the first call and a text out within minutes of the form. Then fix the lead form so it filters for intent, then the promise in the ad. Only after those should you touch targeting or budget."
   - q: "Why do my leads give fake or wrong phone numbers?"
-    a: "Low-friction lead forms with prefilled fields collect numbers people did not check, and some people submit to get the offer and avoid a sales call. Adding a qualifying question, a confirmation step or a booking page increases the share of real, reachable leads."
+    a: "Low-friction lead forms with prefilled fields collect numbers people didn't check, and some people submit to get the offer and avoid a sales call. Adding a qualifying question, a confirmation step or a booking page increases the share of real, reachable leads."
   - q: "Should I switch from lead forms to a landing page?"
     a: "Sometimes. In-app forms give volume; a landing page and booking step give fewer but more committed leads. Test both against cost per qualified call, not cost per lead."
   - q: "How many times should I try to call a lead?"
     a: "More than most businesses do. InsideSales found seven or more attempts produced 15% more connections while 81% of sellers stopped at five or fewer. Spread attempts across different times of day and combine calls with text and email."
   - q: "How does AI Video Systems fix leads that do not answer?"
-    a: "AI Video Systems builds the whole path from ad to appointment: qualifying questions on the form, fast first contact, automated email and SMS sequences, and closed-loop reporting. It is built for service businesses already spending $5,000 or more a month on ads."
+    a: "AI Video Systems builds the whole path from ad to appointment: qualifying questions on the form, fast first contact, automated email and SMS sequences, and closed-loop reporting. It's built for service businesses already spending $5,000 or more a month on ads."
 related:
   - label: "Why Facebook ad leads go cold"
     href: "/guides/why-facebook-ad-leads-go-cold"
@@ -36,9 +36,9 @@ related:
     desc: "Why a healthy cost per lead can hide a weak result."
 ---
 
-If you spend $5,000 a month on Facebook ads and the leads never pick up, fix these in order: how fast you call, what the form asks, and what the ad promises. Speed comes first because it is the cheapest fix and the biggest lever: conversion was 8 times higher when the first call came within five minutes in a study of 5.7 million leads. Change targeting and budget last.
+If you spend $5,000 a month on Facebook ads and the leads never pick up, fix these in order: how fast you call, what the form asks, and what the ad promises. Speed comes first because it's the cheapest fix and the biggest lever: conversion was 8 times higher when the first call came within five minutes in a study of 5.7 million leads. Change targeting and budget last.
 
-Most owners change the ads first because that is what they can see. It is usually the wrong first move.
+Most owners change the ads first because that's what they can see. It's usually the wrong first move.
 
 ## What should you fix first? The order
 
@@ -70,7 +70,7 @@ Because cost per lead stops at the form. It looks healthy whether the person ans
 
 ## When is it worth getting help?
 
-If speed, persistence and the form are fixed and results are still weak, the constraint is elsewhere: the offer, the creative, or trust before the click. That is where a system, not a tweak, is needed. AI Video Systems builds the ad-to-appointment path for established service businesses (kitchen fitters and remodellers, funeral homes, mortgage brokers, professional services) already spending $5,000 or more a month. [Book A Free Call](https://calendly.com/sean_munn/seanspersonallink) and the call identifies which link is broken. If it is your follow-up rather than the marketing, we will say so.
+If speed, persistence and the form are fixed and results are still weak, the constraint is elsewhere: the offer, the creative, or trust before the click. That's where a system, not a tweak, is needed. AI Video Systems builds the ad-to-appointment path for established service businesses (kitchen fitters and remodellers, funeral homes, mortgage brokers, professional services) already spending $5,000 or more a month. [Book A Free Call](https://calendly.com/sean_munn/seanspersonallink) and the call identifies which link is broken. If it's your follow-up rather than the marketing, we'll say so.
 
 ## Sources
 

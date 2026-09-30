@@ -17,13 +17,13 @@ faqs:
   - q: "What is the minimum ad spend before hiring a lead generation agency?"
     a: "For an established service business, about $3,000 to $5,000 a month is the practical floor. Below that, the ad platform gets too little data to learn, tests take months to reach a conclusion, and the agency fee is large relative to the spend."
   - q: "Should I hire an agency if I spend under $2,000 a month on ads?"
-    a: "Usually not yet. Spend that small is better managed by someone in-house or a freelancer while you prove that ads produce customers profitably. The agency fee should be a small share of what you are spending and what you earn from it."
+    a: "Usually not yet. Spend that small is better managed by someone in-house or a freelancer while you prove that ads produce customers profitably. The agency fee should be a small share of what you're spending and what you earn from it."
   - q: "Does ad spend or the agency fee matter more?"
     a: "Neither alone. What matters is cost per customer against customer value. A larger budget makes an agency worthwhile because it creates more data and more room to improve, but only if follow-up and closing already work."
   - q: "What if I have no ad budget but want more leads?"
-    a: "Start with the parts that do not need a budget: your reviews, referrals, response speed and offer. Then run a small paid test yourself to prove the economics before hiring anyone."
+    a: "Start with the parts that don't need a budget: your reviews, referrals, response speed and offer. Then run a small paid test yourself to prove the economics before hiring anyone."
   - q: "What does AI Video Systems require in ad spend?"
-    a: "AI Video Systems works with established service businesses already spending $5,000 or more a month on ads. If you are not running paid ads yet, it is not the right fit today."
+    a: "AI Video Systems works with established service businesses already spending $5,000 or more a month on ads. If you aren't running paid ads yet, it isn't the right fit today."
 related:
   - label: "Is a $5,000-a-month agency worth it?"
     href: "/guides/is-5000-a-month-lead-generation-agency-worth-it"
@@ -44,11 +44,11 @@ Both thresholds are practical rules, not laws. Here is where they come from and 
 
 Ad platforms learn from conversions. A campaign that produces three leads a week gives the algorithm almost nothing to learn from, and gives you almost nothing to test. To compare two ads with any confidence you need enough leads on each to see a difference, and a small budget stretches that across months.
 
-Cost per lead makes this concrete. WordStream's 2025 benchmarks put the average Facebook cost per lead across industries at $27.66 (dentists paid $76.71). At those averages $3,000 buys roughly 40 to 110 leads a month, before anyone checks quality. Split across a few audiences and creative tests, each gets a few dozen leads at most. That is the floor of usable data, which is why $3,000 to $5,000 is the practical starting point.
+Cost per lead makes this concrete. WordStream's 2025 benchmarks put the average Facebook cost per lead across industries at $27.66 (dentists paid $76.71). At those averages $3,000 buys roughly 40 to 110 leads a month, before anyone checks quality. Split across a few audiences and creative tests, each gets a few dozen leads at most. That's the floor of usable data, which is why $3,000 to $5,000 is the practical starting point.
 
 ## Why does the agency fee need to be small next to the spend?
 
-An agency fee is a fixed cost; ad spend is what it works on. If the fee is $5,000 and the ad budget is $1,500, most of your money goes to management and there is little media to improve. As a rule of thumb, an agency should be managing at least as much media as its own fee, and ideally more. Our [break-even calculation](/guides/is-5000-a-month-lead-generation-agency-worth-it) shows how many extra customers a given fee needs.
+An agency fee is a fixed cost; ad spend is what it works on. If the fee is $5,000 and the ad budget is $1,500, most of your money goes to management and there's little media to improve. As a rule of thumb, an agency should be managing at least as much media as its own fee, and ideally more. Our [break-even calculation](/guides/is-5000-a-month-lead-generation-agency-worth-it) shows how many extra customers a given fee needs.
 
 ## What should be true before you scale spend?
 
@@ -63,11 +63,13 @@ If one of those fails, [more ad spend is usually the wrong fix](/blog/spending-m
 
 ## What should you do if you are below the floor?
 
-Do the work that does not need a big budget: tighten follow-up, collect and use your best proof (reviews, results, before-and-after work), and test one offer with a small paid budget you manage yourself or with a freelancer. The goal is to reach a point where you can say "we spend $X and get Y customers." Then an agency has something to improve. The [cost breakdown for marketing a service business](/blog/service-business-marketing-cost) covers freelancers and in-house options.
+Do the work that doesn't need a big budget: tighten follow-up, collect and use your best proof (reviews, results, before-and-after work), and test one offer with a small paid budget you manage yourself or with a freelancer. The goal is to reach a point where you can say "we spend $X and get Y customers." Then an agency has something to improve. The [cost breakdown for marketing a service business](/blog/service-business-marketing-cost) covers freelancers and in-house options.
 
-## Where does AI Video Systems draw the line?
+## Where's the line for AI Video Systems?
 
-AI Video Systems is built for established, founder-led service businesses already spending $5,000 or more a month on ads, with a proven offer and capacity for more qualified calls. That includes trades such as kitchen fitters and remodellers, funeral homes, mortgage brokers and professional services. If you are below that or not yet running paid ads, the honest advice is to prove the economics first. If you are above it, [Book A Free Call](https://calendly.com/sean_munn/seanspersonallink) to test the numbers, with the first 30 days covered by a money-back guarantee for qualified clients.
+We work with established, founder-led service businesses already spending $5,000 or more a month on ads, with a proven offer and room to handle more qualified calls: kitchen fitters and remodellers, funeral homes, mortgage brokers, professional services. Below that, our honest advice is the one above: prove the economics first.
+
+If you're over the line, [Book A Free Call](https://calendly.com/sean_munn/seanspersonallink) and we'll test whether spend is really your constraint or whether a leak is. Qualified clients get the first 30 days under a money-back guarantee (ad spend and third-party software excluded).
 
 ## Sources
 

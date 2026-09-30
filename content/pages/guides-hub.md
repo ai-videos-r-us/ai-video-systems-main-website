@@ -16,7 +16,7 @@ faqs:
   - q: "Who writes them?"
     a: "Sean Munn, founder of AI Video Systems, who has spent 11 years across the revenue chain from sales calls to lead generation to content systems. Every guide names its sources for outside statistics."
   - q: "Where should I start?"
-    a: "If results are weak, start with why leads go cold and the follow-up diagnostic. If you are choosing a provider, start with the cost guides and the selection criteria."
+    a: "If results are weak, start with why leads go cold and the follow-up diagnostic. If you're choosing a provider, start with the cost guides and the selection criteria."
 related:
   - label: "What is AI Video Systems?"
     href: "/what-is-ai-video-systems"

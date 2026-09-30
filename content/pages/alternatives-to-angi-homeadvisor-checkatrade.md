@@ -23,7 +23,7 @@ faqs:
   - q: "Why did the FTC act against HomeAdvisor?"
     a: "In January 2023 the FTC ordered HomeAdvisor to pay up to $7.2 million over false, misleading or unsubstantiated claims about the quality and source of the leads it sold to service providers. It shows why you should measure lead outcomes yourself rather than rely on platform claims."
   - q: "Can AI Video Systems replace Angi or Checkatrade leads?"
-    a: "It builds a lead source you own: video content and Meta ads to your own conversion pages, with follow-up and reporting to closed jobs. It is built for established home improvement and other service businesses already spending $5,000 or more a month on ads."
+    a: "It builds a lead source you own: video content and Meta ads to your own conversion pages, with follow-up and reporting to closed jobs. It's built for established home improvement and other service businesses already spending $5,000 or more a month on ads."
 related:
   - label: "Cost per lead vs cost per customer"
     href: "/blog/cpl-vs-cac"
@@ -46,7 +46,7 @@ None of that means marketplaces never work. It means you should judge them the s
 
 **Weak at:** control and margin. Lead prices vary by trade and area, the same enquiry can be sold to more than one business on the shared-lead model, and you have no customer relationship or data until you win the job. Check each platform's current terms for your trade and region, because they change.
 
-In January 2023 the Federal Trade Commission ordered HomeAdvisor to pay up to $7.2 million over false, misleading or unsubstantiated claims about the quality and source of the leads it sold to service providers ([FTC press release](https://www.ftc.gov/news-events/news/press-releases/2023/01/ftc-order-requires-homeadvisor-pay-72-million-stop-deceptively-marketing-its-leads-home-improvement)). It is a reason to measure lead outcomes yourself instead of taking a platform's word.
+In January 2023 the Federal Trade Commission ordered HomeAdvisor to pay up to $7.2 million over false, misleading or unsubstantiated claims about the quality and source of the leads it sold to service providers ([FTC press release](https://www.ftc.gov/news-events/news/press-releases/2023/01/ftc-order-requires-homeadvisor-pay-72-million-stop-deceptively-marketing-its-leads-home-improvement)). It's a reason to measure lead outcomes yourself instead of taking a platform's word.
 
 ## How do you compare a marketplace with your own ads?
 
@@ -64,6 +64,9 @@ Use cost per customer, not cost per lead. For each source, add up everything you
 
 A kitchen or bathroom job is high value, considered and trust-heavy: buyers compare several firms and want proof of finished work. That makes three things decisive: **proof in the ad** (real before-and-afters), **speed to lead** (the first firm to respond sets the frame; conversion was 8 times higher inside five minutes in a study of 5.7 million leads, see [the data](/blog/speed-to-lead-5-minute-rule)) and **tracking to signed jobs**.
 
-## Where does AI Video Systems fit?
+## What does a lead source you own look like?
 
-AI Video Systems builds a lead source you own: video content built from your finished work and customer outcomes, Meta ads and retargeting to your own conversion pages, email follow-up, and reporting from lead to confirmed sale. It is built for established home improvement and other service businesses already spending $5,000 or more a month on ads. [Book A Free Call](https://calendly.com/sean_munn/seanspersonallink); the first 30 days are covered by a money-back guarantee for qualified clients (ad spend and third-party software excluded).
+If you're a kitchen fitter, remodeller or other home improvement firm already spending $5,000 or more a month on ads, the alternative to renting leads is a system you keep: video built from your finished jobs and customer voices, Meta ads and retargeting to your own pages, fast follow-up, and reporting that ends at signed jobs. That's what we build and run for you.
+
+We don't have a home improvement case study on this site yet, so the proof we can show is from a funeral-plan provider: qualified opportunities from 24 to 60 a month on 29.5% less ad spend ([the full account](/blog/compare-funerals-30-day-case-study)). [Book A Free Call](https://calendly.com/sean_munn/seanspersonallink) and we'll tell you honestly whether it would work for your trade; qualified clients get the first 30 days under a money-back guarantee (ad spend and third-party software excluded).
+
