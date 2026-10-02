@@ -5,6 +5,8 @@ description: "AI video turns into sales when it is the first link of a chain, no
 date: 2026-10-02
 tag: "ai-video"
 author: "Sean Munn"
+image: "/blog-images/ai-video-to-sales.jpg"
+imageAlt: "A small group of people stand outside a pottery shop watching a video of hands shaping a clay mug on a window screen, while inside a shopkeeper hands a red bag to a customer. Below, a Meta Ads Manager row for the Compare Funerals retargeting ad set shows one lead at £4.45: from video views to a landing page lead."
 seeAlso:
   - label: "Will AI video ads look fake and damage my brand?"
     href: "/guides/will-ai-video-ads-look-fake-and-damage-my-brand"

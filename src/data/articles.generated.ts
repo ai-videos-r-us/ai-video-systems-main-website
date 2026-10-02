@@ -4,6 +4,13 @@ import type { Article } from './articles';
 
 export const ARTICLES: Article[] = [
   {
+    tag: "ai-video",
+    title: "How to turn AI video into sales: the complete guide for service businesses",
+    excerpt: "AI video turns into sales when it is the first link of a chain, not the whole plan. The eleven links between a view and a closed customer, and where each one leaks.",
+    date: "2 Oct 2026",
+    href: "/blog/ai-video-to-sales",
+  },
+  {
     tag: "lead-generation",
     title: "How do I get leads for my business? (the honest options, ranked)",
     excerpt: "There's no single best lead source — only the one that produces qualified customers for your situation. Here are the seven real options for a service business, ranked by what they actually return, not how popular they are.",
@@ -16,12 +23,5 @@ export const ARTICLES: Article[] = [
     excerpt: "Most definitions of lead generation describe an activity — capturing contacts. Here's the one that matters once you're paying for it: a revenue system.",
     date: "28 Sep 2026",
     href: "/blog/what-is-lead-generation",
-  },
-  {
-    tag: "lead-generation",
-    title: "Lead generation for service businesses: the complete guide",
-    excerpt: "Lead generation for a service business isn't a lead-count game — it's a revenue system. Here's the full engine: targeting, creative, capture, speed-to-lead, CRM and closed-loop reporting, judged by qualified sales calls.",
-    date: "25 Sep 2026",
-    href: "/blog/lead-generation-for-service-businesses",
   },
 ];
