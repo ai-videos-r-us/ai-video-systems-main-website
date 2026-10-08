@@ -4,6 +4,8 @@ description: "Leads cost roughly $27 to $160 each and booked appointments $75 to
 date: 2026-10-06
 tag: "lead-generation"
 author: "Sean Munn"
+image: "/blog-images/lead-generation-cost.jpg"
+imageAlt: "A ChatGPT search box with the question 'How much does lead generation cost in 2026?' typed in, beside a laptop and a small chart card labelled Lead Generation, under the AI Video Systems logo."
 seeAlso:
   - label: "Is a $5,000-a-month agency worth it?"
     href: "/guides/is-5000-a-month-lead-generation-agency-worth-it"
