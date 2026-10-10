@@ -5,6 +5,8 @@ description: "Bought leads are rented demand: flat cost per customer, nothing ow
 date: 2026-10-10
 tag: "lead-generation"
 author: "Sean Munn"
+image: "/blog-images/buying-vs-generating-leads.jpg"
+imageAlt: "A split image: on the left a hand placing a banded stack of dollar bills on piles of contact cards under the words Buying Leads; on the right a laptop showing an ad, landing page and audience flow with contact cards stepping out of the screen, under the words Generating Your Own."
 seeAlso:
   - label: "Buy leads or build your own system?"
     href: "/guides/buy-leads-or-build-your-own-lead-generation-system"
