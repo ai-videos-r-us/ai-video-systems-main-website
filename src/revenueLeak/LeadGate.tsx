@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { PRIVACY_POLICY_URL, TERMS_URL } from '../diagnostic/links';
 import { readAttribution } from './attribution';
+import { AUDIT_URL, trackAuditCtaClick } from '../components/CTA';
 
 interface LeadGateProps {
   onUnlock: (firstName: string, accessToken: string) => void;
@@ -69,15 +70,33 @@ export default function LeadGate({ onUnlock }: LeadGateProps) {
 
   return (
     <div className="mx-auto w-full max-w-[560px] px-5 pb-24 pt-10 md:pt-16">
-      <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-carbon/45">
-        AI Video Systems &middot; Diagnostic 01
+      <p className="font-mono text-[11px] uppercase leading-relaxed tracking-[0.16em] text-carbon/45">
+        Free Revenue Leak Calculator &middot; For service businesses already running paid ads
       </p>
       <h1 className="mt-4 font-display text-[30px] font-extrabold leading-[1.08] tracking-tight text-carbon sm:text-[40px]">
-        How much ad spend are you wasting?
+        How many more customers could you get from the leads you already pay for?
       </h1>
-      <p className="mt-4 text-[16px] leading-relaxed text-carbon/70">
-        Calculate how many more customers you could get for the same ad spend.
+      <p className="mt-5 text-[17px] font-semibold leading-snug text-carbon">
+        Your ads bring in enquiries. How many make it all the way to becoming customers?
       </p>
+      <p className="mt-3 text-[16px] leading-relaxed text-carbon/70">
+        Enter seven numbers to see where prospects drop out&mdash;and estimate the extra customers and revenue better
+        conversion could generate from the same ad spend.
+      </p>
+
+      <p className="mt-6 text-[14px] font-semibold text-carbon">See:</p>
+      <ul className="mt-2.5 space-y-2.5">
+        {[
+          'How your leads move from enquiry to booked call to customer.',
+          'Which stage offers the biggest estimated revenue opportunity.',
+          'What improving conversion could mean for your monthly revenue—without buying more leads.',
+        ].map((item) => (
+          <li key={item} className="flex gap-3 text-[15px] leading-relaxed text-carbon/75">
+            <span aria-hidden="true" className="mt-[9px] h-1.5 w-1.5 flex-shrink-0 bg-signal" />
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
 
       <form onSubmit={handleSubmit} noValidate className="mt-9 border-t border-carbon/10 pt-8">
         <div className="grid grid-cols-1 gap-4">
@@ -102,7 +121,7 @@ export default function LeadGate({ onUnlock }: LeadGateProps) {
           </div>
           <div>
             <label htmlFor="rl-email" className="block text-[13.5px] font-semibold text-carbon">
-              Email <span className="text-signal">*</span>
+              Email address <span className="text-signal">*</span>
             </label>
             <input
               id="rl-email"
@@ -149,8 +168,8 @@ export default function LeadGate({ onUnlock }: LeadGateProps) {
               }`}
             />
             <span>
-              Send me occasional commercial breakdowns from AI Video
-              Systems.&nbsp;<span className="text-signal">*</span>
+              Send me practical breakdowns on getting more customers from paid ads.&nbsp;
+              <span className="text-signal">*</span>
             </span>
           </label>
           {errors.consent && (
@@ -175,11 +194,12 @@ export default function LeadGate({ onUnlock }: LeadGateProps) {
           className="mt-7 inline-flex min-h-[48px] w-full items-center justify-center bg-signal px-7 py-3.5 font-display text-sm font-bold uppercase tracking-wider text-white transition-colors hover:bg-action disabled:cursor-not-allowed disabled:bg-carbon/30 sm:w-auto"
           style={{ clipPath: 'polygon(0 0, 100% 0, calc(100% - 12px) 100%, 0 100%)' }}
         >
-          {submitting ? 'Opening…' : 'Learn More'}
+          {submitting ? 'Opening…' : 'Open My Free Calculator'}
         </button>
 
         <p className="mt-5 text-[12px] leading-relaxed text-carbon/45">
-          No call, no download &mdash; the calculator opens on this page. By continuing you agree to our{' '}
+          The calculator opens on this page. No download or call required. Results are estimates based on your figures
+          and the assumptions shown. By continuing you agree to our{' '}
           <a href={PRIVACY_POLICY_URL} className="underline hover:text-carbon">
             Privacy Policy
           </a>{' '}
@@ -190,6 +210,26 @@ export default function LeadGate({ onUnlock }: LeadGateProps) {
           .
         </p>
       </form>
+
+      <section className="mt-12 border-t border-carbon/10 pt-8">
+        <h2 className="font-display text-[20px] font-bold leading-snug tracking-tight text-carbon">
+          Want help getting more from your current ad spend?
+        </h2>
+        <p className="mt-3 text-[15px] leading-relaxed text-carbon/70">
+          Book a free call to review your advertising and lead-to-sale process, explore potential improvements, and
+          see whether AI Video Systems is a fit for your business.
+        </p>
+        <a
+          href={AUDIT_URL}
+          target="_blank"
+          rel="noopener"
+          onClick={() => trackAuditCtaClick('revenue-leak-optin')}
+          className="mt-5 inline-flex items-center gap-1.5 font-display text-sm font-bold uppercase tracking-wider text-signal underline-offset-4 hover:text-action hover:underline"
+        >
+          Book A Free Call <span aria-hidden="true">&rarr;</span>
+        </a>
+        <p className="mt-4 font-mono text-[11.5px] text-carbon/45">For service businesses currently running paid ads.</p>
+      </section>
     </div>
   );
 }
