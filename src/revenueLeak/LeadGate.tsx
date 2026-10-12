@@ -69,37 +69,37 @@ export default function LeadGate({ onUnlock }: LeadGateProps) {
   }
 
   return (
-    <div className="mx-auto w-full max-w-[560px] px-5 pb-24 pt-10 md:pt-16">
-      <p className="font-mono text-[11px] uppercase leading-relaxed tracking-[0.16em] text-carbon/45">
+    <div className="mx-auto w-full max-w-[560px] px-5 pb-24 pt-6 sm:pt-10 md:pt-16">
+      <p className="font-mono text-[10px] uppercase leading-relaxed tracking-[0.1em] text-carbon/45 sm:text-[11px] sm:tracking-[0.16em]">
         Free Revenue Leak Calculator &middot; For service businesses already running paid ads
       </p>
-      <h1 className="mt-4 font-display text-[30px] font-extrabold leading-[1.08] tracking-tight text-carbon sm:text-[40px]">
+      <h1 className="mt-2.5 font-display text-[27px] font-extrabold leading-[1.05] tracking-tight text-carbon sm:mt-4 sm:text-[40px] sm:leading-[1.08]">
         How many more customers could you get from the leads you already pay for?
       </h1>
-      <p className="mt-5 text-[17px] font-semibold leading-snug text-carbon">
+      <p className="mt-3 text-[16px] font-semibold leading-snug text-carbon sm:mt-5 sm:text-[17px]">
         Your ads bring in enquiries. How many make it all the way to becoming customers?
       </p>
-      <p className="mt-3 text-[16px] leading-relaxed text-carbon/70">
+      <p className="mt-2 text-[15px] leading-normal text-carbon/70 sm:mt-3 sm:text-[16px] sm:leading-relaxed">
         Enter seven numbers to see where prospects drop out&mdash;and estimate the extra customers and revenue better
         conversion could generate from the same ad spend.
       </p>
 
-      <p className="mt-6 text-[14px] font-semibold text-carbon">See:</p>
-      <ul className="mt-2.5 space-y-2.5">
+      <p className="mt-4 text-[13px] font-semibold text-carbon sm:mt-6 sm:text-[14px]">See:</p>
+      <ul className="mt-2 space-y-1.5 sm:mt-2.5 sm:space-y-2.5">
         {[
           'How your leads move from enquiry to booked call to customer.',
           'Which stage offers the biggest estimated revenue opportunity.',
           'What improving conversion could mean for your monthly revenue—without buying more leads.',
         ].map((item) => (
-          <li key={item} className="flex gap-3 text-[15px] leading-relaxed text-carbon/75">
-            <span aria-hidden="true" className="mt-[9px] h-1.5 w-1.5 flex-shrink-0 bg-signal" />
+          <li key={item} className="flex gap-3 text-[14px] leading-snug text-carbon/75 sm:text-[15px] sm:leading-relaxed">
+            <span aria-hidden="true" className="mt-[7px] h-1.5 w-1.5 sm:mt-[9px] flex-shrink-0 bg-signal" />
             <span>{item}</span>
           </li>
         ))}
       </ul>
 
-      <form onSubmit={handleSubmit} noValidate className="mt-9 border-t border-carbon/10 pt-8">
-        <div className="grid grid-cols-1 gap-4">
+      <form onSubmit={handleSubmit} noValidate className="mt-5 border-t border-carbon/10 pt-5 sm:mt-9 sm:pt-8">
+        <div className="grid grid-cols-1 gap-3 sm:gap-4">
           <div>
             <label htmlFor="rl-first-name" className="block text-[13.5px] font-semibold text-carbon">
               First name <span className="text-signal">*</span>
@@ -153,7 +153,7 @@ export default function LeadGate({ onUnlock }: LeadGateProps) {
           />
         </div>
 
-        <div className="mt-6">
+        <div className="mt-4 sm:mt-6">
           <label className="flex cursor-pointer items-start gap-3 text-[13.5px] text-carbon/75">
             <input
               type="checkbox"
@@ -191,7 +191,7 @@ export default function LeadGate({ onUnlock }: LeadGateProps) {
         <button
           type="submit"
           disabled={submitting}
-          className="mt-7 inline-flex min-h-[48px] w-full items-center justify-center bg-signal px-7 py-3.5 font-display text-sm font-bold uppercase tracking-wider text-white transition-colors hover:bg-action disabled:cursor-not-allowed disabled:bg-carbon/30 sm:w-auto"
+          className="mt-5 inline-flex min-h-[48px] sm:mt-7 w-full items-center justify-center bg-signal px-7 py-3.5 font-display text-sm font-bold uppercase tracking-wider text-white transition-colors hover:bg-action disabled:cursor-not-allowed disabled:bg-carbon/30 sm:w-auto"
           style={{ clipPath: 'polygon(0 0, 100% 0, calc(100% - 12px) 100%, 0 100%)' }}
         >
           {submitting ? 'Opening…' : 'Open My Free Calculator'}
