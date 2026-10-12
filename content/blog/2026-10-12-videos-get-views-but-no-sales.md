@@ -5,6 +5,8 @@ description: "Views stop short of sales at five places: wrong viewer, no next st
 date: 2026-10-12
 tag: "ai-video"
 author: "Sean Munn"
+image: "/blog-images/videos-get-views-but-no-sales.jpg"
+imageAlt: "A widescreen monitor on a founder's desk plays a video of a large crowd stopped at the edge of a broken stone ledge, with a booking page sitting on a separate pillar out of reach across the gap. A caption reads 128,000 views, and a second screen beside it shows New enquiries: 0."
 seeAlso:
   - label: "How to turn AI video into sales: the complete guide"
     href: "/blog/ai-video-to-sales"
