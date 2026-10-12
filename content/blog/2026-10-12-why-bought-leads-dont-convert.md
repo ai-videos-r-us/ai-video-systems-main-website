@@ -5,6 +5,8 @@ description: "Bought leads convert badly for four reasons: shared, low intent, s
 date: 2026-10-12
 tag: "lead-generation"
 author: "Sean Munn"
+image: "/blog-images/why-bought-leads-dont-convert.jpg"
+imageAlt: "On a widescreen monitor, a man at a desk glances up at a second man standing in the doorway holding a tablet that shows a video call, while on the right a booking page plays the same man explaining his work above a finished kitchen and a Book a consultation button: proof sent before the call."
 seeAlso:
   - label: "Why Facebook ad leads go cold"
     href: "/guides/why-facebook-ad-leads-go-cold"
