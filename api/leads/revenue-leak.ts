@@ -3,7 +3,6 @@ import { createHash } from 'node:crypto';
 import { validateLead } from '../../lib/server/lead-validation.js';
 import { sendLeadWebhook } from '../../lib/server/lead-webhook.js';
 import { isRateLimited } from '../../lib/server/rate-limit.js';
-import { hasLeadWebhookConfig } from '../../lib/server/env.js';
 import { issueAccessToken, HAS_STABLE_ACCESS_SECRET } from '../../lib/server/access-token.js';
 
 function getClientIp(req: VercelRequest): string {
@@ -55,13 +54,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   // are ours to fix, not a reason to withhold what the visitor just paid for with contact details.
   const accessToken = issueAccessToken(lead.email);
 
-  if (!hasLeadWebhookConfig()) {
-    // No destination configured yet. Log it so the lead is at least recoverable from
-    // Vercel's function logs, and still let the visitor through to the calculator.
-    console.warn('lead_webhook_not_configured', JSON.stringify({ firstName: lead.firstName, email: lead.email }));
-    return res.status(200).json({ ok: true, delivery: 'not_configured', accessToken });
-  }
-
+  // Always resolves — LEAD_WEBHOOK_URL when set, otherwise the checked-in Zapier default.
   const result = await sendLeadWebhook({
     lead,
     capturedAt: new Date().toISOString(),

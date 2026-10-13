@@ -68,8 +68,9 @@ describe('getFuneralLeadWebhookTarget', () => {
       LEAD_WEBHOOK_SECRET: undefined,
     });
     expect(getFuneralLeadWebhookTarget().url).toMatch(/^https:\/\//);
-    // The Revenue Leak destination is unaffected by the funeral default.
-    expect(getLeadWebhookTarget()).toBeNull();
+    expect(getLeadWebhookTarget().url).toMatch(/^https:\/\//);
+    // Each page has its own default — the two never collapse into one Zap.
+    expect(getLeadWebhookTarget().url).not.toBe(getFuneralLeadWebhookTarget().url);
   });
 
   it('leaves the revenue-leak destination alone when a funeral URL is set', async () => {
@@ -82,6 +83,17 @@ describe('getFuneralLeadWebhookTarget', () => {
       url: 'https://hooks.example/revenue-leak',
       secret: 'revenue-secret',
     });
+  });
+});
+
+describe('getLeadWebhookTarget', () => {
+  it('uses the checked-in Zapier default, unsigned, when no URL is set', async () => {
+    const { getLeadWebhookTarget, DEFAULT_LEAD_WEBHOOK_URL } = await loadEnv({
+      LEAD_WEBHOOK_URL: undefined,
+      LEAD_WEBHOOK_SECRET: 'revenue-secret',
+    });
+    expect(DEFAULT_LEAD_WEBHOOK_URL).toBe('https://hooks.zapier.com/hooks/catch/8612096/41diul0/');
+    expect(getLeadWebhookTarget()).toEqual({ url: DEFAULT_LEAD_WEBHOOK_URL });
   });
 });
 
