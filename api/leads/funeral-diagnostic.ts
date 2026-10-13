@@ -29,7 +29,7 @@ function parseBody(req: VercelRequest): unknown {
 /**
  * Gate capture for the Funeral Plan Scale Readiness Diagnostic. Same contract as the Revenue
  * Leak gate — first name, email, required marketing consent — but delivered to the funeral
- * destination (FUNERAL_LEAD_WEBHOOK_URL, falling back to LEAD_WEBHOOK_URL).
+ * destination (FUNERAL_LEAD_WEBHOOK_URL, falling back to its own checked-in Zapier default).
  */
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'POST') {
