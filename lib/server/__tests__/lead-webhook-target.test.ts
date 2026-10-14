@@ -92,7 +92,7 @@ describe('getLeadWebhookTarget', () => {
       LEAD_WEBHOOK_URL: undefined,
       LEAD_WEBHOOK_SECRET: 'revenue-secret',
     });
-    expect(DEFAULT_LEAD_WEBHOOK_URL).toBe('https://hooks.zapier.com/hooks/catch/8612096/41diul0/');
+    expect(DEFAULT_LEAD_WEBHOOK_URL).toBe('https://hooks.zapier.com/hooks/catch/8612096/4117mtn/');
     expect(getLeadWebhookTarget()).toEqual({ url: DEFAULT_LEAD_WEBHOOK_URL });
   });
 });

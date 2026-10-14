@@ -47,7 +47,7 @@ export interface LeadWebhookTarget {
  * leads the moment it deploys, but the URL is public. If the Zap starts eating task quota,
  * rotate the hook in Zapier and set LEAD_WEBHOOK_URL in Vercel instead of committing it.
  */
-export const DEFAULT_LEAD_WEBHOOK_URL = 'https://hooks.zapier.com/hooks/catch/8612096/41diul0/';
+export const DEFAULT_LEAD_WEBHOOK_URL = 'https://hooks.zapier.com/hooks/catch/8612096/4117mtn/';
 
 /**
  * Destination for Revenue Leak Calculator gate captures. LEAD_WEBHOOK_URL wins when set;
